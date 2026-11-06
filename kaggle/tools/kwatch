@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Usage: kwatch <account> <owner/slug> [queue_stuck_minutes=8] [max_runtime_minutes=180]
+# Exit 0 = complete, 1 = error/cancelled, 3 = stuck in queue (procedure: cancel & retry <=4x), 4 = exceeded max runtime (possible hang).
+acct="$1"; ref="$2"; qmin="${3:-8}"; maxmin="${4:-180}"
+t0=$(date +%s); last=""; run_since=""
+while true; do
+  st=$(kg "$acct" kernels status "$ref" 2>&1 | tail -1); now=$(date +%s)
+  [ "$st" != "$last" ] && { echo "$(date -u +%H:%M:%S) $ref :: $st"; last="$st"; }
+  case "$st" in
+    *COMPLETE*) echo "FINISHED $ref after $(( (now-t0)/60 )) min"; exit 0;;
+    *ERROR*|*CANCEL*) echo "FAILED $ref :: $st"; kg "$acct" kernels logs "$ref" 2>/dev/null | tail -c 4000; exit 1;;
+    *RUNNING*) [ -z "$run_since" ] && run_since=$now
+               [ $(( now - run_since )) -ge $(( maxmin * 60 )) ] && { echo "LONG $ref running > ${maxmin} min"; exit 4; };;
+    *) [ -z "$run_since" ] && [ $(( now - t0 )) -ge $(( qmin * 60 )) ] && { echo "STUCK $ref :: not running after ${qmin} min :: $st"; exit 3; };;
+  esac
+  sleep 30
+done

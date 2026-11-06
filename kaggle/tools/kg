@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Usage: kg <account-label> <kaggle args...>   (token read from /root/.kaggle/accounts.json; never printed)
+acct="$1"; shift
+tok=$(python3 -c "import json,sys; print(json.load(open('/root/.kaggle/accounts.json'))[sys.argv[1]]['token'])" "$acct") || { echo "unknown account $acct" >&2; exit 2; }
+KAGGLE_API_TOKEN="$tok" exec kaggle "$@"

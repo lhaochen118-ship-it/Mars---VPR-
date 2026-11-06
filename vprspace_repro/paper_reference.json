@@ -1,0 +1,91 @@
+{
+  "paper": "VPR-Space: A Benchmark for Visual Place Recognition in Space Analog Domains (Fechner & Neubert), arXiv:2610.35642v1, 26 Oct 2026",
+  "gt": "VPR-GT-RPE-0",
+  "setup_order": [
+    "MadMax-A0--MadMax-A2",
+    "MadMax-A2--MadMax-A4",
+    "MadMax-C0--MadMax-C1",
+    "MadMax-E0--MadMax-E1",
+    "MadMax-F0--MadMax-F3",
+    "MadMax-G0--MadMax-G2",
+    "S3LI-Etna-crater--S3LI-Etna-crater_inout",
+    "S3LI-Etna-traverse_1--S3LI-Etna-loops",
+    "LunarLoc-9--LunarLoc-10",
+    "LunarLoc-15--LunarLoc-17",
+    "SPICE-A-dawn-off-spad@5.0us--SPICE-A-night-on-spad@5.0us",
+    "SPICE-A-dawn-off-spad@5.0us--SPICE-A-noon-off-spad@5.0us",
+    "SPICE-A-noon-off-spad@5.0us--SPICE-A-night-on-spad@5.0us",
+    "SPICE-A-dawn-off@2500.0us--SPICE-A-night-on@2500.0us",
+    "SPICE-A-dawn-off@2500.0us--SPICE-A-noon-off@2500.0us",
+    "SPICE-A-noon-off@2500.0us--SPICE-A-night-on@2500.0us"
+  ],
+  "paper_labels": {
+    "MadMax-A0--MadMax-A2": "MM A0 - A2",
+    "MadMax-A2--MadMax-A4": "MM A2 - A4",
+    "MadMax-C0--MadMax-C1": "MM C0 - C1",
+    "MadMax-E0--MadMax-E1": "MM E0 - E1",
+    "MadMax-F0--MadMax-F3": "MM F0 - F3",
+    "MadMax-G0--MadMax-G2": "MM G0 - G2",
+    "S3LI-Etna-crater--S3LI-Etna-crater_inout": "S3E crater - crater inout",
+    "S3LI-Etna-traverse_1--S3LI-Etna-loops": "S3E traverse 1 - loops",
+    "LunarLoc-9--LunarLoc-10": "LL 9 - 10",
+    "LunarLoc-15--LunarLoc-17": "LL 15 - 17",
+    "SPICE-A-dawn-off-spad@5.0us--SPICE-A-night-on-spad@5.0us": "HL3 SPAD dawn - night",
+    "SPICE-A-dawn-off-spad@5.0us--SPICE-A-noon-off-spad@5.0us": "HL3 SPAD dawn - noon",
+    "SPICE-A-noon-off-spad@5.0us--SPICE-A-night-on-spad@5.0us": "HL3 SPAD noon - night",
+    "SPICE-A-dawn-off@2500.0us--SPICE-A-night-on@2500.0us": "HL3 FLIR dawn - night",
+    "SPICE-A-dawn-off@2500.0us--SPICE-A-noon-off@2500.0us": "HL3 FLIR dawn - noon",
+    "SPICE-A-noon-off@2500.0us--SPICE-A-night-on@2500.0us": "HL3 FLIR noon - night"
+  },
+  "table_II_auprc": {
+    "_columns": ["megaloc", "boq", "salad", "anyloc_global", "densevlad"],
+    "_note": "Values in setup_order (paper row order). Rounded to 2 decimals in the paper.",
+    "megaloc":       [0.67, 0.36, 0.51, 0.33, 0.79, 0.57, 0.52, 0.20, 0.62, 0.48, 0.18, 0.76, 0.21, 0.33, 0.70, 0.28],
+    "boq":           [0.70, 0.41, 0.52, 0.30, 0.71, 0.49, 0.33, 0.17, 0.56, 0.49, 0.21, 0.79, 0.35, 0.35, 0.72, 0.41],
+    "salad":         [0.65, 0.39, 0.41, 0.23, 0.68, 0.48, 0.32, 0.10, 0.36, 0.51, 0.13, 0.69, 0.19, 0.27, 0.60, 0.31],
+    "anyloc_global": [0.68, 0.29, 0.33, 0.26, 0.63, 0.50, 0.18, 0.08, 0.44, 0.40, 0.23, 0.66, 0.35, 0.32, 0.65, 0.33],
+    "densevlad":     [0.69, 0.32, 0.31, 0.30, 0.57, 0.41, 0.35, 0.07, 0.41, 0.34, 0.02, 0.80, 0.05, 0.17, 0.67, 0.12],
+    "worst_case": {"megaloc": 0.18, "boq": 0.17, "salad": 0.10, "anyloc_global": 0.08, "densevlad": 0.02},
+    "avg_mean":   {"megaloc": 0.47, "boq": 0.47, "salad": 0.39, "anyloc_global": 0.40, "densevlad": 0.35},
+    "avg_std":    {"megaloc": 0.20, "boq": 0.19, "salad": 0.19, "anyloc_global": 0.18, "densevlad": 0.24}
+  },
+  "table_III_recall": {
+    "_note": "Aggregates over the 16 setups only (no per-setup values published). worst = per-metric minimum (to be confirmed), avg = mean +- std.",
+    "megaloc":       {"worst": {"R@1": 0.24, "R@5": 0.46, "R@10": 0.53, "R@100p": 0.00},  "mean": {"R@1": 0.59, "R@5": 0.75, "R@10": 0.81, "R@100p": 0.07}, "std": {"R@1": 0.25, "R@5": 0.19, "R@10": 0.15, "R@100p": 0.07}},
+    "boq":           {"worst": {"R@1": 0.38, "R@5": 0.59, "R@10": 0.69, "R@100p": 0.00},  "mean": {"R@1": 0.64, "R@5": 0.78, "R@10": 0.84, "R@100p": 0.08}, "std": {"R@1": 0.20, "R@5": 0.14, "R@10": 0.11, "R@100p": 0.08}},
+    "salad":         {"worst": {"R@1": 0.25, "R@5": 0.56, "R@10": 0.66, "R@100p": 0.00},  "mean": {"R@1": 0.59, "R@5": 0.77, "R@10": 0.84, "R@100p": 0.05}, "std": {"R@1": 0.21, "R@5": 0.14, "R@10": 0.12, "R@100p": 0.07}},
+    "anyloc_global": {"worst": {"R@1": 0.31, "R@5": 0.54, "R@10": 0.64, "R@100p": 0.001}, "mean": {"R@1": 0.56, "R@5": 0.73, "R@10": 0.81, "R@100p": 0.04}, "std": {"R@1": 0.21, "R@5": 0.16, "R@10": 0.13, "R@100p": 0.04}},
+    "densevlad":     {"worst": {"R@1": 0.06, "R@5": 0.23, "R@10": 0.33, "R@100p": 0.00},  "mean": {"R@1": 0.52, "R@5": 0.68, "R@10": 0.76, "R@100p": 0.05}, "std": {"R@1": 0.27, "R@5": 0.24, "R@10": 0.20, "R@100p": 0.05}}
+  },
+  "table_IV_dataset_stats": {
+    "_columns": ["n_db", "n_q", "pct_queries_with_match", "pct_positive_matches"],
+    "MadMax-A0--MadMax-A2": [171, 180, 92.8, 8.55],
+    "MadMax-A2--MadMax-A4": [180, 412, 20.9, 0.74],
+    "MadMax-C0--MadMax-C1": [502, 463, 78.6, 1.89],
+    "MadMax-E0--MadMax-E1": [517, 507, 43.2, 0.62],
+    "MadMax-F0--MadMax-F3": [117, 229, 89.1, 5.14],
+    "MadMax-G0--MadMax-G2": [258, 290, 51.7, 1.75],
+    "S3LI-Etna-crater--S3LI-Etna-crater_inout": [1129, 1683, 18.2, 0.15],
+    "S3LI-Etna-traverse_1--S3LI-Etna-loops": [485, 780, 36.8, 0.40],
+    "LunarLoc-9--LunarLoc-10": [119, 183, 71.0, 3.19],
+    "LunarLoc-15--LunarLoc-17": [118, 54, 27.8, 0.97],
+    "SPICE-A-dawn-off-spad@5.0us--SPICE-A-night-on-spad@5.0us": [98, 97, 76.3, 1.25],
+    "SPICE-A-dawn-off-spad@5.0us--SPICE-A-noon-off-spad@5.0us": [98, 97, 100.0, 6.00],
+    "SPICE-A-noon-off-spad@5.0us--SPICE-A-night-on-spad@5.0us": [97, 97, 72.2, 1.74],
+    "SPICE-A-dawn-off@2500.0us--SPICE-A-night-on@2500.0us": [99, 97, 78.4, 2.55],
+    "SPICE-A-dawn-off@2500.0us--SPICE-A-noon-off@2500.0us": [99, 99, 96.0, 5.93],
+    "SPICE-A-noon-off@2500.0us--SPICE-A-night-on@2500.0us": [99, 97, 78.4, 2.72]
+  },
+  "table_V_gt_hyperparameters": {
+    "MADMAX/S3LI-Etna/LunarLoc": {"soft": {"d_max_m": 35, "tau_t_m": 4, "tau_R_deg": 30, "n": 2}, "hard": {"d_max_m": 35, "tau_t_m": 3, "tau_R_deg": 20, "n": 4}},
+    "SPICE-HL3": {"soft": {"d_max_m": 1, "tau_t_m": 0.4, "tau_R_deg": 20, "n": 1}, "hard": {"d_max_m": 1, "tau_t_m": 0.2, "tau_R_deg": 10, "n": 1}},
+    "rpe_ensemble": ["DUSt3R", "MUSt3R", "MapAnything", "MADPose", "SuperPoint+LightGlue"],
+    "notes": "Depth Anything V2 metric depth + RANSAC where applicable; both input orderings must pass; translation error relaxed to 5DoF (min over scale)."
+  },
+  "fig6_boq_similarities": {
+    "_note": "BoQ; similarity after DB-statistics standardization + L2 normalization (as in evaluate.py). correct = best db image inside hard GT, fp = highest-similarity db image (false positive). Query index convention (0- or 1-based) unknown.",
+    "MadMax-A0--MadMax-A2": {"query": 56, "correct": 0.246, "fp": 0.296},
+    "S3LI-Etna-traverse_1--S3LI-Etna-loops": {"query": 200, "correct": 0.078, "fp": 0.353},
+    "SPICE-A-dawn-off-spad@5.0us--SPICE-A-night-on-spad@5.0us": {"query": 93, "correct": 0.019, "fp": 0.182}
+  }
+}
