@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Usage: kwatch_many <file with lines "label owner/slug"> [queue_stuck_min=8]
+# Emits one line per status change; flags kernels still queued after queue_stuck_min; exits when all are terminal.
+list="$1"; qmin="${2:-8}"; declare -A last t0 done_
+start=$(date +%s)
+while true; do
+  all=1
+  while read -r label ref; do
+    [ -z "$label" ] && continue
+    [ -n "${done_[$ref]}" ] && continue
+    st=$(kg "$label" kernels status "$ref" 2>&1 | tail -1 | sed -E 's/.*status "([^"]+)".*/\1/')
+    now=$(date +%s); [ -z "${t0[$ref]}" ] && t0[$ref]=$now
+    if [ "$st" != "${last[$ref]}" ]; then echo "$(date -u +%H:%M:%S) $ref -> $st"; last[$ref]="$st"; fi
+    case "$st" in
+      *COMPLETE*|*ERROR*|*CANCEL*) done_[$ref]=1;;
+      *RUNNING*) all=0;;
+      *) all=0; if [ $(( now - start )) -ge $(( qmin * 60 )) ] && [ -z "${warned[$ref]}" ]; then echo "STUCK? $ref not running after ${qmin} min ($st)"; fi;;
+    esac
+  done < "$list"
+  [ $all -eq 1 ] && { echo "ALL TERMINAL"; exit 0; }
+  sleep 30
+done

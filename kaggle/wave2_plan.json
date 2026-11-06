@@ -1,0 +1,17 @@
+{
+ "note": "Wave 2 GPU sessions: launched per account as soon as that account's vprspace-deps-core is COMPLETE",
+ "sessions": [
+  {"label": "nguyenmanh0404", "session": "a-exact",        "gpu": "L4", "env": "pinned", "deps": ["core"], "configs": ["boq", "megaloc", "boq_bs256", "megaloc_bs128"]},
+  {"label": "nguyenmanh0404", "session": "c-cosplace-mixvpr", "gpu": "L4", "env": "pinned", "deps": ["core", "extra"], "configs": ["cosplace_r50_2048_native", "cosplace_r50_2048_512", "cosplace_r101_2048_native", "cosplace_r152_2048_native", "cosplace_r50_512_native", "cosplace_vgg16_512_native", "mixvpr_4096", "mixvpr_512", "mixvpr_128"]},
+  {"label": "namhunhh",       "session": "c-netvlad-dinov3", "gpu": "L4", "env": "pinned", "deps": ["core", "extra"], "configs": ["netvlad_4096_native", "netvlad_32768_native", "netvlad_4096_max640", "dinov3_s16_224", "dinov3_b16_224", "dinov3_b16_512", "dinov3_l16_224", "dinov3_l16_512"]},
+  {"label": "namhunhh",       "session": "b-salad",        "gpu": "L4", "env": "pinned", "deps": ["core"], "configs": ["salad_322", "salad_322_official", "salad_224", "salad_518", "salad_native14"]},
+  {"label": "hieu",           "session": "b-anyloc-224-322", "gpu": "L4", "env": "pinned", "deps": ["core", "anyloc"], "configs": ["anyloc_224", "anyloc_322"]},
+  {"label": "hieu",           "session": "b-anyloc-518",   "gpu": "L4", "env": "pinned", "deps": ["core", "anyloc"], "configs": ["anyloc_518"]},
+  {"label": "duckzuy",        "session": "b-anyloc-demo-p1", "gpu": "L4", "env": "pinned", "deps": ["core", "anyloc"], "configs": ["anyloc_demo1024"], "split": 0},
+  {"label": "duckzuy",        "session": "b-anyloc-demo-p2", "gpu": "L4", "env": "pinned", "deps": ["core", "anyloc"], "configs": ["anyloc_demo1024"], "split": 1},
+  {"label": "dinhthinh",      "session": "a-exact-kaggleenv", "gpu": "L4", "env": "kaggle", "deps": ["core"], "configs": ["boq", "megaloc"]},
+  {"label": "dinhthinh",      "session": "b-densevlad",    "gpu": "L4", "env": "kaggle", "deps": ["core"], "configs": ["densevlad_16384"]},
+  {"label": "mxuanquy",       "session": "a-exact-t4",     "gpu": "T4", "env": "pinned", "deps": ["core"], "configs": ["boq", "megaloc"]},
+  {"label": "yeshenhi",       "session": "a-exact-t4-bs",  "gpu": "T4", "env": "pinned", "deps": ["core"], "configs": ["boq_bs256", "megaloc_bs128"]}
+ ]
+}
