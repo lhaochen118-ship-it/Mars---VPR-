@@ -35,6 +35,47 @@ def _offline_parse_repo_info(github):
 
 
 torch.hub._parse_repo_info = _offline_parse_repo_info
+
+
+# Offline Hugging Face fallback: if the regular cache lookup fails (e.g. snapshot symlinks lost when the cache was
+# saved as a Kaggle output), resolve the file from the content-addressed blobs of the same cache and verify that the
+# blob's sha256 equals its name. Weights are identical either way; this only repairs the file lookup.
+def _install_hf_fallback():
+    try:
+        import hashlib, huggingface_hub
+    except Exception:
+        return
+    orig = huggingface_hub.hf_hub_download
+
+    def patched(repo_id, filename, *args, **kwargs):
+        try:
+            return orig(repo_id, filename, *args, **kwargs)
+        except Exception as e:
+            base = Path(os.environ.get("HF_HOME", "~/.cache/huggingface")).expanduser() / "hub" / ("models--" + repo_id.replace("/", "--"))
+            for snap in sorted(base.glob(f"snapshots/*/{filename}")):
+                if snap.exists() and snap.stat().st_size > 2048:
+                    return str(snap)
+            if filename.endswith(".safetensors"):
+                blobs = sorted((p for p in base.glob("blobs/*") if p.is_file()), key=lambda p: -p.stat().st_size)
+                for b in blobs:
+                    h = hashlib.sha256()
+                    with open(b, "rb") as f:
+                        for c in iter(lambda: f.read(64 << 20), b""):
+                            h.update(c)
+                    if h.hexdigest() == b.name:
+                        log(f"hf fallback: {repo_id}/{filename} -> blob {b.name[:12]} (sha256 verified)")
+                        return str(b)
+            raise e
+
+    huggingface_hub.hf_hub_download = patched
+    try:
+        import huggingface_hub.file_download as fd
+        fd.hf_hub_download = patched
+    except Exception:
+        pass
+
+
+_install_hf_fallback()
 NUM_WORKERS = int(os.environ.get("VPRS_LOADER_WORKERS", "10"))
 DEV = "cuda" if torch.cuda.is_available() else "cpu"
 

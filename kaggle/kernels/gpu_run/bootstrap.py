@@ -29,11 +29,16 @@ def main():
     os.makedirs("/tmp/vprdata", exist_ok=True)
     ext = subprocess.Popen("cat " + " ".join(f"'{p}'" for p in parts) + " | tar -x -C /tmp/vprdata", shell=True)
     # 2) ... while preparing caches and the pinned environment
+    tree = subprocess.run("find /kaggle/input -maxdepth 5 -type d | head -80", shell=True, capture_output=True, text=True).stdout
+    log("input tree:\n" + tree)
+    def find_dirs(name):  # kernel_sources are mounted at varying depths under /kaggle/input
+        return sorted(d for d in glob.glob(f"/kaggle/input/**/{name}", recursive=True)
+                      if os.path.isdir(d) and "/torch_home/" not in d and "/hf_home/" not in d and "/wheels/" not in d)
     for kind in ("torch_home", "hf_home"):
         os.makedirs(f"/tmp/{kind}", exist_ok=True)
-        for src in sorted(glob.glob(f"/kaggle/input/*/{kind}")):
+        for src in find_dirs(kind):
             sh(["cp", "-rs", "--remove-destination", src + "/.", f"/tmp/{kind}/"])
-    extra = sorted(glob.glob("/kaggle/input/*/extra"))
+    extra = find_dirs("extra")
     vme_dir = next((f"{e}/VPR-methods-evaluation" for e in extra if os.path.isdir(f"{e}/VPR-methods-evaluation")), None)
     mixvpr_root = "/tmp/mixvpr_root"
     mx = next((f"{e}/mixvpr" for e in extra if os.path.isdir(f"{e}/mixvpr")), None)
@@ -43,8 +48,9 @@ def main():
             os.symlink(mx, f"{mixvpr_root}/trained_models/mixvpr")
     py = sys.executable
     if SPEC.get("env", "pinned") == "pinned":
-        wheels = glob.glob("/kaggle/input/*/wheels")[0]
-        req = glob.glob("/kaggle/input/*/requirements_pinned.txt")[0]
+        wheels = next(d for d in find_dirs("wheels") if glob.glob(f"{d}/torch-2.6.0*.whl"))
+        req = sorted(glob.glob("/kaggle/input/**/requirements_pinned.txt", recursive=True))[0]
+        log("wheels:", wheels, "req:", req)
         try:
             sh([sys.executable, "-m", "venv", "/tmp/vprenv"])
             pip = ["/tmp/vprenv/bin/python", "-m", "pip"]
