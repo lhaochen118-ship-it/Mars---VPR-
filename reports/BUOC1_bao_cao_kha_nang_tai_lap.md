@@ -15,7 +15,8 @@
 2. **Tái lập CHÍNH XÁC được** (mọi thứ cần thiết đã công bố và đã kiểm chứng):
    dữ liệu của 16 cặp, ma trận GT `VPR-GT-RPE-0`, code đánh giá và metric, cùng **2 trong 9 phương pháp có cấu hình đầy đủ: MegaLoc và BoQ**. Tương ứng với cột **MeLo** và **BoQ** của Bảng II và III, các giá trị similarity ở **Hình 6** (BoQ), và **Bảng IV** (thống kê dữ liệu).
 3. **Chỉ tái lập GẦN ĐÚNG được**: phương pháp và trọng số công khai, nhưng tác giả **không công bố cấu hình** đã dùng: SALAD, AnyLoc (global), AnyLoc (unstructured), MixVPR, CosPlace, NetVLAD, DINOv3-CLS (trọng số bị khóa, phải xin quyền), DenseVLAD (không có bản Python chính thức hay vocabulary sẵn). Trong số này **chỉ SALAD, AnyLoc-global và DenseVLAD có số liệu trong bài** để đối chiếu. Năm cấu hình còn lại không có số nào được công bố.
-4. **KHÔNG công bố, không thể tái lập chính xác**: code dựng benchmark từ dữ liệu SLAM gốc (chọn chuỗi, lấy mẫu con, làm sạch), pipeline sinh GT bằng tổ hợp 5 bộ ước lượng tư thế tương đối (RPE), các GT thay thế ở Hình 5, kết quả chi tiết của 5 cấu hình không có trong bảng, website benchmark, và Hình 1 trái (Oxford RobotCar). Tác giả ghi rõ những phần này *"sẽ công bố khi bài báo được xuất bản"*.
+4. **KHÔNG công bố, không thể tái lập chính xác**: code dựng benchmark từ dữ liệu SLAM gốc (chọn chuỗi, lấy mẫu con), **code chạy** 5 bộ ước lượng tư thế tương đối (RPE), các GT thay thế ở Hình 5, kết quả chi tiết của 5 cấu hình không có trong bảng, website benchmark, và Hình 1 trái (Oxford RobotCar). Tác giả ghi rõ những phần này *"sẽ công bố khi bài báo được xuất bản"*.
+   *Cập nhật sau khi kiểm tra toàn bộ release*: **nhãn làm sạch** và **kết quả của cả 5 RPE** cho mọi cặp ảnh **có** trong `misc/`. Từ đó **bước bỏ phiếu sinh GT được tái lập chính xác 100%** (§5).
 5. **Tài nguyên Kaggle đã xác minh**: 10 tài khoản đều hoạt động (8 tài khoản L4, 2 tài khoản T4). L4 có được qua cuộc thi `gemma-4-developer-agent` (id 149921, mọi tài khoản đã tham gia). Kaggle API truy cập được trực tiếp từ phiên làm việc này, nên Bước 2 có thể tự động hoàn toàn.
 
 **Bảng tổng hợp mức tái lập**
@@ -28,8 +29,10 @@
 | MegaLoc, BoQ | ✅ cấu hình trong `methods.py` | ✅ **Chính xác** |
 | SALAD, AnyLoc-global, DenseVLAD | ⚠️ chỉ có số liệu, không có cấu hình | 🟡 Gần đúng, **có số để đối chiếu** |
 | AnyLoc-unstructured, MixVPR, CosPlace, NetVLAD, DINOv3 | ⚠️ không có cấu hình, không có số | 🟡 Gần đúng, **không có số để đối chiếu** |
-| Pipeline sinh GT (DUSt3R, MUSt3R, MapAnything, MADPose, SP+LG, Depth Anything V2) | ❌ | ❌ chỉ có thể làm xấp xỉ, rất tốn kém |
-| Code dựng benchmark từ dữ liệu gốc, nhãn làm sạch | ❌ | ❌ |
+| Pipeline sinh GT: bước **bỏ phiếu** từ kết quả RPE đã phát hành | ✅ `misc/rpe_estimates` | ✅ **Chính xác** (0 sai lệch, 16/16 cặp) |
+| Pipeline sinh GT: bước **chạy** RPE (DUSt3R, MUSt3R, MapAnything, MADPose, SP+LG, Depth Anything V2) | ❌ | ❌ chỉ có thể làm xấp xỉ, rất tốn kém |
+| Nhãn làm sạch dữ liệu | ✅ `misc/flagged_errors` | ✅ (dùng lại) |
+| Code dựng benchmark từ dữ liệu gốc | ❌ | ❌ |
 | Kết quả chi tiết, website benchmark | ❌ | ❌ |
 
 ---
@@ -134,9 +137,10 @@ Ngay cả khi tải hết dữ liệu gốc, vẫn **không dựng lại chính 
 | Pose camera | ✅ | `poses/<traj>.npy` | ✅ | Không cần cho đánh giá, chỉ dùng để kiểm tra |
 | GT `VPR-GT-RPE-0` (hard, soft) | ✅ | `vpr_gt/VPR-GT-RPE-0/<setup>.npz` | ✅ (dùng lại) | Thống kê khớp Bảng IV (§5) |
 | GT "pose thresholding" / "frustum overlap" (Hình 5) | ❌ | – | ❌ | Bài không cho ngưỡng cụ thể |
-| Nhãn làm sạch dữ liệu ("found errors are provided as part of the published data") | ⚠️ | Xem §5 | – | Bài nói có kèm theo; §5 kiểm tra thực tế |
+| Nhãn làm sạch dữ liệu ("found errors are provided as part of the published data") | ✅ | `misc/flagged_errors/` (117 CSV) | ✅ (dùng lại) | Đã xác nhận ở §5. Có lưu ý: một số chuỗi chỉ rà soát một phần, LunarLoc không gán nhãn |
+| Kết quả 5 RPE cho mọi cặp | ✅ | `misc/rpe_estimates/` | ✅ | Bước bỏ phiếu của GT dựng lại **khớp 100%** (§5) |
 | Code dựng benchmark (chọn chuỗi, lấy mẫu con 1 m / 10°, trích ảnh từ rosbag) | ❌ | – | ❌ | Bài chỉ mô tả bằng lời (Phụ lục) |
-| Pipeline sinh GT (5 RPE, Depth Anything V2, RANSAC, bỏ phiếu đa số) | ❌ | – | ❌ | Bảng V chỉ cho ngưỡng. Thiếu checkpoint, độ phân giải, tham số RANSAC, xử lý intrinsics, danh sách cặp được đánh giá |
+| Pipeline sinh GT (5 RPE, Depth Anything V2, RANSAC, bỏ phiếu đa số) | ⚠️ một phần | Code chạy RPE: không có. **Kết quả RPE** và **bước bỏ phiếu**: có | ✅ bước bỏ phiếu / ❌ bước chạy RPE | Bỏ phiếu theo Bảng V từ `misc/rpe_estimates` cho ra **đúng** GT phát hành (0 sai lệch). Phần chạy RPE (checkpoint, độ phân giải, RANSAC, intrinsics) vẫn không tái lập được |
 | Code đánh giá và metric | ✅ | `evaluate.py`, `metrics.py` @ `eae17bf` | ✅ | Dùng nguyên văn |
 | MegaLoc | ✅ | Code `gmberton/MegaLoc@5fe0dd6`; trọng số HF `gberton/MegaLoc` `model.safetensors` (914.577.436 B, SHA-256 `d4f9f2bc…986ffb4f8`) | ✅ | **Đã kiểm chứng bằng cách tải về so sánh: 189/189 tensor giống hệt từng bit** với bản HF tháng 02/2025 (\|Δ\| = 0). Khác biệt duy nhất là bỏ `mask_token` toàn số 0 (không dùng khi suy luận) và đổi tên khóa (§6) |
 | BoQ (DINOv2, 12288-d) | ✅ | Code `amaralibey/bag-of-queries@1a4965e` (không đổi kể từ 16/03/2025); trọng số `releases/v1.0/dinov2_12288.pth` (363 MB, upload 04/07/2024, chưa từng bị thay); DINOv2 `facebookresearch/dinov2@7764ea0` | ✅ | `load_state_dict(strict=True)` ghi đè toàn bộ trọng số backbone |
@@ -175,7 +179,25 @@ Bộ [`gmberton/VPR-methods-evaluation`](https://github.com/gmberton/VPR-methods
 
 _(Phần này được điền từ kết quả notebook CPU `vprspace-release-inspect`. Notebook tải trực tiếp cả 11 phần từ GitHub, tính SHA-256, liệt kê toàn bộ file, đọc header PNG và tính lại Bảng IV từ ma trận GT.)_
 
-<!-- SECTION5_PLACEHOLDER -->
+**Kết quả** (notebook `quynhtran35/vprspace-release-inspect`, 27 phút; manifest đầy đủ từng file kèm SHA-256 nằm trong output của notebook):
+
+- **SHA-256: 11/11 phần khớp** giá trị trên trang release. Tổng 20.288.675.840 byte: 10 phần × 1.992.294.400 byte và 1 phần 365.731.840 byte.
+- Thư mục gốc `vpr-space-v0/` gồm:
+
+| Thư mục | Nội dung |
+|---|---|
+| `images/` | **8.784 ảnh PNG**, đúng bằng tổng suy ra từ Bảng IV; 19,99 GB; tất cả là RGB 8-bit (không có PNG 16-bit) |
+| `poses/` | 25 file `.npy` (ma trận 4×4) |
+| `vpr_gt/VPR-GT-RPE-0/` | 16 file `.npz` (`gt_soft`, `gt_hard`, kiểu bool, kích thước n_db × n_q) |
+| `misc/flagged_errors/` | 117 file CSV: **nhãn lỗi do người gán**, gồm cả các dataset lân cận (S3LI-Vulcano, TAIL-Plus) |
+| `misc/rpe_estimates/` | 16 file `.npz`: **tư thế tương đối do cả 5 RPE ước lượng**, cho mọi cặp và cả 2 thứ tự, kèm `evaluated` và `gt_dist_m` |
+| `README.md` | Mô tả bản release |
+
+- Độ phân giải theo họ dataset: MADMAX 2064×1544, S3LI 688×512, LunarLoc 1280×720 (chuỗi 9/10) và 1224×1024 (chuỗi 15/17), SPICE FLIR 720×540, SPICE SPAD 512×512.
+- **Bảng IV**:
+  - #DB, #Q và "% query có match": **khớp tuyệt đối 16/16 cặp**.
+  - "% cặp dương": thấp hơn bài báo ở 14/16 cặp; chỉ S3LI khớp. Đã thử mọi mẫu số và mọi ngưỡng n, không cách nào giải thích được. Xem chi tiết trong [báo cáo kiểm chứng](KIEM_CHUNG_phan_thay_the_va_nguon.md).
+- **Dựng lại bước bỏ phiếu của GT** từ `rpe_estimates` + `poses` + ngưỡng Bảng V: **khớp 100% (0 sai lệch, cả hard lẫn soft, 16/16 cặp)**. Như vậy GT phát hành hoàn toàn nhất quán với phương pháp mô tả trong bài; chỉ riêng bước chạy 5 RPE là không tái lập được.
 
 ---
 

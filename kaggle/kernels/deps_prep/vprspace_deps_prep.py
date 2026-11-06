@@ -207,7 +207,7 @@ def manifest():
 if __name__ == "__main__":
     t0 = time.time()
     info = {"profile": PROFILE, "python": sys.version, "pinned_commits": PINNED}
-    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "fast-pytorch-kmeans", "gdown", "pytorch-metric-learning==3.0.1"], check=False)
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "--no-deps", "fast-pytorch-kmeans", "gdown", "pytorch-metric-learning==3.0.1"], check=False)  # --no-deps: never touch Kaggle's torch
     if "core" in PROFILE:
         info["venv_test"] = wheels()
         warm_core()

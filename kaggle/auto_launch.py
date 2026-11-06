@@ -22,13 +22,18 @@ def main():
     plan = json.load(open(sys.argv[1]))["sessions"]
     split = json.load(open(SPLIT)) if os.path.exists(SPLIT) else None
     pending = list(range(len(plan)))
-    ready = {}
+    ready, seen_active, t_start = {}, set(), time.time()
     while pending:
         for k in list(pending):
             s = plan[k]
             lab = s["label"]
             if lab not in ready:
                 st = status(lab, "vprspace-deps-core")
+                if "RUNNING" in st or "QUEUED" in st:
+                    seen_active.add(lab)
+                    continue
+                if lab not in seen_active and time.time() - t_start < 240:
+                    continue  # ignore a stale terminal status of the previous kernel version
                 if "COMPLETE" in st:
                     ready[lab] = True
                     print(f"{time.strftime('%H:%M:%S')} deps-core ready for {lab}", flush=True)
