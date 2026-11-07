@@ -126,6 +126,7 @@ Bài chỉ ghi "DenseVLAD [Torii 2015]". Bản gốc là code MATLAB với ba th
 | kornia (cũ), whitening full-rank trên DB | 0,037 | 0,049 | 0,002 | 0/16 | 0,313 | 0,690 | 0,11 / 0,32 / 0,47 |
 | VLFeat 640, giữ descriptor bị đưa về 0 | 0,295 | 0,228 | 0,017 | 2/16 | 0,058 | 0,975 | 0,47 / 0,60 / 0,68 |
 | **VLFeat 640, bỏ descriptor bị đưa về 0** | **0,296** | 0,227 | 0,017 | 2/16 | 0,058 | **0,974** | 0,47 / 0,60 / 0,68 |
+| VLFeat **độ phân giải gốc** (không thu nhỏ), bỏ descriptor 0 | 0,264 | 0,215 | 0,018 | 2/16 | 0,086 | 0,976 | 0,44 / 0,60 / 0,68 |
 | + whitening học trên DB, k=128 | 0,357 | 0,249 | 0,020 | 2/16 | 0,068 | 0,934 | 0,48 / 0,63 / 0,71 |
 | + whitening học trên DB, k=256 | 0,383 | 0,245 | 0,023 | 2/16 | 0,079 | 0,916 | 0,51 / 0,66 / 0,73 |
 | + whitening học trên DB, k=512 | 0,361 | 0,219 | 0,022 | 2/16 | 0,093 | 0,859 | 0,52 / 0,67 / 0,74 |
@@ -159,6 +160,7 @@ Các phiên bản:
 - **Vocabulary là yếu tố chính.** Cùng đặc trưng VLFeat, đổi vocabulary từ ảnh DB sang ảnh phố GSV-Cities cho kết quả gần bài nhất theo từng cặp: r = 0,983, \|Δ\| TB 0,042, khớp 4/16 (A2–A4, F0–F3, G0–G2, SPAD dawn–night). Cụ thể:
   - LunarLoc 9–10 và 15–17: 0,397 / 0,350 so với 0,41 / 0,34 (vocabulary DB cho 0,32 / 0,22);
   - SPAD dawn–noon: 0,738 so với 0,80.
+- **Độ phân giải: bài dùng ảnh thu nhỏ.** Chạy VLFeat ở độ phân giải gốc cho 0,264, kém hơn bản 640 px (0,296). Mức giảm tập trung ở MADMAX, nơi ảnh gốc 2064×1544; ví dụ A2–A4 còn 0,182, so với 0,326 ở 640 px và 0,32 của bài. Vậy bài nhiều khả năng thu nhỏ ảnh về cỡ 640 px như chuẩn của Torii.
 - **Whitening là yếu tố thứ hai.** Thêm PCA-whitening 4096-D học trên 20.000 ảnh GSV, tức đúng pipeline của Torii:
   - Bảng III gần như trùng bài: R@1/R@5/R@10 = 0,52/0,67/0,75 so với 0,52/0,68/0,76;
   - nhưng AUPRC trung bình lên 0,397, cao hơn 0,35 của bài.

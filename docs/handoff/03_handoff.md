@@ -28,7 +28,7 @@ Tái lập bài **VPR-Space** (Fechner & Neubert, arXiv:2610.35642) trên 16 c�
 | Vá AnyLoc MadMax-E0 và ghép 16/16 | ✅ `results/runs/merged-anyloc/` |
 | DenseVLAD VLFeat: 640 px (`g-dvlad-vlfeat-640`) | ✅ |
 | DenseVLAD VLFeat: vocabulary và whitening từ GSV-Cities (`h-dvlad-vlfeat-urban`, dinhthinh) | ✅ gần bài nhất (r = 0,983) |
-| DenseVLAD VLFeat: độ phân giải gốc (`g-dvlad-vlfeat-native`, namhunhh) | xem `reports/KET_QUA_tai_lap.md` §6 |
+| DenseVLAD VLFeat: độ phân giải gốc (`g-dvlad-vlfeat-native`, namhunhh) | ✅ 0,264, kém hơn bản 640 px |
 | Báo cáo kết quả `reports/KET_QUA_tai_lap.md`, bảng đầy đủ `reports/KET_QUA_so_sanh.md` | ✅ |
 | PDF 1–3, `environment_summary`, `research_workflow`, `readme.md` | ✅ |
 

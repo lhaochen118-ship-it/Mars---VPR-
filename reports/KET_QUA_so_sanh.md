@@ -1,6 +1,6 @@
 # VPR-Space reproduction: comparison with the paper
 
-63 descriptor sets with results.
+73 descriptor sets with results.
 
 ## Table II (AUPRC): agreement with the paper
 
@@ -29,11 +29,21 @@
 | `anyloc_global_518 [merged]` | anyloc_global | 4/16 | 0.0369 | 0.0914 | 0.424 / 0.40 |
 | `anyloc_global_demo1024 [merged]` | anyloc_global | 3/16 | 0.0402 | 0.1141 | 0.423 / 0.40 |
 | `anyloc_global_224 [merged]` | anyloc_global | 2/16 | 0.0431 | 0.0882 | 0.353 / 0.40 |
+| `densevlad_vlfeat_640_urban_pcaw1024_keep0 [h-dvlad-vlfeat-urban]` | densevlad | 3/16 | 0.0410 | 0.1350 | 0.370 / 0.35 |
+| `densevlad_vlfeat_640_urban_drop0 [h-dvlad-vlfeat-urban]` | densevlad | 4/16 | 0.0421 | 0.1296 | 0.314 / 0.35 |
+| `densevlad_vlfeat_640_urban_keep0 [h-dvlad-vlfeat-urban]` | densevlad | 3/16 | 0.0427 | 0.1272 | 0.314 / 0.35 |
+| `densevlad_vlfeat_640_urban_pcaw1024_drop0 [h-dvlad-vlfeat-urban]` | densevlad | 2/16 | 0.0428 | 0.1262 | 0.370 / 0.35 |
 | `densevlad_vlfeat_640_drop0 [g-dvlad-vlfeat-640]` | densevlad | 2/16 | 0.0581 | 0.1294 | 0.296 / 0.35 |
 | `densevlad_vlfeat_640_keep0 [g-dvlad-vlfeat-640]` | densevlad | 2/16 | 0.0582 | 0.1298 | 0.295 / 0.35 |
+| `densevlad_vlfeat_640_urban_pcaw4096_keep0 [h-dvlad-vlfeat-urban]` | densevlad | 2/16 | 0.0608 | 0.1664 | 0.397 / 0.35 |
+| `densevlad_vlfeat_640_urban_pcaw256_drop0 [h-dvlad-vlfeat-urban]` | densevlad | 2/16 | 0.0612 | 0.1306 | 0.320 / 0.35 |
+| `densevlad_vlfeat_640_urban_pcaw4096_drop0 [h-dvlad-vlfeat-urban]` | densevlad | 2/16 | 0.0618 | 0.1700 | 0.397 / 0.35 |
+| `densevlad_vlfeat_640_urban_pcaw256_keep0 [h-dvlad-vlfeat-urban]` | densevlad | 2/16 | 0.0633 | 0.1360 | 0.319 / 0.35 |
 | `densevlad_vlfeat_640_drop0_pcaw128 [local-pca]` | densevlad | 2/16 | 0.0682 | 0.1808 | 0.357 / 0.35 |
 | `densevlad_vlfeat_640_drop0_pcaw256 [local-pca]` | densevlad | 2/16 | 0.0793 | 0.2151 | 0.383 / 0.35 |
 | `densevlad_vlfeat_640_drop0_pcaw64 [local-pca]` | densevlad | 1/16 | 0.0815 | 0.2034 | 0.317 / 0.35 |
+| `densevlad_vlfeat_native_drop0 [g-dvlad-vlfeat-native]` | densevlad | 2/16 | 0.0864 | 0.1613 | 0.264 / 0.35 |
+| `densevlad_vlfeat_native_keep0 [g-dvlad-vlfeat-native]` | densevlad | 2/16 | 0.0875 | 0.1636 | 0.263 / 0.35 |
 | `densevlad_vlfeat_640_drop0_pcaw512 [local-pca]` | densevlad | 2/16 | 0.0927 | 0.2122 | 0.361 / 0.35 |
 | `densevlad_vlfeat_640_drop0_pcaw1024 [local-pca]` | densevlad | 1/16 | 0.1166 | 0.3889 | 0.305 / 0.35 |
 | `densevlad_16384 [b-densevlad]` | densevlad | 1/16 | 0.1310 | 0.2628 | 0.219 / 0.35 |
@@ -153,33 +163,33 @@
 | R@10 | 0.642 | 0.709 | 0.640 | 0.808 ± 0.126/0.130 | 0.81 ± 0.13 |
 | R@100p | 0.001 | 0.001 | 0.001 | 0.042 ± 0.043/0.045 | 0.04 ± 0.04 |
 
-### Per setup: `densevlad_vlfeat_640_drop0 [g-dvlad-vlfeat-640]` vs paper column densevlad
+### Per setup: `densevlad_vlfeat_640_urban_pcaw1024_keep0 [h-dvlad-vlfeat-urban]` vs paper column densevlad
 
 | setup | ours | paper | diff | exact |
 |---|---|---|---|---|
-| MM A0 - A2 | 0.6540 | 0.69 | -0.0360 | ❌ |
-| MM A2 - A4 | 0.3256 | 0.32 | +0.0056 | ❌ |
-| MM C0 - C1 | 0.2752 | 0.31 | -0.0348 | ❌ |
-| MM E0 - E1 | 0.2015 | 0.30 | -0.0985 | ❌ |
-| MM F0 - F3 | 0.5936 | 0.57 | +0.0236 | ❌ |
-| MM G0 - G2 | 0.3921 | 0.41 | -0.0179 | ❌ |
-| S3E crater - crater inout | 0.3213 | 0.35 | -0.0287 | ❌ |
-| S3E traverse 1 - loops | 0.0743 | 0.07 | +0.0043 | ✅ |
-| LL 9 - 10 | 0.3167 | 0.41 | -0.0933 | ❌ |
-| LL 15 - 17 | 0.2148 | 0.34 | -0.1252 | ❌ |
-| HL3 SPAD dawn - night | 0.0169 | 0.02 | -0.0031 | ✅ |
-| HL3 SPAD dawn - noon | 0.6730 | 0.80 | -0.1270 | ❌ |
-| HL3 SPAD noon - night | 0.0314 | 0.05 | -0.0186 | ❌ |
-| HL3 FLIR dawn - night | 0.0406 | 0.17 | -0.1294 | ❌ |
-| HL3 FLIR dawn - noon | 0.5561 | 0.67 | -0.1139 | ❌ |
-| HL3 FLIR noon - night | 0.0505 | 0.12 | -0.0695 | ❌ |
+| MM A0 - A2 | 0.7298 | 0.69 | +0.0398 | ❌ |
+| MM A2 - A4 | 0.3458 | 0.32 | +0.0258 | ❌ |
+| MM C0 - C1 | 0.3071 | 0.31 | -0.0029 | ✅ |
+| MM E0 - E1 | 0.3158 | 0.30 | +0.0158 | ❌ |
+| MM F0 - F3 | 0.6789 | 0.57 | +0.1089 | ❌ |
+| MM G0 - G2 | 0.5018 | 0.41 | +0.0918 | ❌ |
+| S3E crater - crater inout | 0.3808 | 0.35 | +0.0308 | ❌ |
+| S3E traverse 1 - loops | 0.2050 | 0.07 | +0.1350 | ❌ |
+| LL 9 - 10 | 0.4085 | 0.41 | -0.0015 | ✅ |
+| LL 15 - 17 | 0.3638 | 0.34 | +0.0238 | ❌ |
+| HL3 SPAD dawn - night | 0.0239 | 0.02 | +0.0039 | ✅ |
+| HL3 SPAD dawn - noon | 0.7888 | 0.80 | -0.0112 | ❌ |
+| HL3 SPAD noon - night | 0.0619 | 0.05 | +0.0119 | ❌ |
+| HL3 FLIR dawn - night | 0.0937 | 0.17 | -0.0763 | ❌ |
+| HL3 FLIR dawn - noon | 0.6526 | 0.67 | -0.0174 | ❌ |
+| HL3 FLIR noon - night | 0.0610 | 0.12 | -0.0590 | ❌ |
 
 | Table III | ours worst (min) | ours worst (hardest setup) | paper worst | ours mean ± std (ddof0/ddof1) | paper mean ± std |
 |---|---|---|---|---|---|
-| R@1 | 0.063 | 0.063 | 0.060 | 0.468 ± 0.259/0.268 | 0.52 ± 0.27 |
-| R@5 | 0.129 | 0.189 | 0.230 | 0.601 ± 0.270/0.279 | 0.68 ± 0.24 |
-| R@10 | 0.183 | 0.242 | 0.330 | 0.679 ± 0.257/0.266 | 0.76 ± 0.20 |
-| R@100p | 0.000 | 0.000 | 0.000 | 0.033 ± 0.046/0.047 | 0.05 ± 0.05 |
+| R@1 | 0.095 | 0.095 | 0.060 | 0.501 ± 0.265/0.274 | 0.52 ± 0.27 |
+| R@5 | 0.221 | 0.221 | 0.230 | 0.662 ± 0.245/0.253 | 0.68 ± 0.24 |
+| R@10 | 0.284 | 0.284 | 0.330 | 0.730 ± 0.226/0.234 | 0.76 ± 0.20 |
+| R@100p | 0.000 | 0.000 | 0.000 | 0.055 ± 0.057/0.059 | 0.05 ± 0.05 |
 
 ## Fig. 6 (BoQ similarities, 3 decimals)
 
@@ -249,6 +259,8 @@
 | `anyloc_global_518 [merged]` | 0.424 | 0.549 | 0.740 | 0.807 | 0.066 | 0.098 |
 | `anyloc_global_demo1024 [merged]` | 0.423 | 0.575 | 0.737 | 0.808 | 0.065 | 0.110 |
 | `salad_518 [b-salad]` | 0.411 | 0.591 | 0.770 | 0.832 | 0.064 | 0.089 |
+| `densevlad_vlfeat_640_urban_pcaw4096_drop0 [h-dvlad-vlfeat-urban]` | 0.397 | 0.521 | 0.672 | 0.745 | 0.067 | 0.022 |
+| `densevlad_vlfeat_640_urban_pcaw4096_keep0 [h-dvlad-vlfeat-urban]` | 0.397 | 0.519 | 0.668 | 0.745 | 0.065 | 0.023 |
 | `anyloc_unstructured_demo1024 [merged]` | 0.395 | 0.550 | 0.726 | 0.790 | 0.051 | 0.080 |
 | `anyloc_global_322 [merged]` | 0.395 | 0.557 | 0.733 | 0.808 | 0.042 | 0.085 |
 | `salad_322 [b-salad]` | 0.394 | 0.593 | 0.768 | 0.837 | 0.053 | 0.098 |
@@ -256,6 +268,8 @@
 | `salad_322_official [b-salad]` | 0.393 | 0.589 | 0.762 | 0.833 | 0.054 | 0.095 |
 | `salad_native14 [b-salad]` | 0.384 | 0.579 | 0.754 | 0.821 | 0.059 | 0.097 |
 | `densevlad_vlfeat_640_drop0_pcaw256 [local-pca]` | 0.383 | 0.508 | 0.659 | 0.733 | 0.053 | 0.023 |
+| `densevlad_vlfeat_640_urban_pcaw1024_drop0 [h-dvlad-vlfeat-urban]` | 0.370 | 0.507 | 0.659 | 0.734 | 0.056 | 0.023 |
+| `densevlad_vlfeat_640_urban_pcaw1024_keep0 [h-dvlad-vlfeat-urban]` | 0.370 | 0.501 | 0.662 | 0.730 | 0.055 | 0.024 |
 | `anyloc_unstructured_322 [merged]` | 0.369 | 0.536 | 0.724 | 0.798 | 0.038 | 0.062 |
 | `salad_224 [b-salad]` | 0.367 | 0.563 | 0.750 | 0.807 | 0.053 | 0.077 |
 | `densevlad_vlfeat_640_drop0_pcaw512 [local-pca]` | 0.361 | 0.516 | 0.674 | 0.744 | 0.060 | 0.022 |
@@ -263,8 +277,12 @@
 | `anyloc_global_224 [merged]` | 0.353 | 0.530 | 0.728 | 0.800 | 0.038 | 0.052 |
 | `mixvpr_4096 [c-cosplace-mixvpr]` | 0.352 | 0.517 | 0.695 | 0.781 | 0.063 | 0.068 |
 | `anyloc_unstructured_224 [merged]` | 0.339 | 0.520 | 0.709 | 0.791 | 0.024 | 0.060 |
+| `densevlad_vlfeat_640_urban_pcaw256_drop0 [h-dvlad-vlfeat-urban]` | 0.320 | 0.472 | 0.628 | 0.711 | 0.030 | 0.016 |
+| `densevlad_vlfeat_640_urban_pcaw256_keep0 [h-dvlad-vlfeat-urban]` | 0.319 | 0.471 | 0.626 | 0.710 | 0.032 | 0.016 |
 | `densevlad_vlfeat_640_drop0_pcaw64 [local-pca]` | 0.317 | 0.464 | 0.610 | 0.682 | 0.029 | 0.023 |
 | `dinov3_l16_320 [f-dinov3-320]` | 0.316 | 0.489 | 0.664 | 0.742 | 0.038 | 0.034 |
+| `densevlad_vlfeat_640_urban_keep0 [h-dvlad-vlfeat-urban]` | 0.314 | 0.471 | 0.619 | 0.689 | 0.040 | 0.018 |
+| `densevlad_vlfeat_640_urban_drop0 [h-dvlad-vlfeat-urban]` | 0.314 | 0.475 | 0.616 | 0.691 | 0.040 | 0.018 |
 | `dinov3_b16_224 [c-netvlad-dinov3]` | 0.312 | 0.505 | 0.682 | 0.751 | 0.039 | 0.034 |
 | `dinov3_s16_320 [f-dinov3-320]` | 0.311 | 0.501 | 0.669 | 0.732 | 0.039 | 0.055 |
 | `dinov3_l16_224 [c-netvlad-dinov3]` | 0.309 | 0.494 | 0.666 | 0.744 | 0.042 | 0.033 |
@@ -280,6 +298,8 @@
 | `cosplace_r50_2048_native [c-cosplace-mixvpr]` | 0.269 | 0.475 | 0.635 | 0.698 | 0.030 | 0.040 |
 | `cosplace_r50_2048_512 [c-cosplace-mixvpr]` | 0.269 | 0.490 | 0.640 | 0.716 | 0.027 | 0.040 |
 | `cosplace_r50_512_native [c-cosplace-mixvpr]` | 0.265 | 0.474 | 0.621 | 0.688 | 0.026 | 0.036 |
+| `densevlad_vlfeat_native_drop0 [g-dvlad-vlfeat-native]` | 0.264 | 0.444 | 0.595 | 0.680 | 0.021 | 0.018 |
+| `densevlad_vlfeat_native_keep0 [g-dvlad-vlfeat-native]` | 0.263 | 0.445 | 0.598 | 0.680 | 0.021 | 0.018 |
 | `cosplace_r101_2048_native [c-cosplace-mixvpr]` | 0.259 | 0.467 | 0.623 | 0.710 | 0.030 | 0.032 |
 | `cosplace_vgg16_512_native [c-cosplace-mixvpr]` | 0.257 | 0.465 | 0.621 | 0.687 | 0.028 | 0.019 |
 | `cosplace_r152_2048_native [c-cosplace-mixvpr]` | 0.256 | 0.463 | 0.625 | 0.700 | 0.027 | 0.047 |

@@ -1,0 +1,127 @@
+{
+ "LunarLoc-10": {
+  "images": 183,
+  "descriptors_per_image": 872238.0,
+  "zero_fraction": 0.49322262233610803
+ },
+ "LunarLoc-15": {
+  "images": 118,
+  "descriptors_per_image": 1197814.0,
+  "zero_fraction": 0.5096884825189888
+ },
+ "LunarLoc-17": {
+  "images": 54,
+  "descriptors_per_image": 1197814.0,
+  "zero_fraction": 0.49465291371213327
+ },
+ "LunarLoc-9": {
+  "images": 119,
+  "descriptors_per_image": 872238.0,
+  "zero_fraction": 0.4981400111653282
+ },
+ "MadMax-A0": {
+  "images": 171,
+  "descriptors_per_image": 3097254.0,
+  "zero_fraction": 0.07202956165468391
+ },
+ "MadMax-A2": {
+  "images": 180,
+  "descriptors_per_image": 3097254.0,
+  "zero_fraction": 0.0914389703481428
+ },
+ "MadMax-A4": {
+  "images": 412,
+  "descriptors_per_image": 3097254.0,
+  "zero_fraction": 0.022983539362061028
+ },
+ "MadMax-C0": {
+  "images": 502,
+  "descriptors_per_image": 3097254.0,
+  "zero_fraction": 0.026705936846353428
+ },
+ "MadMax-C1": {
+  "images": 463,
+  "descriptors_per_image": 3097254.0,
+  "zero_fraction": 0.08702948799343403
+ },
+ "MadMax-E0": {
+  "images": 517,
+  "descriptors_per_image": 3097254.0,
+  "zero_fraction": 0.08566461877913371
+ },
+ "MadMax-E1": {
+  "images": 507,
+  "descriptors_per_image": 3097254.0,
+  "zero_fraction": 0.08473536771846774
+ },
+ "MadMax-F0": {
+  "images": 117,
+  "descriptors_per_image": 3097254.0,
+  "zero_fraction": 0.012339491194954777
+ },
+ "MadMax-F3": {
+  "images": 229,
+  "descriptors_per_image": 3097254.0,
+  "zero_fraction": 0.016873239141375163
+ },
+ "MadMax-G0": {
+  "images": 258,
+  "descriptors_per_image": 3097254.0,
+  "zero_fraction": 0.26842189087294693
+ },
+ "MadMax-G2": {
+  "images": 290,
+  "descriptors_per_image": 3097254.0,
+  "zero_fraction": 0.2520155295292384
+ },
+ "S3LI-Etna-crater": {
+  "images": 1129,
+  "descriptors_per_image": 322894.0,
+  "zero_fraction": 0.10348355428617244
+ },
+ "S3LI-Etna-crater_inout": {
+  "images": 1683,
+  "descriptors_per_image": 322894.0,
+  "zero_fraction": 0.3228241533589601
+ },
+ "S3LI-Etna-loops": {
+  "images": 780,
+  "descriptors_per_image": 322894.0,
+  "zero_fraction": 0.16930373514655045
+ },
+ "S3LI-Etna-traverse_1": {
+  "images": 485,
+  "descriptors_per_image": 322894.0,
+  "zero_fraction": 0.16423761422072125
+ },
+ "SPICE-A-dawn-off-spad@5.0us": {
+  "images": 98,
+  "descriptors_per_image": 237182.0,
+  "zero_fraction": 0.4073668391052148
+ },
+ "SPICE-A-dawn-off@2500.0us": {
+  "images": 99,
+  "descriptors_per_image": 357938.0,
+  "zero_fraction": 0.5771121075028456
+ },
+ "SPICE-A-night-on-spad@5.0us": {
+  "images": 97,
+  "descriptors_per_image": 237182.0,
+  "zero_fraction": 0.2574672962004818
+ },
+ "SPICE-A-night-on@2500.0us": {
+  "images": 97,
+  "descriptors_per_image": 357938.0,
+  "zero_fraction": 0.39795174456579563
+ },
+ "SPICE-A-noon-off-spad@5.0us": {
+  "images": 97,
+  "descriptors_per_image": 237182.0,
+  "zero_fraction": 0.2081989410541837
+ },
+ "SPICE-A-noon-off@2500.0us": {
+  "images": 99,
+  "descriptors_per_image": 357938.0,
+  "zero_fraction": 0.3120899669380133
+ }
+}

@@ -49,7 +49,8 @@
 
 | Vocabulary / whitening | AUPRC TB | Tương quan theo cặp |
 |---|---|---|
-| Vocabulary học trên DB | 0,296 | 0,974 |
+| Vocabulary học trên DB, ảnh thu nhỏ 640 px | 0,296 | 0,974 |
+| Vocabulary học trên DB, độ phân giải gốc | 0,264 | 0,976 (MADMAX giảm mạnh, nên bài dùng ảnh thu nhỏ) |
 | Vocabulary học trên **ảnh phố độc lập** (GSV-Cities, mô phỏng cách Torii học trên Street View) | 0,314 | **0,983** (khớp 4/16) |
 | Thêm whitening 4096-D học trên 20.000 ảnh GSV | 0,397 | 0,969 |
 

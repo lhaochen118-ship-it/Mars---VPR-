@@ -1,0 +1,110 @@
+[{"stream_name":"stderr","time":0.729657157,"data":"/kaggle/src/script.py:23: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.\n"}
+,{"stream_name":"stderr","time":0.729693037,"data":"  tarfile.open(fileobj=io.BytesIO(base64.b64decode(CODE_B64))).extractall(code)\n"}
+,{"stream_name":"stdout","time":0.757936515,"data":"06:18:47 [+     0s] spec {\"session\": \"g-dvlad-vlfeat-native\", \"env\": \"pinned\", \"configs\": [], \"trajectories\": null, \"pixel_cost\": false, \"post\": [[\"{code}/densevlad_vlfeat.py\", \"--root\", \"{root}\", \"--desc-dir\", \"{desc}\", \"--res\", \"native\"]]}\n"}
+,{"stream_name":"stdout","time":4.438731823,"data":"06:18:50 [+     4s] input tree:\n"}
+,{"stream_name":"stdout","time":4.43876171,"data":"/kaggle/input\n"}
+,{"stream_name":"stdout","time":4.438765394,"data":"/kaggle/input/competitions\n"}
+,{"stream_name":"stdout","time":4.438768096,"data":"/kaggle/input/competitions/gemma-4-developer-agent\n"}
+,{"stream_name":"stdout","time":4.438770783,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission\n"}
+,{"stream_name":"stdout","time":4.43877338,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/configs\n"}
+,{"stream_name":"stdout","time":4.438776061,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/prompts\n"}
+,{"stream_name":"stdout","time":4.438778707,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/sub_agents\n"}
+,{"stream_name":"stdout","time":4.438781194,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters\n"}
+,{"stream_name":"stdout","time":4.438783611,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters/tool_lora\n"}
+,{"stream_name":"stdout","time":4.438786255,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters/main_lora\n"}
+,{"stream_name":"stdout","time":4.438788835,"data":"/kaggle/input/competitions/gemma-4-developer-agent/docker\n"}
+,{"stream_name":"stdout","time":4.438791241,"data":"/kaggle/input/competitions/gemma-4-developer-agent/snapshots\n"}
+,{"stream_name":"stdout","time":4.438793736,"data":"/kaggle/input/competitions/gemma-4-developer-agent/wheels\n"}
+,{"stream_name":"stdout","time":4.438796202,"data":"/kaggle/input/competitions/gemma-4-developer-agent/graphs\n"}
+,{"stream_name":"stdout","time":4.438798712,"data":"/kaggle/input/competitions/gemma-4-developer-agent/embeddings\n"}
+,{"stream_name":"stdout","time":4.43880116,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sandbox\n"}
+,{"stream_name":"stdout","time":4.438803586,"data":"/kaggle/input/notebooks\n"}
+,{"stream_name":"stdout","time":4.438805937,"data":"/kaggle/input/notebooks/namhunhh\n"}
+,{"stream_name":"stdout","time":4.438808363,"data":"/kaggle/input/notebooks/namhunhh/vprspace-data-b\n"}
+,{"stream_name":"stdout","time":4.438810735,"data":"/kaggle/input/notebooks/namhunhh/vprspace-vlfeat-build\n"}
+,{"stream_name":"stdout","time":4.43881313,"data":"/kaggle/input/notebooks/namhunhh/vprspace-vlfeat-build/vlfeat\n"}
+,{"stream_name":"stdout","time":4.438815634,"data":"/kaggle/input/notebooks/namhunhh/vprspace-vlfeat-build/vlfeat/__pycache__\n"}
+,{"stream_name":"stdout","time":4.438818136,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-core\n"}
+,{"stream_name":"stdout","time":4.438820516,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-core/hf_home\n"}
+,{"stream_name":"stdout","time":4.438822975,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-core/hf_home/hub\n"}
+,{"stream_name":"stdout","time":4.438825402,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-core/hf_home/xet\n"}
+,{"stream_name":"stdout","time":4.438837265,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-core/torch_home\n"}
+,{"stream_name":"stdout","time":4.438839487,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-core/torch_home/hub\n"}
+,{"stream_name":"stdout","time":4.4388414130000005,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-core/wheels\n"}
+,{"stream_name":"stdout","time":4.438843352,"data":"/kaggle/input/notebooks/namhunhh/vprspace-data-a\n"}
+,{"stream_name":"stdout","time":4.438845233,"data":"\n"}
+,{"stream_name":"stdout","time":7.552271535,"data":"06:18:53 [+     7s] $ cp -rs --remove-destination /kaggle/input/notebooks/namhunhh/vprspace-deps-core/torch_home/. /tmp/torch_home/\n"}
+,{"stream_name":"stdout","time":10.962724613,"data":"06:18:57 [+    10s] $ cp -rs --remove-destination /kaggle/input/notebooks/namhunhh/vprspace-deps-core/hf_home/. /tmp/hf_home/\n"}
+,{"stream_name":"stdout","time":22.288863631,"data":"06:19:08 [+    22s] wheels: /kaggle/input/notebooks/namhunhh/vprspace-deps-core/wheels req: /kaggle/input/notebooks/namhunhh/vprspace-deps-core/requirements_pinned.txt\n"}
+,{"stream_name":"stdout","time":22.288889307,"data":"06:19:08 [+    22s] $ /usr/bin/python3 -m venv /tmp/vprenv\n"}
+,{"stream_name":"stderr","time":22.425355763,"data":"Error: Command '['/tmp/vprenv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":22.438195306,"data":"06:19:08 [+    22s] $ /usr/bin/python3 -m venv --without-pip /tmp/vprenv\n"}
+,{"stream_name":"stdout","time":22.524820608,"data":"06:19:08 [+    22s] $ /usr/bin/python3 -m pip --python /tmp/vprenv/bin/python install -q --no-index --find-links /kaggle/input/notebooks/namhunhh/vprspace-deps-core/wheels -r /kaggle/input/notebooks/namhunhh/vprspace-deps-core/requirements_pinned.txt\n"}
+,{"stream_name":"stderr","time":22.964610745999998,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":22.964643124,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":145.090415254,"data":"06:21:11 [+   144s] $ /usr/bin/python3 -m pip --python /tmp/vprenv/bin/python install -q --no-index --no-deps --find-links /kaggle/input/notebooks/namhunhh/vprspace-deps-core/wheels pytorch-lightning lightning-utilities torchmetrics fast-pytorch-kmeans timm psutil pytorch-metric-learning\n"}
+,{"stream_name":"stderr","time":145.331989133,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":145.332014806,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":150.657745154,"data":"06:21:17 [+   150s] data root /tmp/vprdata/vpr-space-v0 extracted\n"}
+,{"stream_name":"stdout","time":150.724765246,"data":"06:21:17 [+   150s] 4 GPUs, images per GPU [2182.0, 2217.0, 2192.0, 2193.0]\n"}
+,{"stream_name":"stdout","time":154.174229057,"data":"06:21:20 [+   153s] hf_plain dirs: none\n"}
+,{"stream_name":"stdout","time":160.827329284,"data":"06:21:27 [+   160s] workers exit codes [0, 0, 0, 0]\n"}
+,{"stream_name":"stdout","time":160.827483236,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":160.827505771,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":160.827510191,"data":"06:21:26 [w0] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 5\n"}
+,{"stream_name":"stdout","time":160.827513835,"data":"\n"}
+,{"stream_name":"stdout","time":160.827520581,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":160.827523977,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":160.827539111,"data":"06:21:26 [w1] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 6\n"}
+,{"stream_name":"stdout","time":160.827541826,"data":"\n"}
+,{"stream_name":"stdout","time":160.827545453,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":160.827547834,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":160.827550063,"data":"06:21:26 [w2] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 7\n"}
+,{"stream_name":"stdout","time":160.827552427,"data":"\n"}
+,{"stream_name":"stdout","time":160.827573462,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":160.827578865,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":160.827581104,"data":"06:21:26 [w3] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 7\n"}
+,{"stream_name":"stdout","time":160.827583189,"data":"\n"}
+,{"stream_name":"stdout","time":160.827601178,"data":"06:21:27 [+   160s] post step: /tmp/vprenv/bin/python /tmp/vprcode/densevlad_vlfeat.py --root /tmp/vprdata/vpr-space-v0 --desc-dir /kaggle/working/desc --res native\n"}
+,{"stream_name":"stderr","time":160.877652397,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":160.877669628,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":2374.853224844,"data":"06:58:21 [densevlad-vlfeat] native: 3989 database images, 1193458 sampled non-zero RootSIFT (2208s)\n"}
+,{"stream_name":"stdout","time":2379.16152653,"data":"06:58:25 [densevlad-vlfeat] native: vocabulary (128, 128) ready (2212s)\n"}
+,{"stream_name":"stdout","time":2453.580464315,"data":"06:59:39 [densevlad-vlfeat] native LunarLoc-10: 183 imgs, 872238 descr/img, zero 0.493 (2286s)\n"}
+,{"stream_name":"stdout","time":2519.136223652,"data":"07:00:45 [densevlad-vlfeat] native LunarLoc-15: 118 imgs, 1197814 descr/img, zero 0.510 (2352s)\n"}
+,{"stream_name":"stdout","time":2551.716434863,"data":"07:01:18 [densevlad-vlfeat] native LunarLoc-17: 54 imgs, 1197814 descr/img, zero 0.495 (2384s)\n"}
+,{"stream_name":"stdout","time":2600.32433701,"data":"07:02:06 [densevlad-vlfeat] native LunarLoc-9: 119 imgs, 872238 descr/img, zero 0.498 (2433s)\n"}
+,{"stream_name":"stdout","time":2857.511225426,"data":"07:06:23 [densevlad-vlfeat] native MadMax-A0: 171 imgs, 3097254 descr/img, zero 0.072 (2690s)\n"}
+,{"stream_name":"stdout","time":3152.244505217,"data":"07:11:18 [densevlad-vlfeat] native MadMax-A2: 180 imgs, 3097254 descr/img, zero 0.091 (2985s)\n"}
+,{"stream_name":"stdout","time":3776.464554646,"data":"07:21:42 [densevlad-vlfeat] native MadMax-A4: 412 imgs, 3097254 descr/img, zero 0.023 (3609s)\n"}
+,{"stream_name":"stdout","time":4536.774257609,"data":"07:34:23 [densevlad-vlfeat] native MadMax-C0: 502 imgs, 3097254 descr/img, zero 0.027 (4370s)\n"}
+,{"stream_name":"stdout","time":5233.343311306,"data":"07:45:59 [densevlad-vlfeat] native MadMax-C1: 463 imgs, 3097254 descr/img, zero 0.087 (5066s)\n"}
+,{"stream_name":"stdout","time":5993.511370153,"data":"07:58:39 [densevlad-vlfeat] native MadMax-E0: 517 imgs, 3097254 descr/img, zero 0.086 (5826s)\n"}
+,{"stream_name":"stdout","time":6741.317264162,"data":"08:11:07 [densevlad-vlfeat] native MadMax-E1: 507 imgs, 3097254 descr/img, zero 0.085 (6574s)\n"}
+,{"stream_name":"stdout","time":6934.248902935,"data":"08:14:20 [densevlad-vlfeat] native MadMax-F0: 117 imgs, 3097254 descr/img, zero 0.012 (6767s)\n"}
+,{"stream_name":"stdout","time":7290.980671413,"data":"08:20:17 [densevlad-vlfeat] native MadMax-F3: 229 imgs, 3097254 descr/img, zero 0.017 (7124s)\n"}
+,{"stream_name":"stdout","time":7657.276787844,"data":"08:26:23 [densevlad-vlfeat] native MadMax-G0: 258 imgs, 3097254 descr/img, zero 0.268 (7490s)\n"}
+,{"stream_name":"stdout","time":8077.939870122,"data":"08:33:24 [densevlad-vlfeat] native MadMax-G2: 290 imgs, 3097254 descr/img, zero 0.252 (7911s)\n"}
+,{"stream_name":"stdout","time":8250.46688367,"data":"08:36:16 [densevlad-vlfeat] native S3LI-Etna-crater: 1129 imgs, 322894 descr/img, zero 0.103 (8083s)\n"}
+,{"stream_name":"stdout","time":8489.408793341,"data":"08:40:15 [densevlad-vlfeat] native S3LI-Etna-crater_inout: 1683 imgs, 322894 descr/img, zero 0.323 (8322s)\n"}
+,{"stream_name":"stdout","time":8606.070642455,"data":"08:42:12 [densevlad-vlfeat] native S3LI-Etna-loops: 780 imgs, 322894 descr/img, zero 0.169 (8439s)\n"}
+,{"stream_name":"stdout","time":8679.089814108,"data":"08:43:25 [densevlad-vlfeat] native S3LI-Etna-traverse_1: 485 imgs, 322894 descr/img, zero 0.164 (8512s)\n"}
+,{"stream_name":"stdout","time":8690.429147988,"data":"08:43:36 [densevlad-vlfeat] native SPICE-A-dawn-off-spad@5.0us: 98 imgs, 237182 descr/img, zero 0.407 (8523s)\n"}
+,{"stream_name":"stdout","time":8707.684127039,"data":"08:43:54 [densevlad-vlfeat] native SPICE-A-dawn-off@2500.0us: 99 imgs, 357938 descr/img, zero 0.577 (8540s)\n"}
+,{"stream_name":"stdout","time":8719.300766582,"data":"08:44:05 [densevlad-vlfeat] native SPICE-A-night-on-spad@5.0us: 97 imgs, 237182 descr/img, zero 0.257 (8552s)\n"}
+,{"stream_name":"stdout","time":8737.150007283,"data":"08:44:23 [densevlad-vlfeat] native SPICE-A-night-on@2500.0us: 97 imgs, 357938 descr/img, zero 0.398 (8570s)\n"}
+,{"stream_name":"stdout","time":8749.098129793,"data":"08:44:35 [densevlad-vlfeat] native SPICE-A-noon-off-spad@5.0us: 97 imgs, 237182 descr/img, zero 0.208 (8582s)\n"}
+,{"stream_name":"stdout","time":8767.498438644,"data":"08:44:53 [densevlad-vlfeat] native SPICE-A-noon-off@2500.0us: 99 imgs, 357938 descr/img, zero 0.312 (8600s)\n"}
+,{"stream_name":"stdout","time":8768.217990215,"data":"08:44:54 [+  8768s] $ /tmp/vprenv/bin/python /tmp/vprcode/metrics_all.py --root /tmp/vprdata/vpr-space-v0 --desc-dir /kaggle/working/desc --out /kaggle/working/results --tag g-dvlad-vlfeat-native\n"}
+,{"stream_name":"stderr","time":8768.269565581,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":8768.269583978,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":8773.089277384,"data":"densevlad_vlfeat_native_drop0: 16/16 setups, AUPRC mean 0.2642\n"}
+,{"stream_name":"stdout","time":8774.773335278,"data":"densevlad_vlfeat_native_keep0: 16/16 setups, AUPRC mean 0.2628\n"}
+,{"stream_name":"stdout","time":8776.437822989,"data":"08:45:02 [+  8776s] DONE\n"}
+,{"stream_name":"stderr","time":8778.79286123,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":8778.792886806,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":8779.102229143,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":8779.102251461,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":8780.966269102,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":8781.953036774,"data":"[NbConvertApp] Writing 348510 bytes to __results__.html\n"}
+]
