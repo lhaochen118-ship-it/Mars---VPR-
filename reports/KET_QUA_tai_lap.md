@@ -10,14 +10,14 @@
 | **MegaLoc** | code `methods.py` của tác giả, môi trường ghim | **14/16** | 0,0037 | 0,469 / 0,47 |
 | **SALAD** | DINOv2-B, ảnh 322×322 (ToTensor → Resize bicubic+antialias → Normalize) | **15/16** | 0,0033 | 0,394 / 0,39 |
 | **AnyLoc (global)** | DINOv2 ViT-G/14 L31 value, 32 cụm, ảnh 322×322 | **14/16** | 0,0031 | 0,395 / 0,40 |
-| **DenseVLAD** | VLFeat `vl_phow` gốc, 640 px, vocabulary học trên DB | 2/16 | 0,058 | 0,296 / 0,35 (tương quan theo cặp 0,974) |
+| **DenseVLAD** | VLFeat `vl_phow` gốc, 640 px; vocabulary học trên ảnh phố GSV-Cities (gần nhất theo cặp) | 4/16 | 0,042 | 0,314 / 0,35 (tương quan theo cặp 0,983) |
 
 Kết luận ngắn:
 
 1. **BoQ được tái lập chính xác**: Bảng II 16/16 (cả 3 hàng tổng hợp), Bảng III 12/12 ô, Hình 6a 2/2 giá trị, Hình 6b giá trị "best correct". Hình 6c lệch 0,001 ở cả hai giá trị (0,0183 và 0,1811 so với 0,019 và 0,182).
 2. **MegaLoc khớp 14/16.** Lệch thật sự duy nhất là **MM G0–G2** (0,553 so với 0,57). Ô còn lại (SPAD noon–night 0,21500 so với 0,21) nằm đúng biên làm tròn. Bảng III khớp 11/12 ô.
 3. **SALAD** (15/16) và **AnyLoc-global** (14/16) gần như khớp hoàn toàn khi dùng **độ phân giải 322×322**. Đây là kích thước tác giả dùng cho BoQ. Hai cấu hình này không được bài báo công bố; chúng tôi xác định bằng cách quét độ phân giải chọn trước (224/322/518/native).
-4. **DenseVLAD không thể tái lập chính xác**: vocabulary và PCA của Torii đã mất. Bản VLFeat đúng chuẩn có cùng hình dạng theo cặp với bài (r = 0,974) nhưng thấp hơn 0,054 (§6).
+4. **DenseVLAD không thể tái lập chính xác**: vocabulary và PCA gốc của Torii đã mất. Bản VLFeat với vocabulary và whitening học trên ảnh phố GSV-Cities bao quanh số của bài: AUPRC 0,314–0,397 so với 0,35; tương quan theo cặp 0,97–0,98; Bảng III gần trùng (§6).
 5. Kết quả **ổn định**: đổi batch size, môi trường (gói ghim hay mặc định Kaggle) hoặc GPU (L4 hay T4) chỉ làm AUPRC thay đổi tối đa 8·10⁻⁴.
 
 ## 2. Thiết lập
@@ -131,6 +131,10 @@ Bài chỉ ghi "DenseVLAD [Torii 2015]". Bản gốc là code MATLAB với ba th
 | + whitening học trên DB, k=512 | 0,361 | 0,219 | 0,022 | 2/16 | 0,093 | 0,859 | 0,52 / 0,67 / 0,74 |
 | + whitening học trên DB, k=1024 | 0,305 | 0,186 | 0,020 | 1/16 | 0,117 | 0,724 | 0,51 / 0,68 / 0,75 |
 | + whitening học trên DB, full-rank | 0,126 | 0,109 | 0,025 | 1/16 | 0,224 | 0,248 | 0,34 / 0,56 / 0,67 |
+| VLFeat 640, **vocabulary GSV-Cities**, không whitening | 0,314 | 0,232 | 0,018 | **4/16** | **0,042** | **0,983** | 0,48 / 0,62 / 0,69 |
+| VLFeat 640, vocabulary + whitening GSV-Cities, k=256 | 0,320 | 0,236 | 0,016 | 2/16 | 0,061 | 0,959 | 0,47 / 0,63 / 0,71 |
+| VLFeat 640, vocabulary + whitening GSV-Cities, k=1024 | 0,370 | 0,250 | 0,023 | 2/16 | 0,043 | 0,975 | 0,51 / 0,66 / 0,73 |
+| VLFeat 640, vocabulary + whitening GSV-Cities, **k=4096 (như Torii)** | 0,397 | 0,252 | 0,022 | 2/16 | 0,062 | 0,969 | **0,52 / 0,67 / 0,75** |
 
 Các phiên bản:
 
@@ -140,6 +144,9 @@ Các phiên bản:
   - rgb2gray và imresize bicubic antialias theo kiểu MATLAB, cạnh dài 640;
   - RootSIFT, vocabulary k-means 128 từ học trên ảnh DB, VLAD gán cứng, intra-norm, L2.
 - **Whitening học trên DB** (`densevlad_pca.py`) chỉ là phân tích độ nhạy: nó học trên chính ảnh database của benchmark.
+- **GSV-Cities** (phiên `h-dvlad-vlfeat-urban`) mô phỏng cách Torii học trên Street View đô thị. Đây là tập ảnh phố độc lập, không chứa ảnh nào của VPR-Space:
+  - vocabulary học trên 4.000 ảnh của 23 thành phố;
+  - whitening học trên 20.000 VLAD của các ảnh khác; n = 20.000 ≫ k, nên phép whitening có điều kiện tốt.
 
 ### 6.2 Vì sao bản kornia cũ thấp hơn nhiều
 
@@ -149,18 +156,16 @@ Các phiên bản:
 
 ### 6.3 Kết luận về DenseVLAD
 
-- Bản VLFeat đúng chuẩn có **cùng hình dạng theo cặp** với cột của bài (r = 0,974) nhưng **thấp hơn trung bình 0,054**.
-  - Hai cặp khớp: S3E traverse–loops và SPAD dawn–night.
-  - Lệch lớn nhất ở LunarLoc (0,32/0,22 so với 0,41/0,34) và SPAD dawn–noon (0,67 so với 0,80).
-- Thành phần còn thiếu là **vocabulary và whitening của Torii**. Whitening học trên DB với k = 128–512 đưa trung bình lên 0,36–0,38, ngang hoặc hơn bài, nhưng làm giảm tương quan theo cặp (0,86–0,93). Vì vậy whitening giải thích được *độ lớn* nhưng không giải thích được *hình dạng*.
-- Hai phiên bổ sung dưới đây kiểm tra hai giả thuyết còn lại; kết quả được thêm vào mục 6.4 khi phiên xong:
-  - `g-dvlad-vlfeat-native`: độ phân giải gốc, không thu nhỏ;
-  - `h-dvlad-vlfeat-urban`: vocabulary và whitening 4096-D học trên 4.000 + 20.000 ảnh GSV-Cities, mô phỏng cách Torii học trên Street View đô thị.
-- **DenseVLAD không thể tái lập chính xác.** Phiên bản dùng để đối chiếu là "VLFeat 640, bỏ descriptor 0".
-
-### 6.4 Độ phân giải gốc và vocabulary/whitening đô thị
-
-*(chờ hai phiên `g-dvlad-vlfeat-native` và `h-dvlad-vlfeat-urban`)*
+- **Vocabulary là yếu tố chính.** Cùng đặc trưng VLFeat, đổi vocabulary từ ảnh DB sang ảnh phố GSV-Cities cho kết quả gần bài nhất theo từng cặp: r = 0,983, \|Δ\| TB 0,042, khớp 4/16 (A2–A4, F0–F3, G0–G2, SPAD dawn–night). Cụ thể:
+  - LunarLoc 9–10 và 15–17: 0,397 / 0,350 so với 0,41 / 0,34 (vocabulary DB cho 0,32 / 0,22);
+  - SPAD dawn–noon: 0,738 so với 0,80.
+- **Whitening là yếu tố thứ hai.** Thêm PCA-whitening 4096-D học trên 20.000 ảnh GSV, tức đúng pipeline của Torii:
+  - Bảng III gần như trùng bài: R@1/R@5/R@10 = 0,52/0,67/0,75 so với 0,52/0,68/0,76;
+  - nhưng AUPRC trung bình lên 0,397, cao hơn 0,35 của bài.
+- **Giá trị của bài nằm giữa hai cấu hình này** (0,314 và 0,397). Mọi cấu hình đều có tương quan theo cặp ≥ 0,96.
+- Khác biệt còn lại phù hợp với việc tác giả dùng **vocabulary và PCA gốc của Torii**, học trên ảnh San Francisco và Tokyo, khác với GSV-Cities. Thành phần đó không còn tồn tại công khai.
+- **DenseVLAD không thể tái lập chính xác.** Bản gần nhất theo từng cặp là "VLFeat 640, vocabulary GSV-Cities, không whitening".
+- Lưu ý: việc chọn bản "gần nhất" dựa vào số của bài, nên đây là phân tích độ nhạy, không phải cấu hình chọn trước.
 
 ## 7. Độ ổn định của kết quả chính xác
 

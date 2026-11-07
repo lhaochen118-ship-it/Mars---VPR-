@@ -9,7 +9,7 @@
    - Dựng lại hoàn toàn bước sinh GT từ các ước lượng RPE phát hành; khớp 100%.
 2. **Xác định cấu hình chưa công bố** của SALAD và AnyLoc bằng quét độ phân giải chọn trước: cả hai dùng **322×322**.
    - SALAD khớp 15/16 cặp; AnyLoc-global khớp 14/16 cặp.
-3. **Tìm ra nguyên nhân** khiến DenseVLAD tái cài đặt lệch xa bài báo, và định lượng phần không thể tái lập (§3.2).
+3. **Tìm ra nguyên nhân** khiến DenseVLAD lệch bài báo: ngưỡng tương phản của VLFeat, cùng nguồn dữ liệu học vocabulary và whitening. Hai cấu hình học trên ảnh phố độc lập bao quanh số của bài (§3.2).
 4. Phát hiện **4 điểm không nhất quán** trong bài hoặc bản phát hành (§3).
 
 ## 2. Kết quả tích cực (có bằng chứng)
@@ -39,15 +39,23 @@
 
 ### 3.2 DenseVLAD
 
-*(xem số liệu cuối cùng ở `KET_QUA_tai_lap.md` §6)*
+**Bản kornia ban đầu**: AUPRC trung bình 0,219, so với 0,35 của bài. Nguyên nhân:
 
-- Bản kornia ban đầu cho AUPRC trung bình 0,219, so với 0,35 của bài. Nguyên nhân:
-  1. **Thiếu ngưỡng tương phản của `vl_phow`** (0,005). Ở ảnh SPICE và LunarLoc, 21–57% descriptor bị VLFeat đưa về 0 (MADMAX 0,4–14%); kornia lại chuẩn hoá nhiễu thành descriptor đơn vị.
-  2. **Khác hình học bin**: VLFeat nội suy song tuyến và có cửa sổ Gauss 1,5 bin; σ làm mịn = size/6.
-  3. **PCA-whitening suy biến**: whitening học trên 3.989 vector DB với 3.989 thành phần làm mọi vector DB có cùng chuẩn và cos đôi một = −1/(n−1), nên retrieval sụp (0,037).
-- Pipeline **VLFeat gốc** (bản 0.9.21, gọi đúng như MEX của MATLAB) đạt 0,296. Nó có **tương quan theo cặp r = 0,974** với cột DenseVLAD của bài: cùng hình dạng nhưng thấp hơn.
-- Phần còn thiếu là **vocabulary và phép chiếu PCA-whitening 4096-D của Torii** (`247code.zip`), học trên ảnh phố đô thị. Gói này không còn: host gốc trả 403, Internet Archive không lưu.
-- Whitening học trên DB ở k = 128–512 đưa trung bình lên 0,36–0,38, nhưng làm hỏng hình dạng theo cặp (r = 0,86–0,93).
+1. **Thiếu ngưỡng tương phản của `vl_phow`** (0,005). Ở ảnh SPICE và LunarLoc, 21–57% descriptor bị VLFeat đưa về 0 (MADMAX 0,4–14%); kornia lại chuẩn hoá nhiễu thành descriptor đơn vị.
+2. **Khác hình học bin**: VLFeat nội suy song tuyến và có cửa sổ Gauss 1,5 bin; σ làm mịn = size/6.
+3. **PCA-whitening suy biến**: whitening học trên 3.989 vector DB với 3.989 thành phần làm mọi vector DB có cùng chuẩn và cos đôi một = −1/(n−1), nên retrieval sụp (0,037).
+
+**Pipeline VLFeat gốc** (bản 0.9.21, gọi đúng như MEX của MATLAB):
+
+| Vocabulary / whitening | AUPRC TB | Tương quan theo cặp |
+|---|---|---|
+| Vocabulary học trên DB | 0,296 | 0,974 |
+| Vocabulary học trên **ảnh phố độc lập** (GSV-Cities, mô phỏng cách Torii học trên Street View) | 0,314 | **0,983** (khớp 4/16) |
+| Thêm whitening 4096-D học trên 20.000 ảnh GSV | 0,397 | 0,969 |
+
+Với whitening 4096-D, Bảng III gần trùng bài: R@1/R@5/R@10 = 0,52/0,67/0,75 so với 0,52/0,68/0,76.
+
+**Kết luận**: số của bài nằm giữa hai cấu hình đô thị. Sai khác do **dữ liệu học vocabulary và whitening**. Vocabulary và PCA gốc của Torii (`247code.zip`) không còn: host trả 403, Internet Archive không lưu. Vì vậy DenseVLAD không thể tái lập chính xác.
 
 ### 3.3 Bảng IV, cột "% of pos. matches"
 

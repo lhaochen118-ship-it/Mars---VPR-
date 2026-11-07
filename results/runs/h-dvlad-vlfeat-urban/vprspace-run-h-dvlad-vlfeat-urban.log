@@ -1,0 +1,153 @@
+[{"stream_name":"stderr","time":0.821841594,"data":"/kaggle/src/script.py:23: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.\n"}
+,{"stream_name":"stderr","time":0.821887524,"data":"  tarfile.open(fileobj=io.BytesIO(base64.b64decode(CODE_B64))).extractall(code)\n"}
+,{"stream_name":"stdout","time":0.878204738,"data":"07:00:44 [+     0s] spec {\"session\": \"h-dvlad-vlfeat-urban\", \"env\": \"pinned\", \"configs\": [], \"trajectories\": null, \"pixel_cost\": false, \"post\": [[\"{code}/densevlad_vlfeat.py\", \"--root\", \"{root}\", \"--desc-dir\", \"{desc}\", \"--res\", \"640\", \"--train-root\", \"/kaggle/input\", \"--train-n-vocab\", \"4000\", \"--train-n-pca\", \"20000\", \"--pca-k\", \"256\", \"1024\", \"4096\"]]}\n"}
+,{"stream_name":"stdout","time":86.434047725,"data":"07:02:09 [+    86s] input tree:\n"}
+,{"stream_name":"stdout","time":86.434073258,"data":"/kaggle/input\n"}
+,{"stream_name":"stdout","time":86.43407674,"data":"/kaggle/input/notebooks\n"}
+,{"stream_name":"stdout","time":86.434079344,"data":"/kaggle/input/notebooks/dinhthinh\n"}
+,{"stream_name":"stdout","time":86.434081781,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-vlfeat-build\n"}
+,{"stream_name":"stdout","time":86.434084218,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-vlfeat-build/vlfeat\n"}
+,{"stream_name":"stdout","time":86.434086948,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-vlfeat-build/vlfeat/__pycache__\n"}
+,{"stream_name":"stdout","time":86.43408945,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-data-b\n"}
+,{"stream_name":"stdout","time":86.434091834,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-deps-core\n"}
+,{"stream_name":"stdout","time":86.434094153,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-deps-core/hf_home\n"}
+,{"stream_name":"stdout","time":86.434096648,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-deps-core/hf_home/hub\n"}
+,{"stream_name":"stdout","time":86.434099022,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-deps-core/hf_home/xet\n"}
+,{"stream_name":"stdout","time":86.434101389,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-deps-core/torch_home\n"}
+,{"stream_name":"stdout","time":86.434103727,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-deps-core/torch_home/hub\n"}
+,{"stream_name":"stdout","time":86.434106183,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-deps-core/wheels\n"}
+,{"stream_name":"stdout","time":86.434108536,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-data-a\n"}
+,{"stream_name":"stdout","time":86.434110853,"data":"/kaggle/input/competitions\n"}
+,{"stream_name":"stdout","time":86.434113158,"data":"/kaggle/input/competitions/gemma-4-developer-agent\n"}
+,{"stream_name":"stdout","time":86.434115666,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission\n"}
+,{"stream_name":"stdout","time":86.434118098,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/configs\n"}
+,{"stream_name":"stdout","time":86.434120518,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/prompts\n"}
+,{"stream_name":"stdout","time":86.434123047,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/sub_agents\n"}
+,{"stream_name":"stdout","time":86.434125466,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters\n"}
+,{"stream_name":"stdout","time":86.434127833,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters/tool_lora\n"}
+,{"stream_name":"stdout","time":86.434130238,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters/main_lora\n"}
+,{"stream_name":"stdout","time":86.434141844,"data":"/kaggle/input/competitions/gemma-4-developer-agent/docker\n"}
+,{"stream_name":"stdout","time":86.434144037,"data":"/kaggle/input/competitions/gemma-4-developer-agent/snapshots\n"}
+,{"stream_name":"stdout","time":86.434145969,"data":"/kaggle/input/competitions/gemma-4-developer-agent/wheels\n"}
+,{"stream_name":"stdout","time":86.434147804,"data":"/kaggle/input/competitions/gemma-4-developer-agent/graphs\n"}
+,{"stream_name":"stdout","time":86.43414962,"data":"/kaggle/input/competitions/gemma-4-developer-agent/embeddings\n"}
+,{"stream_name":"stdout","time":86.434151482,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sandbox\n"}
+,{"stream_name":"stdout","time":86.434153309,"data":"/kaggle/input/datasets\n"}
+,{"stream_name":"stdout","time":86.434155029,"data":"/kaggle/input/datasets/amaralibey\n"}
+,{"stream_name":"stdout","time":86.434156798,"data":"/kaggle/input/datasets/amaralibey/gsv-cities\n"}
+,{"stream_name":"stdout","time":86.434158696,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Dataframes\n"}
+,{"stream_name":"stdout","time":86.434160523,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images\n"}
+,{"stream_name":"stdout","time":86.434163411,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/Bangkok\n"}
+,{"stream_name":"stdout","time":86.434165296,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/Barcelona\n"}
+,{"stream_name":"stdout","time":86.434167187,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/Boston\n"}
+,{"stream_name":"stdout","time":86.434168974,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/Brussels\n"}
+,{"stream_name":"stdout","time":86.434170782,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/BuenosAires\n"}
+,{"stream_name":"stdout","time":86.434172582,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/Chicago\n"}
+,{"stream_name":"stdout","time":86.434174518,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/Lisbon\n"}
+,{"stream_name":"stdout","time":86.434176351,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/London\n"}
+,{"stream_name":"stdout","time":86.434178158,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/LosAngeles\n"}
+,{"stream_name":"stdout","time":86.434180004,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/Madrid\n"}
+,{"stream_name":"stdout","time":86.434181904,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/Medellin\n"}
+,{"stream_name":"stdout","time":86.434183715,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/Melbourne\n"}
+,{"stream_name":"stdout","time":86.434185567,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/MexicoCity\n"}
+,{"stream_name":"stdout","time":86.434187373,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/Miami\n"}
+,{"stream_name":"stdout","time":86.434189302,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/Minneapolis\n"}
+,{"stream_name":"stdout","time":86.434191157,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/OSL\n"}
+,{"stream_name":"stdout","time":86.434192979,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/Osaka\n"}
+,{"stream_name":"stdout","time":86.434194794,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/PRG\n"}
+,{"stream_name":"stdout","time":86.434196656,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/PRS\n"}
+,{"stream_name":"stdout","time":86.434198455,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/Phoenix\n"}
+,{"stream_name":"stdout","time":86.434200292,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/Rome\n"}
+,{"stream_name":"stdout","time":86.434202082,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/TRT\n"}
+,{"stream_name":"stdout","time":86.434206513,"data":"/kaggle/input/datasets/amaralibey/gsv-cities/Images/WashingtonDC\n"}
+,{"stream_name":"stdout","time":86.434208575,"data":"\n"}
+,{"stream_name":"stdout","time":93.928327714,"data":"07:02:17 [+    93s] $ cp -rs --remove-destination /kaggle/input/notebooks/dinhthinh/vprspace-deps-core/torch_home/. /tmp/torch_home/\n"}
+,{"stream_name":"stdout","time":100.525399108,"data":"07:02:24 [+   100s] $ cp -rs --remove-destination /kaggle/input/notebooks/dinhthinh/vprspace-deps-core/hf_home/. /tmp/hf_home/\n"}
+,{"stream_name":"stdout","time":115.238313026,"data":"07:02:38 [+   114s] wheels: /kaggle/input/notebooks/dinhthinh/vprspace-deps-core/wheels req: /kaggle/input/notebooks/dinhthinh/vprspace-deps-core/requirements_pinned.txt\n"}
+,{"stream_name":"stdout","time":115.238336355,"data":"07:02:38 [+   114s] $ /usr/bin/python3 -m venv /tmp/vprenv\n"}
+,{"stream_name":"stderr","time":115.377760911,"data":"Error: Command '['/tmp/vprenv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":115.390228741,"data":"07:02:38 [+   115s] $ /usr/bin/python3 -m venv --without-pip /tmp/vprenv\n"}
+,{"stream_name":"stdout","time":115.475801396,"data":"07:02:38 [+   115s] $ /usr/bin/python3 -m pip --python /tmp/vprenv/bin/python install -q --no-index --find-links /kaggle/input/notebooks/dinhthinh/vprspace-deps-core/wheels -r /kaggle/input/notebooks/dinhthinh/vprspace-deps-core/requirements_pinned.txt\n"}
+,{"stream_name":"stderr","time":115.936987596,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":115.937007865,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":237.346756238,"data":"07:04:40 [+   237s] $ /usr/bin/python3 -m pip --python /tmp/vprenv/bin/python install -q --no-index --no-deps --find-links /kaggle/input/notebooks/dinhthinh/vprspace-deps-core/wheels pytorch-lightning lightning-utilities torchmetrics fast-pytorch-kmeans timm psutil pytorch-metric-learning\n"}
+,{"stream_name":"stderr","time":237.587614842,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":237.587637423,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":241.174665029,"data":"07:04:44 [+   240s] data root /tmp/vprdata/vpr-space-v0 extracted\n"}
+,{"stream_name":"stdout","time":241.240785543,"data":"07:04:44 [+   240s] 4 GPUs, images per GPU [2182.0, 2217.0, 2192.0, 2193.0]\n"}
+,{"stream_name":"stdout","time":246.869472828,"data":"07:04:50 [+   246s] hf_plain dirs: none\n"}
+,{"stream_name":"stdout","time":252.249109032,"data":"07:04:55 [+   251s] workers exit codes [0, 0, 0, 0]\n"}
+,{"stream_name":"stdout","time":252.249205718,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":252.249222209,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":252.249225883,"data":"07:04:55 [w0] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 5\n"}
+,{"stream_name":"stdout","time":252.249229098,"data":"\n"}
+,{"stream_name":"stdout","time":252.249310112,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":252.249316852,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":252.249319732,"data":"07:04:55 [w1] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 6\n"}
+,{"stream_name":"stdout","time":252.249322429,"data":"\n"}
+,{"stream_name":"stdout","time":252.249340235,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":252.24935599,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":252.24935813,"data":"07:04:54 [w2] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 7\n"}
+,{"stream_name":"stdout","time":252.249360222,"data":"\n"}
+,{"stream_name":"stdout","time":252.249364174,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":252.249366138,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":252.249367936,"data":"07:04:54 [w3] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 7\n"}
+,{"stream_name":"stdout","time":252.249369858,"data":"\n"}
+,{"stream_name":"stdout","time":252.249447279,"data":"07:04:55 [+   251s] post step: /tmp/vprenv/bin/python /tmp/vprcode/densevlad_vlfeat.py --root /tmp/vprdata/vpr-space-v0 --desc-dir /kaggle/working/desc --res 640 --train-root /kaggle/input --train-n-vocab 4000 --train-n-pca 20000 --pca-k 256 1024 4096\n"}
+,{"stream_name":"stderr","time":252.300262434,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":252.300273303,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":260.470950019,"data":"07:05:03 [densevlad-vlfeat] external set: 23 cities, 24012 sampled images\n"}
+,{"stream_name":"stdout","time":519.838301405,"data":"07:09:23 [densevlad-vlfeat] densevlad_vlfeat_640_urban: 4000 external images, 1200000 sampled non-zero RootSIFT (260s)\n"}
+,{"stream_name":"stdout","time":524.146743368,"data":"07:09:27 [densevlad-vlfeat] densevlad_vlfeat_640_urban: vocabulary (128, 128) ready (264s)\n"}
+,{"stream_name":"stdout","time":542.454933653,"data":"07:09:45 [densevlad-vlfeat] 640 LunarLoc-10: 183 imgs, 206038 descr/img, zero 0.463 (282s)\n"}
+,{"stream_name":"stdout","time":560.158291455,"data":"07:10:03 [densevlad-vlfeat] 640 LunarLoc-15: 118 imgs, 314278 descr/img, zero 0.486 (300s)\n"}
+,{"stream_name":"stdout","time":568.840746074,"data":"07:10:12 [densevlad-vlfeat] 640 LunarLoc-17: 54 imgs, 314278 descr/img, zero 0.473 (309s)\n"}
+,{"stream_name":"stdout","time":580.318150703,"data":"07:10:23 [densevlad-vlfeat] 640 LunarLoc-9: 119 imgs, 206038 descr/img, zero 0.463 (320s)\n"}
+,{"stream_name":"stdout","time":606.818385169,"data":"07:10:50 [densevlad-vlfeat] 640 MadMax-A0: 171 imgs, 279221 descr/img, zero 0.036 (347s)\n"}
+,{"stream_name":"stdout","time":635.43097804,"data":"07:11:18 [densevlad-vlfeat] 640 MadMax-A2: 180 imgs, 279221 descr/img, zero 0.046 (375s)\n"}
+,{"stream_name":"stdout","time":698.69048152,"data":"07:12:22 [densevlad-vlfeat] 640 MadMax-A4: 412 imgs, 279221 descr/img, zero 0.015 (439s)\n"}
+,{"stream_name":"stdout","time":775.679957323,"data":"07:13:39 [densevlad-vlfeat] 640 MadMax-C0: 502 imgs, 279221 descr/img, zero 0.017 (516s)\n"}
+,{"stream_name":"stdout","time":846.498696029,"data":"07:14:49 [densevlad-vlfeat] 640 MadMax-C1: 463 imgs, 279221 descr/img, zero 0.059 (586s)\n"}
+,{"stream_name":"stdout","time":925.078861582,"data":"07:16:08 [densevlad-vlfeat] 640 MadMax-E0: 517 imgs, 279221 descr/img, zero 0.022 (665s)\n"}
+,{"stream_name":"stdout","time":1002.211300627,"data":"07:17:25 [densevlad-vlfeat] 640 MadMax-E1: 507 imgs, 279221 descr/img, zero 0.026 (742s)\n"}
+,{"stream_name":"stdout","time":1021.771711097,"data":"07:17:45 [densevlad-vlfeat] 640 MadMax-F0: 117 imgs, 279221 descr/img, zero 0.004 (762s)\n"}
+,{"stream_name":"stdout","time":1057.501330084,"data":"07:18:20 [densevlad-vlfeat] 640 MadMax-F3: 229 imgs, 279221 descr/img, zero 0.009 (797s)\n"}
+,{"stream_name":"stdout","time":1095.69723359,"data":"07:18:59 [densevlad-vlfeat] 640 MadMax-G0: 258 imgs, 279221 descr/img, zero 0.135 (836s)\n"}
+,{"stream_name":"stdout","time":1139.550424869,"data":"07:19:43 [densevlad-vlfeat] 640 MadMax-G2: 290 imgs, 279221 descr/img, zero 0.117 (879s)\n"}
+,{"stream_name":"stdout","time":1286.563900293,"data":"07:22:10 [densevlad-vlfeat] 640 S3LI-Etna-crater: 1129 imgs, 277991 descr/img, zero 0.100 (1027s)\n"}
+,{"stream_name":"stdout","time":1493.078785581,"data":"07:25:36 [densevlad-vlfeat] 640 S3LI-Etna-crater_inout: 1683 imgs, 277991 descr/img, zero 0.320 (1233s)\n"}
+,{"stream_name":"stdout","time":1592.778108337,"data":"07:27:16 [densevlad-vlfeat] 640 S3LI-Etna-loops: 780 imgs, 277991 descr/img, zero 0.165 (1333s)\n"}
+,{"stream_name":"stdout","time":1655.572267759,"data":"07:28:19 [densevlad-vlfeat] 640 S3LI-Etna-traverse_1: 485 imgs, 277991 descr/img, zero 0.160 (1396s)\n"}
+,{"stream_name":"stdout","time":1667.299246209,"data":"07:28:30 [densevlad-vlfeat] 640 SPICE-A-dawn-off-spad@5.0us: 98 imgs, 237182 descr/img, zero 0.407 (1407s)\n"}
+,{"stream_name":"stdout","time":1680.830902143,"data":"07:28:44 [densevlad-vlfeat] 640 SPICE-A-dawn-off@2500.0us: 99 imgs, 279838 descr/img, zero 0.570 (1421s)\n"}
+,{"stream_name":"stdout","time":1692.170591287,"data":"07:28:55 [densevlad-vlfeat] 640 SPICE-A-night-on-spad@5.0us: 97 imgs, 237182 descr/img, zero 0.257 (1432s)\n"}
+,{"stream_name":"stdout","time":1706.291927669,"data":"07:29:09 [densevlad-vlfeat] 640 SPICE-A-night-on@2500.0us: 97 imgs, 279838 descr/img, zero 0.403 (1446s)\n"}
+,{"stream_name":"stdout","time":1718.291140064,"data":"07:29:21 [densevlad-vlfeat] 640 SPICE-A-noon-off-spad@5.0us: 97 imgs, 237182 descr/img, zero 0.208 (1458s)\n"}
+,{"stream_name":"stdout","time":1732.773857491,"data":"07:29:36 [densevlad-vlfeat] 640 SPICE-A-noon-off@2500.0us: 99 imgs, 279838 descr/img, zero 0.303 (1473s)\n"}
+,{"stream_name":"stdout","time":3414.191675451,"data":"07:57:37 [densevlad-vlfeat] densevlad_vlfeat_640_urban: 20000 external VLADs for the whitening (3154s)\n"}
+,{"stream_name":"stdout","time":3558.962603159,"data":"08:00:02 [densevlad-vlfeat] whitening k=256: explained variance 0.554 (n=20000, rank 16384)\n"}
+,{"stream_name":"stdout","time":3560.684769935,"data":"08:00:04 [densevlad-vlfeat] whitening k=1024: explained variance 0.778 (n=20000, rank 16384)\n"}
+,{"stream_name":"stdout","time":3567.559678843,"data":"08:00:11 [densevlad-vlfeat] whitening k=4096: explained variance 0.960 (n=20000, rank 16384)\n"}
+,{"stream_name":"stdout","time":3741.157260261,"data":"08:03:04 [densevlad-vlfeat] whitening k=256: explained variance 0.553 (n=20000, rank 16384)\n"}
+,{"stream_name":"stdout","time":3742.878236811,"data":"08:03:06 [densevlad-vlfeat] whitening k=1024: explained variance 0.777 (n=20000, rank 16384)\n"}
+,{"stream_name":"stdout","time":3749.748574774,"data":"08:03:13 [densevlad-vlfeat] whitening k=4096: explained variance 0.959 (n=20000, rank 16384)\n"}
+,{"stream_name":"stdout","time":3778.606805807,"data":"08:03:42 [densevlad-vlfeat] densevlad_vlfeat_640_urban: whitened sets written (3519s)\n"}
+,{"stream_name":"stdout","time":3779.432154212,"data":"08:03:42 [+  3779s] $ /tmp/vprenv/bin/python /tmp/vprcode/metrics_all.py --root /tmp/vprdata/vpr-space-v0 --desc-dir /kaggle/working/desc --out /kaggle/working/results --tag h-dvlad-vlfeat-urban\n"}
+,{"stream_name":"stderr","time":3779.482766452,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":3779.482783798,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":3784.301399836,"data":"densevlad_vlfeat_640_urban_drop0: 16/16 setups, AUPRC mean 0.3136\n"}
+,{"stream_name":"stdout","time":3785.985127551,"data":"densevlad_vlfeat_640_urban_keep0: 16/16 setups, AUPRC mean 0.3139\n"}
+,{"stream_name":"stdout","time":3786.565013766,"data":"densevlad_vlfeat_640_urban_pcaw1024_drop0: 16/16 setups, AUPRC mean 0.3704\n"}
+,{"stream_name":"stdout","time":3787.141672894,"data":"densevlad_vlfeat_640_urban_pcaw1024_keep0: 16/16 setups, AUPRC mean 0.3699\n"}
+,{"stream_name":"stdout","time":3787.678392341,"data":"densevlad_vlfeat_640_urban_pcaw256_drop0: 16/16 setups, AUPRC mean 0.3198\n"}
+,{"stream_name":"stdout","time":3788.214769373,"data":"densevlad_vlfeat_640_urban_pcaw256_keep0: 16/16 setups, AUPRC mean 0.3193\n"}
+,{"stream_name":"stdout","time":3789.008794522,"data":"densevlad_vlfeat_640_urban_pcaw4096_drop0: 16/16 setups, AUPRC mean 0.3971\n"}
+,{"stream_name":"stdout","time":3789.809233504,"data":"densevlad_vlfeat_640_urban_pcaw4096_keep0: 16/16 setups, AUPRC mean 0.3971\n"}
+,{"stream_name":"stdout","time":3791.417713732,"data":"08:03:54 [+  3791s] DONE\n"}
+,{"stream_name":"stderr","time":3793.815590471,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3793.815613805,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3794.131262381,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3794.131283302,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3796.121839696,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3797.167484282,"data":"[NbConvertApp] Writing 349858 bytes to __results__.html\n"}
+]

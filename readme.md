@@ -16,7 +16,7 @@
 - **MegaLoc**: khớp 14/16; lệch thật duy nhất ở MM G0–G2.
 - **SALAD** (322 px): khớp 15/16.
 - **AnyLoc-global** (322 px): khớp 14/16.
-- **DenseVLAD**: không tái lập chính xác được, vì vocabulary và PCA gốc của Torii đã mất. Xem báo cáo §6.
+- **DenseVLAD**: không tái lập chính xác được, vì vocabulary và PCA gốc của Torii đã mất. Bản VLFeat với vocabulary và whitening học trên ảnh phố GSV-Cities bao quanh số của bài: AUPRC 0,31–0,40 so với 0,35; tương quan theo cặp 0,98 (báo cáo §6).
 
 ## Cấu trúc repo
 
