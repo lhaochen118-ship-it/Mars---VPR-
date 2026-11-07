@@ -96,3 +96,15 @@ Tôi đối chiếu lại với **code chính thức** của từng phương ph�
 | Wheel Python | `download.pytorch.org`, PyPI | Chính thức | Kiểm tra bằng cài đặt offline + import trong venv |
 
 **Kết luận.** Mọi trọng số đều đến từ repo chính thức của tác giả từng phương pháp, hoặc từ bản chuyển đổi được cộng đồng dùng rộng rãi (NetVLAD, DINOv3), và các bản này đã được kiểm chứng hoặc hiệu chỉnh. SHA-256 của mọi file tải về được ghi trong `deps_manifest_*.json` (output của các notebook deps trên Kaggle) và sẽ được đưa vào repo.
+
+---
+
+## 4. Cập nhật sau Bước 2 (07/11/2026)
+
+- **DenseVLAD**: phương án kornia ở bảng trên đã được **thay** bằng VLFeat 0.9.21 gốc. Lý do: 3 khác biệt định lượng được, trong đó ngưỡng tương phản 0,005 của `vl_phow` là lớn nhất (xem PDF 2 §8). Cũng xin đính chính: σ làm mịn của `vl_phow` 0.9.21 là **size/6**, không phải √((size/6)² − 0,25) như ghi ở trên.
+  - Gói `247code.zip` (1,1 GB; chứa vocabulary và PCA của Torii) có trên trang 24/7 lưu ở Internet Archive (snapshot 04/10/2025), nhưng **bản thân file không được lưu**. Host gốc trả **403** (thử từ Kaggle 07/11/2026).
+  - Phương án gần nhất: học vocabulary và whitening trên tập đô thị độc lập GSV-Cities, mô phỏng cách Torii học trên ảnh Street View San Francisco.
+- **AnyLoc**: cấu hình khớp bài là ViT-G/14, L31 value, 32 cụm, ảnh **322×322**. Vocabulary unstructured chính thức ở cùng cấu hình **cao nhất** ở MM A0–A2 và MM E0–E1, trái với nhận định của bài.
+- **Nguồn mới dùng thêm**:
+  - VLFeat: `vlfeat.org/download/vlfeat-0.9.21-bin.tar.gz`, SHA-256 `91a9dd856210473b1eef7098fa84f3a1e1ac020f2a6e97d1df9727354d47a211`; bản phát hành chính thức, giấy phép BSD.
+  - GSV-Cities: Kaggle `amaralibey/gsv-cities`, do chính tác giả GSV-Cities tải lên.

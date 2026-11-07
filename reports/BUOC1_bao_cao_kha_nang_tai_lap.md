@@ -326,3 +326,19 @@ Phiên L4 dùng đúng metadata ở mục 4.1–4.2: `"machine_shape": "NvidiaL4
 - Repo và release: <https://github.com/rfechner/VPR-Space>, <https://github.com/rfechner/VPR-Space/releases/tag/v0.1.0>, issue #1 <https://github.com/rfechner/VPR-Space/issues/1>.
 - Phương pháp: [MegaLoc (GitHub)](https://github.com/gmberton/MegaLoc), [MegaLoc (HF)](https://huggingface.co/gberton/MegaLoc), [Bag-of-Queries](https://github.com/amaralibey/Bag-of-Queries), [SALAD](https://github.com/serizba/salad), [AnyLoc](https://github.com/AnyLoc/DINO), [MixVPR](https://github.com/amaralibey/MixVPR), [CosPlace](https://github.com/gmberton/CosPlace), [DINOv2](https://github.com/facebookresearch/dinov2), [DINOv3](https://github.com/facebookresearch/dinov3), [DINOv3 trên HF (gated)](https://huggingface.co/facebook/dinov3-vitb16-pretrain-lvd1689m), [VPR-methods-evaluation](https://github.com/gmberton/VPR-methods-evaluation).
 - Dữ liệu gốc: [MADMAX (DLR)](https://www.dlr.de/en/rm/research/publications-and-downloads/datasets/marokko-navigations-tests), [S3LI (DLR)](https://www.dlr.de/en/rm/research/publications-and-downloads/datasets/s3li-dataset), [LunarLoc (arXiv 2506.16940)](https://arxiv.org/abs/2506.16940), [SPICE-HL³ (Zenodo)](https://zenodo.org/records/13970078).
+
+---
+
+## 11. Cập nhật sau Bước 2 (07/11/2026)
+
+Kết quả chi tiết ở [`KET_QUA_tai_lap.md`](KET_QUA_tai_lap.md). Các dự đoán ở trên được xác nhận hoặc điều chỉnh như sau:
+
+| Dự đoán ở Bước 1 | Thực tế |
+|---|---|
+| MegaLoc, BoQ tái lập chính xác | **BoQ 16/16**, **MegaLoc 14/16** (Bảng II). Lệch thật duy nhất: MegaLoc ở MM G0–G2 (0,553 so với 0,57), không do code/môi trường/batch/độ phân giải |
+| SALAD, AnyLoc-global "gần đúng, có số đối chiếu" | Chỉ ra được cấu hình: **322×322** cho cả hai. SALAD khớp 15/16, AnyLoc-global 14/16 |
+| DenseVLAD "khó khớp số" | Đúng. Bản VLFeat gốc đạt AUPRC trung bình 0,296 so với 0,35 của bài (tương quan theo cặp 0,974). Vocabulary và PCA gốc của Torii đã mất (host trả 403, Internet Archive không lưu) |
+| Cách tính "worst case" và std chưa rõ | Worst = **min theo từng metric**; std **ddof=1**; chỉ số ở Hình 6 **bắt đầu từ 0** |
+| Dữ liệu phát hành đầy đủ | Có 1 ảnh hỏng: `MadMax-E0/0293.png` bị cắt cụt. Bài đã dùng phần giải mã được |
+| Bảng IV khớp GT | Cột "% queries w/ match" khớp; cột "% of pos. matches" không khớp với bất kỳ định nghĩa nào |
+| D3: DINOv3 chỉ có trọng số khóa | Dùng mirror timm (sửa RoPE bf16). Đủ 8 biến thể; không biến thể nào cao nhất ở cặp nào, đúng như bài |

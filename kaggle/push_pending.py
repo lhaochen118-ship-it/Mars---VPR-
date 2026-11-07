@@ -10,7 +10,7 @@ sys.path.insert(0, HERE)
 from launch import USERNAMES, metadata  # noqa: E402
 import launch_session  # noqa: E402
 
-SPLIT = "/tmp/claude-0/-home-user-Mars---VPR-/f4f85d11-307a-560d-8600-f8fcabc2f136/scratchpad/anyloc_demo_split.json"
+SPLIT = os.path.join(HERE, "anyloc_demo_split.json")  # trajectory split of the two b-anyloc-demo sessions (wave 2)
 
 
 def try_push(s, split):
@@ -50,7 +50,7 @@ def try_push(s, split):
 def main():
     plan = {s["session"]: s for s in json.load(open(sys.argv[1]))["sessions"]}
     todo = list(sys.argv[2:])
-    split = json.load(open(SPLIT))
+    split = json.load(open(SPLIT)) if os.path.exists(SPLIT) else {}
     while todo:
         for name in list(todo):
             s = plan[name]

@@ -1,6 +1,6 @@
 # PDF 2 — Engineering & Operations Lessons (VPR-Space reproduction)
 
-*Cập nhật 06/11/2026. Ghi lại kinh nghiệm thực tế: cấu hình môi trường, vận hành Kaggle, các lỗi đã gặp và cách sửa.*
+*Cập nhật 07/11/2026. Ghi lại kinh nghiệm thực tế: cấu hình môi trường, vận hành Kaggle, các lỗi đã gặp và cách sửa.*
 
 ## 1. Kaggle: những điều đã kiểm chứng
 
@@ -52,10 +52,44 @@ Các lỗi bắt được trước khi tốn GPU:
 
 - Suy luận chia theo **(cấu hình, trajectory)** trên 4 GPU bằng thuật toán LPT. DDP không cần, vì không có gradient. Batch con tự giảm khi OOM.
 - Hai vocabulary của AnyLoc (global và unstructured) dùng **chung một lượt ViT-G**, tiết kiệm 50% phần tốn kém nhất.
-- DenseVLAD: SIFT của OpenCV mất **50 s/ảnh** (~120 CPU-giờ). Đổi sang dense SIFT của kornia trên GPU (khoảng 1 s/ảnh ngay cả trên CPU).
+- DenseVLAD: SIFT của OpenCV mất **50 s/ảnh** (~120 CPU-giờ). Bản kornia trên GPU nhanh (~1 s/ảnh) nhưng **không tương đương VLFeat** (xem §8). Bản cuối gọi chính VLFeat 0.9.21 qua ctypes, chạy song song trên 44/46 vCPU của phiên L4 (mỗi process 1 luồng BLAS). Tốc độ 1,2 s/ảnh 640×480 mỗi lõi, nên ~30 phút cho cả bộ.
 - Giải nén 19 GB dữ liệu chạy song song với lúc dựng venv.
 
 ## 6. Bảo mật
 
 - Token Kaggle chỉ nằm trong `/root/.kaggle/accounts.json` (quyền 600). Wrapper `kg` đọc token theo tên tài khoản và không bao giờ in ra.
 - Trước mỗi commit đều quét chuỗi `KGAT_`.
+
+## 7. Thu và ghép kết quả
+
+- Phiên lỗi ở một trajectory (AnyLoc MadMax-E0, wave 2) được **vá bằng một phiên riêng**, chỉ chạy trajectory đó. Sau đó ghép metric theo cặp bằng `kaggle/merge_results.py`.
+  - Ghép như vậy hợp lệ vì metric của mỗi cặp chỉ phụ thuộc descriptor DB và Q của chính cặp đó; descriptor tính độc lập từng ảnh.
+  - Cặp xuất hiện ở hai nguồn phải trùng nhau đến 1e-9, nếu không công cụ dừng.
+- Phiên chia theo trajectory (`b-anyloc-demo-p1/p2`): tải descriptor (`kernels output --file-pattern`) rồi chạy `metrics_all.py` cục bộ (`kaggle/merge_split.py`).
+- **Ổ đĩa cục bộ chỉ còn ~8 GB**: tải từng loại descriptor rồi xoá ngay sau khi tính metric.
+- **Không chép số bằng tay vào báo cáo.** Lần đầu viết bảng BoQ bằng tay đã sai 7 ô. Mọi bảng giờ sinh bằng `vprspace_repro/report_tables.py` và `compare.py`.
+- `pip freeze` của venv `--without-pip` từng **rỗng**: lệnh `venv/bin/python -m pip` không có pip. Đã sửa bootstrap để dùng `pip --python <venv>`. Phiên bản thật của các phiên cũ lấy từ dòng `torch 2.6.0+cu124` trong log worker.
+
+## 8. DenseVLAD: từ kornia sang VLFeat
+
+| Khác biệt | kornia `DenseSIFTDescriptor` | VLFeat `vl_phow` (MATLAB) |
+|---|---|---|
+| Làm mịn trước | σ = √((b/6)² − 0,25) (chúng tôi tự đặt, **sai**) | σ = b/6 (`vl_phow.m` 0.9.21) |
+| Gom không gian | tam giác rộng b, không cửa sổ Gauss | nội suy song tuyến (2b−1), cửa sổ Gauss 1,5 bin ("fast": phẳng theo bin) |
+| Ngưỡng tương phản | không có, nhiễu bị chuẩn hoá thành vector đơn vị | descriptor có chuẩn < 0,005 bị đưa về 0 |
+| Lượng tử | float | uint8 = min(512·d, 255) |
+| Bố cục 128 chiều | angle-major | MEX chuyển vị ảnh, rồi `vl_dsift_transpose_descriptor` |
+
+Cách làm:
+
+- `vprspace_repro/vlfeat_phow/phow_shim.c` gọi `vl_imsmooth` và `vl_dsift` **giống hệt** hai file MEX: ảnh column-major, bounds, chuyển vị, chuẩn uint8.
+- Thư viện build trong notebook CPU `vprspace-vlfeat-build`: tải bản phát hành 0.9.21, kiểm SHA-256 `91a9dd85…`, rồi chạy self-test.
+- **Không chạy được binary ngoài trong container của phiên Claude**: bộ phân loại quyền chặn. Mọi chạy VLFeat diễn ra trên Kaggle. Phần thuần Python (imresize MATLAB, rgb2gray, RootSIFT, VLAD, whitening) được kiểm thử cục bộ bằng một `phow` giả lập.
+- Trên Kaggle, thư viện `.so` được copy sang `/tmp` trước khi `dlopen`, vì input có thể mount `noexec`. Thư viện cũng được nạp trong tiến trình cha trước khi fork pool.
+
+## 9. Mẹo vận hành Kaggle mới
+
+- **Dừng một kernel treo**: push một version mới (code rỗng) cho cùng slug. Version đang chạy bị thay và trạng thái về COMPLETE ngay. CLI không có lệnh cancel.
+- Internet Archive: API `archive.org/wayback/available` truy cập được từ container, nhưng `web.archive.org` bị chặn. Phải đọc snapshot qua notebook CPU có Internet.
+- Trang lưu ở chế độ `id_` có thể trả nội dung **gzip**; cần giải nén trước khi parse.
+- Dataset công khai lớn (GSV-Cities, 23 GB) gắn thẳng vào phiên GPU qua `dataset_sources`, không tốn thời gian tải. Plan đã hỗ trợ các trường `dataset_sources`, `extra_sources`, `pre` và `post`.

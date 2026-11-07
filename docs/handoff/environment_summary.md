@@ -1,6 +1,6 @@
 # Environment summary — VPR-Space reproduction
 
-*Cập nhật 06/11/2026.*
+*Cập nhật 07/11/2026.*
 
 ## Môi trường đánh giá (giống tác giả)
 
@@ -11,7 +11,9 @@
 | numpy / pillow / scipy / opencv | **2.4.4 / 12.2.0 / 1.17.1 / 5.0.0.93** (đúng file ghim) | PyPI, cài offline |
 | huggingface_hub / safetensors / einops | 1.23.0 / 0.8.0 / 0.8.2 (đúng file ghim) | PyPI |
 | Bổ sung cho các phương pháp khác | pytorch_lightning 2.6.6, lightning_utilities, torchmetrics, pytorch_metric_learning 3.0.1, fast_pytorch_kmeans, psutil, timm 1.0.30 (`--no-deps`) | PyPI |
-| DenseVLAD, kiểm tra môi trường | Môi trường mặc định Kaggle: torch 2.11.0+cu130, kornia 0.9.0 | Kaggle image |
+| Kiểm tra môi trường (`a-exact-kaggleenv`) | Môi trường mặc định Kaggle: torch 2.11.0+cu130, numpy 2.1.3, pillow 13.0.0 | Kaggle image |
+| DenseVLAD (bản cuối) | **VLFeat 0.9.21** (`vlfeat-0.9.21-bin.tar.gz`, SHA-256 `91a9dd85…7a211`, `libvl.so` glnxa64) + shim C `phow_shim.c` (gcc 13.3), chạy trong venv ghim (numpy 2.4.4, scipy 1.17.1) | vlfeat.org, build trong notebook `vprspace-vlfeat-build` |
+| DenseVLAD (bản kornia cũ, đã thay) | kornia 0.9.0 | Kaggle image |
 | Mặc định TF32 | `matmul.allow_tf32 = False`, `cudnn.allow_tf32 = True` (mặc định PyTorch, tác giả không thay đổi) | – |
 
 ## Code upstream ghim theo commit
@@ -33,9 +35,14 @@
 |---|---|---|---|
 | L4×4 (qua cuộc thi `gemma-4-developer-agent`) | 4× L4 23 GB (sm_89), driver 580 | 46 vCPU / 188 GB | Toàn bộ suy luận |
 | T4×2 | 2× T4 16 GB (sm_75) | – | Bản sao Nhóm A, để đo độ nhạy phần cứng |
-| CPU + Internet | – | – | Tải dữ liệu, kiểm chứng, đóng gói deps |
+| CPU + Internet | – | 4 vCPU | Tải dữ liệu, kiểm chứng, đóng gói deps, build VLFeat, tra cứu Internet Archive |
 
 ## Dữ liệu
 
 - `rfechner/VPR-Space` v0.1.0: 11 phần, 20.288.675.840 byte. SHA-256 khớp 11/11.
 - Thư mục `vpr-space-v0/`: `images` (8.784 PNG), `poses` (25), `vpr_gt/VPR-GT-RPE-0` (16), `misc/flagged_errors`, `misc/rpe_estimates`.
+
+## Dữ liệu ngoài (chỉ cho DenseVLAD "urban")
+
+- `amaralibey/gsv-cities` (Kaggle, bản tải lên của tác giả GSV-Cities): 23 thành phố, ảnh Street View.
+- Lấy mẫu cố định (seed 0): 4.000 ảnh cho vocabulary, 20.000 ảnh khác cho PCA-whitening. Không có ảnh nào của VPR-Space.

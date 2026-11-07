@@ -1,54 +1,64 @@
 # PDF 3 — Handoff (VPR-Space reproduction)
 
-*Cập nhật 06/11/2026. Dành cho agent hoặc khung chat tiếp theo; không lặp lại nội dung của PDF 1 và PDF 2.*
+*Cập nhật 07/11/2026. Dành cho agent hoặc khung chat tiếp theo. Không lặp lại PDF 1 (phát hiện khoa học) và PDF 2 (kinh nghiệm vận hành).*
 
 ## Mục tiêu
 
-Tái lập bài **VPR-Space** (Fechner & Neubert, arXiv:2610.35642) trên **16 cặp DB/Q**:
+Tái lập bài **VPR-Space** (Fechner & Neubert, arXiv:2610.35642) trên 16 cặp DB/Q:
 
-- Khớp **chính xác** cho MegaLoc và BoQ: Bảng II, Bảng III, Bảng IV, Hình 6.
-- Tái cài đặt **gần đúng**, có ghi chú, cho SALAD, AnyLoc (global, unstructured), MixVPR, CosPlace, NetVLAD, DINOv3 và DenseVLAD.
+- **Chính xác** cho MegaLoc và BoQ (code tác giả công bố).
+- **Gần đúng, có ghi chú** cho SALAD, AnyLoc (global, unstructured), DenseVLAD (bài có số để đối chiếu).
+- Kết quả tham khảo cho MixVPR, CosPlace, NetVLAD, DINOv3 (bài không công bố số).
 
-## Các quyết định đã thống nhất với người dùng
+## Quyết định đã thống nhất với người dùng
 
-- Dùng **mọi tài nguyên**: 10 tài khoản Kaggle, không giữ dự phòng.
-- Làm đủ 10 cấu hình. Nhóm A dùng đúng code tác giả; các nhóm khác dùng cấu hình chuẩn chọn trước, kèm quét biến thể.
-- Môi trường: các gói ghim của tác giả, cài offline trong venv. Riêng DenseVLAD và bản kiểm tra môi trường dùng môi trường mặc định Kaggle.
-- Dữ liệu để **riêng tư** trên từng tài khoản: chưa có token `nhatlong1103`, và giấy phép phân phối lại của MADMAX/S3LI chưa rõ.
-- DINOv3 dùng bản mirror của timm (không bị khóa), có sửa RoPE về bf16.
-- Không sinh lại GT bằng RPE. GT phát hành đã được chứng minh khớp 100% bằng cách dựng lại bước bỏ phiếu.
+- Dùng **mọi tài nguyên**, không giữ dự phòng; kết quả nhanh nhất với độ chính xác cao nhất.
+- **Kiểm tra code, toán, quy ước trước khi chạy**; tự kiểm tra mỗi bước.
+- Theo tài liệu "Reproduce VPR - Formatted Headings.docx" (nhánh main). Token không được đưa vào prompt, mã nguồn hay báo cáo.
+- Môi trường: gói ghim của tác giả (torch 2.6.0+cu124), cài offline. GT dùng bản phát hành, đã được chứng minh khớp. Dữ liệu để riêng tư theo từng tài khoản.
+- DINOv3: dùng mirror timm, sửa RoPE về bf16. DenseVLAD: chuyển từ kornia sang **VLFeat gốc**.
 
 ## Tiến độ
 
 | Hạng mục | Trạng thái |
 |---|---|
-| Báo cáo Bước 1, kiểm chứng release, kiểm chứng nguồn | ✅ |
-| Dựng lại bước bỏ phiếu GT | ✅ 0 sai lệch, 16/16 cặp |
-| Notebook dữ liệu và deps trên 7 tài khoản GPU | ✅ (deps-core cần 5 lần sửa; xem PDF 2) |
-| Wave 2: 12 phiên GPU (`kaggle/wave2_plan.json`) | 🔄 đang chạy |
-| So sánh với bài báo, báo cáo kết quả | ⏳ chờ kết quả |
+| Bước 1: báo cáo khả năng tái lập, kiểm chứng nguồn | ✅ |
+| Dựng lại GT | ✅ 16/16, 0 sai lệch |
+| Phiên GPU wave 2–5 (Nhóm A, SALAD, AnyLoc ×4, CosPlace ×8, MixVPR ×3, NetVLAD ×6, DINOv3 ×8, DenseVLAD kornia) | ✅ đã thu đủ vào `results/runs/` |
+| Vá AnyLoc MadMax-E0 và ghép 16/16 | ✅ `results/runs/merged-anyloc/` |
+| DenseVLAD VLFeat: 640 px (`g-dvlad-vlfeat-640`) | ✅ |
+| DenseVLAD VLFeat: native (`g-dvlad-vlfeat-native`, namhunhh) và urban vocab + whitening (`h-dvlad-vlfeat-urban`, dinhthinh) | xem `reports/KET_QUA_tai_lap.md` §6 |
+| Báo cáo kết quả `reports/KET_QUA_tai_lap.md`, bảng đầy đủ `reports/KET_QUA_so_sanh.md` | ✅ |
+| PDF 1–3, `environment_summary`, `research_workflow`, `readme.md` | ✅ |
 
 ## Vị trí của mọi thứ
 
 | Thứ | Ở đâu |
 |---|---|
-| Token | `/root/.kaggle/accounts.json` (máy phiên này; **không** có trong repo) |
-| Dữ liệu (riêng tư) | Output của `<user>/vprspace-data-a` và `<user>/vprspace-data-b` trên 7 tài khoản GPU |
-| Deps | Output của `<user>/vprspace-deps-{core,extra,anyloc}` |
-| Descriptor | Output của `<user>/vprspace-run-<session>` ở `desc/<config>/<trajectory>.npy` (float32) |
-| Kết quả metric | Output của phiên, ở `results/<config>__<session>.json`; trong repo là `results/runs/` |
-| Manifest dữ liệu (SHA-256 từng file) | Output của `quynhtran35/vprspace-release-inspect` |
+| Token | `/root/.kaggle/accounts.json` trên máy phiên (quyền 600); **không** có trong repo. Wrapper: `kg <label>` |
+| Tài khoản | `kaggle/launch.py` → `USERNAMES` (nhãn → username). L4: 12 tài khoản; T4: mxuanquy, yeshenhi |
+| Dữ liệu (riêng tư) | Output `<user>/vprspace-data-a` và `-b` trên: hieuho669, duckzuykobip, nguyenmanh0404, namhunhh, dinhthinh, yeshenhi, mxuanquy |
+| Deps | `<user>/vprspace-deps-{core,extra,anyloc,hf}`; VLFeat: `<user>/vprspace-vlfeat-build` trên dinhthinh, namhunhh, hieuho669 |
+| Descriptor | Output phiên `<user>/vprspace-run-<session>` → `desc/<set>/<trajectory>.npy`. Tài khoản của từng phiên ghi trong `kaggle/wave*_plan.json` |
+| Metric | `results/runs/<session>/results/<set>__<session>.json` (+ `logs/`) |
+| Phân tích kiểm chứng | `results/verification/` (GT re-derivation, G0–G2 GT sensitivity) |
+| Hình | `results/figures/` |
+| GT và pose cục bộ cho tính metric | Giải nén từ output `quynhtran35/vprspace-release-inspect` (small files) |
 
-## Bước tiếp theo
+## Bước tiếp theo (nếu tiếp tục)
 
-1. Thu kết quả:
+1. **DenseVLAD**: nếu tìm được `247code.zip` của Torii (vocabulary `dnscnt_RDSIFT_K128.mat` và phép chiếu PCA), chạy:
    ```bash
-   python3 kaggle/collect.py kaggle/wave2_plan.json results/runs
+   python3 vprspace_repro/densevlad_vlfeat.py --root <root> --desc-dir <desc> --res 640 --vocab-mat <mat>
    ```
-2. AnyLoc demo1024 chạy tách 2 phiên, nên cần tải descriptor của cả hai rồi chạy `metrics_all.py` cục bộ. Thư mục GT và pose cục bộ được giải nén từ output của `release-inspect`.
-3. So sánh:
-   ```bash
-   python3 vprspace_repro/compare.py --results results/runs --out reports/KET_QUA_so_sanh.md
-   ```
-4. Nếu một phương pháp gần đúng lệch nhiều so với bài báo: quét thêm biến thể (`configs.py`) trong wave 3.
-5. Viết PDF 1 (Scientific Findings), cập nhật 3 PDF và `environment_summary`, rồi dọn nhánh.
+   Code đã hỗ trợ đọc `.mat`. Cần thêm bước đọc phép chiếu PCA.
+2. **G0–G2**: hỏi tác giả (issue GitHub) về phiên bản ảnh/GT của G0–G2 và định nghĩa cột "% of pos. matches" của Bảng IV.
+3. Khi tác giả công bố "fully detailed results" trên website benchmark: đối chiếu MixVPR, CosPlace, NetVLAD, DINOv3 và AnyLoc-unstructured với `reports/KET_QUA_so_sanh.md`.
+4. Mọi lần chạy mới:
+   - viết plan `kaggle/wave<N>_plan.json`;
+   - dry-run với `VPRS_DRY_RUN=1`;
+   - chạy smoke test cục bộ (`kaggle/smoke_test.py`);
+   - chạy `kaggle/push_pending.py`;
+   - theo dõi bằng `kwatch`;
+   - thu bằng `kaggle/collect.py`;
+   - so sánh bằng `compare.py` và `report_tables.py`.

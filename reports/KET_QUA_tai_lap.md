@@ -10,14 +10,15 @@
 | **MegaLoc** | code `methods.py` của tác giả, môi trường ghim | **14/16** | 0,0037 | 0,469 / 0,47 |
 | **SALAD** | DINOv2-B, ảnh 322×322 (ToTensor → Resize bicubic+antialias → Normalize) | **15/16** | 0,0033 | 0,394 / 0,39 |
 | **AnyLoc (global)** | DINOv2 ViT-G/14 L31 value, 32 cụm, ảnh 322×322 | **14/16** | 0,0031 | 0,395 / 0,40 |
-| **DenseVLAD** | xem §6 | xem §6 | | |
+| **DenseVLAD** | VLFeat `vl_phow` gốc, 640 px, vocabulary học trên DB | 2/16 | 0,058 | 0,296 / 0,35 (tương quan theo cặp 0,974) |
 
 Kết luận ngắn:
 
 1. **BoQ được tái lập chính xác**: Bảng II 16/16 (cả 3 hàng tổng hợp), Bảng III 12/12 ô, Hình 6a 2/2 giá trị, Hình 6b giá trị "best correct". Hình 6c lệch 0,001 ở cả hai giá trị (0,0183 và 0,1811 so với 0,019 và 0,182).
 2. **MegaLoc khớp 14/16.** Lệch thật sự duy nhất là **MM G0–G2** (0,553 so với 0,57). Ô còn lại (SPAD noon–night 0,21500 so với 0,21) nằm đúng biên làm tròn. Bảng III khớp 11/12 ô.
 3. **SALAD** (15/16) và **AnyLoc-global** (14/16) gần như khớp hoàn toàn khi dùng **độ phân giải 322×322**. Đây là kích thước tác giả dùng cho BoQ. Hai cấu hình này không được bài báo công bố; chúng tôi xác định bằng cách quét độ phân giải chọn trước (224/322/518/native).
-4. Kết quả **ổn định**: đổi batch size, môi trường (gói ghim hay mặc định Kaggle) hoặc GPU (L4 hay T4) chỉ làm AUPRC thay đổi tối đa 8·10⁻⁴.
+4. **DenseVLAD không thể tái lập chính xác**: vocabulary và PCA của Torii đã mất. Bản VLFeat đúng chuẩn có cùng hình dạng theo cặp với bài (r = 0,974) nhưng thấp hơn 0,054 (§6).
+5. Kết quả **ổn định**: đổi batch size, môi trường (gói ghim hay mặc định Kaggle) hoặc GPU (L4 hay T4) chỉ làm AUPRC thay đổi tối đa 8·10⁻⁴.
 
 ## 2. Thiết lập
 
@@ -38,6 +39,8 @@ Kết luận ngắn:
   - Bản kiểm tra chạy trên môi trường mặc định của Kaggle: torch 2.11.0+cu130, numpy 2.1.3, pillow 13.0.0.
 
 ## 3. Bảng II — AUPRC theo từng cặp
+
+![AUPRC tái lập so với bài báo (Bảng II); dải xám là ±0,005](../results/figures/table2_ours_vs_paper.png)
 
 Mỗi ô ghi: số của ta / số của bài. ✗ nghĩa là lệch quá 0,005, tức không khớp sau khi làm tròn 2 chữ số. Bảng sinh tự động bằng `vprspace_repro/report_tables.py`.
 
@@ -112,7 +115,52 @@ Ghi chú:
 
 ## 6. DenseVLAD
 
-*(đang cập nhật — xem mục này sau khi các phiên VLFeat hoàn tất)*
+Bài chỉ ghi "DenseVLAD [Torii 2015]". Bản gốc là code MATLAB với ba thành phần: dense SIFT bằng VLFeat `vl_phow`, vocabulary 128 từ và PCA-whitening 4096-D. Vocabulary và whitening đều học trên ảnh Street View đô thị. Gói `247code.zip` chứa chúng **không còn tồn tại**: host gốc trả 403, Internet Archive có trang dự án nhưng không lưu file.
+
+### 6.1 Các phiên bản đã chạy (16/16 cặp)
+
+| Phiên bản | AUPRC TB | std (ddof=1) | worst | Khớp | \|Δ\| TB | Tương quan với bài | R@1 / R@5 / R@10 |
+|---|---|---|---|---|---|---|---|
+| **Bài báo** | **0,35** | **0,24** | **0,02** | | | | **0,52 / 0,68 / 0,76** |
+| kornia (cũ), 16384-D | 0,219 | 0,194 | 0,017 | 1/16 | 0,131 | 0,952 | 0,42 / 0,59 / 0,67 |
+| kornia (cũ), whitening full-rank trên DB | 0,037 | 0,049 | 0,002 | 0/16 | 0,313 | 0,690 | 0,11 / 0,32 / 0,47 |
+| VLFeat 640, giữ descriptor bị đưa về 0 | 0,295 | 0,228 | 0,017 | 2/16 | 0,058 | 0,975 | 0,47 / 0,60 / 0,68 |
+| **VLFeat 640, bỏ descriptor bị đưa về 0** | **0,296** | 0,227 | 0,017 | 2/16 | 0,058 | **0,974** | 0,47 / 0,60 / 0,68 |
+| + whitening học trên DB, k=128 | 0,357 | 0,249 | 0,020 | 2/16 | 0,068 | 0,934 | 0,48 / 0,63 / 0,71 |
+| + whitening học trên DB, k=256 | 0,383 | 0,245 | 0,023 | 2/16 | 0,079 | 0,916 | 0,51 / 0,66 / 0,73 |
+| + whitening học trên DB, k=512 | 0,361 | 0,219 | 0,022 | 2/16 | 0,093 | 0,859 | 0,52 / 0,67 / 0,74 |
+| + whitening học trên DB, k=1024 | 0,305 | 0,186 | 0,020 | 1/16 | 0,117 | 0,724 | 0,51 / 0,68 / 0,75 |
+| + whitening học trên DB, full-rank | 0,126 | 0,109 | 0,025 | 1/16 | 0,224 | 0,248 | 0,34 / 0,56 / 0,67 |
+
+Các phiên bản:
+
+- **VLFeat** (`densevlad_vlfeat.py`): gọi chính VLFeat 0.9.21 với đúng tham số mặc định của `vl_phow`, như MEX của MATLAB:
+  - bin 4/6/8/10, bước 2, σ = bin/6, cửa sổ 1,5;
+  - descriptor uint8; descriptor có chuẩn < 0,005 bị đưa về 0;
+  - rgb2gray và imresize bicubic antialias theo kiểu MATLAB, cạnh dài 640;
+  - RootSIFT, vocabulary k-means 128 từ học trên ảnh DB, VLAD gán cứng, intra-norm, L2.
+- **Whitening học trên DB** (`densevlad_pca.py`) chỉ là phân tích độ nhạy: nó học trên chính ảnh database của benchmark.
+
+### 6.2 Vì sao bản kornia cũ thấp hơn nhiều
+
+1. **Không có ngưỡng tương phản.** VLFeat đưa về 0 các descriptor có chuẩn < 0,005: 21–57% ở SPICE và LunarLoc, 0,4–14% ở MADMAX. kornia lại chuẩn hoá nhiễu ở vùng phẳng hoặc tối thành vector đơn vị, làm VLAD bị lấn át.
+2. **Hình học bin khác.** VLFeat nội suy song tuyến qua 2b−1 pixel, có cửa sổ Gauss, và σ làm mịn = b/6.
+3. **Whitening suy biến.** Học whitening trên n = 3.989 vector DB với đủ n thành phần cho dữ liệu học có hiệp phương sai đơn vị trên toàn không gian của nó. Mọi vector DB khi đó có cùng chuẩn và cos đôi một = −1/(n−1), nên retrieval sụp: 0,037 (bản kornia) và 0,126 (bản VLFeat).
+
+### 6.3 Kết luận về DenseVLAD
+
+- Bản VLFeat đúng chuẩn có **cùng hình dạng theo cặp** với cột của bài (r = 0,974) nhưng **thấp hơn trung bình 0,054**.
+  - Hai cặp khớp: S3E traverse–loops và SPAD dawn–night.
+  - Lệch lớn nhất ở LunarLoc (0,32/0,22 so với 0,41/0,34) và SPAD dawn–noon (0,67 so với 0,80).
+- Thành phần còn thiếu là **vocabulary và whitening của Torii**. Whitening học trên DB với k = 128–512 đưa trung bình lên 0,36–0,38, ngang hoặc hơn bài, nhưng làm giảm tương quan theo cặp (0,86–0,93). Vì vậy whitening giải thích được *độ lớn* nhưng không giải thích được *hình dạng*.
+- Hai phiên bổ sung dưới đây kiểm tra hai giả thuyết còn lại; kết quả được thêm vào mục 6.4 khi phiên xong:
+  - `g-dvlad-vlfeat-native`: độ phân giải gốc, không thu nhỏ;
+  - `h-dvlad-vlfeat-urban`: vocabulary và whitening 4096-D học trên 4.000 + 20.000 ảnh GSV-Cities, mô phỏng cách Torii học trên Street View đô thị.
+- **DenseVLAD không thể tái lập chính xác.** Phiên bản dùng để đối chiếu là "VLFeat 640, bỏ descriptor 0".
+
+### 6.4 Độ phân giải gốc và vocabulary/whitening đô thị
+
+*(chờ hai phiên `g-dvlad-vlfeat-native` và `h-dvlad-vlfeat-urban`)*
 
 ## 7. Độ ổn định của kết quả chính xác
 
