@@ -1,0 +1,90 @@
+{
+ "name": "anyloc_global_demo1024",
+ "tag": "b-anyloc-demo-p2",
+ "complete": false,
+ "missing": [
+  "MadMax-A0--MadMax-A2",
+  "MadMax-C0--MadMax-C1",
+  "MadMax-E0--MadMax-E1",
+  "MadMax-F0--MadMax-F3",
+  "MadMax-G0--MadMax-G2",
+  "S3LI-Etna-crater--S3LI-Etna-crater_inout",
+  "S3LI-Etna-traverse_1--S3LI-Etna-loops",
+  "LunarLoc-9--LunarLoc-10",
+  "LunarLoc-15--LunarLoc-17",
+  "SPICE-A-dawn-off-spad@5.0us--SPICE-A-night-on-spad@5.0us",
+  "SPICE-A-dawn-off-spad@5.0us--SPICE-A-noon-off-spad@5.0us",
+  "SPICE-A-dawn-off@2500.0us--SPICE-A-noon-off@2500.0us",
+  "SPICE-A-noon-off-spad@5.0us--SPICE-A-night-on-spad@5.0us",
+  "SPICE-A-noon-off@2500.0us--SPICE-A-night-on@2500.0us"
+ ],
+ "per_setup": {
+  "MadMax-A2--MadMax-A4": {
+   "AUPRC": 0.32635758789546465,
+   "R@100p": 0.058712121212121215,
+   "R@1": 0.37809187279151946,
+   "R@5": 0.6148409893992933,
+   "R@10": 0.7491166077738516,
+   "n_db": 180,
+   "n_q": 412,
+   "dim": 49152
+  },
+  "SPICE-A-dawn-off@2500.0us--SPICE-A-night-on@2500.0us": {
+   "AUPRC": 0.3175128811933403,
+   "R@100p": 0.037815126050420166,
+   "R@1": 0.39361702127659576,
+   "R@5": 0.574468085106383,
+   "R@10": 0.6808510638297872,
+   "n_db": 99,
+   "n_q": 97,
+   "dim": 49152
+  }
+ },
+ "aggregates": {
+  "AUPRC": {
+   "mean": 0.3219352345444025,
+   "std_ddof0": 0.004422353351062169,
+   "std_ddof1": 0.006254152086678225,
+   "min": 0.3175128811933403,
+   "argmin": "SPICE-A-dawn-off@2500.0us--SPICE-A-night-on@2500.0us"
+  },
+  "R@100p": {
+   "mean": 0.048263623631270694,
+   "std_ddof0": 0.010448497580850525,
+   "std_ddof1": 0.014776406985261286,
+   "min": 0.037815126050420166,
+   "argmin": "SPICE-A-dawn-off@2500.0us--SPICE-A-night-on@2500.0us"
+  },
+  "R@1": {
+   "mean": 0.3858544470340576,
+   "std_ddof0": 0.0077625742425381505,
+   "std_ddof1": 0.010977937772725507,
+   "min": 0.37809187279151946,
+   "argmin": "MadMax-A2--MadMax-A4"
+  },
+  "R@5": {
+   "mean": 0.5946545372528382,
+   "std_ddof0": 0.020186452146455147,
+   "std_ddof1": 0.028547954401712344,
+   "min": 0.574468085106383,
+   "argmin": "SPICE-A-dawn-off@2500.0us--SPICE-A-night-on@2500.0us"
+  },
+  "R@10": {
+   "mean": 0.7149838358018195,
+   "std_ddof0": 0.03413277197203218,
+   "std_ddof1": 0.04827102904423616,
+   "min": 0.6808510638297872,
+   "argmin": "SPICE-A-dawn-off@2500.0us--SPICE-A-night-on@2500.0us"
+  },
+  "worst_setup_by_auprc": {
+   "setup": "SPICE-A-dawn-off@2500.0us--SPICE-A-night-on@2500.0us",
+   "AUPRC": 0.3175128811933403,
+   "R@100p": 0.037815126050420166,
+   "R@1": 0.39361702127659576,
+   "R@5": 0.574468085106383,
+   "R@10": 0.6808510638297872
+  }
+ },
+ "fig6": {},
+ "time": "2026-11-06 13:22:29"
+}

@@ -1,0 +1,282 @@
+{
+ "name": "anyloc_global_demo1024",
+ "tag": "merged",
+ "complete": true,
+ "missing": [],
+ "per_setup": {
+  "MadMax-A0--MadMax-A2": {
+   "AUPRC": 0.6751933137521151,
+   "R@100p": 0.026113013698630137,
+   "R@1": 0.9166666666666666,
+   "R@5": 0.9555555555555556,
+   "R@10": 0.9888888888888889,
+   "n_db": 171,
+   "n_q": 180,
+   "dim": 49152
+  },
+  "MadMax-A2--MadMax-A4": {
+   "AUPRC": 0.32635758789546465,
+   "R@100p": 0.058712121212121215,
+   "R@1": 0.37809187279151946,
+   "R@5": 0.6148409893992933,
+   "R@10": 0.7491166077738516,
+   "n_db": 180,
+   "n_q": 412,
+   "dim": 49152
+  },
+  "MadMax-C0--MadMax-C1": {
+   "AUPRC": 0.3350030792102382,
+   "R@100p": 0.03271263210870659,
+   "R@1": 0.6976241900647948,
+   "R@5": 0.838012958963283,
+   "R@10": 0.91792656587473,
+   "n_db": 502,
+   "n_q": 463,
+   "dim": 49152
+  },
+  "MadMax-E0--MadMax-E1": {
+   "AUPRC": 0.3563454425396292,
+   "R@100p": 0.0529925187032419,
+   "R@1": 0.6890459363957597,
+   "R@5": 0.7985865724381626,
+   "R@10": 0.8586572438162544,
+   "n_db": 517,
+   "n_q": 507,
+   "dim": 49152
+  },
+  "MadMax-F0--MadMax-F3": {
+   "AUPRC": 0.6595823616003129,
+   "R@100p": 0.09224489795918367,
+   "R@1": 0.8558951965065502,
+   "R@5": 0.9606986899563319,
+   "R@10": 0.9868995633187773,
+   "n_db": 117,
+   "n_q": 229,
+   "dim": 49152
+  },
+  "MadMax-G0--MadMax-G2": {
+   "AUPRC": 0.49933530896246237,
+   "R@100p": 0.022906793048973143,
+   "R@1": 0.7525252525252525,
+   "R@5": 0.8131313131313131,
+   "R@10": 0.8484848484848485,
+   "n_db": 258,
+   "n_q": 290,
+   "dim": 49152
+  },
+  "S3LI-Etna-crater--S3LI-Etna-crater_inout": {
+   "AUPRC": 0.2758342138899952,
+   "R@100p": 0.005888465535157603,
+   "R@1": 0.5153061224489796,
+   "R@5": 0.6819727891156463,
+   "R@10": 0.7397959183673469,
+   "n_db": 1129,
+   "n_q": 1683,
+   "dim": 49152
+  },
+  "S3LI-Etna-traverse_1--S3LI-Etna-loops": {
+   "AUPRC": 0.1097212850151732,
+   "R@100p": 0.0,
+   "R@1": 0.4259927797833935,
+   "R@5": 0.6191335740072202,
+   "R@10": 0.6949458483754513,
+   "n_db": 485,
+   "n_q": 780,
+   "dim": 49152
+  },
+  "LunarLoc-9--LunarLoc-10": {
+   "AUPRC": 0.5411602507417131,
+   "R@100p": 0.0530421216848674,
+   "R@1": 0.7102272727272727,
+   "R@5": 0.9034090909090909,
+   "R@10": 0.9318181818181818,
+   "n_db": 119,
+   "n_q": 183,
+   "dim": 49152
+  },
+  "LunarLoc-15--LunarLoc-17": {
+   "AUPRC": 0.5141471009666495,
+   "R@100p": 0.26229508196721313,
+   "R@1": 0.375,
+   "R@5": 0.59375,
+   "R@10": 0.78125,
+   "n_db": 118,
+   "n_q": 54,
+   "dim": 49152
+  },
+  "SPICE-A-dawn-off-spad@5.0us--SPICE-A-night-on-spad@5.0us": {
+   "AUPRC": 0.20837483408054341,
+   "R@100p": 0.0,
+   "R@1": 0.30526315789473685,
+   "R@5": 0.6105263157894737,
+   "R@10": 0.6631578947368421,
+   "n_db": 98,
+   "n_q": 97,
+   "dim": 49152
+  },
+  "SPICE-A-dawn-off-spad@5.0us--SPICE-A-noon-off-spad@5.0us": {
+   "AUPRC": 0.6729583159171069,
+   "R@100p": 0.12455516014234876,
+   "R@1": 0.8041237113402062,
+   "R@5": 0.8865979381443299,
+   "R@10": 0.9278350515463918,
+   "n_db": 98,
+   "n_q": 97,
+   "dim": 49152
+  },
+  "SPICE-A-noon-off-spad@5.0us--SPICE-A-night-on-spad@5.0us": {
+   "AUPRC": 0.36763087141722905,
+   "R@100p": 0.11875,
+   "R@1": 0.34408602150537637,
+   "R@5": 0.5591397849462365,
+   "R@10": 0.6451612903225806,
+   "n_db": 97,
+   "n_q": 97,
+   "dim": 49152
+  },
+  "SPICE-A-dawn-off@2500.0us--SPICE-A-night-on@2500.0us": {
+   "AUPRC": 0.3175128811933403,
+   "R@100p": 0.037815126050420166,
+   "R@1": 0.39361702127659576,
+   "R@5": 0.574468085106383,
+   "R@10": 0.6808510638297872,
+   "n_db": 99,
+   "n_q": 97,
+   "dim": 49152
+  },
+  "SPICE-A-dawn-off@2500.0us--SPICE-A-noon-off@2500.0us": {
+   "AUPRC": 0.6165923125176855,
+   "R@100p": 0.09824561403508772,
+   "R@1": 0.7777777777777778,
+   "R@5": 0.9090909090909091,
+   "R@10": 0.9191919191919192,
+   "n_db": 99,
+   "n_q": 99,
+   "dim": 49152
+  },
+  "SPICE-A-noon-off@2500.0us--SPICE-A-night-on@2500.0us": {
+   "AUPRC": 0.2882518750749578,
+   "R@100p": 0.051181102362204724,
+   "R@1": 0.2604166666666667,
+   "R@5": 0.4791666666666667,
+   "R@10": 0.59375,
+   "n_db": 99,
+   "n_q": 97,
+   "dim": 49152
+  }
+ },
+ "aggregates": {
+  "AUPRC": {
+   "mean": 0.4227500646734136,
+   "std_ddof0": 0.17091064929816666,
+   "std_ddof1": 0.17651575957901222,
+   "min": 0.1097212850151732,
+   "argmin": "S3LI-Etna-traverse_1--S3LI-Etna-loops"
+  },
+  "R@100p": {
+   "mean": 0.06484091553175976,
+   "std_ddof0": 0.06360805272860495,
+   "std_ddof1": 0.06569411437401873,
+   "min": 0.0,
+   "argmin": "S3LI-Etna-traverse_1--S3LI-Etna-loops"
+  },
+  "R@1": {
+   "mean": 0.5751037278982218,
+   "std_ddof0": 0.21353869088804944,
+   "std_ddof1": 0.2205418116214264,
+   "min": 0.2604166666666667,
+   "argmin": "SPICE-A-noon-off@2500.0us--SPICE-A-night-on@2500.0us"
+  },
+  "R@5": {
+   "mean": 0.7373800770762435,
+   "std_ddof0": 0.1561595755112732,
+   "std_ddof1": 0.16128091608159487,
+   "min": 0.4791666666666667,
+   "argmin": "SPICE-A-noon-off@2500.0us--SPICE-A-night-on@2500.0us"
+  },
+  "R@10": {
+   "mean": 0.8079831803966158,
+   "std_ddof0": 0.1260583552352213,
+   "std_ddof1": 0.13019250946034952,
+   "min": 0.59375,
+   "argmin": "SPICE-A-noon-off@2500.0us--SPICE-A-night-on@2500.0us"
+  },
+  "worst_setup_by_auprc": {
+   "setup": "S3LI-Etna-traverse_1--S3LI-Etna-loops",
+   "AUPRC": 0.1097212850151732,
+   "R@100p": 0.0,
+   "R@1": 0.4259927797833935,
+   "R@5": 0.6191335740072202,
+   "R@10": 0.6949458483754513
+  }
+ },
+ "fig6": {
+  "MadMax-A0--MadMax-A2": {
+   "0-based": {
+    "top1_db": 70,
+    "top1_sim": 0.5167341828346252,
+    "top1_in_hard_gt": false,
+    "best_correct_sim": 0.37732240557670593,
+    "best_correct_db": 63
+   },
+   "1-based": {
+    "top1_db": 64,
+    "top1_sim": 0.5565661191940308,
+    "top1_in_hard_gt": true,
+    "best_correct_sim": 0.5565661191940308,
+    "best_correct_db": 64
+   }
+  },
+  "S3LI-Etna-traverse_1--S3LI-Etna-loops": {
+   "0-based": {
+    "top1_db": 122,
+    "top1_sim": 0.46808576583862305,
+    "top1_in_hard_gt": false,
+    "best_correct_sim": -0.012337115593254566,
+    "best_correct_db": 214
+   },
+   "1-based": {
+    "top1_db": 122,
+    "top1_sim": 0.47440105676651,
+    "top1_in_hard_gt": false,
+    "best_correct_sim": -0.03545204922556877,
+    "best_correct_db": 214
+   }
+  },
+  "SPICE-A-dawn-off-spad@5.0us--SPICE-A-night-on-spad@5.0us": {
+   "0-based": {
+    "top1_db": 73,
+    "top1_sim": 0.13685671985149384,
+    "top1_in_hard_gt": false,
+    "best_correct_sim": 0.06607374548912048,
+    "best_correct_db": 95
+   },
+   "1-based": {
+    "top1_db": 73,
+    "top1_sim": 0.12848831713199615,
+    "top1_in_hard_gt": false,
+    "best_correct_sim": null,
+    "best_correct_db": null
+   }
+  }
+ },
+ "merged_from": {
+  "MadMax-A0--MadMax-A2": "anyloc_global_demo1024__merged.json",
+  "MadMax-A2--MadMax-A4": "anyloc_global_demo1024__merged.json",
+  "MadMax-C0--MadMax-C1": "anyloc_global_demo1024__merged.json",
+  "MadMax-E0--MadMax-E1": "anyloc_global_demo1024__merged.json",
+  "MadMax-F0--MadMax-F3": "anyloc_global_demo1024__merged.json",
+  "MadMax-G0--MadMax-G2": "anyloc_global_demo1024__merged.json",
+  "S3LI-Etna-crater--S3LI-Etna-crater_inout": "anyloc_global_demo1024__merged.json",
+  "S3LI-Etna-traverse_1--S3LI-Etna-loops": "anyloc_global_demo1024__merged.json",
+  "LunarLoc-9--LunarLoc-10": "anyloc_global_demo1024__merged.json",
+  "LunarLoc-15--LunarLoc-17": "anyloc_global_demo1024__merged.json",
+  "SPICE-A-dawn-off-spad@5.0us--SPICE-A-night-on-spad@5.0us": "anyloc_global_demo1024__merged.json",
+  "SPICE-A-dawn-off@2500.0us--SPICE-A-night-on@2500.0us": "anyloc_global_demo1024__merged.json",
+  "SPICE-A-dawn-off-spad@5.0us--SPICE-A-noon-off-spad@5.0us": "anyloc_global_demo1024__merged.json",
+  "SPICE-A-dawn-off@2500.0us--SPICE-A-noon-off@2500.0us": "anyloc_global_demo1024__merged.json",
+  "SPICE-A-noon-off-spad@5.0us--SPICE-A-night-on-spad@5.0us": "anyloc_global_demo1024__merged.json",
+  "SPICE-A-noon-off@2500.0us--SPICE-A-night-on@2500.0us": "anyloc_global_demo1024__merged.json"
+ },
+ "time": "2026-11-07 06:04:11"
+}

@@ -1,0 +1,55 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+13:11:51 [w3] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 6
+Using cache found in /tmp/torch_home/hub/serizba_salad_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+13:13:02 [w3] built salad_322 in 70.6s
+13:13:41 [w3] salad_322 MadMax-C1: 463 imgs 39.6s (11.7 img/s)
+13:14:19 [w3] salad_322 MadMax-A4: 412 imgs 37.7s (10.9 img/s)
+13:14:40 [w3] salad_322 S3LI-Etna-crater: 1129 imgs 20.4s (55.4 img/s)
+13:14:47 [w3] salad_322 LunarLoc-10: 183 imgs 7.9s (23.2 img/s)
+13:14:51 [w3] salad_322 SPICE-A-dawn-off@2500.0us: 99 imgs 3.7s (26.4 img/s)
+13:14:55 [w3] salad_322 SPICE-A-night-on@2500.0us: 97 imgs 3.9s (25.1 img/s)
+Using cache found in /tmp/torch_home/hub/serizba_salad_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+13:14:57 [w3] built salad_322_official in 1.9s
+13:15:24 [w3] salad_322_official MadMax-C1: 463 imgs 27.1s (17.1 img/s)
+13:15:50 [w3] salad_322_official MadMax-A4: 412 imgs 26.4s (15.6 img/s)
+13:16:11 [w3] salad_322_official S3LI-Etna-crater: 1129 imgs 20.1s (56.2 img/s)
+13:16:17 [w3] salad_322_official LunarLoc-10: 183 imgs 6.5s (28.2 img/s)
+13:16:20 [w3] salad_322_official SPICE-A-dawn-off@2500.0us: 99 imgs 3.4s (29.1 img/s)
+13:16:24 [w3] salad_322_official SPICE-A-night-on@2500.0us: 97 imgs 3.4s (28.3 img/s)
+Using cache found in /tmp/torch_home/hub/serizba_salad_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+13:16:26 [w3] built salad_224 in 1.9s
+13:16:55 [w3] salad_224 MadMax-C1: 463 imgs 29.3s (15.8 img/s)
+13:17:26 [w3] salad_224 MadMax-A4: 412 imgs 30.9s (13.3 img/s)
+13:17:37 [w3] salad_224 S3LI-Etna-crater: 1129 imgs 11.0s (102.9 img/s)
+13:17:43 [w3] salad_224 LunarLoc-10: 183 imgs 6.5s (28.2 img/s)
+13:17:46 [w3] salad_224 SPICE-A-dawn-off@2500.0us: 99 imgs 2.9s (34.2 img/s)
+13:17:49 [w3] salad_224 SPICE-A-night-on@2500.0us: 97 imgs 2.9s (33.5 img/s)
+Using cache found in /tmp/torch_home/hub/serizba_salad_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+13:17:51 [w3] built salad_518 in 1.9s
+13:18:33 [w3] OOM -> sub-batch 64
+13:18:49 [w3] salad_518 MadMax-C1: 463 imgs 57.5s (8.1 img/s)
+13:19:38 [w3] salad_518 MadMax-A4: 412 imgs 49.4s (8.3 img/s)
+13:20:32 [w3] salad_518 S3LI-Etna-crater: 1129 imgs 54.4s (20.7 img/s)
+13:20:47 [w3] salad_518 LunarLoc-10: 183 imgs 14.3s (12.8 img/s)
+13:20:54 [w3] salad_518 SPICE-A-dawn-off@2500.0us: 99 imgs 7.4s (13.4 img/s)
+13:21:01 [w3] salad_518 SPICE-A-night-on@2500.0us: 97 imgs 7.2s (13.4 img/s)
+Using cache found in /tmp/torch_home/hub/serizba_salad_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+13:21:03 [w3] built salad_native14 in 1.9s
+13:35:00 [w3] salad_native14 MadMax-C1: 463 imgs 836.5s (0.6 img/s)
+13:47:23 [w3] salad_native14 MadMax-A4: 412 imgs 743.8s (0.6 img/s)
+13:48:39 [w3] salad_native14 S3LI-Etna-crater: 1129 imgs 75.2s (15.0 img/s)
+13:49:23 [w3] salad_native14 LunarLoc-10: 183 imgs 44.5s (4.1 img/s)
+13:49:31 [w3] salad_native14 SPICE-A-dawn-off@2500.0us: 99 imgs 7.9s (12.6 img/s)
+13:49:39 [w3] salad_native14 SPICE-A-night-on@2500.0us: 97 imgs 7.7s (12.7 img/s)

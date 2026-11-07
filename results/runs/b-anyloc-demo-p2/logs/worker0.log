@@ -1,0 +1,22 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+12:52:42 [w0] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 5
+Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files
+Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt
+Desc dim set to 1536
+Model with domain = 'global' vocabulary loaded
+Desc dim set to 1536
+13:03:14 [w0] built anyloc_demo1024 in 632.7s
+13:11:33 [w0] FAILED anyloc_demo1024 MadMax-E0: OSError('Caught OSError in DataLoader worker process 3.\nOriginal Traceback (most recent call last):\n  File "/tmp/vprenv/lib/python3.13/site-packages/PIL/ImageFile.py", line 392, in load\n    s = read(read_bytes)\n  File "/tmp/vprenv/lib/python3.13/site-packages/PIL/PngImagePlugin.py", line 999, in load_read\n    cid, pos, length = self.png.read()\n                       ~~~~~~~~~~~~~^^\n  File "/tmp/vprenv/lib/python3.13/site-packages/PIL/PngImagePlugin.py", line 179, in read\n    length = i32(s)\n  File "/tmp/vprenv/lib/python3.13/site-packages/PIL/_binary.py", line 96, in i32be\n    return unpack_from(">I", c, o)[0]\n           ~~~~~~~~~~~^^^^^^^^^^^^\nstruct.error: unpack_from requires a buffer of at least 4 bytes for unpacking 4 bytes at offset 0 (actual buffer size is 0)\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File "/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/_utils/worker.py", line 349, in _worker_loop\n    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]\n  File "/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch\n    data = [self.dataset[idx] for idx in possibly_batched_index]\n            ~~~~~~~~~~~~^^^^^\n  File "/tmp/vprcode/worker.py", line 103, in __getitem__\n    return self.prep(Image.open(self.paths[i]).convert("RGB"))\n                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^\n  File "/tmp/vprenv/lib/python3.13/site-packages/PIL/Image.py", line 1070, in convert\n    self.load()\n    ~~~~~~~~~^^\n  File "/tmp/vprenv/lib/python3.13/site-packages/PIL/ImageFile.py", line 399, in load\n    raise OSError(msg) from e\nOSError: image file is truncated\n')
+13:16:33 [w0] anyloc_demo1024 S3LI-Etna-traverse_1: 485 imgs 298.2s (1.6 img/s)
+13:20:27 [w0] anyloc_demo1024 LunarLoc-15: 118 imgs 234.0s (0.5 img/s)
+13:21:40 [w0] anyloc_demo1024 SPICE-A-dawn-off@2500.0us: 99 imgs 72.4s (1.4 img/s)
+13:22:22 [w0] anyloc_demo1024 SPICE-A-night-on-spad@5.0us: 97 imgs 42.9s (2.3 img/s)

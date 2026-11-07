@@ -1,0 +1,106 @@
+[{"stream_name":"stderr","time":1.773308649,"data":"/kaggle/src/script.py:23: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.\n"}
+,{"stream_name":"stderr","time":1.773358572,"data":"  tarfile.open(fileobj=io.BytesIO(base64.b64decode(CODE_B64))).extractall(code)\n"}
+,{"stream_name":"stdout","time":1.8638897380000001,"data":"13:36:50 [+     0s] spec {\"session\": \"e0-anyloc-fixed\", \"env\": \"pinned\", \"configs\": [\"anyloc_224\", \"anyloc_322\", \"anyloc_518\"], \"trajectories\": [\"MadMax-E0\"], \"pixel_cost\": false}\n"}
+,{"stream_name":"stdout","time":8.66548687,"data":"13:36:57 [+     7s] input tree:\n"}
+,{"stream_name":"stdout","time":8.6655137,"data":"/kaggle/input\n"}
+,{"stream_name":"stdout","time":8.665516616,"data":"/kaggle/input/notebooks\n"}
+,{"stream_name":"stdout","time":8.665518707,"data":"/kaggle/input/notebooks/hieuho669\n"}
+,{"stream_name":"stdout","time":8.665520623,"data":"/kaggle/input/notebooks/hieuho669/vprspace-deps-core\n"}
+,{"stream_name":"stdout","time":8.665522755,"data":"/kaggle/input/notebooks/hieuho669/vprspace-deps-core/hf_home\n"}
+,{"stream_name":"stdout","time":8.66552478,"data":"/kaggle/input/notebooks/hieuho669/vprspace-deps-core/hf_home/hub\n"}
+,{"stream_name":"stdout","time":8.665526628,"data":"/kaggle/input/notebooks/hieuho669/vprspace-deps-core/hf_home/xet\n"}
+,{"stream_name":"stdout","time":8.665528574,"data":"/kaggle/input/notebooks/hieuho669/vprspace-deps-core/torch_home\n"}
+,{"stream_name":"stdout","time":8.665530447,"data":"/kaggle/input/notebooks/hieuho669/vprspace-deps-core/torch_home/hub\n"}
+,{"stream_name":"stdout","time":8.665532536,"data":"/kaggle/input/notebooks/hieuho669/vprspace-deps-core/wheels\n"}
+,{"stream_name":"stdout","time":8.665534419,"data":"/kaggle/input/notebooks/hieuho669/vprspace-deps-anyloc\n"}
+,{"stream_name":"stdout","time":8.665536281,"data":"/kaggle/input/notebooks/hieuho669/vprspace-deps-anyloc/torch_home\n"}
+,{"stream_name":"stdout","time":8.665538175,"data":"/kaggle/input/notebooks/hieuho669/vprspace-deps-anyloc/torch_home/hub\n"}
+,{"stream_name":"stdout","time":8.66554014,"data":"/kaggle/input/notebooks/hieuho669/vprspace-data-a\n"}
+,{"stream_name":"stdout","time":8.665544856,"data":"/kaggle/input/notebooks/hieuho669/vprspace-data-b\n"}
+,{"stream_name":"stdout","time":8.66554676,"data":"/kaggle/input/competitions\n"}
+,{"stream_name":"stdout","time":8.66554864,"data":"/kaggle/input/competitions/gemma-4-developer-agent\n"}
+,{"stream_name":"stdout","time":8.665550615,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission\n"}
+,{"stream_name":"stdout","time":8.665552508,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/configs\n"}
+,{"stream_name":"stdout","time":8.665554435,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/prompts\n"}
+,{"stream_name":"stdout","time":8.665556331,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/sub_agents\n"}
+,{"stream_name":"stdout","time":8.665558198,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters\n"}
+,{"stream_name":"stdout","time":8.665560056,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters/tool_lora\n"}
+,{"stream_name":"stdout","time":8.665561928,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters/main_lora\n"}
+,{"stream_name":"stdout","time":8.66556389,"data":"/kaggle/input/competitions/gemma-4-developer-agent/docker\n"}
+,{"stream_name":"stdout","time":8.665565924,"data":"/kaggle/input/competitions/gemma-4-developer-agent/snapshots\n"}
+,{"stream_name":"stdout","time":8.665578598,"data":"/kaggle/input/competitions/gemma-4-developer-agent/wheels\n"}
+,{"stream_name":"stdout","time":8.665580795,"data":"/kaggle/input/competitions/gemma-4-developer-agent/graphs\n"}
+,{"stream_name":"stdout","time":8.665582674,"data":"/kaggle/input/competitions/gemma-4-developer-agent/embeddings\n"}
+,{"stream_name":"stdout","time":8.66558458,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sandbox\n"}
+,{"stream_name":"stdout","time":8.665586503,"data":"\n"}
+,{"stream_name":"stdout","time":17.185665836,"data":"13:37:05 [+    15s] $ cp -rs --remove-destination /kaggle/input/notebooks/hieuho669/vprspace-deps-anyloc/torch_home/. /tmp/torch_home/\n"}
+,{"stream_name":"stdout","time":17.362189749,"data":"13:37:06 [+    16s] $ cp -rs --remove-destination /kaggle/input/notebooks/hieuho669/vprspace-deps-core/torch_home/. /tmp/torch_home/\n"}
+,{"stream_name":"stdout","time":25.986931003,"data":"13:37:14 [+    24s] $ cp -rs --remove-destination /kaggle/input/notebooks/hieuho669/vprspace-deps-core/hf_home/. /tmp/hf_home/\n"}
+,{"stream_name":"stdout","time":51.397557571,"data":"13:37:40 [+    50s] wheels: /kaggle/input/notebooks/hieuho669/vprspace-deps-core/wheels req: /kaggle/input/notebooks/hieuho669/vprspace-deps-core/requirements_pinned.txt\n"}
+,{"stream_name":"stdout","time":51.397591108,"data":"13:37:40 [+    50s] $ /usr/bin/python3 -m venv /tmp/vprenv\n"}
+,{"stream_name":"stderr","time":51.548463762,"data":"Error: Command '['/tmp/vprenv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":51.562083708,"data":"13:37:40 [+    50s] $ /usr/bin/python3 -m venv --without-pip /tmp/vprenv\n"}
+,{"stream_name":"stdout","time":51.652693332,"data":"13:37:40 [+    50s] $ /usr/bin/python3 -m pip --python /tmp/vprenv/bin/python install -q --no-index --find-links /kaggle/input/notebooks/hieuho669/vprspace-deps-core/wheels -r /kaggle/input/notebooks/hieuho669/vprspace-deps-core/requirements_pinned.txt\n"}
+,{"stream_name":"stderr","time":52.371507144,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":52.371536056,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":171.078299167,"data":"13:39:39 [+   169s] $ /usr/bin/python3 -m pip --python /tmp/vprenv/bin/python install -q --no-index --no-deps --find-links /kaggle/input/notebooks/hieuho669/vprspace-deps-core/wheels pytorch-lightning lightning-utilities torchmetrics fast-pytorch-kmeans timm psutil pytorch-metric-learning\n"}
+,{"stream_name":"stderr","time":171.319077208,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":171.319116841,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":176.883572592,"data":"13:39:45 [+   175s] data root /tmp/vprdata/vpr-space-v0 extracted\n"}
+,{"stream_name":"stdout","time":176.936862285,"data":"13:39:45 [+   175s] 4 GPUs, images per GPU [517.0, 0, 0, 0]\n"}
+,{"stream_name":"stdout","time":184.834881342,"data":"13:39:53 [+   183s] hf_plain dirs: none\n"}
+,{"stream_name":"stdout","time":672.772719094,"data":"13:48:01 [+   671s] workers exit codes [0]\n"}
+,{"stream_name":"stdout","time":672.772865024,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":672.772883455,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":672.772886805,"data":"13:39:57 [w0] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 1\n"}
+,{"stream_name":"stdout","time":672.77288971,"data":"Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main\n"}
+,{"stream_name":"stdout","time":672.772903099,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":672.772905277,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)\n"}
+,{"stream_name":"stdout","time":672.77290747,"data":"  warnings.warn(\"xFormers is not available (SwiGLU)\")\n"}
+,{"stream_name":"stdout","time":672.772909475,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)\n"}
+,{"stream_name":"stdout","time":672.772911498,"data":"  warnings.warn(\"xFormers is not available (Attention)\")\n"}
+,{"stream_name":"stdout","time":672.77291341,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)\n"}
+,{"stream_name":"stdout","time":672.772915383,"data":"  warnings.warn(\"xFormers is not available (Block)\")\n"}
+,{"stream_name":"stdout","time":672.772917313,"data":"Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files\n"}
+,{"stream_name":"stdout","time":672.772919345,"data":"Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt\n"}
+,{"stream_name":"stdout","time":672.772921312,"data":"Desc dim set to 1536\n"}
+,{"stream_name":"stdout","time":672.772923202,"data":"Model with domain = 'global' vocabulary loaded\n"}
+,{"stream_name":"stdout","time":672.772925023,"data":"Desc dim set to 1536\n"}
+,{"stream_name":"stdout","time":672.772926878,"data":"13:40:45 [w0] built anyloc_224 in 47.8s\n"}
+,{"stream_name":"stdout","time":672.772928702,"data":"13:41:36 [w0] anyloc_224 MadMax-E0: 517 imgs 51.2s (10.1 img/s)\n"}
+,{"stream_name":"stdout","time":672.772930544,"data":"Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main\n"}
+,{"stream_name":"stdout","time":672.772932381,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":672.772934309,"data":"Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files\n"}
+,{"stream_name":"stdout","time":672.772936196,"data":"Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt\n"}
+,{"stream_name":"stdout","time":672.772938315,"data":"Desc dim set to 1536\n"}
+,{"stream_name":"stdout","time":672.772940053,"data":"Model with domain = 'global' vocabulary loaded\n"}
+,{"stream_name":"stdout","time":672.772941891,"data":"Desc dim set to 1536\n"}
+,{"stream_name":"stdout","time":672.772943632,"data":"13:41:57 [w0] built anyloc_322 in 21.3s\n"}
+,{"stream_name":"stdout","time":672.772945407,"data":"13:43:34 [w0] anyloc_322 MadMax-E0: 517 imgs 97.1s (5.3 img/s)\n"}
+,{"stream_name":"stdout","time":672.772947261,"data":"Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main\n"}
+,{"stream_name":"stdout","time":672.772949098,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":672.772950966,"data":"Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files\n"}
+,{"stream_name":"stdout","time":672.772953716,"data":"Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt\n"}
+,{"stream_name":"stdout","time":672.772955762,"data":"Desc dim set to 1536\n"}
+,{"stream_name":"stdout","time":672.772957515,"data":"Model with domain = 'global' vocabulary loaded\n"}
+,{"stream_name":"stdout","time":672.772959332,"data":"Desc dim set to 1536\n"}
+,{"stream_name":"stdout","time":672.772963609,"data":"13:43:55 [w0] built anyloc_518 in 20.9s\n"}
+,{"stream_name":"stdout","time":672.772965521,"data":"13:48:00 [w0] anyloc_518 MadMax-E0: 517 imgs 244.6s (2.1 img/s)\n"}
+,{"stream_name":"stdout","time":672.772967365,"data":"\n"}
+,{"stream_name":"stdout","time":672.77296913,"data":"13:48:01 [+   671s] $ /tmp/vprenv/bin/python /tmp/vprcode/metrics_all.py --root /tmp/vprdata/vpr-space-v0 --desc-dir /kaggle/working/desc --out /kaggle/working/results --tag e0-anyloc-fixed\n"}
+,{"stream_name":"stderr","time":672.823957124,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":672.823974989,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":676.00258697,"data":"anyloc_global_224: 0/16 setups, missing 16\n"}
+,{"stream_name":"stdout","time":676.00313293,"data":"anyloc_global_322: 0/16 setups, missing 16\n"}
+,{"stream_name":"stdout","time":676.003643321,"data":"anyloc_global_518: 0/16 setups, missing 16\n"}
+,{"stream_name":"stdout","time":676.004136157,"data":"anyloc_unstructured_224: 0/16 setups, missing 16\n"}
+,{"stream_name":"stdout","time":676.004634498,"data":"anyloc_unstructured_322: 0/16 setups, missing 16\n"}
+,{"stream_name":"stdout","time":676.00514166,"data":"anyloc_unstructured_518: 0/16 setups, missing 16\n"}
+,{"stream_name":"stdout","time":677.685787047,"data":"13:48:06 [+   676s] DONE\n"}
+,{"stream_name":"stderr","time":680.690574427,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":680.690609607,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":681.220964831,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":681.220987459,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":684.717702234,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":686.150543237,"data":"[NbConvertApp] Writing 339436 bytes to __results__.html\n"}
+]

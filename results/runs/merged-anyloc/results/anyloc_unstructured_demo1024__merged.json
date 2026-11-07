@@ -1,0 +1,282 @@
+{
+ "name": "anyloc_unstructured_demo1024",
+ "tag": "merged",
+ "complete": true,
+ "missing": [],
+ "per_setup": {
+  "MadMax-A0--MadMax-A2": {
+   "AUPRC": 0.7333790765797565,
+   "R@100p": 0.04280821917808219,
+   "R@1": 0.9222222222222223,
+   "R@5": 0.9555555555555556,
+   "R@10": 0.9944444444444445,
+   "n_db": 171,
+   "n_q": 180,
+   "dim": 49152
+  },
+  "MadMax-A2--MadMax-A4": {
+   "AUPRC": 0.36833847231356154,
+   "R@100p": 0.03977272727272727,
+   "R@1": 0.4416961130742049,
+   "R@5": 0.6678445229681979,
+   "R@10": 0.7632508833922261,
+   "n_db": 180,
+   "n_q": 412,
+   "dim": 49152
+  },
+  "MadMax-C0--MadMax-C1": {
+   "AUPRC": 0.36992890269327194,
+   "R@100p": 0.027679919476597887,
+   "R@1": 0.7602591792656588,
+   "R@5": 0.8855291576673866,
+   "R@10": 0.9330453563714903,
+   "n_db": 502,
+   "n_q": 463,
+   "dim": 49152
+  },
+  "MadMax-E0--MadMax-E1": {
+   "AUPRC": 0.380660849083635,
+   "R@100p": 0.023067331670822942,
+   "R@1": 0.6996466431095406,
+   "R@5": 0.8197879858657244,
+   "R@10": 0.8551236749116607,
+   "n_db": 517,
+   "n_q": 507,
+   "dim": 49152
+  },
+  "MadMax-F0--MadMax-F3": {
+   "AUPRC": 0.665640386846286,
+   "R@100p": 0.13551020408163264,
+   "R@1": 0.8646288209606987,
+   "R@5": 0.9781659388646288,
+   "R@10": 0.9956331877729258,
+   "n_db": 117,
+   "n_q": 229,
+   "dim": 49152
+  },
+  "MadMax-G0--MadMax-G2": {
+   "AUPRC": 0.523963857457111,
+   "R@100p": 0.018957345971563982,
+   "R@1": 0.7525252525252525,
+   "R@5": 0.8181818181818182,
+   "R@10": 0.8484848484848485,
+   "n_db": 258,
+   "n_q": 290,
+   "dim": 49152
+  },
+  "S3LI-Etna-crater--S3LI-Etna-crater_inout": {
+   "AUPRC": 0.21147410778738082,
+   "R@100p": 0.005195704883962591,
+   "R@1": 0.4965986394557823,
+   "R@5": 0.6309523809523809,
+   "R@10": 0.6989795918367347,
+   "n_db": 1129,
+   "n_q": 1683,
+   "dim": 49152
+  },
+  "S3LI-Etna-traverse_1--S3LI-Etna-loops": {
+   "AUPRC": 0.07981229023250799,
+   "R@100p": 0.0,
+   "R@1": 0.3574007220216607,
+   "R@5": 0.6155234657039711,
+   "R@10": 0.6895306859205776,
+   "n_db": 485,
+   "n_q": 780,
+   "dim": 49152
+  },
+  "LunarLoc-9--LunarLoc-10": {
+   "AUPRC": 0.47907243509534647,
+   "R@100p": 0.0811232449297972,
+   "R@1": 0.625,
+   "R@5": 0.8977272727272727,
+   "R@10": 0.9488636363636364,
+   "n_db": 119,
+   "n_q": 183,
+   "dim": 49152
+  },
+  "LunarLoc-15--LunarLoc-17": {
+   "AUPRC": 0.3964277544015534,
+   "R@100p": 0.16393442622950818,
+   "R@1": 0.28125,
+   "R@5": 0.65625,
+   "R@10": 0.75,
+   "n_db": 118,
+   "n_q": 54,
+   "dim": 49152
+  },
+  "SPICE-A-dawn-off-spad@5.0us--SPICE-A-night-on-spad@5.0us": {
+   "AUPRC": 0.15015822172916543,
+   "R@100p": 0.008620689655172414,
+   "R@1": 0.22105263157894736,
+   "R@5": 0.47368421052631576,
+   "R@10": 0.6,
+   "n_db": 98,
+   "n_q": 97,
+   "dim": 49152
+  },
+  "SPICE-A-dawn-off-spad@5.0us--SPICE-A-noon-off-spad@5.0us": {
+   "AUPRC": 0.6489526125170567,
+   "R@100p": 0.10498220640569395,
+   "R@1": 0.8041237113402062,
+   "R@5": 0.8969072164948454,
+   "R@10": 0.9175257731958762,
+   "n_db": 98,
+   "n_q": 97,
+   "dim": 49152
+  },
+  "SPICE-A-noon-off-spad@5.0us--SPICE-A-night-on-spad@5.0us": {
+   "AUPRC": 0.27220503731269763,
+   "R@100p": 0.05,
+   "R@1": 0.3118279569892473,
+   "R@5": 0.45161290322580644,
+   "R@10": 0.5698924731182796,
+   "n_db": 97,
+   "n_q": 97,
+   "dim": 49152
+  },
+  "SPICE-A-dawn-off@2500.0us--SPICE-A-night-on@2500.0us": {
+   "AUPRC": 0.19931947684342266,
+   "R@100p": 0.012605042016806723,
+   "R@1": 0.26595744680851063,
+   "R@5": 0.5319148936170213,
+   "R@10": 0.5957446808510638,
+   "n_db": 99,
+   "n_q": 97,
+   "dim": 49152
+  },
+  "SPICE-A-dawn-off@2500.0us--SPICE-A-noon-off@2500.0us": {
+   "AUPRC": 0.5893008820240797,
+   "R@100p": 0.05789473684210526,
+   "R@1": 0.7171717171717171,
+   "R@5": 0.8585858585858586,
+   "R@10": 0.898989898989899,
+   "n_db": 99,
+   "n_q": 99,
+   "dim": 49152
+  },
+  "SPICE-A-noon-off@2500.0us--SPICE-A-night-on@2500.0us": {
+   "AUPRC": 0.24577564410945207,
+   "R@100p": 0.03937007874015748,
+   "R@1": 0.2708333333333333,
+   "R@5": 0.4791666666666667,
+   "R@10": 0.5833333333333334,
+   "n_db": 99,
+   "n_q": 97,
+   "dim": 49152
+  }
+ },
+ "aggregates": {
+  "AUPRC": {
+   "mean": 0.3946506254391428,
+   "std_ddof0": 0.1910245804673865,
+   "std_ddof1": 0.19728933836438572,
+   "min": 0.07981229023250799,
+   "argmin": "S3LI-Etna-traverse_1--S3LI-Etna-loops"
+  },
+  "R@100p": {
+   "mean": 0.050720117334664416,
+   "std_ddof0": 0.04637708738199514,
+   "std_ddof1": 0.047898049886952884,
+   "min": 0.0,
+   "argmin": "S3LI-Etna-traverse_1--S3LI-Etna-loops"
+  },
+  "R@1": {
+   "mean": 0.5495121493660614,
+   "std_ddof0": 0.23594962468898542,
+   "std_ddof1": 0.24368772452382156,
+   "min": 0.22105263157894736,
+   "argmin": "SPICE-A-dawn-off-spad@5.0us--SPICE-A-night-on-spad@5.0us"
+  },
+  "R@5": {
+   "mean": 0.7260868654752157,
+   "std_ddof0": 0.1771896155695706,
+   "std_ddof1": 0.1830006480591577,
+   "min": 0.45161290322580644,
+   "argmin": "SPICE-A-noon-off-spad@5.0us--SPICE-A-night-on-spad@5.0us"
+  },
+  "R@10": {
+   "mean": 0.7901776543116874,
+   "std_ddof0": 0.14817066399895984,
+   "std_ddof1": 0.15303000375052436,
+   "min": 0.5698924731182796,
+   "argmin": "SPICE-A-noon-off-spad@5.0us--SPICE-A-night-on-spad@5.0us"
+  },
+  "worst_setup_by_auprc": {
+   "setup": "S3LI-Etna-traverse_1--S3LI-Etna-loops",
+   "AUPRC": 0.07981229023250799,
+   "R@100p": 0.0,
+   "R@1": 0.3574007220216607,
+   "R@5": 0.6155234657039711,
+   "R@10": 0.6895306859205776
+  }
+ },
+ "fig6": {
+  "MadMax-A0--MadMax-A2": {
+   "0-based": {
+    "top1_db": 68,
+    "top1_sim": 0.5752432942390442,
+    "top1_in_hard_gt": false,
+    "best_correct_sim": 0.4446890652179718,
+    "best_correct_db": 63
+   },
+   "1-based": {
+    "top1_db": 68,
+    "top1_sim": 0.5320082902908325,
+    "top1_in_hard_gt": false,
+    "best_correct_sim": 0.5313567519187927,
+    "best_correct_db": 63
+   }
+  },
+  "S3LI-Etna-traverse_1--S3LI-Etna-loops": {
+   "0-based": {
+    "top1_db": 121,
+    "top1_sim": 0.3173770308494568,
+    "top1_in_hard_gt": false,
+    "best_correct_sim": 0.0011123649310320616,
+    "best_correct_db": 214
+   },
+   "1-based": {
+    "top1_db": 122,
+    "top1_sim": 0.3412587642669678,
+    "top1_in_hard_gt": false,
+    "best_correct_sim": -0.0027081305161118507,
+    "best_correct_db": 214
+   }
+  },
+  "SPICE-A-dawn-off-spad@5.0us--SPICE-A-night-on-spad@5.0us": {
+   "0-based": {
+    "top1_db": 18,
+    "top1_sim": 0.11919227242469788,
+    "top1_in_hard_gt": false,
+    "best_correct_sim": 0.06454294174909592,
+    "best_correct_db": 95
+   },
+   "1-based": {
+    "top1_db": 13,
+    "top1_sim": 0.1100858747959137,
+    "top1_in_hard_gt": false,
+    "best_correct_sim": null,
+    "best_correct_db": null
+   }
+  }
+ },
+ "merged_from": {
+  "MadMax-A0--MadMax-A2": "anyloc_unstructured_demo1024__merged.json",
+  "MadMax-A2--MadMax-A4": "anyloc_unstructured_demo1024__merged.json",
+  "MadMax-C0--MadMax-C1": "anyloc_unstructured_demo1024__merged.json",
+  "MadMax-E0--MadMax-E1": "anyloc_unstructured_demo1024__merged.json",
+  "MadMax-F0--MadMax-F3": "anyloc_unstructured_demo1024__merged.json",
+  "MadMax-G0--MadMax-G2": "anyloc_unstructured_demo1024__merged.json",
+  "S3LI-Etna-crater--S3LI-Etna-crater_inout": "anyloc_unstructured_demo1024__merged.json",
+  "S3LI-Etna-traverse_1--S3LI-Etna-loops": "anyloc_unstructured_demo1024__merged.json",
+  "LunarLoc-9--LunarLoc-10": "anyloc_unstructured_demo1024__merged.json",
+  "LunarLoc-15--LunarLoc-17": "anyloc_unstructured_demo1024__merged.json",
+  "SPICE-A-dawn-off-spad@5.0us--SPICE-A-night-on-spad@5.0us": "anyloc_unstructured_demo1024__merged.json",
+  "SPICE-A-dawn-off@2500.0us--SPICE-A-night-on@2500.0us": "anyloc_unstructured_demo1024__merged.json",
+  "SPICE-A-dawn-off-spad@5.0us--SPICE-A-noon-off-spad@5.0us": "anyloc_unstructured_demo1024__merged.json",
+  "SPICE-A-dawn-off@2500.0us--SPICE-A-noon-off@2500.0us": "anyloc_unstructured_demo1024__merged.json",
+  "SPICE-A-noon-off-spad@5.0us--SPICE-A-night-on-spad@5.0us": "anyloc_unstructured_demo1024__merged.json",
+  "SPICE-A-noon-off@2500.0us--SPICE-A-night-on@2500.0us": "anyloc_unstructured_demo1024__merged.json"
+ },
+ "time": "2026-11-07 06:04:14"
+}

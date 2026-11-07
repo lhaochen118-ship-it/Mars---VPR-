@@ -1,0 +1,99 @@
+{
+ "name": "anyloc_global_demo1024",
+ "tag": "b-anyloc-demo-p1",
+ "complete": false,
+ "missing": [
+  "MadMax-A0--MadMax-A2",
+  "MadMax-A2--MadMax-A4",
+  "MadMax-C0--MadMax-C1",
+  "MadMax-E0--MadMax-E1",
+  "MadMax-F0--MadMax-F3",
+  "MadMax-G0--MadMax-G2",
+  "S3LI-Etna-traverse_1--S3LI-Etna-loops",
+  "LunarLoc-15--LunarLoc-17",
+  "SPICE-A-dawn-off-spad@5.0us--SPICE-A-night-on-spad@5.0us",
+  "SPICE-A-dawn-off@2500.0us--SPICE-A-night-on@2500.0us",
+  "SPICE-A-dawn-off@2500.0us--SPICE-A-noon-off@2500.0us",
+  "SPICE-A-noon-off-spad@5.0us--SPICE-A-night-on-spad@5.0us",
+  "SPICE-A-noon-off@2500.0us--SPICE-A-night-on@2500.0us"
+ ],
+ "per_setup": {
+  "S3LI-Etna-crater--S3LI-Etna-crater_inout": {
+   "AUPRC": 0.2758342138899952,
+   "R@100p": 0.005888465535157603,
+   "R@1": 0.5153061224489796,
+   "R@5": 0.6819727891156463,
+   "R@10": 0.7397959183673469,
+   "n_db": 1129,
+   "n_q": 1683,
+   "dim": 49152
+  },
+  "LunarLoc-9--LunarLoc-10": {
+   "AUPRC": 0.5411602507417131,
+   "R@100p": 0.0530421216848674,
+   "R@1": 0.7102272727272727,
+   "R@5": 0.9034090909090909,
+   "R@10": 0.9318181818181818,
+   "n_db": 119,
+   "n_q": 183,
+   "dim": 49152
+  },
+  "SPICE-A-dawn-off-spad@5.0us--SPICE-A-noon-off-spad@5.0us": {
+   "AUPRC": 0.6729583159171069,
+   "R@100p": 0.12455516014234876,
+   "R@1": 0.8041237113402062,
+   "R@5": 0.8865979381443299,
+   "R@10": 0.9278350515463918,
+   "n_db": 98,
+   "n_q": 97,
+   "dim": 49152
+  }
+ },
+ "aggregates": {
+  "AUPRC": {
+   "mean": 0.49665092684960505,
+   "std_ddof0": 0.16515184535796018,
+   "std_ddof1": 0.20226887560301854,
+   "min": 0.2758342138899952,
+   "argmin": "S3LI-Etna-crater--S3LI-Etna-crater_inout"
+  },
+  "R@100p": {
+   "mean": 0.061161915787457916,
+   "std_ddof0": 0.04878452209769297,
+   "std_ddof1": 0.059748593242439106,
+   "min": 0.005888465535157603,
+   "argmin": "S3LI-Etna-crater--S3LI-Etna-crater_inout"
+  },
+  "R@1": {
+   "mean": 0.6765523688388194,
+   "std_ddof0": 0.12028964842456402,
+   "std_ddof1": 0.1473241299894821,
+   "min": 0.5153061224489796,
+   "argmin": "S3LI-Etna-crater--S3LI-Etna-crater_inout"
+  },
+  "R@5": {
+   "mean": 0.8239932727230223,
+   "std_ddof0": 0.1006578926773745,
+   "std_ddof1": 0.1232802378216994,
+   "min": 0.6819727891156463,
+   "argmin": "S3LI-Etna-crater--S3LI-Etna-crater_inout"
+  },
+  "R@10": {
+   "mean": 0.8664830505773068,
+   "std_ddof0": 0.08959608783266677,
+   "std_ddof1": 0.10973234906980897,
+   "min": 0.7397959183673469,
+   "argmin": "S3LI-Etna-crater--S3LI-Etna-crater_inout"
+  },
+  "worst_setup_by_auprc": {
+   "setup": "S3LI-Etna-crater--S3LI-Etna-crater_inout",
+   "AUPRC": 0.2758342138899952,
+   "R@100p": 0.005888465535157603,
+   "R@1": 0.5153061224489796,
+   "R@5": 0.6819727891156463,
+   "R@10": 0.7397959183673469
+  }
+ },
+ "fig6": {},
+ "time": "2026-11-06 13:32:01"
+}

@@ -1,0 +1,78 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+13:20:06 [w3] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 6
+Using cache found in /tmp/torch_home/hub/gmberton_cosplace_main
+Returning CosPlace model with backbone: ResNet50 with features dimension 2048
+13:20:32 [w3] built cosplace_r50_2048_native in 25.9s
+13:21:28 [w3] cosplace_r50_2048_native MadMax-C1: 463 imgs 56.4s (8.2 img/s)
+13:22:15 [w3] cosplace_r50_2048_native MadMax-A4: 412 imgs 46.3s (8.9 img/s)
+13:22:27 [w3] cosplace_r50_2048_native S3LI-Etna-crater: 1129 imgs 12.6s (89.8 img/s)
+13:22:34 [w3] cosplace_r50_2048_native LunarLoc-10: 183 imgs 6.8s (26.9 img/s)
+13:22:36 [w3] cosplace_r50_2048_native SPICE-A-dawn-off@2500.0us: 99 imgs 1.8s (55.8 img/s)
+13:22:37 [w3] cosplace_r50_2048_native SPICE-A-night-on@2500.0us: 97 imgs 1.6s (59.6 img/s)
+Using cache found in /tmp/torch_home/hub/gmberton_cosplace_main
+Returning CosPlace model with backbone: ResNet50 with features dimension 2048
+13:22:38 [w3] built cosplace_r50_2048_512 in 0.6s
+13:23:00 [w3] cosplace_r50_2048_512 MadMax-C1: 463 imgs 22.0s (21.0 img/s)
+13:23:20 [w3] cosplace_r50_2048_512 MadMax-A4: 412 imgs 19.7s (21.0 img/s)
+13:23:31 [w3] cosplace_r50_2048_512 S3LI-Etna-crater: 1129 imgs 11.7s (96.8 img/s)
+13:23:36 [w3] cosplace_r50_2048_512 LunarLoc-10: 183 imgs 4.7s (38.5 img/s)
+13:23:39 [w3] cosplace_r50_2048_512 SPICE-A-dawn-off@2500.0us: 99 imgs 2.8s (35.9 img/s)
+13:23:42 [w3] cosplace_r50_2048_512 SPICE-A-night-on@2500.0us: 97 imgs 2.8s (34.7 img/s)
+Using cache found in /tmp/torch_home/hub/gmberton_cosplace_main
+Returning CosPlace model with backbone: ResNet101 with features dimension 2048
+13:24:10 [w3] built cosplace_r101_2048_native in 28.0s
+13:25:28 [w3] cosplace_r101_2048_native MadMax-C1: 463 imgs 78.3s (5.9 img/s)
+13:26:37 [w3] cosplace_r101_2048_native MadMax-A4: 412 imgs 68.9s (6.0 img/s)
+13:26:55 [w3] cosplace_r101_2048_native S3LI-Etna-crater: 1129 imgs 17.7s (63.7 img/s)
+13:27:04 [w3] cosplace_r101_2048_native LunarLoc-10: 183 imgs 8.8s (20.9 img/s)
+13:27:06 [w3] cosplace_r101_2048_native SPICE-A-dawn-off@2500.0us: 99 imgs 2.3s (43.8 img/s)
+13:27:08 [w3] cosplace_r101_2048_native SPICE-A-night-on@2500.0us: 97 imgs 2.2s (43.9 img/s)
+Using cache found in /tmp/torch_home/hub/gmberton_cosplace_main
+Returning CosPlace model with backbone: ResNet152 with features dimension 2048
+13:27:59 [w3] built cosplace_r152_2048_native in 50.6s
+13:29:47 [w3] cosplace_r152_2048_native MadMax-C1: 463 imgs 108.8s (4.3 img/s)
+13:31:23 [w3] cosplace_r152_2048_native MadMax-A4: 412 imgs 95.9s (4.3 img/s)
+13:31:48 [w3] cosplace_r152_2048_native S3LI-Etna-crater: 1129 imgs 24.3s (46.5 img/s)
+13:32:00 [w3] cosplace_r152_2048_native LunarLoc-10: 183 imgs 11.9s (15.4 img/s)
+13:32:03 [w3] cosplace_r152_2048_native SPICE-A-dawn-off@2500.0us: 99 imgs 3.1s (32.2 img/s)
+13:32:06 [w3] cosplace_r152_2048_native SPICE-A-night-on@2500.0us: 97 imgs 3.0s (32.6 img/s)
+Using cache found in /tmp/torch_home/hub/gmberton_cosplace_main
+Returning CosPlace model with backbone: ResNet50 with features dimension 512
+13:32:12 [w3] built cosplace_r50_512_native in 5.9s
+13:33:05 [w3] cosplace_r50_512_native MadMax-C1: 463 imgs 53.4s (8.7 img/s)
+13:33:51 [w3] cosplace_r50_512_native MadMax-A4: 412 imgs 46.2s (8.9 img/s)
+13:34:03 [w3] cosplace_r50_512_native S3LI-Etna-crater: 1129 imgs 12.1s (93.0 img/s)
+13:34:09 [w3] cosplace_r50_512_native LunarLoc-10: 183 imgs 6.1s (29.8 img/s)
+13:34:11 [w3] cosplace_r50_512_native SPICE-A-dawn-off@2500.0us: 99 imgs 1.6s (60.4 img/s)
+13:34:13 [w3] cosplace_r50_512_native SPICE-A-night-on@2500.0us: 97 imgs 1.6s (59.0 img/s)
+Using cache found in /tmp/torch_home/hub/gmberton_cosplace_main
+Returning CosPlace model with backbone: VGG16 with features dimension 512
+13:34:19 [w3] built cosplace_vgg16_512_native in 6.2s
+13:35:37 [w3] cosplace_vgg16_512_native MadMax-C1: 463 imgs 78.3s (5.9 img/s)
+13:36:47 [w3] cosplace_vgg16_512_native MadMax-A4: 412 imgs 69.4s (5.9 img/s)
+13:37:07 [w3] cosplace_vgg16_512_native S3LI-Etna-crater: 1129 imgs 20.0s (56.5 img/s)
+13:37:16 [w3] cosplace_vgg16_512_native LunarLoc-10: 183 imgs 9.1s (20.2 img/s)
+13:37:18 [w3] cosplace_vgg16_512_native SPICE-A-dawn-off@2500.0us: 99 imgs 2.4s (41.4 img/s)
+13:37:20 [w3] cosplace_vgg16_512_native SPICE-A-night-on@2500.0us: 97 imgs 2.3s (41.9 img/s)
+13:37:24 [w3] built mixvpr_4096 in 4.0s
+13:38:30 [w3] mixvpr_4096 MadMax-C1: 463 imgs 65.8s (7.0 img/s)
+13:39:36 [w3] mixvpr_4096 MadMax-A4: 412 imgs 65.7s (6.3 img/s)
+13:39:46 [w3] mixvpr_4096 S3LI-Etna-crater: 1129 imgs 10.0s (112.4 img/s)
+13:39:54 [w3] mixvpr_4096 LunarLoc-10: 183 imgs 7.9s (23.1 img/s)
+13:39:57 [w3] mixvpr_4096 SPICE-A-dawn-off@2500.0us: 99 imgs 2.6s (37.5 img/s)
+13:39:59 [w3] mixvpr_4096 SPICE-A-night-on@2500.0us: 97 imgs 2.7s (36.2 img/s)
+13:40:03 [w3] built mixvpr_512 in 3.5s
+13:41:05 [w3] mixvpr_512 MadMax-C1: 463 imgs 62.2s (7.4 img/s)
+13:42:07 [w3] mixvpr_512 MadMax-A4: 412 imgs 61.8s (6.7 img/s)
+13:42:17 [w3] mixvpr_512 S3LI-Etna-crater: 1129 imgs 10.0s (113.1 img/s)
+13:42:25 [w3] mixvpr_512 LunarLoc-10: 183 imgs 7.8s (23.3 img/s)
+13:42:27 [w3] mixvpr_512 SPICE-A-dawn-off@2500.0us: 99 imgs 2.6s (37.8 img/s)
+13:42:30 [w3] mixvpr_512 SPICE-A-night-on@2500.0us: 97 imgs 2.6s (36.7 img/s)
+13:42:33 [w3] built mixvpr_128 in 3.5s
+13:43:36 [w3] mixvpr_128 MadMax-C1: 463 imgs 62.2s (7.4 img/s)
+13:44:37 [w3] mixvpr_128 MadMax-A4: 412 imgs 61.7s (6.7 img/s)
+13:44:47 [w3] mixvpr_128 S3LI-Etna-crater: 1129 imgs 9.9s (113.9 img/s)
+13:44:55 [w3] mixvpr_128 LunarLoc-10: 183 imgs 8.0s (22.9 img/s)
+13:44:58 [w3] mixvpr_128 SPICE-A-dawn-off@2500.0us: 99 imgs 2.7s (36.3 img/s)
+13:45:01 [w3] mixvpr_128 SPICE-A-night-on@2500.0us: 97 imgs 2.6s (36.7 img/s)

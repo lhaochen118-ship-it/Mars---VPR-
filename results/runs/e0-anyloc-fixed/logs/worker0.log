@@ -1,0 +1,36 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+13:39:57 [w0] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 1
+Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files
+Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt
+Desc dim set to 1536
+Model with domain = 'global' vocabulary loaded
+Desc dim set to 1536
+13:40:45 [w0] built anyloc_224 in 47.8s
+13:41:36 [w0] anyloc_224 MadMax-E0: 517 imgs 51.2s (10.1 img/s)
+Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files
+Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt
+Desc dim set to 1536
+Model with domain = 'global' vocabulary loaded
+Desc dim set to 1536
+13:41:57 [w0] built anyloc_322 in 21.3s
+13:43:34 [w0] anyloc_322 MadMax-E0: 517 imgs 97.1s (5.3 img/s)
+Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files
+Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt
+Desc dim set to 1536
+Model with domain = 'global' vocabulary loaded
+Desc dim set to 1536
+13:43:55 [w0] built anyloc_518 in 20.9s
+13:48:00 [w0] anyloc_518 MadMax-E0: 517 imgs 244.6s (2.1 img/s)

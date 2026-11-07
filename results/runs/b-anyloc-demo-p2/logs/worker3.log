@@ -1,0 +1,19 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+12:52:42 [w3] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 2
+Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files
+Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt
+Desc dim set to 1536
+Model with domain = 'global' vocabulary loaded
+Desc dim set to 1536
+13:03:14 [w3] built anyloc_demo1024 in 632.6s
+13:14:53 [w3] anyloc_demo1024 MadMax-A4: 412 imgs 698.3s (0.6 img/s)
+13:22:09 [w3] anyloc_demo1024 MadMax-G0: 258 imgs 436.7s (0.6 img/s)

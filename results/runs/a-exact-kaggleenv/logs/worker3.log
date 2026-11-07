@@ -1,0 +1,28 @@
+13:09:55 [w3] torch 2.11.0+cu130 cuda 13.0 dev NVIDIA L4 trajectories 7
+Using cache found in /tmp/torch_home/hub/amaralibey_bag-of-queries_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+13:11:19 [w3] built boq in 83.7s
+13:11:45 [w3] boq MadMax-E0: 517 imgs 26.4s (19.6 img/s)
+13:12:11 [w3] boq MadMax-E1: 507 imgs 26.0s (19.5 img/s)
+13:12:20 [w3] boq S3LI-Etna-traverse_1: 485 imgs 8.3s (58.2 img/s)
+13:12:36 [w3] boq MadMax-G2: 290 imgs 15.7s (18.4 img/s)
+13:12:50 [w3] boq MadMax-A2: 180 imgs 14.2s (12.7 img/s)
+13:13:03 [w3] boq MadMax-F0: 117 imgs 13.2s (8.9 img/s)
+13:13:06 [w3] boq SPICE-A-night-on@2500.0us: 97 imgs 2.7s (35.8 img/s)
+Using cache found in /tmp/torch_home/hub/gmberton_MegaLoc_main
+13:13:07 [w3] hf plain: gberton/MegaLoc/config.json -> /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/config.json
+13:13:07 [w3] hf plain: gberton/MegaLoc/model.safetensors -> /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/model.safetensors
+13:14:09 [w3] built megaloc in 63.1s
+13:14:37 [w3] megaloc MadMax-E0: 517 imgs 28.5s (18.2 img/s)
+13:15:05 [w3] megaloc MadMax-E1: 507 imgs 27.5s (18.4 img/s)
+13:15:26 [w3] megaloc S3LI-Etna-traverse_1: 485 imgs 21.4s (22.7 img/s)
+13:15:44 [w3] megaloc MadMax-G2: 290 imgs 18.1s (16.0 img/s)
+13:15:58 [w3] megaloc MadMax-A2: 180 imgs 13.7s (13.2 img/s)
+13:16:09 [w3] megaloc MadMax-F0: 117 imgs 10.9s (10.7 img/s)
+13:16:14 [w3] megaloc SPICE-A-night-on@2500.0us: 97 imgs 5.1s (19.1 img/s)

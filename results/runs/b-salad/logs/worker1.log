@@ -1,0 +1,60 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+13:11:51 [w1] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 7
+Using cache found in /tmp/torch_home/hub/serizba_salad_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+13:13:02 [w1] built salad_322 in 70.8s
+13:13:42 [w1] salad_322 MadMax-E1: 507 imgs 40.1s (12.6 img/s)
+13:14:17 [w1] salad_322 MadMax-G0: 258 imgs 35.4s (7.3 img/s)
+13:14:50 [w1] salad_322 MadMax-A2: 180 imgs 32.8s (5.5 img/s)
+13:15:05 [w1] salad_322 S3LI-Etna-loops: 780 imgs 14.9s (52.2 img/s)
+13:15:12 [w1] salad_322 LunarLoc-9: 119 imgs 6.5s (18.2 img/s)
+13:15:15 [w1] salad_322 SPICE-A-dawn-off-spad@5.0us: 98 imgs 3.2s (30.8 img/s)
+13:15:18 [w1] salad_322 SPICE-A-noon-off-spad@5.0us: 97 imgs 3.2s (30.4 img/s)
+Using cache found in /tmp/torch_home/hub/serizba_salad_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+13:15:20 [w1] built salad_322_official in 1.9s
+13:15:48 [w1] salad_322_official MadMax-E1: 507 imgs 27.8s (18.3 img/s)
+13:16:11 [w1] salad_322_official MadMax-G0: 258 imgs 23.7s (10.9 img/s)
+13:16:34 [w1] salad_322_official MadMax-A2: 180 imgs 22.7s (7.9 img/s)
+13:16:49 [w1] salad_322_official S3LI-Etna-loops: 780 imgs 14.5s (53.7 img/s)
+13:16:54 [w1] salad_322_official LunarLoc-9: 119 imgs 5.2s (22.9 img/s)
+13:16:57 [w1] salad_322_official SPICE-A-dawn-off-spad@5.0us: 98 imgs 2.9s (33.4 img/s)
+13:17:00 [w1] salad_322_official SPICE-A-noon-off-spad@5.0us: 97 imgs 3.0s (32.0 img/s)
+Using cache found in /tmp/torch_home/hub/serizba_salad_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+13:17:02 [w1] built salad_224 in 1.9s
+13:17:31 [w1] salad_224 MadMax-E1: 507 imgs 29.4s (17.3 img/s)
+13:17:59 [w1] salad_224 MadMax-G0: 258 imgs 27.5s (9.4 img/s)
+13:18:26 [w1] salad_224 MadMax-A2: 180 imgs 26.9s (6.7 img/s)
+13:18:34 [w1] salad_224 S3LI-Etna-loops: 780 imgs 8.4s (92.7 img/s)
+13:18:39 [w1] salad_224 LunarLoc-9: 119 imgs 5.4s (22.0 img/s)
+13:18:42 [w1] salad_224 SPICE-A-dawn-off-spad@5.0us: 98 imgs 2.2s (44.0 img/s)
+13:18:44 [w1] salad_224 SPICE-A-noon-off-spad@5.0us: 97 imgs 2.3s (42.9 img/s)
+Using cache found in /tmp/torch_home/hub/serizba_salad_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+13:18:46 [w1] built salad_518 in 1.9s
+13:19:27 [w1] OOM -> sub-batch 64
+13:19:44 [w1] salad_518 MadMax-E1: 507 imgs 58.2s (8.7 img/s)
+13:20:24 [w1] salad_518 MadMax-G0: 258 imgs 40.0s (6.5 img/s)
+13:21:00 [w1] salad_518 MadMax-A2: 180 imgs 36.5s (4.9 img/s)
+13:21:39 [w1] salad_518 S3LI-Etna-loops: 780 imgs 38.9s (20.1 img/s)
+13:21:50 [w1] salad_518 LunarLoc-9: 119 imgs 10.6s (11.2 img/s)
+13:21:57 [w1] salad_518 SPICE-A-dawn-off-spad@5.0us: 98 imgs 6.5s (15.0 img/s)
+13:22:03 [w1] salad_518 SPICE-A-noon-off-spad@5.0us: 97 imgs 6.6s (14.7 img/s)
+Using cache found in /tmp/torch_home/hub/serizba_salad_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+13:22:05 [w1] built salad_native14 in 1.8s
+13:37:21 [w1] salad_native14 MadMax-E1: 507 imgs 915.9s (0.6 img/s)
+13:45:07 [w1] salad_native14 MadMax-G0: 258 imgs 465.9s (0.6 img/s)
+13:50:33 [w1] salad_native14 MadMax-A2: 180 imgs 326.5s (0.6 img/s)
+13:51:25 [w1] salad_native14 S3LI-Etna-loops: 780 imgs 51.9s (15.0 img/s)
+13:51:54 [w1] salad_native14 LunarLoc-9: 119 imgs 29.0s (4.1 img/s)
+13:51:59 [w1] salad_native14 SPICE-A-dawn-off-spad@5.0us: 98 imgs 4.8s (20.3 img/s)
+13:52:04 [w1] salad_native14 SPICE-A-noon-off-spad@5.0us: 97 imgs 4.7s (20.7 img/s)

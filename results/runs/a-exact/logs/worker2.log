@@ -1,0 +1,51 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+13:10:35 [w2] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 7
+Using cache found in /tmp/torch_home/hub/amaralibey_bag-of-queries_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+13:12:08 [w2] built boq in 92.9s
+13:12:23 [w2] boq S3LI-Etna-loops: 780 imgs 14.3s (54.7 img/s)
+13:12:49 [w2] boq MadMax-C0: 502 imgs 26.4s (19.0 img/s)
+13:13:09 [w2] boq MadMax-A4: 412 imgs 19.6s (21.0 img/s)
+13:13:14 [w2] boq LunarLoc-10: 183 imgs 4.9s (37.4 img/s)
+13:13:17 [w2] boq LunarLoc-9: 119 imgs 3.9s (30.7 img/s)
+13:13:20 [w2] boq SPICE-A-dawn-off@2500.0us: 99 imgs 2.8s (35.8 img/s)
+13:13:22 [w2] boq SPICE-A-night-on-spad@5.0us: 97 imgs 2.3s (41.8 img/s)
+Using cache found in /tmp/torch_home/hub/gmberton_MegaLoc_main
+13:13:24 [w2] hf plain: gberton/MegaLoc/config.json -> /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/config.json
+13:13:24 [w2] hf plain: gberton/MegaLoc/model.safetensors -> /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/model.safetensors
+13:14:58 [w2] built megaloc in 95.2s
+13:15:33 [w2] megaloc S3LI-Etna-loops: 780 imgs 35.3s (22.1 img/s)
+13:16:02 [w2] megaloc MadMax-C0: 502 imgs 28.9s (17.4 img/s)
+13:16:27 [w2] megaloc MadMax-A4: 412 imgs 24.8s (16.6 img/s)
+13:16:36 [w2] megaloc LunarLoc-10: 183 imgs 9.6s (19.0 img/s)
+13:16:43 [w2] megaloc LunarLoc-9: 119 imgs 6.7s (17.7 img/s)
+13:16:48 [w2] megaloc SPICE-A-dawn-off@2500.0us: 99 imgs 5.4s (18.4 img/s)
+13:16:54 [w2] megaloc SPICE-A-night-on-spad@5.0us: 97 imgs 5.1s (19.0 img/s)
+Using cache found in /tmp/torch_home/hub/amaralibey_bag-of-queries_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+13:16:56 [w2] built boq_bs256 in 2.0s
+13:17:14 [w2] boq_bs256 S3LI-Etna-loops: 780 imgs 18.3s (42.5 img/s)
+13:18:17 [w2] boq_bs256 MadMax-C0: 502 imgs 63.3s (7.9 img/s)
+13:19:19 [w2] boq_bs256 MadMax-A4: 412 imgs 61.5s (6.7 img/s)
+13:19:29 [w2] boq_bs256 LunarLoc-10: 183 imgs 10.2s (18.0 img/s)
+13:19:36 [w2] boq_bs256 LunarLoc-9: 119 imgs 6.7s (17.7 img/s)
+13:19:40 [w2] boq_bs256 SPICE-A-dawn-off@2500.0us: 99 imgs 3.9s (25.4 img/s)
+13:19:43 [w2] boq_bs256 SPICE-A-night-on-spad@5.0us: 97 imgs 3.2s (29.9 img/s)
+Using cache found in /tmp/torch_home/hub/gmberton_MegaLoc_main
+13:19:45 [w2] hf plain: gberton/MegaLoc/config.json -> /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/config.json
+13:19:45 [w2] hf plain: gberton/MegaLoc/model.safetensors -> /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/model.safetensors
+13:19:45 [w2] built megaloc_bs128 in 2.2s
+13:20:24 [w2] megaloc_bs128 S3LI-Etna-loops: 780 imgs 39.0s (20.0 img/s)
+13:21:17 [w2] megaloc_bs128 MadMax-C0: 502 imgs 53.4s (9.4 img/s)
+13:22:07 [w2] megaloc_bs128 MadMax-A4: 412 imgs 49.8s (8.3 img/s)
+13:22:22 [w2] megaloc_bs128 LunarLoc-10: 183 imgs 14.3s (12.8 img/s)
+13:22:32 [w2] megaloc_bs128 LunarLoc-9: 119 imgs 10.7s (11.1 img/s)
+13:22:40 [w2] megaloc_bs128 SPICE-A-dawn-off@2500.0us: 99 imgs 7.3s (13.5 img/s)
+13:22:46 [w2] megaloc_bs128 SPICE-A-night-on-spad@5.0us: 97 imgs 6.6s (14.7 img/s)

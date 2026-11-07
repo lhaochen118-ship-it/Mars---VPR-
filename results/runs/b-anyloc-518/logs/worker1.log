@@ -1,0 +1,23 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+12:48:36 [w1] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 6
+Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files
+Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt
+Desc dim set to 1536
+Model with domain = 'global' vocabulary loaded
+Desc dim set to 1536
+13:02:21 [w1] built anyloc_518 in 825.1s
+13:11:10 [w1] anyloc_518 S3LI-Etna-crater: 1129 imgs 529.1s (2.1 img/s)
+13:14:53 [w1] anyloc_518 MadMax-C1: 463 imgs 223.6s (2.1 img/s)
+13:17:01 [w1] anyloc_518 MadMax-G0: 258 imgs 127.5s (2.0 img/s)
+13:18:28 [w1] anyloc_518 MadMax-A0: 171 imgs 87.3s (2.0 img/s)
+13:19:16 [w1] anyloc_518 SPICE-A-noon-off@2500.0us: 99 imgs 47.5s (2.1 img/s)
+13:20:02 [w1] anyloc_518 SPICE-A-noon-off-spad@5.0us: 97 imgs 46.4s (2.1 img/s)

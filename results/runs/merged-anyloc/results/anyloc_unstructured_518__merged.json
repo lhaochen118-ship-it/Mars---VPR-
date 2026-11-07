@@ -1,0 +1,282 @@
+{
+ "name": "anyloc_unstructured_518",
+ "tag": "merged",
+ "complete": true,
+ "missing": [],
+ "per_setup": {
+  "MadMax-A0--MadMax-A2": {
+   "AUPRC": 0.7472790587718008,
+   "R@100p": 0.05950342465753425,
+   "R@1": 0.9277777777777778,
+   "R@5": 0.9777777777777777,
+   "R@10": 0.9944444444444445,
+   "n_db": 171,
+   "n_q": 180,
+   "dim": 49152
+  },
+  "MadMax-A2--MadMax-A4": {
+   "AUPRC": 0.35077713651199716,
+   "R@100p": 0.05303030303030303,
+   "R@1": 0.4098939929328622,
+   "R@5": 0.6501766784452296,
+   "R@10": 0.7667844522968198,
+   "n_db": 180,
+   "n_q": 412,
+   "dim": 49152
+  },
+  "MadMax-C0--MadMax-C1": {
+   "AUPRC": 0.39135030384805075,
+   "R@100p": 0.0420231504781077,
+   "R@1": 0.7365010799136069,
+   "R@5": 0.8855291576673866,
+   "R@10": 0.9438444924406048,
+   "n_db": 502,
+   "n_q": 463,
+   "dim": 49152
+  },
+  "MadMax-E0--MadMax-E1": {
+   "AUPRC": 0.36867904880960456,
+   "R@100p": 0.03865336658354115,
+   "R@1": 0.7208480565371025,
+   "R@5": 0.8303886925795053,
+   "R@10": 0.8657243816254417,
+   "n_db": 517,
+   "n_q": 507,
+   "dim": 49152
+  },
+  "MadMax-F0--MadMax-F3": {
+   "AUPRC": 0.6523361541377426,
+   "R@100p": 0.09877551020408164,
+   "R@1": 0.8253275109170306,
+   "R@5": 0.9519650655021834,
+   "R@10": 0.9912663755458515,
+   "n_db": 117,
+   "n_q": 229,
+   "dim": 49152
+  },
+  "MadMax-G0--MadMax-G2": {
+   "AUPRC": 0.5300142137132544,
+   "R@100p": 0.022116903633491312,
+   "R@1": 0.7626262626262627,
+   "R@5": 0.8333333333333334,
+   "R@10": 0.8737373737373737,
+   "n_db": 258,
+   "n_q": 290,
+   "dim": 49152
+  },
+  "S3LI-Etna-crater--S3LI-Etna-crater_inout": {
+   "AUPRC": 0.23442795316311127,
+   "R@100p": 0.014547973675095255,
+   "R@1": 0.4846938775510204,
+   "R@5": 0.6156462585034014,
+   "R@10": 0.6751700680272109,
+   "n_db": 1129,
+   "n_q": 1683,
+   "dim": 49152
+  },
+  "S3LI-Etna-traverse_1--S3LI-Etna-loops": {
+   "AUPRC": 0.06523542429518699,
+   "R@100p": 0.0,
+   "R@1": 0.35018050541516244,
+   "R@5": 0.628158844765343,
+   "R@10": 0.703971119133574,
+   "n_db": 485,
+   "n_q": 780,
+   "dim": 49152
+  },
+  "LunarLoc-9--LunarLoc-10": {
+   "AUPRC": 0.4002233406403862,
+   "R@100p": 0.0171606864274571,
+   "R@1": 0.5568181818181818,
+   "R@5": 0.8693181818181818,
+   "R@10": 0.9488636363636364,
+   "n_db": 119,
+   "n_q": 183,
+   "dim": 49152
+  },
+  "LunarLoc-15--LunarLoc-17": {
+   "AUPRC": 0.3591375527779038,
+   "R@100p": 0.08196721311475409,
+   "R@1": 0.3125,
+   "R@5": 0.53125,
+   "R@10": 0.625,
+   "n_db": 118,
+   "n_q": 54,
+   "dim": 49152
+  },
+  "SPICE-A-dawn-off-spad@5.0us--SPICE-A-night-on-spad@5.0us": {
+   "AUPRC": 0.18024040241756306,
+   "R@100p": 0.02586206896551724,
+   "R@1": 0.3263157894736842,
+   "R@5": 0.5157894736842106,
+   "R@10": 0.5894736842105263,
+   "n_db": 98,
+   "n_q": 97,
+   "dim": 49152
+  },
+  "SPICE-A-dawn-off-spad@5.0us--SPICE-A-noon-off-spad@5.0us": {
+   "AUPRC": 0.6534137551233852,
+   "R@100p": 0.12633451957295375,
+   "R@1": 0.8350515463917526,
+   "R@5": 0.9072164948453608,
+   "R@10": 0.9381443298969072,
+   "n_db": 98,
+   "n_q": 97,
+   "dim": 49152
+  },
+  "SPICE-A-noon-off-spad@5.0us--SPICE-A-night-on-spad@5.0us": {
+   "AUPRC": 0.2568801784392177,
+   "R@100p": 0.05,
+   "R@1": 0.22580645161290322,
+   "R@5": 0.5053763440860215,
+   "R@10": 0.5806451612903226,
+   "n_db": 97,
+   "n_q": 97,
+   "dim": 49152
+  },
+  "SPICE-A-dawn-off@2500.0us--SPICE-A-night-on@2500.0us": {
+   "AUPRC": 0.20330158922610347,
+   "R@100p": 0.004201680672268907,
+   "R@1": 0.32978723404255317,
+   "R@5": 0.5212765957446809,
+   "R@10": 0.6382978723404256,
+   "n_db": 99,
+   "n_q": 97,
+   "dim": 49152
+  },
+  "SPICE-A-dawn-off@2500.0us--SPICE-A-noon-off@2500.0us": {
+   "AUPRC": 0.6104032891529901,
+   "R@100p": 0.07719298245614035,
+   "R@1": 0.7272727272727273,
+   "R@5": 0.898989898989899,
+   "R@10": 0.9191919191919192,
+   "n_db": 99,
+   "n_q": 99,
+   "dim": 49152
+  },
+  "SPICE-A-noon-off@2500.0us--SPICE-A-night-on@2500.0us": {
+   "AUPRC": 0.2860278910930478,
+   "R@100p": 0.05905511811023622,
+   "R@1": 0.2916666666666667,
+   "R@5": 0.5,
+   "R@10": 0.5729166666666666,
+   "n_db": 99,
+   "n_q": 97,
+   "dim": 49152
+  }
+ },
+ "aggregates": {
+  "AUPRC": {
+   "mean": 0.39310795575758417,
+   "std_ddof0": 0.18940621679987205,
+   "std_ddof1": 0.19561789955574824,
+   "min": 0.06523542429518699,
+   "argmin": "S3LI-Etna-traverse_1--S3LI-Etna-loops"
+  },
+  "R@100p": {
+   "mean": 0.04815155634884263,
+   "std_ddof0": 0.03407659671290509,
+   "std_ddof1": 0.03519415775053542,
+   "min": 0.0,
+   "argmin": "S3LI-Etna-traverse_1--S3LI-Etna-loops"
+  },
+  "R@1": {
+   "mean": 0.551441728809331,
+   "std_ddof0": 0.2278967255394193,
+   "std_ddof1": 0.23537072604516623,
+   "min": 0.22580645161290322,
+   "argmin": "SPICE-A-noon-off-spad@5.0us--SPICE-A-night-on-spad@5.0us"
+  },
+  "R@5": {
+   "mean": 0.7263870498589071,
+   "std_ddof0": 0.1762279059020747,
+   "std_ddof1": 0.1820073985855315,
+   "min": 0.5,
+   "argmin": "SPICE-A-noon-off@2500.0us--SPICE-A-night-on@2500.0us"
+  },
+  "R@10": {
+   "mean": 0.7892172485757328,
+   "std_ddof0": 0.15514406467093855,
+   "std_ddof1": 0.16023210099559237,
+   "min": 0.5729166666666666,
+   "argmin": "SPICE-A-noon-off@2500.0us--SPICE-A-night-on@2500.0us"
+  },
+  "worst_setup_by_auprc": {
+   "setup": "S3LI-Etna-traverse_1--S3LI-Etna-loops",
+   "AUPRC": 0.06523542429518699,
+   "R@100p": 0.0,
+   "R@1": 0.35018050541516244,
+   "R@5": 0.628158844765343,
+   "R@10": 0.703971119133574
+  }
+ },
+ "fig6": {
+  "MadMax-A0--MadMax-A2": {
+   "0-based": {
+    "top1_db": 68,
+    "top1_sim": 0.5304725170135498,
+    "top1_in_hard_gt": false,
+    "best_correct_sim": 0.4261367619037628,
+    "best_correct_db": 63
+   },
+   "1-based": {
+    "top1_db": 63,
+    "top1_sim": 0.490462988615036,
+    "top1_in_hard_gt": true,
+    "best_correct_sim": 0.490462988615036,
+    "best_correct_db": 63
+   }
+  },
+  "S3LI-Etna-traverse_1--S3LI-Etna-loops": {
+   "0-based": {
+    "top1_db": 436,
+    "top1_sim": 0.27947190403938293,
+    "top1_in_hard_gt": false,
+    "best_correct_sim": -0.021918678656220436,
+    "best_correct_db": 215
+   },
+   "1-based": {
+    "top1_db": 20,
+    "top1_sim": 0.27219828963279724,
+    "top1_in_hard_gt": false,
+    "best_correct_sim": -0.08628814667463303,
+    "best_correct_db": 214
+   }
+  },
+  "SPICE-A-dawn-off-spad@5.0us--SPICE-A-night-on-spad@5.0us": {
+   "0-based": {
+    "top1_db": 24,
+    "top1_sim": 0.1264890879392624,
+    "top1_in_hard_gt": false,
+    "best_correct_sim": 0.002590519143268466,
+    "best_correct_db": 95
+   },
+   "1-based": {
+    "top1_db": 13,
+    "top1_sim": 0.10793304443359375,
+    "top1_in_hard_gt": false,
+    "best_correct_sim": null,
+    "best_correct_db": null
+   }
+  }
+ },
+ "merged_from": {
+  "MadMax-A0--MadMax-A2": "anyloc_unstructured_518__b-anyloc-518.json",
+  "MadMax-A2--MadMax-A4": "anyloc_unstructured_518__b-anyloc-518.json",
+  "MadMax-C0--MadMax-C1": "anyloc_unstructured_518__b-anyloc-518.json",
+  "MadMax-F0--MadMax-F3": "anyloc_unstructured_518__b-anyloc-518.json",
+  "MadMax-G0--MadMax-G2": "anyloc_unstructured_518__b-anyloc-518.json",
+  "S3LI-Etna-crater--S3LI-Etna-crater_inout": "anyloc_unstructured_518__b-anyloc-518.json",
+  "S3LI-Etna-traverse_1--S3LI-Etna-loops": "anyloc_unstructured_518__b-anyloc-518.json",
+  "LunarLoc-9--LunarLoc-10": "anyloc_unstructured_518__b-anyloc-518.json",
+  "LunarLoc-15--LunarLoc-17": "anyloc_unstructured_518__b-anyloc-518.json",
+  "SPICE-A-dawn-off-spad@5.0us--SPICE-A-night-on-spad@5.0us": "anyloc_unstructured_518__b-anyloc-518.json",
+  "SPICE-A-dawn-off@2500.0us--SPICE-A-night-on@2500.0us": "anyloc_unstructured_518__b-anyloc-518.json",
+  "SPICE-A-dawn-off-spad@5.0us--SPICE-A-noon-off-spad@5.0us": "anyloc_unstructured_518__b-anyloc-518.json",
+  "SPICE-A-dawn-off@2500.0us--SPICE-A-noon-off@2500.0us": "anyloc_unstructured_518__b-anyloc-518.json",
+  "SPICE-A-noon-off-spad@5.0us--SPICE-A-night-on-spad@5.0us": "anyloc_unstructured_518__b-anyloc-518.json",
+  "SPICE-A-noon-off@2500.0us--SPICE-A-night-on@2500.0us": "anyloc_unstructured_518__b-anyloc-518.json",
+  "MadMax-E0--MadMax-E1": "anyloc_unstructured_518__e0e1.json"
+ },
+ "time": "2026-11-07 06:00:28"
+}

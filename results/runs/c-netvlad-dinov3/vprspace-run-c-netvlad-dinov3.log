@@ -1,0 +1,378 @@
+[{"stream_name":"stderr","time":0.830573434,"data":"/kaggle/src/script.py:23: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.\n"}
+,{"stream_name":"stderr","time":0.83062034,"data":"  tarfile.open(fileobj=io.BytesIO(base64.b64decode(CODE_B64))).extractall(code)\n"}
+,{"stream_name":"stdout","time":0.897197834,"data":"13:30:32 [+     0s] spec {\"session\": \"c-netvlad-dinov3\", \"env\": \"pinned\", \"configs\": [\"netvlad_4096_native\", \"netvlad_32768_native\", \"netvlad_4096_max640\", \"dinov3_s16_224\", \"dinov3_b16_224\", \"dinov3_b16_512\", \"dinov3_l16_224\", \"dinov3_l16_512\"], \"trajectories\": null, \"pixel_cost\": true}\n"}
+,{"stream_name":"stdout","time":5.143271537,"data":"13:30:36 [+     4s] input tree:\n"}
+,{"stream_name":"stdout","time":5.143294425,"data":"/kaggle/input\n"}
+,{"stream_name":"stdout","time":5.143297885,"data":"/kaggle/input/notebooks\n"}
+,{"stream_name":"stdout","time":5.143300458,"data":"/kaggle/input/notebooks/namhunhh\n"}
+,{"stream_name":"stdout","time":5.143303118,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-extra\n"}
+,{"stream_name":"stdout","time":5.143308511,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-extra/extra\n"}
+,{"stream_name":"stdout","time":5.143311483,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-extra/extra/VPR-methods-evaluation\n"}
+,{"stream_name":"stdout","time":5.143314314,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-extra/extra/mixvpr\n"}
+,{"stream_name":"stdout","time":5.143317099,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-extra/hf_home\n"}
+,{"stream_name":"stdout","time":5.143319695,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-extra/hf_home/hub\n"}
+,{"stream_name":"stdout","time":5.14332228,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-extra/hf_home/xet\n"}
+,{"stream_name":"stdout","time":5.143324913,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-extra/torch_home\n"}
+,{"stream_name":"stdout","time":5.143327469,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-extra/torch_home/hub\n"}
+,{"stream_name":"stdout","time":5.14333016,"data":"/kaggle/input/notebooks/namhunhh/vprspace-data-a\n"}
+,{"stream_name":"stdout","time":5.143332726,"data":"/kaggle/input/notebooks/namhunhh/vprspace-data-b\n"}
+,{"stream_name":"stdout","time":5.143335357,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-core\n"}
+,{"stream_name":"stdout","time":5.14333791,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-core/hf_home\n"}
+,{"stream_name":"stdout","time":5.143340463,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-core/hf_home/hub\n"}
+,{"stream_name":"stdout","time":5.143343011,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-core/hf_home/xet\n"}
+,{"stream_name":"stdout","time":5.143345646,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-core/torch_home\n"}
+,{"stream_name":"stdout","time":5.143348226,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-core/torch_home/hub\n"}
+,{"stream_name":"stdout","time":5.143350921,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-core/wheels\n"}
+,{"stream_name":"stdout","time":5.143353742,"data":"/kaggle/input/vprspace-deps-hf\n"}
+,{"stream_name":"stdout","time":5.143356296,"data":"/kaggle/input/vprspace-deps-hf/hf_plain\n"}
+,{"stream_name":"stdout","time":5.143358836,"data":"/kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc\n"}
+,{"stream_name":"stdout","time":5.143361392,"data":"/kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_base_patch16_dinov3.lvd1689m\n"}
+,{"stream_name":"stdout","time":5.143364049,"data":"/kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_large_patch16_dinov3.lvd1689m\n"}
+,{"stream_name":"stdout","time":5.143375615,"data":"/kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_small_patch16_dinov3.lvd1689m\n"}
+,{"stream_name":"stdout","time":5.14337786,"data":"/kaggle/input/competitions\n"}
+,{"stream_name":"stdout","time":5.143379891,"data":"/kaggle/input/competitions/gemma-4-developer-agent\n"}
+,{"stream_name":"stdout","time":5.143381858,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission\n"}
+,{"stream_name":"stdout","time":5.14338387,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/configs\n"}
+,{"stream_name":"stdout","time":5.143385835,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/prompts\n"}
+,{"stream_name":"stdout","time":5.143387809,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/sub_agents\n"}
+,{"stream_name":"stdout","time":5.143389797,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters\n"}
+,{"stream_name":"stdout","time":5.143393153,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters/tool_lora\n"}
+,{"stream_name":"stdout","time":5.143395169,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters/main_lora\n"}
+,{"stream_name":"stdout","time":5.143397251,"data":"/kaggle/input/competitions/gemma-4-developer-agent/docker\n"}
+,{"stream_name":"stdout","time":5.143399252,"data":"/kaggle/input/competitions/gemma-4-developer-agent/snapshots\n"}
+,{"stream_name":"stdout","time":5.14340121,"data":"/kaggle/input/competitions/gemma-4-developer-agent/wheels\n"}
+,{"stream_name":"stdout","time":5.143403131,"data":"/kaggle/input/competitions/gemma-4-developer-agent/graphs\n"}
+,{"stream_name":"stdout","time":5.143405028,"data":"/kaggle/input/competitions/gemma-4-developer-agent/embeddings\n"}
+,{"stream_name":"stdout","time":5.143406982,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sandbox\n"}
+,{"stream_name":"stdout","time":5.14340896,"data":"\n"}
+,{"stream_name":"stdout","time":8.995953255,"data":"13:30:40 [+     8s] $ cp -rs --remove-destination /kaggle/input/notebooks/namhunhh/vprspace-deps-core/torch_home/. /tmp/torch_home/\n"}
+,{"stream_name":"stdout","time":9.234356161000001,"data":"13:30:40 [+     8s] $ cp -rs --remove-destination /kaggle/input/notebooks/namhunhh/vprspace-deps-extra/torch_home/. /tmp/torch_home/\n"}
+,{"stream_name":"stdout","time":12.656104666,"data":"13:30:44 [+    12s] $ cp -rs --remove-destination /kaggle/input/notebooks/namhunhh/vprspace-deps-core/hf_home/. /tmp/hf_home/\n"}
+,{"stream_name":"stdout","time":14.088834095,"data":"13:30:45 [+    13s] $ cp -rs --remove-destination /kaggle/input/notebooks/namhunhh/vprspace-deps-extra/hf_home/. /tmp/hf_home/\n"}
+,{"stream_name":"stdout","time":26.933043253,"data":"13:30:58 [+    26s] wheels: /kaggle/input/notebooks/namhunhh/vprspace-deps-core/wheels req: /kaggle/input/notebooks/namhunhh/vprspace-deps-core/requirements_pinned.txt\n"}
+,{"stream_name":"stdout","time":26.933069422,"data":"13:30:58 [+    26s] $ /usr/bin/python3 -m venv /tmp/vprenv\n"}
+,{"stream_name":"stderr","time":27.073427411,"data":"Error: Command '['/tmp/vprenv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":27.08595925,"data":"13:30:58 [+    26s] $ /usr/bin/python3 -m venv --without-pip /tmp/vprenv\n"}
+,{"stream_name":"stdout","time":27.173019474,"data":"13:30:58 [+    26s] $ /usr/bin/python3 -m pip --python /tmp/vprenv/bin/python install -q --no-index --find-links /kaggle/input/notebooks/namhunhh/vprspace-deps-core/wheels -r /kaggle/input/notebooks/namhunhh/vprspace-deps-core/requirements_pinned.txt\n"}
+,{"stream_name":"stderr","time":27.650927932,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":27.650948263,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":152.441737373,"data":"13:33:03 [+   152s] $ /usr/bin/python3 -m pip --python /tmp/vprenv/bin/python install -q --no-index --no-deps --find-links /kaggle/input/notebooks/namhunhh/vprspace-deps-core/wheels pytorch-lightning lightning-utilities torchmetrics fast-pytorch-kmeans timm psutil pytorch-metric-learning\n"}
+,{"stream_name":"stderr","time":152.679881449,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":152.679905397,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":157.361743073,"data":"13:33:08 [+   157s] data root /tmp/vprdata/vpr-space-v0 extracted\n"}
+,{"stream_name":"stdout","time":157.42993726,"data":"13:33:08 [+   157s] 4 GPUs, images per GPU [3436.179328, 3447.08928, 3426.137536, 3431.018624]\n"}
+,{"stream_name":"stdout","time":161.625816768,"data":"13:33:13 [+   161s] hf_plain dirs: /kaggle/input/vprspace-deps-hf/hf_plain\n"}
+,{"stream_name":"stdout","time":1802.058128656,"data":"14:00:33 [+  1801s] workers exit codes [0, 0, 0, 0]\n"}
+,{"stream_name":"stdout","time":1802.05826467,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":1802.0582827,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":1802.058286699,"data":"13:33:17 [w0] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 6\n"}
+,{"stream_name":"stdout","time":1802.058289654,"data":"13:33:50 [w0] built netvlad_4096_native in 32.3s\n"}
+,{"stream_name":"stdout","time":1802.05829248,"data":"13:34:01 [w0] OOM -\u003e sub-batch 4\n"}
+,{"stream_name":"stdout","time":1802.058295522,"data":"13:35:44 [w0] netvlad_4096_native MadMax-E0: 517 imgs 114.8s (4.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058298211,"data":"13:36:33 [w0] netvlad_4096_native MadMax-F3: 229 imgs 48.6s (4.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058300983,"data":"13:37:09 [w0] netvlad_4096_native S3LI-Etna-crater_inout: 1683 imgs 36.2s (46.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058303804,"data":"13:37:36 [w0] netvlad_4096_native MadMax-F0: 117 imgs 26.7s (4.4 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058306443,"data":"13:37:41 [w0] netvlad_4096_native LunarLoc-17: 54 imgs 5.3s (10.2 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058309101,"data":"13:37:43 [w0] netvlad_4096_native SPICE-A-night-on-spad@5.0us: 97 imgs 2.0s (49.0 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058311699,"data":"13:37:49 [w0] built netvlad_32768_native in 6.1s\n"}
+,{"stream_name":"stdout","time":1802.058314186,"data":"13:37:55 [w0] OOM -\u003e sub-batch 4\n"}
+,{"stream_name":"stdout","time":1802.058316717,"data":"13:39:39 [w0] netvlad_32768_native MadMax-E0: 517 imgs 109.3s (4.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058319411,"data":"13:40:28 [w0] netvlad_32768_native MadMax-F3: 229 imgs 49.0s (4.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058322068,"data":"13:41:03 [w0] netvlad_32768_native S3LI-Etna-crater_inout: 1683 imgs 35.1s (48.0 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058324783,"data":"13:41:29 [w0] netvlad_32768_native MadMax-F0: 117 imgs 26.6s (4.4 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058327357,"data":"13:41:34 [w0] netvlad_32768_native LunarLoc-17: 54 imgs 5.0s (10.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058329984,"data":"13:41:36 [w0] netvlad_32768_native SPICE-A-night-on-spad@5.0us: 97 imgs 1.8s (52.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058342658,"data":"13:41:45 [w0] built netvlad_4096_max640 in 9.0s\n"}
+,{"stream_name":"stdout","time":1802.058344784,"data":"13:42:10 [w0] netvlad_4096_max640 MadMax-E0: 517 imgs 24.8s (20.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058346692,"data":"13:42:23 [w0] netvlad_4096_max640 MadMax-F3: 229 imgs 12.5s (18.3 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058348572,"data":"13:42:54 [w0] netvlad_4096_max640 S3LI-Etna-crater_inout: 1683 imgs 31.8s (52.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058352552,"data":"13:43:05 [w0] netvlad_4096_max640 MadMax-F0: 117 imgs 10.4s (11.2 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058354533,"data":"13:43:09 [w0] netvlad_4096_max640 LunarLoc-17: 54 imgs 3.8s (14.3 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058356483,"data":"13:43:11 [w0] netvlad_4096_max640 SPICE-A-night-on-spad@5.0us: 97 imgs 2.1s (45.4 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058358505,"data":"13:43:12 [w0] hf plain: timm/vit_small_patch16_dinov3.lvd1689m/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_small_patch16_dinov3.lvd1689m/model.safetensors\n"}
+,{"stream_name":"stdout","time":1802.058362804,"data":"13:43:12 [w0] dinov3: RoPE periods truncated to bfloat16 (official behaviour)\n"}
+,{"stream_name":"stdout","time":1802.058364757,"data":"13:43:12 [w0] built dinov3_s16_224 in 0.9s\n"}
+,{"stream_name":"stdout","time":1802.058366618,"data":"13:43:43 [w0] dinov3_s16_224 MadMax-E0: 517 imgs 31.1s (16.6 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058368539,"data":"13:44:14 [w0] dinov3_s16_224 MadMax-F3: 229 imgs 30.7s (7.4 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058370505,"data":"13:44:20 [w0] dinov3_s16_224 S3LI-Etna-crater_inout: 1683 imgs 6.2s (270.2 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058372445,"data":"13:44:47 [w0] dinov3_s16_224 MadMax-F0: 117 imgs 27.7s (4.2 img/s)\n"}
+,{"stream_name":"stdout","time":1802.05837433,"data":"13:44:50 [w0] dinov3_s16_224 LunarLoc-17: 54 imgs 3.0s (17.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058376235,"data":"13:44:52 [w0] dinov3_s16_224 SPICE-A-night-on-spad@5.0us: 97 imgs 1.6s (59.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058378165,"data":"13:44:53 [w0] hf plain: timm/vit_base_patch16_dinov3.lvd1689m/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_base_patch16_dinov3.lvd1689m/model.safetensors\n"}
+,{"stream_name":"stdout","time":1802.058380283,"data":"13:45:06 [w0] dinov3: RoPE periods truncated to bfloat16 (official behaviour)\n"}
+,{"stream_name":"stdout","time":1802.058382152,"data":"13:45:06 [w0] built dinov3_b16_224 in 13.8s\n"}
+,{"stream_name":"stdout","time":1802.05838397,"data":"13:45:39 [w0] dinov3_b16_224 MadMax-E0: 517 imgs 33.2s (15.6 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058385938,"data":"13:46:11 [w0] dinov3_b16_224 MadMax-F3: 229 imgs 31.5s (7.3 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058387892,"data":"13:46:24 [w0] dinov3_b16_224 S3LI-Etna-crater_inout: 1683 imgs 13.2s (127.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058389804,"data":"13:46:52 [w0] dinov3_b16_224 MadMax-F0: 117 imgs 28.2s (4.1 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058391706,"data":"13:46:55 [w0] dinov3_b16_224 LunarLoc-17: 54 imgs 3.3s (16.4 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058393557,"data":"13:46:57 [w0] dinov3_b16_224 SPICE-A-night-on-spad@5.0us: 97 imgs 2.1s (46.4 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058395486,"data":"13:46:59 [w0] hf plain: timm/vit_base_patch16_dinov3.lvd1689m/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_base_patch16_dinov3.lvd1689m/model.safetensors\n"}
+,{"stream_name":"stdout","time":1802.05839756,"data":"13:46:59 [w0] dinov3: RoPE periods truncated to bfloat16 (official behaviour)\n"}
+,{"stream_name":"stdout","time":1802.058402472,"data":"13:46:59 [w0] built dinov3_b16_512 in 1.4s\n"}
+,{"stream_name":"stdout","time":1802.05840451,"data":"13:47:48 [w0] dinov3_b16_512 MadMax-E0: 517 imgs 49.3s (10.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058406406,"data":"13:48:27 [w0] dinov3_b16_512 MadMax-F3: 229 imgs 39.1s (5.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058408272,"data":"13:49:29 [w0] dinov3_b16_512 S3LI-Etna-crater_inout: 1683 imgs 61.9s (27.2 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058410172,"data":"13:50:01 [w0] dinov3_b16_512 MadMax-F0: 117 imgs 32.1s (3.6 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058412032,"data":"13:50:06 [w0] dinov3_b16_512 LunarLoc-17: 54 imgs 5.1s (10.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058413895,"data":"13:50:11 [w0] dinov3_b16_512 SPICE-A-night-on-spad@5.0us: 97 imgs 4.9s (19.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058416101,"data":"13:50:16 [w0] hf plain: timm/vit_large_patch16_dinov3.lvd1689m/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_large_patch16_dinov3.lvd1689m/model.safetensors\n"}
+,{"stream_name":"stdout","time":1802.058418237,"data":"13:51:43 [w0] dinov3: RoPE periods truncated to bfloat16 (official behaviour)\n"}
+,{"stream_name":"stdout","time":1802.058420233,"data":"13:51:44 [w0] built dinov3_l16_224 in 92.4s\n"}
+,{"stream_name":"stdout","time":1802.058422077,"data":"13:52:19 [w0] dinov3_l16_224 MadMax-E0: 517 imgs 35.6s (14.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058423975,"data":"13:52:54 [w0] dinov3_l16_224 MadMax-F3: 229 imgs 34.4s (6.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058425861,"data":"13:53:28 [w0] dinov3_l16_224 S3LI-Etna-crater_inout: 1683 imgs 34.0s (49.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058427778,"data":"13:53:57 [w0] dinov3_l16_224 MadMax-F0: 117 imgs 29.7s (3.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058429626,"data":"13:54:01 [w0] dinov3_l16_224 LunarLoc-17: 54 imgs 4.0s (13.6 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058431482,"data":"13:54:05 [w0] dinov3_l16_224 SPICE-A-night-on-spad@5.0us: 97 imgs 3.3s (29.0 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058433435,"data":"13:54:09 [w0] hf plain: timm/vit_large_patch16_dinov3.lvd1689m/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_large_patch16_dinov3.lvd1689m/model.safetensors\n"}
+,{"stream_name":"stdout","time":1802.058435645,"data":"13:54:09 [w0] dinov3: RoPE periods truncated to bfloat16 (official behaviour)\n"}
+,{"stream_name":"stdout","time":1802.058437558,"data":"13:54:10 [w0] built dinov3_l16_512 in 4.9s\n"}
+,{"stream_name":"stdout","time":1802.058439418,"data":"13:55:35 [w0] dinov3_l16_512 MadMax-E0: 517 imgs 84.9s (6.1 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058441307,"data":"13:56:29 [w0] dinov3_l16_512 MadMax-F3: 229 imgs 54.1s (4.2 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058443161,"data":"13:59:30 [w0] dinov3_l16_512 S3LI-Etna-crater_inout: 1683 imgs 180.7s (9.3 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058445085,"data":"14:00:10 [w0] dinov3_l16_512 MadMax-F0: 117 imgs 40.2s (2.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058446915,"data":"14:00:19 [w0] dinov3_l16_512 LunarLoc-17: 54 imgs 9.2s (5.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058448747,"data":"14:00:31 [w0] dinov3_l16_512 SPICE-A-night-on-spad@5.0us: 97 imgs 11.9s (8.1 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058450795,"data":"\n"}
+,{"stream_name":"stdout","time":1802.058452556,"data":":17 [w1] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 7\n"}
+,{"stream_name":"stdout","time":1802.058454581,"data":"13:33:50 [w1] built netvlad_4096_native in 32.2s\n"}
+,{"stream_name":"stdout","time":1802.058458295,"data":"13:34:00 [w1] OOM -\u003e sub-batch 4\n"}
+,{"stream_name":"stdout","time":1802.058460328,"data":"13:35:40 [w1] netvlad_4096_native MadMax-E1: 507 imgs 110.7s (4.6 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058462243,"data":"13:36:35 [w1] netvlad_4096_native MadMax-G0: 258 imgs 54.3s (4.8 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058464101,"data":"13:37:13 [w1] netvlad_4096_native MadMax-A2: 180 imgs 38.7s (4.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058466124,"data":"13:37:30 [w1] netvlad_4096_native S3LI-Etna-loops: 780 imgs 16.9s (46.0 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058468115,"data":"13:37:38 [w1] netvlad_4096_native LunarLoc-9: 119 imgs 7.9s (15.2 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058470083,"data":"13:37:40 [w1] netvlad_4096_native SPICE-A-dawn-off-spad@5.0us: 98 imgs 2.0s (47.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058472423,"data":"13:37:42 [w1] netvlad_4096_native SPICE-A-noon-off-spad@5.0us: 97 imgs 1.9s (52.2 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058474363,"data":"13:37:48 [w1] built netvlad_32768_native in 6.0s\n"}
+,{"stream_name":"stdout","time":1802.058476227,"data":"13:37:53 [w1] OOM -\u003e sub-batch 4\n"}
+,{"stream_name":"stdout","time":1802.05847811,"data":"13:39:34 [w1] netvlad_32768_native MadMax-E1: 507 imgs 105.9s (4.8 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058479996,"data":"13:40:28 [w1] netvlad_32768_native MadMax-G0: 258 imgs 54.4s (4.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058481852,"data":"13:41:06 [w1] netvlad_32768_native MadMax-A2: 180 imgs 38.0s (4.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058483804,"data":"13:41:23 [w1] netvlad_32768_native S3LI-Etna-loops: 780 imgs 16.3s (47.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058485813,"data":"13:41:30 [w1] netvlad_32768_native LunarLoc-9: 119 imgs 7.4s (16.1 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058499756,"data":"13:41:32 [w1] netvlad_32768_native SPICE-A-dawn-off-spad@5.0us: 98 imgs 1.9s (52.0 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058501946,"data":"13:41:34 [w1] netvlad_32768_native SPICE-A-noon-off-spad@5.0us: 97 imgs 1.8s (52.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058503881,"data":"13:41:41 [w1] built netvlad_4096_max640 in 7.4s\n"}
+,{"stream_name":"stdout","time":1802.058505782,"data":"13:42:05 [w1] netvlad_4096_max640 MadMax-E1: 507 imgs 24.3s (20.8 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058507686,"data":"13:42:18 [w1] netvlad_4096_max640 MadMax-G0: 258 imgs 13.0s (19.8 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058509643,"data":"13:42:30 [w1] netvlad_4096_max640 MadMax-A2: 180 imgs 11.5s (15.6 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058511534,"data":"13:42:45 [w1] netvlad_4096_max640 S3LI-Etna-loops: 780 imgs 15.0s (51.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058513532,"data":"13:42:48 [w1] netvlad_4096_max640 LunarLoc-9: 119 imgs 3.3s (35.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058530354,"data":"13:42:50 [w1] netvlad_4096_max640 SPICE-A-dawn-off-spad@5.0us: 98 imgs 2.2s (44.8 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058532304,"data":"13:42:53 [w1] netvlad_4096_max640 SPICE-A-noon-off-spad@5.0us: 97 imgs 2.2s (44.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058534285,"data":"13:42:53 [w1] hf plain: timm/vit_small_patch16_dinov3.lvd1689m/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_small_patch16_dinov3.lvd1689m/model.safetensors\n"}
+,{"stream_name":"stdout","time":1802.058536567,"data":"13:42:56 [w1] dinov3: RoPE periods truncated to bfloat16 (official behaviour)\n"}
+,{"stream_name":"stdout","time":1802.058538482,"data":"13:42:56 [w1] built dinov3_s16_224 in 2.9s\n"}
+,{"stream_name":"stdout","time":1802.058542994,"data":"13:43:28 [w1] dinov3_s16_224 MadMax-E1: 507 imgs 32.7s (15.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058545098,"data":"13:44:01 [w1] dinov3_s16_224 MadMax-G0: 258 imgs 32.4s (8.0 img/s)\n"}
+,{"stream_name":"stdout","time":1802.05854713,"data":"13:44:33 [w1] dinov3_s16_224 MadMax-A2: 180 imgs 32.2s (5.6 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058549018,"data":"13:44:37 [w1] dinov3_s16_224 S3LI-Etna-loops: 780 imgs 4.4s (175.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058550984,"data":"13:44:42 [w1] dinov3_s16_224 LunarLoc-9: 119 imgs 4.8s (25.0 img/s)\n"}
+,{"stream_name":"stdout","time":1802.05855285,"data":"13:44:44 [w1] dinov3_s16_224 SPICE-A-dawn-off-spad@5.0us: 98 imgs 1.7s (57.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058554983,"data":"13:44:46 [w1] dinov3_s16_224 SPICE-A-noon-off-spad@5.0us: 97 imgs 1.7s (56.0 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058556931,"data":"13:44:47 [w1] hf plain: timm/vit_base_patch16_dinov3.lvd1689m/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_base_patch16_dinov3.lvd1689m/model.safetensors\n"}
+,{"stream_name":"stdout","time":1802.058559212,"data":"13:45:06 [w1] dinov3: RoPE periods truncated to bfloat16 (official behaviour)\n"}
+,{"stream_name":"stdout","time":1802.058561154,"data":"13:45:06 [w1] built dinov3_b16_224 in 20.3s\n"}
+,{"stream_name":"stdout","time":1802.058562986,"data":"13:45:41 [w1] dinov3_b16_224 MadMax-E1: 507 imgs 34.6s (14.6 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058564892,"data":"13:46:14 [w1] dinov3_b16_224 MadMax-G0: 258 imgs 33.3s (7.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058566821,"data":"13:46:46 [w1] dinov3_b16_224 MadMax-A2: 180 imgs 32.5s (5.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058568677,"data":"13:46:54 [w1] dinov3_b16_224 S3LI-Etna-loops: 780 imgs 7.4s (105.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058570564,"data":"13:46:59 [w1] dinov3_b16_224 LunarLoc-9: 119 imgs 5.3s (22.6 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058572422,"data":"13:47:01 [w1] dinov3_b16_224 SPICE-A-dawn-off-spad@5.0us: 98 imgs 2.1s (47.0 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058574466,"data":"13:47:03 [w1] dinov3_b16_224 SPICE-A-noon-off-spad@5.0us: 97 imgs 2.2s (44.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058576393,"data":"13:47:05 [w1] hf plain: timm/vit_base_patch16_dinov3.lvd1689m/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_base_patch16_dinov3.lvd1689m/model.safetensors\n"}
+,{"stream_name":"stdout","time":1802.058578558,"data":"13:47:05 [w1] dinov3: RoPE periods truncated to bfloat16 (official behaviour)\n"}
+,{"stream_name":"stdout","time":1802.058580496,"data":"13:47:05 [w1] built dinov3_b16_512 in 1.4s\n"}
+,{"stream_name":"stdout","time":1802.058582323,"data":"13:47:53 [w1] dinov3_b16_512 MadMax-E1: 507 imgs 48.2s (10.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058584206,"data":"13:48:33 [w1] dinov3_b16_512 MadMax-G0: 258 imgs 39.5s (6.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.05858606,"data":"13:49:09 [w1] dinov3_b16_512 MadMax-A2: 180 imgs 36.5s (4.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058587891,"data":"13:49:38 [w1] dinov3_b16_512 S3LI-Etna-loops: 780 imgs 29.3s (26.6 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058589883,"data":"13:49:48 [w1] dinov3_b16_512 LunarLoc-9: 119 imgs 9.2s (12.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058618159,"data":"13:49:52 [w1] dinov3_b16_512 SPICE-A-dawn-off-spad@5.0us: 98 imgs 4.8s (20.3 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058620417,"data":"13:49:57 [w1] dinov3_b16_512 SPICE-A-noon-off-spad@5.0us: 97 imgs 4.8s (20.1 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058622356,"data":"13:50:02 [w1] hf plain: timm/vit_large_patch16_dinov3.lvd1689m/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_large_patch16_dinov3.lvd1689m/model.safetensors\n"}
+,{"stream_name":"stdout","time":1802.058627015,"data":"13:51:43 [w1] dinov3: RoPE periods truncated to bfloat16 (official behaviour)\n"}
+,{"stream_name":"stdout","time":1802.058628978,"data":"13:51:44 [w1] built dinov3_l16_224 in 106.5s\n"}
+,{"stream_name":"stdout","time":1802.058630881,"data":"13:52:19 [w1] dinov3_l16_224 MadMax-E1: 507 imgs 35.0s (14.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058633273,"data":"13:52:55 [w1] dinov3_l16_224 MadMax-G0: 258 imgs 36.3s (7.1 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058635304,"data":"13:53:29 [w1] dinov3_l16_224 MadMax-A2: 180 imgs 34.4s (5.2 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058637228,"data":"13:53:46 [w1] dinov3_l16_224 S3LI-Etna-loops: 780 imgs 16.4s (47.6 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058639195,"data":"13:53:53 [w1] dinov3_l16_224 LunarLoc-9: 119 imgs 6.7s (17.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058641216,"data":"13:53:56 [w1] dinov3_l16_224 SPICE-A-dawn-off-spad@5.0us: 98 imgs 3.2s (30.3 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058643409,"data":"13:53:59 [w1] dinov3_l16_224 SPICE-A-noon-off-spad@5.0us: 97 imgs 3.3s (29.3 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058645342,"data":"13:54:04 [w1] hf plain: timm/vit_large_patch16_dinov3.lvd1689m/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_large_patch16_dinov3.lvd1689m/model.safetensors\n"}
+,{"stream_name":"stdout","time":1802.058647454,"data":"13:54:04 [w1] dinov3: RoPE periods truncated to bfloat16 (official behaviour)\n"}
+,{"stream_name":"stdout","time":1802.058649465,"data":"13:54:04 [w1] built dinov3_l16_512 in 4.9s\n"}
+,{"stream_name":"stdout","time":1802.058651356,"data":"13:55:26 [w1] dinov3_l16_512 MadMax-E1: 507 imgs 81.4s (6.2 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058653286,"data":"13:56:23 [w1] dinov3_l16_512 MadMax-G0: 258 imgs 57.1s (4.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058655266,"data":"13:57:12 [w1] dinov3_l16_512 MadMax-A2: 180 imgs 49.2s (3.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058657149,"data":"13:58:35 [w1] dinov3_l16_512 S3LI-Etna-loops: 780 imgs 82.7s (9.4 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058659037,"data":"13:58:52 [w1] dinov3_l16_512 LunarLoc-9: 119 imgs 17.3s (6.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058660938,"data":"13:59:03 [w1] dinov3_l16_512 SPICE-A-dawn-off-spad@5.0us: 98 imgs 11.6s (8.4 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058662956,"data":"13:59:15 [w1] dinov3_l16_512 SPICE-A-noon-off-spad@5.0us: 97 imgs 11.4s (8.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058664964,"data":"\n"}
+,{"stream_name":"stdout","time":1802.058666746,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":1802.058668674,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":1802.058670544,"data":"13:33:17 [w2] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 6\n"}
+,{"stream_name":"stdout","time":1802.058672489,"data":"13:33:50 [w2] built netvlad_4096_native in 32.4s\n"}
+,{"stream_name":"stdout","time":1802.058674401,"data":"13:33:59 [w2] OOM -\u003e sub-batch 4\n"}
+,{"stream_name":"stdout","time":1802.058676294,"data":"13:35:39 [w2] netvlad_4096_native MadMax-C0: 502 imgs 109.3s (4.6 img/s)\n"}
+,{"stream_name":"stdout","time":1802.05867819,"data":"13:36:40 [w2] netvlad_4096_native MadMax-G2: 290 imgs 61.1s (4.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.0586802,"data":"13:37:17 [w2] netvlad_4096_native MadMax-A0: 171 imgs 36.8s (4.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058682136,"data":"13:37:28 [w2] netvlad_4096_native S3LI-Etna-traverse_1: 485 imgs 10.9s (44.4 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058694024,"data":"13:37:38 [w2] netvlad_4096_native LunarLoc-15: 118 imgs 10.4s (11.3 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058696119,"data":"13:37:41 [w2] netvlad_4096_native SPICE-A-noon-off@2500.0us: 99 imgs 2.8s (35.0 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058698074,"data":"13:37:47 [w2] built netvlad_32768_native in 6.0s\n"}
+,{"stream_name":"stdout","time":1802.058699964,"data":"13:37:52 [w2] OOM -\u003e sub-batch 4\n"}
+,{"stream_name":"stdout","time":1802.058702184,"data":"13:39:33 [w2] netvlad_32768_native MadMax-C0: 502 imgs 105.5s (4.8 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058704108,"data":"13:40:34 [w2] netvlad_32768_native MadMax-G2: 290 imgs 61.0s (4.8 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058706117,"data":"13:41:10 [w2] netvlad_32768_native MadMax-A0: 171 imgs 36.8s (4.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058708049,"data":"13:41:21 [w2] netvlad_32768_native S3LI-Etna-traverse_1: 485 imgs 10.4s (46.8 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058709992,"data":"13:41:31 [w2] netvlad_32768_native LunarLoc-15: 118 imgs 9.9s (11.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058711912,"data":"13:41:33 [w2] netvlad_32768_native SPICE-A-noon-off@2500.0us: 99 imgs 2.7s (36.3 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058713885,"data":"13:41:41 [w2] built netvlad_4096_max640 in 7.3s\n"}
+,{"stream_name":"stdout","time":1802.058715738,"data":"13:42:02 [w2] netvlad_4096_max640 MadMax-C0: 502 imgs 21.8s (23.0 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058717637,"data":"13:42:16 [w2] netvlad_4096_max640 MadMax-G2: 290 imgs 13.8s (21.1 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058719519,"data":"13:42:28 [w2] netvlad_4096_max640 MadMax-A0: 171 imgs 11.6s (14.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058721511,"data":"13:42:38 [w2] netvlad_4096_max640 S3LI-Etna-traverse_1: 485 imgs 9.8s (49.6 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058723482,"data":"13:42:43 [w2] netvlad_4096_max640 LunarLoc-15: 118 imgs 5.1s (23.2 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058725418,"data":"13:42:46 [w2] netvlad_4096_max640 SPICE-A-noon-off@2500.0us: 99 imgs 3.1s (32.3 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058727466,"data":"13:42:47 [w2] hf plain: timm/vit_small_patch16_dinov3.lvd1689m/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_small_patch16_dinov3.lvd1689m/model.safetensors\n"}
+,{"stream_name":"stdout","time":1802.058729609,"data":"13:42:56 [w2] dinov3: RoPE periods truncated to bfloat16 (official behaviour)\n"}
+,{"stream_name":"stdout","time":1802.058731525,"data":"13:42:56 [w2] built dinov3_s16_224 in 9.9s\n"}
+,{"stream_name":"stdout","time":1802.058733372,"data":"13:43:29 [w2] dinov3_s16_224 MadMax-C0: 502 imgs 32.9s (15.2 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058735353,"data":"13:44:01 [w2] dinov3_s16_224 MadMax-G2: 290 imgs 32.3s (9.0 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058737326,"data":"13:44:33 [w2] dinov3_s16_224 MadMax-A0: 171 imgs 32.6s (5.2 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058739262,"data":"13:44:37 [w2] dinov3_s16_224 S3LI-Etna-traverse_1: 485 imgs 3.7s (131.3 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058741214,"data":"13:44:46 [w2] dinov3_s16_224 LunarLoc-15: 118 imgs 8.6s (13.8 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058743216,"data":"13:44:48 [w2] dinov3_s16_224 SPICE-A-noon-off@2500.0us: 99 imgs 2.5s (40.2 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058745167,"data":"13:44:49 [w2] hf plain: timm/vit_base_patch16_dinov3.lvd1689m/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_base_patch16_dinov3.lvd1689m/model.safetensors\n"}
+,{"stream_name":"stdout","time":1802.058749258,"data":"13:45:06 [w2] dinov3: RoPE periods truncated to bfloat16 (official behaviour)\n"}
+,{"stream_name":"stdout","time":1802.05875126,"data":"13:45:06 [w2] built dinov3_b16_224 in 17.7s\n"}
+,{"stream_name":"stdout","time":1802.058753833,"data":"13:45:41 [w2] dinov3_b16_224 MadMax-C0: 502 imgs 34.7s (14.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058755869,"data":"13:46:14 [w2] dinov3_b16_224 MadMax-G2: 290 imgs 33.3s (8.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058757785,"data":"13:46:47 [w2] dinov3_b16_224 MadMax-A0: 171 imgs 32.7s (5.2 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058759712,"data":"13:46:52 [w2] dinov3_b16_224 S3LI-Etna-traverse_1: 485 imgs 5.6s (87.2 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058761728,"data":"13:47:01 [w2] dinov3_b16_224 LunarLoc-15: 118 imgs 9.1s (13.0 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058763622,"data":"13:47:04 [w2] dinov3_b16_224 SPICE-A-noon-off@2500.0us: 99 imgs 2.9s (33.8 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058765719,"data":"13:47:06 [w2] hf plain: timm/vit_base_patch16_dinov3.lvd1689m/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_base_patch16_dinov3.lvd1689m/model.safetensors\n"}
+,{"stream_name":"stdout","time":1802.058767866,"data":"13:47:06 [w2] dinov3: RoPE periods truncated to bfloat16 (official behaviour)\n"}
+,{"stream_name":"stdout","time":1802.058769787,"data":"13:47:06 [w2] built dinov3_b16_512 in 1.5s\n"}
+,{"stream_name":"stdout","time":1802.058771731,"data":"13:47:54 [w2] dinov3_b16_512 MadMax-C0: 502 imgs 48.1s (10.4 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058773658,"data":"13:48:35 [w2] dinov3_b16_512 MadMax-G2: 290 imgs 41.1s (7.1 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058775601,"data":"13:49:11 [w2] dinov3_b16_512 MadMax-A0: 171 imgs 36.3s (4.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058777519,"data":"13:49:31 [w2] dinov3_b16_512 S3LI-Etna-traverse_1: 485 imgs 19.3s (25.1 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058779503,"data":"13:49:41 [w2] dinov3_b16_512 LunarLoc-15: 118 imgs 10.9s (10.8 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058781403,"data":"13:49:48 [w2] dinov3_b16_512 SPICE-A-noon-off@2500.0us: 99 imgs 6.4s (15.6 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058783339,"data":"13:49:52 [w2] hf plain: timm/vit_large_patch16_dinov3.lvd1689m/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_large_patch16_dinov3.lvd1689m/model.safetensors\n"}
+,{"stream_name":"stdout","time":1802.058785461,"data":"13:51:43 [w2] dinov3: RoPE periods truncated to bfloat16 (official behaviour)\n"}
+,{"stream_name":"stdout","time":1802.058787498,"data":"13:51:44 [w2] built dinov3_l16_224 in 115.9s\n"}
+,{"stream_name":"stdout","time":1802.058789383,"data":"13:52:19 [w2] dinov3_l16_224 MadMax-C0: 502 imgs 35.1s (14.3 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058791321,"data":"13:52:55 [w2] dinov3_l16_224 MadMax-G2: 290 imgs 36.7s (7.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058793252,"data":"13:53:30 [w2] dinov3_l16_224 MadMax-A0: 171 imgs 34.5s (5.0 img/s)\n"}
+,{"stream_name":"stdout","time":1802.05879515,"data":"13:53:41 [w2] dinov3_l16_224 S3LI-Etna-traverse_1: 485 imgs 11.2s (43.4 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058797061,"data":"13:53:51 [w2] dinov3_l16_224 LunarLoc-15: 118 imgs 10.3s (11.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058802395,"data":"13:53:56 [w2] dinov3_l16_224 SPICE-A-noon-off@2500.0us: 99 imgs 4.1s (24.2 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058804672,"data":"13:54:00 [w2] hf plain: timm/vit_large_patch16_dinov3.lvd1689m/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_large_patch16_dinov3.lvd1689m/model.safetensors\n"}
+,{"stream_name":"stdout","time":1802.058808957,"data":"13:54:00 [w2] dinov3: RoPE periods truncated to bfloat16 (official behaviour)\n"}
+,{"stream_name":"stdout","time":1802.058811012,"data":"13:54:01 [w2] built dinov3_l16_512 in 5.0s\n"}
+,{"stream_name":"stdout","time":1802.05881288,"data":"13:55:22 [w2] dinov3_l16_512 MadMax-C0: 502 imgs 81.9s (6.1 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058814809,"data":"13:56:23 [w2] dinov3_l16_512 MadMax-G2: 290 imgs 60.4s (4.8 img/s)\n"}
+,{"stream_name":"stdout","time":1802.05881672,"data":"13:57:10 [w2] dinov3_l16_512 MadMax-A0: 171 imgs 47.6s (3.6 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058818602,"data":"13:58:03 [w2] dinov3_l16_512 S3LI-Etna-traverse_1: 485 imgs 52.5s (9.2 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058820492,"data":"13:58:23 [w2] dinov3_l16_512 LunarLoc-15: 118 imgs 20.1s (5.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058822459,"data":"13:58:36 [w2] dinov3_l16_512 SPICE-A-noon-off@2500.0us: 99 imgs 13.2s (7.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058824427,"data":"\n"}
+,{"stream_name":"stdout","time":1802.058826214,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":1802.058828145,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":1802.058830051,"data":"13:33:18 [w3] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 6\n"}
+,{"stream_name":"stdout","time":1802.05883207,"data":"13:33:50 [w3] built netvlad_4096_native in 32.2s\n"}
+,{"stream_name":"stdout","time":1802.058833927,"data":"13:34:00 [w3] OOM -\u003e sub-batch 4\n"}
+,{"stream_name":"stdout","time":1802.058835772,"data":"13:35:33 [w3] netvlad_4096_native MadMax-C1: 463 imgs 102.9s (4.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058837729,"data":"13:36:58 [w3] netvlad_4096_native MadMax-A4: 412 imgs 85.2s (4.8 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058839667,"data":"13:37:22 [w3] netvlad_4096_native S3LI-Etna-crater: 1129 imgs 24.6s (45.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058841612,"data":"13:37:34 [w3] netvlad_4096_native LunarLoc-10: 183 imgs 11.7s (15.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058843543,"data":"13:37:37 [w3] netvlad_4096_native SPICE-A-dawn-off@2500.0us: 99 imgs 2.8s (35.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058845566,"data":"13:37:40 [w3] netvlad_4096_native SPICE-A-night-on@2500.0us: 97 imgs 2.7s (35.8 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058847496,"data":"13:37:46 [w3] built netvlad_32768_native in 6.0s\n"}
+,{"stream_name":"stdout","time":1802.058849361,"data":"13:37:50 [w3] OOM -\u003e sub-batch 4\n"}
+,{"stream_name":"stdout","time":1802.058851213,"data":"13:39:23 [w3] netvlad_32768_native MadMax-C1: 463 imgs 97.7s (4.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058853186,"data":"13:40:48 [w3] netvlad_32768_native MadMax-A4: 412 imgs 85.2s (4.8 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058855121,"data":"13:41:12 [w3] netvlad_32768_native S3LI-Etna-crater: 1129 imgs 23.7s (47.6 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058857086,"data":"13:41:23 [w3] netvlad_32768_native LunarLoc-10: 183 imgs 11.0s (16.6 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058859033,"data":"13:41:26 [w3] netvlad_32768_native SPICE-A-dawn-off@2500.0us: 99 imgs 2.8s (35.4 img/s)\n"}
+,{"stream_name":"stdout","time":1802.05886101,"data":"13:41:29 [w3] netvlad_32768_native SPICE-A-night-on@2500.0us: 97 imgs 2.6s (36.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058862943,"data":"13:41:36 [w3] built netvlad_4096_max640 in 7.3s\n"}
+,{"stream_name":"stdout","time":1802.058864803,"data":"13:41:57 [w3] netvlad_4096_max640 MadMax-C1: 463 imgs 21.2s (21.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058868594,"data":"13:42:15 [w3] netvlad_4096_max640 MadMax-A4: 412 imgs 17.9s (23.0 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058870926,"data":"13:42:37 [w3] netvlad_4096_max640 S3LI-Etna-crater: 1129 imgs 21.7s (51.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058872866,"data":"13:42:41 [w3] netvlad_4096_max640 LunarLoc-10: 183 imgs 4.2s (43.6 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058874809,"data":"13:42:45 [w3] netvlad_4096_max640 SPICE-A-dawn-off@2500.0us: 99 imgs 3.5s (28.4 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058876753,"data":"13:42:48 [w3] netvlad_4096_max640 SPICE-A-night-on@2500.0us: 97 imgs 3.1s (31.6 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058878724,"data":"13:42:48 [w3] hf plain: timm/vit_small_patch16_dinov3.lvd1689m/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_small_patch16_dinov3.lvd1689m/model.safetensors\n"}
+,{"stream_name":"stdout","time":1802.058880848,"data":"13:42:56 [w3] dinov3: RoPE periods truncated to bfloat16 (official behaviour)\n"}
+,{"stream_name":"stdout","time":1802.05888278,"data":"13:42:56 [w3] built dinov3_s16_224 in 8.0s\n"}
+,{"stream_name":"stdout","time":1802.058884621,"data":"13:43:25 [w3] dinov3_s16_224 MadMax-C1: 463 imgs 29.5s (15.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058886658,"data":"13:43:56 [w3] dinov3_s16_224 MadMax-A4: 412 imgs 31.1s (13.3 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058888583,"data":"13:44:01 [w3] dinov3_s16_224 S3LI-Etna-crater: 1129 imgs 5.1s (220.1 img/s)\n"}
+,{"stream_name":"stdout","time":1802.05889052,"data":"13:44:07 [w3] dinov3_s16_224 LunarLoc-10: 183 imgs 5.4s (34.0 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058892439,"data":"13:44:09 [w3] dinov3_s16_224 SPICE-A-dawn-off@2500.0us: 99 imgs 2.4s (42.0 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058894403,"data":"13:44:12 [w3] dinov3_s16_224 SPICE-A-night-on@2500.0us: 97 imgs 2.4s (40.3 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058896326,"data":"13:44:13 [w3] hf plain: timm/vit_base_patch16_dinov3.lvd1689m/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_base_patch16_dinov3.lvd1689m/model.safetensors\n"}
+,{"stream_name":"stdout","time":1802.058898443,"data":"13:45:06 [w3] dinov3: RoPE periods truncated to bfloat16 (official behaviour)\n"}
+,{"stream_name":"stdout","time":1802.058900361,"data":"13:45:06 [w3] built dinov3_b16_224 in 54.3s\n"}
+,{"stream_name":"stdout","time":1802.058902277,"data":"13:45:39 [w3] dinov3_b16_224 MadMax-C1: 463 imgs 33.2s (14.0 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058904199,"data":"13:46:12 [w3] dinov3_b16_224 MadMax-A4: 412 imgs 32.7s (12.6 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058907369,"data":"13:46:22 [w3] dinov3_b16_224 S3LI-Etna-crater: 1129 imgs 9.9s (113.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058909428,"data":"13:46:28 [w3] dinov3_b16_224 LunarLoc-10: 183 imgs 6.1s (29.8 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058911355,"data":"13:46:31 [w3] dinov3_b16_224 SPICE-A-dawn-off@2500.0us: 99 imgs 2.7s (36.4 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058913374,"data":"13:46:33 [w3] dinov3_b16_224 SPICE-A-night-on@2500.0us: 97 imgs 2.8s (35.0 img/s)\n"}
+,{"stream_name":"stdout","time":1802.0589153,"data":"13:46:35 [w3] hf plain: timm/vit_base_patch16_dinov3.lvd1689m/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_base_patch16_dinov3.lvd1689m/model.safetensors\n"}
+,{"stream_name":"stdout","time":1802.058917681,"data":"13:46:35 [w3] dinov3: RoPE periods truncated to bfloat16 (official behaviour)\n"}
+,{"stream_name":"stdout","time":1802.058919763,"data":"13:46:35 [w3] built dinov3_b16_512 in 1.6s\n"}
+,{"stream_name":"stdout","time":1802.058923813,"data":"13:47:23 [w3] dinov3_b16_512 MadMax-C1: 463 imgs 47.6s (9.7 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058925915,"data":"13:48:08 [w3] dinov3_b16_512 MadMax-A4: 412 imgs 45.5s (9.0 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058927837,"data":"13:48:51 [w3] dinov3_b16_512 S3LI-Etna-crater: 1129 imgs 42.7s (26.4 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058929837,"data":"13:49:03 [w3] dinov3_b16_512 LunarLoc-10: 183 imgs 12.1s (15.2 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058931836,"data":"13:49:09 [w3] dinov3_b16_512 SPICE-A-dawn-off@2500.0us: 99 imgs 6.1s (16.2 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058933746,"data":"13:49:15 [w3] dinov3_b16_512 SPICE-A-night-on@2500.0us: 97 imgs 6.3s (15.3 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058935667,"data":"13:49:20 [w3] hf plain: timm/vit_large_patch16_dinov3.lvd1689m/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_large_patch16_dinov3.lvd1689m/model.safetensors\n"}
+,{"stream_name":"stdout","time":1802.058937852,"data":"13:51:43 [w3] dinov3: RoPE periods truncated to bfloat16 (official behaviour)\n"}
+,{"stream_name":"stdout","time":1802.058939791,"data":"13:51:44 [w3] built dinov3_l16_224 in 148.3s\n"}
+,{"stream_name":"stdout","time":1802.058941752,"data":"13:52:18 [w3] dinov3_l16_224 MadMax-C1: 463 imgs 34.6s (13.4 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058943747,"data":"13:52:56 [w3] dinov3_l16_224 MadMax-A4: 412 imgs 37.8s (10.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058945669,"data":"13:53:20 [w3] dinov3_l16_224 S3LI-Etna-crater: 1129 imgs 23.6s (47.9 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058947566,"data":"13:53:28 [w3] dinov3_l16_224 LunarLoc-10: 183 imgs 8.3s (22.1 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058949538,"data":"13:53:32 [w3] dinov3_l16_224 SPICE-A-dawn-off@2500.0us: 99 imgs 3.9s (25.3 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058951614,"data":"13:53:36 [w3] dinov3_l16_224 SPICE-A-night-on@2500.0us: 97 imgs 4.0s (24.4 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058953677,"data":"13:53:40 [w3] hf plain: timm/vit_large_patch16_dinov3.lvd1689m/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_large_patch16_dinov3.lvd1689m/model.safetensors\n"}
+,{"stream_name":"stdout","time":1802.058955899,"data":"13:53:41 [w3] dinov3: RoPE periods truncated to bfloat16 (official behaviour)\n"}
+,{"stream_name":"stdout","time":1802.058957961,"data":"13:53:41 [w3] built dinov3_l16_512 in 4.9s\n"}
+,{"stream_name":"stdout","time":1802.058959917,"data":"13:55:01 [w3] dinov3_l16_512 MadMax-C1: 463 imgs 79.9s (5.8 img/s)\n"}
+,{"stream_name":"stdout","time":1802.05896183,"data":"13:56:15 [w3] dinov3_l16_512 MadMax-A4: 412 imgs 74.3s (5.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058963777,"data":"13:58:17 [w3] dinov3_l16_512 S3LI-Etna-crater: 1129 imgs 121.5s (9.3 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058965675,"data":"13:58:41 [w3] dinov3_l16_512 LunarLoc-10: 183 imgs 24.8s (7.4 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058967562,"data":"13:58:55 [w3] dinov3_l16_512 SPICE-A-dawn-off@2500.0us: 99 imgs 13.2s (7.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.058969536,"data":"13:59:07 [w3] dinov3_l16_512 SPICE-A-night-on@2500.0us: 97 imgs 12.9s (7.5 img/s)\n"}
+,{"stream_name":"stdout","time":1802.05897148,"data":"\n"}
+,{"stream_name":"stdout","time":1802.058973754,"data":"14:00:33 [+  1801s] $ /tmp/vprenv/bin/python /tmp/vprcode/metrics_all.py --root /tmp/vprdata/vpr-space-v0 --desc-dir /kaggle/working/desc --out /kaggle/working/results --tag c-netvlad-dinov3\n"}
+,{"stream_name":"stderr","time":1802.108812254,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":1802.108836062,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":1805.750830035,"data":"dinov3_b16_224: 16/16 setups, AUPRC mean 0.3118\n"}
+,{"stream_name":"stdout","time":1806.326144666,"data":"dinov3_b16_512: 16/16 setups, AUPRC mean 0.2929\n"}
+,{"stream_name":"stdout","time":1806.921824363,"data":"dinov3_l16_224: 16/16 setups, AUPRC mean 0.3089\n"}
+,{"stream_name":"stdout","time":1807.519641088,"data":"dinov3_l16_512: 16/16 setups, AUPRC mean 0.3016\n"}
+,{"stream_name":"stdout","time":1808.070207265,"data":"dinov3_s16_224: 16/16 setups, AUPRC mean 0.2984\n"}
+,{"stream_name":"stdout","time":1811.132380639,"data":"netvlad_32768_native: 16/16 setups, AUPRC mean 0.2529\n"}
+,{"stream_name":"stdout","time":1811.93284134,"data":"netvlad_4096_max640: 16/16 setups, AUPRC mean 0.2311\n"}
+,{"stream_name":"stdout","time":1812.742131991,"data":"netvlad_4096_native: 16/16 setups, AUPRC mean 0.2501\n"}
+,{"stream_name":"stdout","time":1814.343651954,"data":"14:00:45 [+  1814s] DONE\n"}
+,{"stream_name":"stderr","time":1816.718425783,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1816.718446519,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1817.060321812,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1817.060340852,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1819.051994537,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1820.116464941,"data":"[NbConvertApp] Writing 339545 bytes to __results__.html\n"}
+]

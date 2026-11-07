@@ -1,0 +1,28 @@
+13:09:56 [w2] torch 2.11.0+cu130 cuda 13.0 dev NVIDIA L4 trajectories 7
+Using cache found in /tmp/torch_home/hub/amaralibey_bag-of-queries_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+13:11:19 [w2] built boq in 83.5s
+13:11:41 [w2] boq S3LI-Etna-loops: 780 imgs 22.2s (35.1 img/s)
+13:12:07 [w2] boq MadMax-C0: 502 imgs 26.1s (19.2 img/s)
+13:12:27 [w2] boq MadMax-A4: 412 imgs 19.2s (21.4 img/s)
+13:12:31 [w2] boq LunarLoc-10: 183 imgs 4.8s (38.0 img/s)
+13:12:35 [w2] boq LunarLoc-9: 119 imgs 3.8s (31.3 img/s)
+13:12:38 [w2] boq SPICE-A-dawn-off@2500.0us: 99 imgs 2.8s (35.9 img/s)
+13:12:41 [w2] boq SPICE-A-night-on-spad@5.0us: 97 imgs 2.6s (37.9 img/s)
+Using cache found in /tmp/torch_home/hub/gmberton_MegaLoc_main
+13:12:42 [w2] hf plain: gberton/MegaLoc/config.json -> /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/config.json
+13:12:42 [w2] hf plain: gberton/MegaLoc/model.safetensors -> /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/model.safetensors
+13:14:09 [w2] built megaloc in 88.3s
+13:14:44 [w2] megaloc S3LI-Etna-loops: 780 imgs 35.2s (22.2 img/s)
+13:15:12 [w2] megaloc MadMax-C0: 502 imgs 27.6s (18.2 img/s)
+13:15:35 [w2] megaloc MadMax-A4: 412 imgs 23.5s (17.6 img/s)
+13:15:44 [w2] megaloc LunarLoc-10: 183 imgs 9.2s (20.0 img/s)
+13:15:51 [w2] megaloc LunarLoc-9: 119 imgs 6.5s (18.4 img/s)
+13:15:56 [w2] megaloc SPICE-A-dawn-off@2500.0us: 99 imgs 5.3s (18.8 img/s)
+13:16:01 [w2] megaloc SPICE-A-night-on-spad@5.0us: 97 imgs 4.9s (19.6 img/s)

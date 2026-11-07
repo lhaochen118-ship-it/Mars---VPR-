@@ -1,0 +1,165 @@
+[{"stream_name":"stderr","time":1.374570474,"data":"/kaggle/src/script.py:23: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.\n"}
+,{"stream_name":"stderr","time":1.374625148,"data":"  tarfile.open(fileobj=io.BytesIO(base64.b64decode(CODE_B64))).extractall(code)\n"}
+,{"stream_name":"stdout","time":1.43636689,"data":"13:07:47 [+     0s] spec {\"session\": \"a-exact-kaggleenv\", \"env\": \"kaggle\", \"configs\": [\"boq\", \"megaloc\"], \"trajectories\": null, \"pixel_cost\": false}\n"}
+,{"stream_name":"stdout","time":5.823496403,"data":"13:07:51 [+     4s] input tree:\n"}
+,{"stream_name":"stdout","time":5.823519646,"data":"/kaggle/input\n"}
+,{"stream_name":"stdout","time":5.823522507,"data":"/kaggle/input/notebooks\n"}
+,{"stream_name":"stdout","time":5.823524657,"data":"/kaggle/input/notebooks/dinhthinh\n"}
+,{"stream_name":"stdout","time":5.823526597,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-deps-core\n"}
+,{"stream_name":"stdout","time":5.823528482,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-deps-core/hf_home\n"}
+,{"stream_name":"stdout","time":5.8235304150000005,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-deps-core/hf_home/hub\n"}
+,{"stream_name":"stdout","time":5.823532359,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-deps-core/hf_home/xet\n"}
+,{"stream_name":"stdout","time":5.823534234,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-deps-core/torch_home\n"}
+,{"stream_name":"stdout","time":5.823536128,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-deps-core/torch_home/hub\n"}
+,{"stream_name":"stdout","time":5.823538046,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-deps-core/wheels\n"}
+,{"stream_name":"stdout","time":5.823540056,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-data-b\n"}
+,{"stream_name":"stdout","time":5.823541894,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-data-a\n"}
+,{"stream_name":"stdout","time":5.823543746,"data":"/kaggle/input/vprspace-deps-hf\n"}
+,{"stream_name":"stdout","time":5.82354556,"data":"/kaggle/input/vprspace-deps-hf/hf_plain\n"}
+,{"stream_name":"stdout","time":5.823547501,"data":"/kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc\n"}
+,{"stream_name":"stdout","time":5.823549388,"data":"/kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_base_patch16_dinov3.lvd1689m\n"}
+,{"stream_name":"stdout","time":5.823551338,"data":"/kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_large_patch16_dinov3.lvd1689m\n"}
+,{"stream_name":"stdout","time":5.823553235,"data":"/kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_small_patch16_dinov3.lvd1689m\n"}
+,{"stream_name":"stdout","time":5.823555279,"data":"/kaggle/input/competitions\n"}
+,{"stream_name":"stdout","time":5.823557102,"data":"/kaggle/input/competitions/gemma-4-developer-agent\n"}
+,{"stream_name":"stdout","time":5.823558988,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission\n"}
+,{"stream_name":"stdout","time":5.8235608800000005,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/configs\n"}
+,{"stream_name":"stdout","time":5.823562765,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/prompts\n"}
+,{"stream_name":"stdout","time":5.823564678,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/sub_agents\n"}
+,{"stream_name":"stdout","time":5.823566554,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters\n"}
+,{"stream_name":"stdout","time":5.823572216,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters/tool_lora\n"}
+,{"stream_name":"stdout","time":5.823582722,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters/main_lora\n"}
+,{"stream_name":"stdout","time":5.823584867,"data":"/kaggle/input/competitions/gemma-4-developer-agent/docker\n"}
+,{"stream_name":"stdout","time":5.823586825,"data":"/kaggle/input/competitions/gemma-4-developer-agent/snapshots\n"}
+,{"stream_name":"stdout","time":5.823588688,"data":"/kaggle/input/competitions/gemma-4-developer-agent/wheels\n"}
+,{"stream_name":"stdout","time":5.8235905930000005,"data":"/kaggle/input/competitions/gemma-4-developer-agent/graphs\n"}
+,{"stream_name":"stdout","time":5.823592379,"data":"/kaggle/input/competitions/gemma-4-developer-agent/embeddings\n"}
+,{"stream_name":"stdout","time":5.823594244,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sandbox\n"}
+,{"stream_name":"stdout","time":5.82360368,"data":"\n"}
+,{"stream_name":"stdout","time":9.744722142,"data":"13:07:55 [+     8s] $ cp -rs --remove-destination /kaggle/input/notebooks/dinhthinh/vprspace-deps-core/torch_home/. /tmp/torch_home/\n"}
+,{"stream_name":"stdout","time":13.819351757,"data":"13:07:59 [+    12s] $ cp -rs --remove-destination /kaggle/input/notebooks/dinhthinh/vprspace-deps-core/hf_home/. /tmp/hf_home/\n"}
+,{"stream_name":"stdout","time":91.47059554,"data":"13:09:17 [+    90s] data root /tmp/vprdata/vpr-space-v0 extracted\n"}
+,{"stream_name":"stdout","time":91.537446311,"data":"13:09:17 [+    90s] 4 GPUs, images per GPU [2182.0, 2217.0, 2192.0, 2193.0]\n"}
+,{"stream_name":"stdout","time":95.39355048,"data":"13:09:21 [+    94s] hf_plain dirs: /kaggle/input/vprspace-deps-hf/hf_plain\n"}
+,{"stream_name":"stdout","time":509.726515419,"data":"13:16:15 [+   508s] workers exit codes [0, 0, 0, 0]\n"}
+,{"stream_name":"stdout","time":509.726628857,"data":"13:09:56 [w0] torch 2.11.0+cu130 cuda 13.0 dev NVIDIA L4 trajectories 5\n"}
+,{"stream_name":"stdout","time":509.726647057,"data":"Using cache found in /tmp/torch_home/hub/amaralibey_bag-of-queries_main\n"}
+,{"stream_name":"stdout","time":509.726650778,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":509.72665357,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)\n"}
+,{"stream_name":"stdout","time":509.726656523,"data":"  warnings.warn(\"xFormers is not available (SwiGLU)\")\n"}
+,{"stream_name":"stdout","time":509.726659462,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)\n"}
+,{"stream_name":"stdout","time":509.726662504,"data":"  warnings.warn(\"xFormers is not available (Attention)\")\n"}
+,{"stream_name":"stdout","time":509.726665071,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)\n"}
+,{"stream_name":"stdout","time":509.726667644,"data":"  warnings.warn(\"xFormers is not available (Block)\")\n"}
+,{"stream_name":"stdout","time":509.726670085,"data":"13:11:19 [w0] built boq in 83.5s\n"}
+,{"stream_name":"stdout","time":509.726672581,"data":"13:11:55 [w0] boq S3LI-Etna-crater_inout: 1683 imgs 35.9s (46.9 img/s)\n"}
+,{"stream_name":"stdout","time":509.726675031,"data":"13:12:11 [w0] boq MadMax-F3: 229 imgs 15.7s (14.6 img/s)\n"}
+,{"stream_name":"stdout","time":509.726677524,"data":"13:12:16 [w0] boq LunarLoc-15: 118 imgs 5.2s (22.7 img/s)\n"}
+,{"stream_name":"stdout","time":509.726680095,"data":"13:12:18 [w0] boq SPICE-A-dawn-off-spad@5.0us: 98 imgs 2.5s (38.7 img/s)\n"}
+,{"stream_name":"stdout","time":509.726682592,"data":"13:12:23 [w0] boq LunarLoc-17: 54 imgs 4.2s (12.8 img/s)\n"}
+,{"stream_name":"stdout","time":509.726694096,"data":"Using cache found in /tmp/torch_home/hub/gmberton_MegaLoc_main\n"}
+,{"stream_name":"stdout","time":509.726696215,"data":"13:12:25 [w0] hf plain: gberton/MegaLoc/config.json -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/config.json\n"}
+,{"stream_name":"stdout","time":509.726698997,"data":"13:12:25 [w0] hf plain: gberton/MegaLoc/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/model.safetensors\n"}
+,{"stream_name":"stdout","time":509.726700996,"data":"13:14:09 [w0] built megaloc in 106.3s\n"}
+,{"stream_name":"stdout","time":509.726702818,"data":"13:15:23 [w0] megaloc S3LI-Etna-crater_inout: 1683 imgs 73.8s (22.8 img/s)\n"}
+,{"stream_name":"stdout","time":509.726704759,"data":"13:15:39 [w0] megaloc MadMax-F3: 229 imgs 16.1s (14.3 img/s)\n"}
+,{"stream_name":"stdout","time":509.726706597,"data":"13:15:46 [w0] megaloc LunarLoc-15: 118 imgs 7.0s (16.8 img/s)\n"}
+,{"stream_name":"stdout","time":509.726708506,"data":"13:15:51 [w0] megaloc SPICE-A-dawn-off-spad@5.0us: 98 imgs 5.1s (19.2 img/s)\n"}
+,{"stream_name":"stdout","time":509.726710443,"data":"13:15:55 [w0] megaloc LunarLoc-17: 54 imgs 4.3s (12.6 img/s)\n"}
+,{"stream_name":"stdout","time":509.726712376,"data":"\n"}
+,{"stream_name":"stdout","time":509.726736438,"data":"13:09:55 [w1] torch 2.11.0+cu130 cuda 13.0 dev NVIDIA L4 trajectories 6\n"}
+,{"stream_name":"stdout","time":509.726742205,"data":"Using cache found in /tmp/torch_home/hub/amaralibey_bag-of-queries_main\n"}
+,{"stream_name":"stdout","time":509.726744578,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":509.726746594,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)\n"}
+,{"stream_name":"stdout","time":509.726748739,"data":"  warnings.warn(\"xFormers is not available (SwiGLU)\")\n"}
+,{"stream_name":"stdout","time":509.726751014,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)\n"}
+,{"stream_name":"stdout","time":509.726753103,"data":"  warnings.warn(\"xFormers is not available (Attention)\")\n"}
+,{"stream_name":"stdout","time":509.726755104,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)\n"}
+,{"stream_name":"stdout","time":509.72675709,"data":"  warnings.warn(\"xFormers is not available (Block)\")\n"}
+,{"stream_name":"stdout","time":509.726759175,"data":"13:11:19 [w1] built boq in 83.6s\n"}
+,{"stream_name":"stdout","time":509.72676103,"data":"13:11:47 [w1] boq S3LI-Etna-crater: 1129 imgs 27.9s (40.5 img/s)\n"}
+,{"stream_name":"stdout","time":509.726763113,"data":"13:12:15 [w1] boq MadMax-C1: 463 imgs 27.6s (16.8 img/s)\n"}
+,{"stream_name":"stdout","time":509.726764942,"data":"13:12:31 [w1] boq MadMax-G0: 258 imgs 16.2s (15.9 img/s)\n"}
+,{"stream_name":"stdout","time":509.726766906,"data":"13:12:45 [w1] boq MadMax-A0: 171 imgs 14.0s (12.2 img/s)\n"}
+,{"stream_name":"stdout","time":509.726768764,"data":"13:12:48 [w1] boq SPICE-A-noon-off@2500.0us: 99 imgs 2.8s (35.0 img/s)\n"}
+,{"stream_name":"stdout","time":509.726770685,"data":"13:12:50 [w1] boq SPICE-A-noon-off-spad@5.0us: 97 imgs 2.5s (39.3 img/s)\n"}
+,{"stream_name":"stdout","time":509.726772582,"data":"Using cache found in /tmp/torch_home/hub/gmberton_MegaLoc_main\n"}
+,{"stream_name":"stdout","time":509.72677452,"data":"13:12:52 [w1] hf plain: gberton/MegaLoc/config.json -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/config.json\n"}
+,{"stream_name":"stdout","time":509.726776789,"data":"13:12:52 [w1] hf plain: gberton/MegaLoc/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/model.safetensors\n"}
+,{"stream_name":"stdout","time":509.726791085,"data":"13:14:09 [w1] built megaloc in 78.8s\n"}
+,{"stream_name":"stdout","time":509.726793176,"data":"13:15:01 [w1] megaloc S3LI-Etna-crater: 1129 imgs 52.5s (21.5 img/s)\n"}
+,{"stream_name":"stdout","time":509.726795122,"data":"13:15:28 [w1] megaloc MadMax-C1: 463 imgs 26.3s (17.6 img/s)\n"}
+,{"stream_name":"stdout","time":509.726796962,"data":"13:15:45 [w1] megaloc MadMax-G0: 258 imgs 17.8s (14.5 img/s)\n"}
+,{"stream_name":"stdout","time":509.726798807,"data":"13:15:59 [w1] megaloc MadMax-A0: 171 imgs 13.7s (12.5 img/s)\n"}
+,{"stream_name":"stdout","time":509.726800651,"data":"13:16:05 [w1] megaloc SPICE-A-noon-off@2500.0us: 99 imgs 5.4s (18.3 img/s)\n"}
+,{"stream_name":"stdout","time":509.726802605,"data":"13:16:10 [w1] megaloc SPICE-A-noon-off-spad@5.0us: 97 imgs 5.1s (19.0 img/s)\n"}
+,{"stream_name":"stdout","time":509.726804529,"data":"\n"}
+,{"stream_name":"stdout","time":509.726811259,"data":"13:09:56 [w2] torch 2.11.0+cu130 cuda 13.0 dev NVIDIA L4 trajectories 7\n"}
+,{"stream_name":"stdout","time":509.726813457,"data":"Using cache found in /tmp/torch_home/hub/amaralibey_bag-of-queries_main\n"}
+,{"stream_name":"stdout","time":509.726815479,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":509.726817384,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)\n"}
+,{"stream_name":"stdout","time":509.726819399,"data":"  warnings.warn(\"xFormers is not available (SwiGLU)\")\n"}
+,{"stream_name":"stdout","time":509.726821277,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)\n"}
+,{"stream_name":"stdout","time":509.726823318,"data":"  warnings.warn(\"xFormers is not available (Attention)\")\n"}
+,{"stream_name":"stdout","time":509.726825162,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)\n"}
+,{"stream_name":"stdout","time":509.726827073,"data":"  warnings.warn(\"xFormers is not available (Block)\")\n"}
+,{"stream_name":"stdout","time":509.726828902,"data":"13:11:19 [w2] built boq in 83.5s\n"}
+,{"stream_name":"stdout","time":509.72683089,"data":"13:11:41 [w2] boq S3LI-Etna-loops: 780 imgs 22.2s (35.1 img/s)\n"}
+,{"stream_name":"stdout","time":509.726832736,"data":"13:12:07 [w2] boq MadMax-C0: 502 imgs 26.1s (19.2 img/s)\n"}
+,{"stream_name":"stdout","time":509.726834538,"data":"13:12:27 [w2] boq MadMax-A4: 412 imgs 19.2s (21.4 img/s)\n"}
+,{"stream_name":"stdout","time":509.726836331,"data":"13:12:31 [w2] boq LunarLoc-10: 183 imgs 4.8s (38.0 img/s)\n"}
+,{"stream_name":"stdout","time":509.726838198,"data":"13:12:35 [w2] boq LunarLoc-9: 119 imgs 3.8s (31.3 img/s)\n"}
+,{"stream_name":"stdout","time":509.72684002,"data":"13:12:38 [w2] boq SPICE-A-dawn-off@2500.0us: 99 imgs 2.8s (35.9 img/s)\n"}
+,{"stream_name":"stdout","time":509.726841901,"data":"13:12:41 [w2] boq SPICE-A-night-on-spad@5.0us: 97 imgs 2.6s (37.9 img/s)\n"}
+,{"stream_name":"stdout","time":509.726843768,"data":"Using cache found in /tmp/torch_home/hub/gmberton_MegaLoc_main\n"}
+,{"stream_name":"stdout","time":509.726845863,"data":"13:12:42 [w2] hf plain: gberton/MegaLoc/config.json -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/config.json\n"}
+,{"stream_name":"stdout","time":509.726848367,"data":"13:12:42 [w2] hf plain: gberton/MegaLoc/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/model.safetensors\n"}
+,{"stream_name":"stdout","time":509.726852817,"data":"13:14:09 [w2] built megaloc in 88.3s\n"}
+,{"stream_name":"stdout","time":509.726854808,"data":"13:14:44 [w2] megaloc S3LI-Etna-loops: 780 imgs 35.2s (22.2 img/s)\n"}
+,{"stream_name":"stdout","time":509.726856642,"data":"13:15:12 [w2] megaloc MadMax-C0: 502 imgs 27.6s (18.2 img/s)\n"}
+,{"stream_name":"stdout","time":509.726858482,"data":"13:15:35 [w2] megaloc MadMax-A4: 412 imgs 23.5s (17.6 img/s)\n"}
+,{"stream_name":"stdout","time":509.72686028,"data":"13:15:44 [w2] megaloc LunarLoc-10: 183 imgs 9.2s (20.0 img/s)\n"}
+,{"stream_name":"stdout","time":509.726862111,"data":"13:15:51 [w2] megaloc LunarLoc-9: 119 imgs 6.5s (18.4 img/s)\n"}
+,{"stream_name":"stdout","time":509.726864006,"data":"13:15:56 [w2] megaloc SPICE-A-dawn-off@2500.0us: 99 imgs 5.3s (18.8 img/s)\n"}
+,{"stream_name":"stdout","time":509.726866883,"data":"13:16:01 [w2] megaloc SPICE-A-night-on-spad@5.0us: 97 imgs 4.9s (19.6 img/s)\n"}
+,{"stream_name":"stdout","time":509.726868782,"data":"\n"}
+,{"stream_name":"stdout","time":509.726870782,"data":"13:09:55 [w3] torch 2.11.0+cu130 cuda 13.0 dev NVIDIA L4 trajectories 7\n"}
+,{"stream_name":"stdout","time":509.726872923,"data":"Using cache found in /tmp/torch_home/hub/amaralibey_bag-of-queries_main\n"}
+,{"stream_name":"stdout","time":509.726874766,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":509.726876669,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)\n"}
+,{"stream_name":"stdout","time":509.726878639,"data":"  warnings.warn(\"xFormers is not available (SwiGLU)\")\n"}
+,{"stream_name":"stdout","time":509.726880585,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)\n"}
+,{"stream_name":"stdout","time":509.726882561,"data":"  warnings.warn(\"xFormers is not available (Attention)\")\n"}
+,{"stream_name":"stdout","time":509.726884487,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)\n"}
+,{"stream_name":"stdout","time":509.726886479,"data":"  warnings.warn(\"xFormers is not available (Block)\")\n"}
+,{"stream_name":"stdout","time":509.726888316,"data":"13:11:19 [w3] built boq in 83.7s\n"}
+,{"stream_name":"stdout","time":509.726890098,"data":"13:11:45 [w3] boq MadMax-E0: 517 imgs 26.4s (19.6 img/s)\n"}
+,{"stream_name":"stdout","time":509.726891956,"data":"13:12:11 [w3] boq MadMax-E1: 507 imgs 26.0s (19.5 img/s)\n"}
+,{"stream_name":"stdout","time":509.726893776,"data":"13:12:20 [w3] boq S3LI-Etna-traverse_1: 485 imgs 8.3s (58.2 img/s)\n"}
+,{"stream_name":"stdout","time":509.72689567,"data":"13:12:36 [w3] boq MadMax-G2: 290 imgs 15.7s (18.4 img/s)\n"}
+,{"stream_name":"stdout","time":509.726897492,"data":"13:12:50 [w3] boq MadMax-A2: 180 imgs 14.2s (12.7 img/s)\n"}
+,{"stream_name":"stdout","time":509.726899346,"data":"13:13:03 [w3] boq MadMax-F0: 117 imgs 13.2s (8.9 img/s)\n"}
+,{"stream_name":"stdout","time":509.726901187,"data":"13:13:06 [w3] boq SPICE-A-night-on@2500.0us: 97 imgs 2.7s (35.8 img/s)\n"}
+,{"stream_name":"stdout","time":509.726903043,"data":"Using cache found in /tmp/torch_home/hub/gmberton_MegaLoc_main\n"}
+,{"stream_name":"stdout","time":509.726904909,"data":"13:13:07 [w3] hf plain: gberton/MegaLoc/config.json -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/config.json\n"}
+,{"stream_name":"stdout","time":509.726906892,"data":"13:13:07 [w3] hf plain: gberton/MegaLoc/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/model.safetensors\n"}
+,{"stream_name":"stdout","time":509.726910875,"data":"13:14:09 [w3] built megaloc in 63.1s\n"}
+,{"stream_name":"stdout","time":509.726912812,"data":"13:14:37 [w3] megaloc MadMax-E0: 517 imgs 28.5s (18.2 img/s)\n"}
+,{"stream_name":"stdout","time":509.726914627,"data":"13:15:05 [w3] megaloc MadMax-E1: 507 imgs 27.5s (18.4 img/s)\n"}
+,{"stream_name":"stdout","time":509.726916453,"data":"13:15:26 [w3] megaloc S3LI-Etna-traverse_1: 485 imgs 21.4s (22.7 img/s)\n"}
+,{"stream_name":"stdout","time":509.726918292,"data":"13:15:44 [w3] megaloc MadMax-G2: 290 imgs 18.1s (16.0 img/s)\n"}
+,{"stream_name":"stdout","time":509.726920074,"data":"13:15:58 [w3] megaloc MadMax-A2: 180 imgs 13.7s (13.2 img/s)\n"}
+,{"stream_name":"stdout","time":509.72692187,"data":"13:16:09 [w3] megaloc MadMax-F0: 117 imgs 10.9s (10.7 img/s)\n"}
+,{"stream_name":"stdout","time":509.726923716,"data":"13:16:14 [w3] megaloc SPICE-A-night-on@2500.0us: 97 imgs 5.1s (19.1 img/s)\n"}
+,{"stream_name":"stdout","time":509.726925725,"data":"\n"}
+,{"stream_name":"stdout","time":509.726927813,"data":"13:16:15 [+   508s] $ /usr/bin/python3 /tmp/vprcode/metrics_all.py --root /tmp/vprdata/vpr-space-v0 --desc-dir /kaggle/working/desc --out /kaggle/working/results --tag a-exact-kaggleenv\n"}
+,{"stream_name":"stdout","time":514.387243265,"data":"boq: 16/16 setups, AUPRC mean 0.4694\n"}
+,{"stream_name":"stdout","time":515.457419923,"data":"megaloc: 16/16 setups, AUPRC mean 0.4688\n"}
+,{"stream_name":"stdout","time":517.152578883,"data":"13:16:22 [+   516s] DONE\n"}
+,{"stream_name":"stderr","time":519.736526972,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":519.736547298,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":520.118712853,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":520.118730293,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":521.206194425,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":522.532082495,"data":"[NbConvertApp] Writing 339269 bytes to __results__.html\n"}
+]

@@ -7,7 +7,8 @@ import argparse, json, os, shutil, subprocess, sys, tempfile
 
 USERNAMES = {"quynhtran35": "quynhtran35", "yuan1103": "yuan1103", "phatle1578": "phatle1578",
              "nguyenmanh0404": "nguyenmanh0404", "namhunhh": "namhunhh", "duckzuy": "duckzuykobip",
-             "dinhthinh": "dinhthinh", "hieu": "hieuho669", "mxuanquy": "mxuanquy", "yeshenhi": "yeshenhi"}
+             "dinhthinh": "dinhthinh", "hieu": "hieuho669", "mxuanquy": "mxuanquy", "yeshenhi": "yeshenhi",
+             "nhatlong1103": "nhatlong1103", "quynhle07": "quynhle07", "nguyenhoa99": "nguyenhoa99", "synchan5704": "synchan5704"}
 COMPETITION = "gemma-4-developer-agent"  # competition id 149921: grants the L4 machine shape
 
 

@@ -1,0 +1,37 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+12:50:56 [w1] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 6
+Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files
+Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt
+Desc dim set to 1536
+Model with domain = 'global' vocabulary loaded
+Desc dim set to 1536
+12:59:24 [w1] built anyloc_224 in 507.3s
+13:01:06 [w1] anyloc_224 S3LI-Etna-crater: 1129 imgs 102.3s (11.0 img/s)
+13:01:55 [w1] anyloc_224 MadMax-C1: 463 imgs 49.0s (9.5 img/s)
+13:02:25 [w1] anyloc_224 MadMax-G0: 258 imgs 30.5s (8.5 img/s)
+13:02:49 [w1] anyloc_224 MadMax-A0: 171 imgs 23.3s (7.4 img/s)
+13:02:58 [w1] anyloc_224 SPICE-A-noon-off@2500.0us: 99 imgs 9.9s (10.0 img/s)
+13:03:08 [w1] anyloc_224 SPICE-A-noon-off-spad@5.0us: 97 imgs 9.4s (10.4 img/s)
+Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files
+Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt
+Desc dim set to 1536
+Model with domain = 'global' vocabulary loaded
+Desc dim set to 1536
+13:03:29 [w1] built anyloc_322 in 21.3s
+13:06:53 [w1] anyloc_322 S3LI-Etna-crater: 1129 imgs 204.3s (5.5 img/s)
+13:08:23 [w1] anyloc_322 MadMax-C1: 463 imgs 89.5s (5.2 img/s)
+13:09:17 [w1] anyloc_322 MadMax-G0: 258 imgs 53.8s (4.8 img/s)
+13:09:54 [w1] anyloc_322 MadMax-A0: 171 imgs 37.5s (4.6 img/s)
+13:10:13 [w1] anyloc_322 SPICE-A-noon-off@2500.0us: 99 imgs 19.0s (5.2 img/s)
+13:10:32 [w1] anyloc_322 SPICE-A-noon-off-spad@5.0us: 97 imgs 18.5s (5.2 img/s)

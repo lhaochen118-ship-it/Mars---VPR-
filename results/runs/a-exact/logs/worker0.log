@@ -1,0 +1,43 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+13:10:35 [w0] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 5
+Using cache found in /tmp/torch_home/hub/amaralibey_bag-of-queries_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+13:12:08 [w0] built boq in 93.1s
+13:12:35 [w0] boq S3LI-Etna-crater_inout: 1683 imgs 26.8s (62.8 img/s)
+13:12:51 [w0] boq MadMax-F3: 229 imgs 16.0s (14.3 img/s)
+13:12:56 [w0] boq LunarLoc-15: 118 imgs 5.3s (22.4 img/s)
+13:12:59 [w0] boq SPICE-A-dawn-off-spad@5.0us: 98 imgs 2.5s (39.4 img/s)
+13:13:03 [w0] boq LunarLoc-17: 54 imgs 4.2s (12.8 img/s)
+Using cache found in /tmp/torch_home/hub/gmberton_MegaLoc_main
+13:13:05 [w0] hf plain: gberton/MegaLoc/config.json -> /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/config.json
+13:13:05 [w0] hf plain: gberton/MegaLoc/model.safetensors -> /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/model.safetensors
+13:14:58 [w0] built megaloc in 114.6s
+13:16:12 [w0] megaloc S3LI-Etna-crater_inout: 1683 imgs 74.3s (22.7 img/s)
+13:16:29 [w0] megaloc MadMax-F3: 229 imgs 16.6s (13.8 img/s)
+13:16:36 [w0] megaloc LunarLoc-15: 118 imgs 7.2s (16.3 img/s)
+13:16:41 [w0] megaloc SPICE-A-dawn-off-spad@5.0us: 98 imgs 5.0s (19.4 img/s)
+13:16:45 [w0] megaloc LunarLoc-17: 54 imgs 4.4s (12.4 img/s)
+Using cache found in /tmp/torch_home/hub/amaralibey_bag-of-queries_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+13:16:47 [w0] built boq_bs256 in 1.9s
+13:17:20 [w0] boq_bs256 S3LI-Etna-crater_inout: 1683 imgs 32.6s (51.6 img/s)
+13:18:15 [w0] boq_bs256 MadMax-F3: 229 imgs 55.4s (4.1 img/s)
+13:18:24 [w0] boq_bs256 LunarLoc-15: 118 imgs 8.4s (14.0 img/s)
+13:18:27 [w0] boq_bs256 SPICE-A-dawn-off-spad@5.0us: 98 imgs 3.3s (30.0 img/s)
+13:18:31 [w0] boq_bs256 LunarLoc-17: 54 imgs 3.9s (13.7 img/s)
+Using cache found in /tmp/torch_home/hub/gmberton_MegaLoc_main
+13:18:33 [w0] hf plain: gberton/MegaLoc/config.json -> /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/config.json
+13:18:33 [w0] hf plain: gberton/MegaLoc/model.safetensors -> /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/model.safetensors
+13:18:33 [w0] built megaloc_bs128 in 2.1s
+13:19:51 [w0] megaloc_bs128 S3LI-Etna-crater_inout: 1683 imgs 77.9s (21.6 img/s)
+13:20:31 [w0] megaloc_bs128 MadMax-F3: 229 imgs 39.9s (5.7 img/s)
+13:20:44 [w0] megaloc_bs128 LunarLoc-15: 118 imgs 12.8s (9.2 img/s)
+13:20:50 [w0] megaloc_bs128 SPICE-A-dawn-off-spad@5.0us: 98 imgs 6.6s (14.8 img/s)
+13:20:56 [w0] megaloc_bs128 LunarLoc-17: 54 imgs 5.9s (9.2 img/s)

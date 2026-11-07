@@ -1,0 +1,206 @@
+[{"stream_name":"stderr","time":0.913921188,"data":"/kaggle/src/script.py:23: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.\n"}
+,{"stream_name":"stderr","time":0.913965519,"data":"  tarfile.open(fileobj=io.BytesIO(base64.b64decode(CODE_B64))).extractall(code)\n"}
+,{"stream_name":"stdout","time":0.950507594,"data":"13:19:04 [+     0s] spec {\"session\": \"d-groupa-resolution-t4\", \"env\": \"pinned\", \"configs\": [\"megaloc_322\", \"megaloc_224\", \"boq_224\", \"boq_518\"], \"trajectories\": null, \"pixel_cost\": false}\n"}
+,{"stream_name":"stdout","time":4.792663385,"data":"13:19:08 [+     4s] input tree:\n"}
+,{"stream_name":"stdout","time":4.7926933819999995,"data":"/kaggle/input\n"}
+,{"stream_name":"stdout","time":4.792699338,"data":"/kaggle/input/vprspace-deps-hf\n"}
+,{"stream_name":"stdout","time":4.792720046,"data":"/kaggle/input/vprspace-deps-hf/hf_plain\n"}
+,{"stream_name":"stdout","time":4.792725537,"data":"/kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc\n"}
+,{"stream_name":"stdout","time":4.792730248,"data":"/kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_base_patch16_dinov3.lvd1689m\n"}
+,{"stream_name":"stdout","time":4.792734643,"data":"/kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_large_patch16_dinov3.lvd1689m\n"}
+,{"stream_name":"stdout","time":4.792738944,"data":"/kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_small_patch16_dinov3.lvd1689m\n"}
+,{"stream_name":"stdout","time":4.792743182,"data":"/kaggle/input/notebooks\n"}
+,{"stream_name":"stdout","time":4.792747353,"data":"/kaggle/input/notebooks/mxuanquy\n"}
+,{"stream_name":"stdout","time":4.7927514890000005,"data":"/kaggle/input/notebooks/mxuanquy/vprspace-data-a\n"}
+,{"stream_name":"stdout","time":4.792755678,"data":"/kaggle/input/notebooks/mxuanquy/vprspace-deps-core\n"}
+,{"stream_name":"stdout","time":4.792759868,"data":"/kaggle/input/notebooks/mxuanquy/vprspace-deps-core/hf_home\n"}
+,{"stream_name":"stdout","time":4.792764234,"data":"/kaggle/input/notebooks/mxuanquy/vprspace-deps-core/hf_home/hub\n"}
+,{"stream_name":"stdout","time":4.792768507,"data":"/kaggle/input/notebooks/mxuanquy/vprspace-deps-core/hf_home/xet\n"}
+,{"stream_name":"stdout","time":4.792772617,"data":"/kaggle/input/notebooks/mxuanquy/vprspace-deps-core/torch_home\n"}
+,{"stream_name":"stdout","time":4.79277752,"data":"/kaggle/input/notebooks/mxuanquy/vprspace-deps-core/torch_home/hub\n"}
+,{"stream_name":"stdout","time":4.792782669,"data":"/kaggle/input/notebooks/mxuanquy/vprspace-deps-core/wheels\n"}
+,{"stream_name":"stdout","time":4.7927874169999996,"data":"/kaggle/input/notebooks/mxuanquy/vprspace-data-b\n"}
+,{"stream_name":"stdout","time":4.792791913,"data":"\n"}
+,{"stream_name":"stdout","time":9.620264166,"data":"13:19:13 [+     9s] $ cp -rs --remove-destination /kaggle/input/notebooks/mxuanquy/vprspace-deps-core/torch_home/. /tmp/torch_home/\n"}
+,{"stream_name":"stdout","time":14.767481713,"data":"13:19:18 [+    14s] $ cp -rs --remove-destination /kaggle/input/notebooks/mxuanquy/vprspace-deps-core/hf_home/. /tmp/hf_home/\n"}
+,{"stream_name":"stdout","time":28.722767881,"data":"13:19:32 [+    28s] wheels: /kaggle/input/notebooks/mxuanquy/vprspace-deps-core/wheels req: /kaggle/input/notebooks/mxuanquy/vprspace-deps-core/requirements_pinned.txt\n"}
+,{"stream_name":"stdout","time":28.722805186,"data":"13:19:32 [+    28s] $ /usr/bin/python3 -m venv /tmp/vprenv\n"}
+,{"stream_name":"stderr","time":29.697311011,"data":"Error: Command '['/tmp/vprenv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":29.714101929,"data":"13:19:33 [+    29s] $ /usr/bin/python3 -m venv --without-pip /tmp/vprenv\n"}
+,{"stream_name":"stdout","time":29.829027287,"data":"13:19:33 [+    29s] $ /usr/bin/python3 -m pip --python /tmp/vprenv/bin/python install -q --no-index --find-links /kaggle/input/notebooks/mxuanquy/vprspace-deps-core/wheels -r /kaggle/input/notebooks/mxuanquy/vprspace-deps-core/requirements_pinned.txt\n"}
+,{"stream_name":"stderr","time":30.394520785,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":30.394544478,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":213.777991119,"data":"13:22:37 [+   213s] $ /usr/bin/python3 -m pip --python /tmp/vprenv/bin/python install -q --no-index --no-deps --find-links /kaggle/input/notebooks/mxuanquy/vprspace-deps-core/wheels pytorch-lightning lightning-utilities torchmetrics fast-pytorch-kmeans timm psutil pytorch-metric-learning\n"}
+,{"stream_name":"stderr","time":214.031187129,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":214.031212719,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":217.676144951,"data":"13:22:41 [+   217s] data root /tmp/vprdata/vpr-space-v0 extracted\n"}
+,{"stream_name":"stdout","time":217.815312693,"data":"13:22:41 [+   217s] 2 GPUs, images per GPU [4393.0, 4391.0]\n"}
+,{"stream_name":"stdout","time":222.822251046,"data":"13:22:46 [+   222s] hf_plain dirs: /kaggle/input/vprspace-deps-hf/hf_plain\n"}
+,{"stream_name":"stdout","time":2274.771525887,"data":"13:56:58 [+  2274s] workers exit codes [0, 0]\n"}
+,{"stream_name":"stdout","time":2274.774748322,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":2274.774761642,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":2274.77476515,"data":"13:22:51 [w0] torch 2.6.0+cu124 cuda 12.4 dev Tesla T4 trajectories 12\n"}
+,{"stream_name":"stdout","time":2274.774768209,"data":"Using cache found in /tmp/torch_home/hub/gmberton_MegaLoc_main\n"}
+,{"stream_name":"stdout","time":2274.774771149,"data":"13:22:53 [w0] hf plain: gberton/MegaLoc/config.json -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/config.json\n"}
+,{"stream_name":"stdout","time":2274.774774894,"data":"13:22:53 [w0] hf plain: gberton/MegaLoc/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/model.safetensors\n"}
+,{"stream_name":"stdout","time":2274.774777942,"data":"13:24:43 [w0] built megaloc_322 in 112.0s\n"}
+,{"stream_name":"stdout","time":2274.774781627,"data":"/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/dataloader.py:624: UserWarning: This DataLoader will create 8 worker processes in total. Our suggested max number of worker in current system is 4, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.\n"}
+,{"stream_name":"stdout","time":2274.774785974,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":2274.774788907,"data":"13:25:40 [w0] megaloc_322 S3LI-Etna-crater_inout: 1683 imgs 57.0s (29.5 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774791838,"data":"13:27:20 [w0] megaloc_322 MadMax-E0: 517 imgs 99.7s (5.2 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774794734,"data":"13:28:56 [w0] megaloc_322 MadMax-C0: 502 imgs 96.6s (5.2 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774797606,"data":"13:30:11 [w0] megaloc_322 MadMax-C1: 463 imgs 75.3s (6.2 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774800561,"data":"13:31:01 [w0] megaloc_322 MadMax-G2: 290 imgs 49.6s (5.8 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774812404,"data":"13:31:33 [w0] megaloc_322 MadMax-F3: 229 imgs 32.2s (7.1 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774814837,"data":"13:32:10 [w0] megaloc_322 MadMax-A2: 180 imgs 36.5s (4.9 img/s)\n"}
+,{"stream_name":"stdout","time":2274.77481721,"data":"13:32:16 [w0] megaloc_322 LunarLoc-9: 119 imgs 6.3s (18.9 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774819522,"data":"13:32:50 [w0] megaloc_322 MadMax-F0: 117 imgs 33.9s (3.5 img/s)\n"}
+,{"stream_name":"stdout","time":2274.77482186,"data":"13:32:57 [w0] megaloc_322 SPICE-A-noon-off@2500.0us: 99 imgs 6.9s (14.3 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774824443,"data":"13:33:02 [w0] megaloc_322 SPICE-A-night-on-spad@5.0us: 97 imgs 5.6s (17.3 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774826809,"data":"13:33:08 [w0] megaloc_322 SPICE-A-noon-off-spad@5.0us: 97 imgs 5.3s (18.3 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774829131,"data":"Using cache found in /tmp/torch_home/hub/gmberton_MegaLoc_main\n"}
+,{"stream_name":"stdout","time":2274.774831515,"data":"13:33:10 [w0] hf plain: gberton/MegaLoc/config.json -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/config.json\n"}
+,{"stream_name":"stdout","time":2274.774834648,"data":"13:33:10 [w0] hf plain: gberton/MegaLoc/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/model.safetensors\n"}
+,{"stream_name":"stdout","time":2274.774837157,"data":"13:33:10 [w0] built megaloc_224 in 2.6s\n"}
+,{"stream_name":"stdout","time":2274.774839549,"data":"13:33:44 [w0] megaloc_224 S3LI-Etna-crater_inout: 1683 imgs 33.6s (50.1 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774841897,"data":"13:34:54 [w0] megaloc_224 MadMax-E0: 517 imgs 70.1s (7.4 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774844209,"data":"13:35:57 [w0] megaloc_224 MadMax-C0: 502 imgs 62.5s (8.0 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774846532,"data":"13:36:40 [w0] megaloc_224 MadMax-C1: 463 imgs 43.2s (10.7 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774848905,"data":"13:37:14 [w0] megaloc_224 MadMax-G2: 290 imgs 34.3s (8.4 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774851212,"data":"13:37:47 [w0] megaloc_224 MadMax-F3: 229 imgs 32.8s (7.0 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774853507,"data":"13:38:18 [w0] megaloc_224 MadMax-A2: 180 imgs 31.4s (5.7 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774856125,"data":"13:38:26 [w0] megaloc_224 LunarLoc-9: 119 imgs 7.6s (15.7 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774858575,"data":"13:38:45 [w0] megaloc_224 MadMax-F0: 117 imgs 19.3s (6.1 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774860914,"data":"13:38:49 [w0] megaloc_224 SPICE-A-noon-off@2500.0us: 99 imgs 3.6s (27.6 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774863351,"data":"13:38:52 [w0] megaloc_224 SPICE-A-night-on-spad@5.0us: 97 imgs 2.8s (34.7 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774865687,"data":"13:38:54 [w0] megaloc_224 SPICE-A-noon-off-spad@5.0us: 97 imgs 2.9s (33.9 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774868012,"data":"Using cache found in /tmp/torch_home/hub/amaralibey_bag-of-queries_main\n"}
+,{"stream_name":"stdout","time":2274.774870319,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2274.774872747,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)\n"}
+,{"stream_name":"stdout","time":2274.774875193,"data":"  warnings.warn(\"xFormers is not available (SwiGLU)\")\n"}
+,{"stream_name":"stdout","time":2274.774877668,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)\n"}
+,{"stream_name":"stdout","time":2274.774882312,"data":"  warnings.warn(\"xFormers is not available (Attention)\")\n"}
+,{"stream_name":"stdout","time":2274.774884921,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)\n"}
+,{"stream_name":"stdout","time":2274.774887329,"data":"  warnings.warn(\"xFormers is not available (Block)\")\n"}
+,{"stream_name":"stdout","time":2274.774889683,"data":"13:38:57 [w0] built boq_224 in 2.3s\n"}
+,{"stream_name":"stdout","time":2274.774891946,"data":"13:39:35 [w0] boq_224 S3LI-Etna-crater_inout: 1683 imgs 37.7s (44.6 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774894351,"data":"13:41:03 [w0] boq_224 MadMax-E0: 517 imgs 88.0s (5.9 img/s)\n"}
+,{"stream_name":"stdout","time":2274.77489667,"data":"13:42:16 [w0] boq_224 MadMax-C0: 502 imgs 73.1s (6.9 img/s)\n"}
+,{"stream_name":"stdout","time":2274.77489894,"data":"13:43:19 [w0] boq_224 MadMax-C1: 463 imgs 63.6s (7.3 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774901219,"data":"13:43:55 [w0] boq_224 MadMax-G2: 290 imgs 35.6s (8.1 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774903863,"data":"13:44:23 [w0] boq_224 MadMax-F3: 229 imgs 28.2s (8.1 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774906165,"data":"13:44:46 [w0] boq_224 MadMax-A2: 180 imgs 23.3s (7.7 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774908453,"data":"13:44:51 [w0] boq_224 LunarLoc-9: 119 imgs 4.8s (24.8 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774910775,"data":"13:45:10 [w0] boq_224 MadMax-F0: 117 imgs 18.4s (6.4 img/s)\n"}
+,{"stream_name":"stdout","time":2274.7749131,"data":"13:45:13 [w0] boq_224 SPICE-A-noon-off@2500.0us: 99 imgs 3.2s (30.8 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774915422,"data":"13:45:18 [w0] boq_224 SPICE-A-night-on-spad@5.0us: 97 imgs 5.2s (18.8 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774917767,"data":"13:45:23 [w0] boq_224 SPICE-A-noon-off-spad@5.0us: 97 imgs 5.3s (18.4 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774920087,"data":"Using cache found in /tmp/torch_home/hub/amaralibey_bag-of-queries_main\n"}
+,{"stream_name":"stdout","time":2274.774922377,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2274.774924686,"data":"13:45:25 [w0] built boq_518 in 2.2s\n"}
+,{"stream_name":"stdout","time":2274.774926947,"data":"13:48:36 [w0] boq_518 S3LI-Etna-crater_inout: 1683 imgs 190.8s (8.8 img/s)\n"}
+,{"stream_name":"stdout","time":2274.77492927,"data":"13:50:13 [w0] boq_518 MadMax-E0: 517 imgs 96.9s (5.3 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774931581,"data":"13:51:47 [w0] boq_518 MadMax-C0: 502 imgs 93.6s (5.4 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774933865,"data":"13:53:15 [w0] boq_518 MadMax-C1: 463 imgs 88.7s (5.2 img/s)\n"}
+,{"stream_name":"stdout","time":2274.77493615,"data":"13:54:14 [w0] boq_518 MadMax-G2: 290 imgs 59.0s (4.9 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774938442,"data":"13:55:01 [w0] boq_518 MadMax-F3: 229 imgs 46.8s (4.9 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774940717,"data":"13:55:37 [w0] boq_518 MadMax-A2: 180 imgs 35.4s (5.1 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774942995,"data":"13:55:54 [w0] boq_518 LunarLoc-9: 119 imgs 17.0s (7.0 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774945289,"data":"13:56:19 [w0] boq_518 MadMax-F0: 117 imgs 25.1s (4.7 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774947584,"data":"13:56:32 [w0] boq_518 SPICE-A-noon-off@2500.0us: 99 imgs 13.4s (7.4 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774949887,"data":"13:56:45 [w0] boq_518 SPICE-A-night-on-spad@5.0us: 97 imgs 12.6s (7.7 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774952198,"data":"13:56:57 [w0] boq_518 SPICE-A-noon-off-spad@5.0us: 97 imgs 12.5s (7.8 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774956766,"data":"\n"}
+,{"stream_name":"stdout","time":2274.774958982,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":2274.77496128,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":2274.774963564,"data":"13:22:51 [w1] torch 2.6.0+cu124 cuda 12.4 dev Tesla T4 trajectories 13\n"}
+,{"stream_name":"stdout","time":2274.774965889,"data":"Using cache found in /tmp/torch_home/hub/gmberton_MegaLoc_main\n"}
+,{"stream_name":"stdout","time":2274.774968205,"data":"13:22:53 [w1] hf plain: gberton/MegaLoc/config.json -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/config.json\n"}
+,{"stream_name":"stdout","time":2274.77497072,"data":"13:22:53 [w1] hf plain: gberton/MegaLoc/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/model.safetensors\n"}
+,{"stream_name":"stdout","time":2274.774973147,"data":"13:24:43 [w1] built megaloc_322 in 112.1s\n"}
+,{"stream_name":"stdout","time":2274.774975913,"data":"/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/dataloader.py:624: UserWarning: This DataLoader will create 8 worker processes in total. Our suggested max number of worker in current system is 4, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.\n"}
+,{"stream_name":"stdout","time":2274.774979045,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":2274.77498134,"data":"13:25:23 [w1] megaloc_322 S3LI-Etna-crater: 1129 imgs 40.5s (27.9 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774983656,"data":"13:25:51 [w1] megaloc_322 S3LI-Etna-loops: 780 imgs 28.0s (27.9 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774995759,"data":"13:27:31 [w1] megaloc_322 MadMax-E1: 507 imgs 99.6s (5.1 img/s)\n"}
+,{"stream_name":"stdout","time":2274.774998227,"data":"13:27:52 [w1] megaloc_322 S3LI-Etna-traverse_1: 485 imgs 21.3s (22.8 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775000533,"data":"13:29:14 [w1] megaloc_322 MadMax-A4: 412 imgs 81.6s (5.0 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775002825,"data":"13:30:08 [w1] megaloc_322 MadMax-G0: 258 imgs 54.4s (4.7 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775005115,"data":"13:30:19 [w1] megaloc_322 LunarLoc-10: 183 imgs 10.5s (17.5 img/s)\n"}
+,{"stream_name":"stdout","time":2274.77500741,"data":"13:30:56 [w1] megaloc_322 MadMax-A0: 171 imgs 37.6s (4.6 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775009702,"data":"13:31:04 [w1] megaloc_322 LunarLoc-15: 118 imgs 8.0s (14.7 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775012001,"data":"13:31:11 [w1] megaloc_322 SPICE-A-dawn-off@2500.0us: 99 imgs 6.7s (14.7 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775014334,"data":"13:31:18 [w1] megaloc_322 SPICE-A-dawn-off-spad@5.0us: 98 imgs 6.5s (15.1 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775016636,"data":"13:31:25 [w1] megaloc_322 SPICE-A-night-on@2500.0us: 97 imgs 7.2s (13.5 img/s)\n"}
+,{"stream_name":"stdout","time":2274.77501894,"data":"13:31:30 [w1] megaloc_322 LunarLoc-17: 54 imgs 5.5s (9.8 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775021289,"data":"Using cache found in /tmp/torch_home/hub/gmberton_MegaLoc_main\n"}
+,{"stream_name":"stdout","time":2274.775023597,"data":"13:31:32 [w1] hf plain: gberton/MegaLoc/config.json -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/config.json\n"}
+,{"stream_name":"stdout","time":2274.775026036,"data":"13:31:32 [w1] hf plain: gberton/MegaLoc/model.safetensors -\u003e /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/model.safetensors\n"}
+,{"stream_name":"stdout","time":2274.775034755,"data":"13:31:33 [w1] built megaloc_224 in 3.1s\n"}
+,{"stream_name":"stdout","time":2274.77503715,"data":"13:31:58 [w1] megaloc_224 S3LI-Etna-crater: 1129 imgs 24.4s (46.2 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775039472,"data":"13:32:14 [w1] megaloc_224 S3LI-Etna-loops: 780 imgs 16.4s (47.5 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775041792,"data":"13:33:10 [w1] megaloc_224 MadMax-E1: 507 imgs 56.1s (9.0 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775044097,"data":"13:33:22 [w1] megaloc_224 S3LI-Etna-traverse_1: 485 imgs 12.0s (40.5 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775046461,"data":"13:34:32 [w1] megaloc_224 MadMax-A4: 412 imgs 69.9s (5.9 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775048795,"data":"13:35:15 [w1] megaloc_224 MadMax-G0: 258 imgs 43.1s (6.0 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775051397,"data":"13:35:25 [w1] megaloc_224 LunarLoc-10: 183 imgs 9.7s (18.9 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775053758,"data":"13:35:53 [w1] megaloc_224 MadMax-A0: 171 imgs 28.1s (6.1 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775056032,"data":"13:35:59 [w1] megaloc_224 LunarLoc-15: 118 imgs 5.8s (20.4 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775058338,"data":"13:36:03 [w1] megaloc_224 SPICE-A-dawn-off@2500.0us: 99 imgs 4.5s (21.9 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775060671,"data":"13:36:08 [w1] megaloc_224 SPICE-A-dawn-off-spad@5.0us: 98 imgs 4.4s (22.3 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775062975,"data":"13:36:13 [w1] megaloc_224 SPICE-A-night-on@2500.0us: 97 imgs 4.7s (20.6 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775065302,"data":"13:36:20 [w1] megaloc_224 LunarLoc-17: 54 imgs 7.1s (7.6 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775067689,"data":"Using cache found in /tmp/torch_home/hub/amaralibey_bag-of-queries_main\n"}
+,{"stream_name":"stdout","time":2274.775069999,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2274.775072352,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)\n"}
+,{"stream_name":"stdout","time":2274.775074805,"data":"  warnings.warn(\"xFormers is not available (SwiGLU)\")\n"}
+,{"stream_name":"stdout","time":2274.775077198,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)\n"}
+,{"stream_name":"stdout","time":2274.775079669,"data":"  warnings.warn(\"xFormers is not available (Attention)\")\n"}
+,{"stream_name":"stdout","time":2274.775082045,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)\n"}
+,{"stream_name":"stdout","time":2274.775084474,"data":"  warnings.warn(\"xFormers is not available (Block)\")\n"}
+,{"stream_name":"stdout","time":2274.775086857,"data":"13:36:50 [w1] built boq_224 in 30.4s\n"}
+,{"stream_name":"stdout","time":2274.775089147,"data":"13:37:19 [w1] boq_224 S3LI-Etna-crater: 1129 imgs 28.4s (39.8 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775091484,"data":"13:37:40 [w1] boq_224 S3LI-Etna-loops: 780 imgs 21.0s (37.1 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775093802,"data":"13:38:58 [w1] boq_224 MadMax-E1: 507 imgs 78.0s (6.5 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775096144,"data":"13:39:13 [w1] boq_224 S3LI-Etna-traverse_1: 485 imgs 15.1s (32.2 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775098455,"data":"13:40:33 [w1] boq_224 MadMax-A4: 412 imgs 79.7s (5.2 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775100773,"data":"13:41:14 [w1] boq_224 MadMax-G0: 258 imgs 41.5s (6.2 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775104754,"data":"13:41:27 [w1] boq_224 LunarLoc-10: 183 imgs 12.5s (14.6 img/s)\n"}
+,{"stream_name":"stdout","time":2274.77510712,"data":"13:42:09 [w1] boq_224 MadMax-A0: 171 imgs 42.6s (4.0 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775109408,"data":"13:42:16 [w1] boq_224 LunarLoc-15: 118 imgs 6.7s (17.6 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775111799,"data":"13:42:22 [w1] boq_224 SPICE-A-dawn-off@2500.0us: 99 imgs 6.6s (15.0 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775125785,"data":"13:42:28 [w1] boq_224 SPICE-A-dawn-off-spad@5.0us: 98 imgs 5.8s (17.0 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775128419,"data":"13:42:35 [w1] boq_224 SPICE-A-night-on@2500.0us: 97 imgs 7.0s (13.9 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775131027,"data":"13:42:46 [w1] boq_224 LunarLoc-17: 54 imgs 10.7s (5.0 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775133309,"data":"Using cache found in /tmp/torch_home/hub/amaralibey_bag-of-queries_main\n"}
+,{"stream_name":"stdout","time":2274.77513558,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2274.775137841,"data":"13:42:55 [w1] built boq_518 in 9.3s\n"}
+,{"stream_name":"stdout","time":2274.775140025,"data":"13:45:12 [w1] boq_518 S3LI-Etna-crater: 1129 imgs 136.5s (8.3 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775142323,"data":"13:46:46 [w1] boq_518 S3LI-Etna-loops: 780 imgs 94.4s (8.3 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775144564,"data":"13:48:23 [w1] boq_518 MadMax-E1: 507 imgs 96.7s (5.2 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775146822,"data":"13:49:23 [w1] boq_518 S3LI-Etna-traverse_1: 485 imgs 60.3s (8.0 img/s)\n"}
+,{"stream_name":"stdout","time":2274.7751491,"data":"13:50:55 [w1] boq_518 MadMax-A4: 412 imgs 92.0s (4.5 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775151343,"data":"13:51:57 [w1] boq_518 MadMax-G0: 258 imgs 61.9s (4.2 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775153594,"data":"13:52:29 [w1] boq_518 LunarLoc-10: 183 imgs 31.6s (5.8 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775155892,"data":"13:53:11 [w1] boq_518 MadMax-A0: 171 imgs 42.6s (4.0 img/s)\n"}
+,{"stream_name":"stdout","time":2274.77515816,"data":"13:53:30 [w1] boq_518 LunarLoc-15: 118 imgs 18.9s (6.3 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775160457,"data":"13:53:47 [w1] boq_518 SPICE-A-dawn-off@2500.0us: 99 imgs 16.3s (6.1 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775162747,"data":"13:54:00 [w1] boq_518 SPICE-A-dawn-off-spad@5.0us: 98 imgs 13.1s (7.5 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775165034,"data":"13:54:14 [w1] boq_518 SPICE-A-night-on@2500.0us: 97 imgs 13.9s (7.0 img/s)\n"}
+,{"stream_name":"stdout","time":2274.77516731,"data":"13:54:27 [w1] boq_518 LunarLoc-17: 54 imgs 13.3s (4.1 img/s)\n"}
+,{"stream_name":"stdout","time":2274.775169577,"data":"\n"}
+,{"stream_name":"stdout","time":2274.775171775,"data":"13:56:58 [+  2274s] $ /tmp/vprenv/bin/python /tmp/vprcode/metrics_all.py --root /tmp/vprdata/vpr-space-v0 --desc-dir /kaggle/working/desc --out /kaggle/working/results --tag d-groupa-resolution-t4\n"}
+,{"stream_name":"stderr","time":2274.936419866,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":2274.936451046,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":2283.026429937,"data":"boq_224: 16/16 setups, AUPRC mean 0.4419\n"}
+,{"stream_name":"stdout","time":2285.422887179,"data":"boq_518: 16/16 setups, AUPRC mean 0.4743\n"}
+,{"stream_name":"stdout","time":2287.480058446,"data":"megaloc_224: 16/16 setups, AUPRC mean 0.4487\n"}
+,{"stream_name":"stdout","time":2289.637665432,"data":"megaloc_322: 16/16 setups, AUPRC mean 0.4670\n"}
+,{"stream_name":"stdout","time":2290.745562894,"data":"13:57:14 [+  2290s] DONE\n"}
+,{"stream_name":"stderr","time":2293.239408269,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":2293.239439617,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":2293.621126575,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":2293.621152103,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":2295.836323525,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":2296.925172561,"data":"[NbConvertApp] Writing 339444 bytes to __results__.html\n"}
+]

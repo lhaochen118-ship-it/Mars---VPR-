@@ -42,7 +42,9 @@ def load(results_dir):
             continue
         key = f"{r['name']}" + (f" [{r['tag']}]" if r.get("tag") else "")
         rows[key] = r
-    return rows
+    # partial runs (split / failed-trajectory sessions) are dropped once a complete result of the same set exists
+    complete = {r["name"] for r in rows.values() if r["complete"]}
+    return {k: r for k, r in rows.items() if r["complete"] or r["name"] not in complete}
 
 
 def main():

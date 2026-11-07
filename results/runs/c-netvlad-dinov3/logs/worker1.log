@@ -1,0 +1,79 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+13:33:17 [w1] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 7
+13:33:50 [w1] built netvlad_4096_native in 32.2s
+13:34:00 [w1] OOM -> sub-batch 4
+13:35:40 [w1] netvlad_4096_native MadMax-E1: 507 imgs 110.7s (4.6 img/s)
+13:36:35 [w1] netvlad_4096_native MadMax-G0: 258 imgs 54.3s (4.8 img/s)
+13:37:13 [w1] netvlad_4096_native MadMax-A2: 180 imgs 38.7s (4.7 img/s)
+13:37:30 [w1] netvlad_4096_native S3LI-Etna-loops: 780 imgs 16.9s (46.0 img/s)
+13:37:38 [w1] netvlad_4096_native LunarLoc-9: 119 imgs 7.9s (15.2 img/s)
+13:37:40 [w1] netvlad_4096_native SPICE-A-dawn-off-spad@5.0us: 98 imgs 2.0s (47.9 img/s)
+13:37:42 [w1] netvlad_4096_native SPICE-A-noon-off-spad@5.0us: 97 imgs 1.9s (52.2 img/s)
+13:37:48 [w1] built netvlad_32768_native in 6.0s
+13:37:53 [w1] OOM -> sub-batch 4
+13:39:34 [w1] netvlad_32768_native MadMax-E1: 507 imgs 105.9s (4.8 img/s)
+13:40:28 [w1] netvlad_32768_native MadMax-G0: 258 imgs 54.4s (4.7 img/s)
+13:41:06 [w1] netvlad_32768_native MadMax-A2: 180 imgs 38.0s (4.7 img/s)
+13:41:23 [w1] netvlad_32768_native S3LI-Etna-loops: 780 imgs 16.3s (47.9 img/s)
+13:41:30 [w1] netvlad_32768_native LunarLoc-9: 119 imgs 7.4s (16.1 img/s)
+13:41:32 [w1] netvlad_32768_native SPICE-A-dawn-off-spad@5.0us: 98 imgs 1.9s (52.0 img/s)
+13:41:34 [w1] netvlad_32768_native SPICE-A-noon-off-spad@5.0us: 97 imgs 1.8s (52.7 img/s)
+13:41:41 [w1] built netvlad_4096_max640 in 7.4s
+13:42:05 [w1] netvlad_4096_max640 MadMax-E1: 507 imgs 24.3s (20.8 img/s)
+13:42:18 [w1] netvlad_4096_max640 MadMax-G0: 258 imgs 13.0s (19.8 img/s)
+13:42:30 [w1] netvlad_4096_max640 MadMax-A2: 180 imgs 11.5s (15.6 img/s)
+13:42:45 [w1] netvlad_4096_max640 S3LI-Etna-loops: 780 imgs 15.0s (51.9 img/s)
+13:42:48 [w1] netvlad_4096_max640 LunarLoc-9: 119 imgs 3.3s (35.9 img/s)
+13:42:50 [w1] netvlad_4096_max640 SPICE-A-dawn-off-spad@5.0us: 98 imgs 2.2s (44.8 img/s)
+13:42:53 [w1] netvlad_4096_max640 SPICE-A-noon-off-spad@5.0us: 97 imgs 2.2s (44.7 img/s)
+13:42:53 [w1] hf plain: timm/vit_small_patch16_dinov3.lvd1689m/model.safetensors -> /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_small_patch16_dinov3.lvd1689m/model.safetensors
+13:42:56 [w1] dinov3: RoPE periods truncated to bfloat16 (official behaviour)
+13:42:56 [w1] built dinov3_s16_224 in 2.9s
+13:43:28 [w1] dinov3_s16_224 MadMax-E1: 507 imgs 32.7s (15.5 img/s)
+13:44:01 [w1] dinov3_s16_224 MadMax-G0: 258 imgs 32.4s (8.0 img/s)
+13:44:33 [w1] dinov3_s16_224 MadMax-A2: 180 imgs 32.2s (5.6 img/s)
+13:44:37 [w1] dinov3_s16_224 S3LI-Etna-loops: 780 imgs 4.4s (175.7 img/s)
+13:44:42 [w1] dinov3_s16_224 LunarLoc-9: 119 imgs 4.8s (25.0 img/s)
+13:44:44 [w1] dinov3_s16_224 SPICE-A-dawn-off-spad@5.0us: 98 imgs 1.7s (57.9 img/s)
+13:44:46 [w1] dinov3_s16_224 SPICE-A-noon-off-spad@5.0us: 97 imgs 1.7s (56.0 img/s)
+13:44:47 [w1] hf plain: timm/vit_base_patch16_dinov3.lvd1689m/model.safetensors -> /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_base_patch16_dinov3.lvd1689m/model.safetensors
+13:45:06 [w1] dinov3: RoPE periods truncated to bfloat16 (official behaviour)
+13:45:06 [w1] built dinov3_b16_224 in 20.3s
+13:45:41 [w1] dinov3_b16_224 MadMax-E1: 507 imgs 34.6s (14.6 img/s)
+13:46:14 [w1] dinov3_b16_224 MadMax-G0: 258 imgs 33.3s (7.7 img/s)
+13:46:46 [w1] dinov3_b16_224 MadMax-A2: 180 imgs 32.5s (5.5 img/s)
+13:46:54 [w1] dinov3_b16_224 S3LI-Etna-loops: 780 imgs 7.4s (105.7 img/s)
+13:46:59 [w1] dinov3_b16_224 LunarLoc-9: 119 imgs 5.3s (22.6 img/s)
+13:47:01 [w1] dinov3_b16_224 SPICE-A-dawn-off-spad@5.0us: 98 imgs 2.1s (47.0 img/s)
+13:47:03 [w1] dinov3_b16_224 SPICE-A-noon-off-spad@5.0us: 97 imgs 2.2s (44.5 img/s)
+13:47:05 [w1] hf plain: timm/vit_base_patch16_dinov3.lvd1689m/model.safetensors -> /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_base_patch16_dinov3.lvd1689m/model.safetensors
+13:47:05 [w1] dinov3: RoPE periods truncated to bfloat16 (official behaviour)
+13:47:05 [w1] built dinov3_b16_512 in 1.4s
+13:47:53 [w1] dinov3_b16_512 MadMax-E1: 507 imgs 48.2s (10.5 img/s)
+13:48:33 [w1] dinov3_b16_512 MadMax-G0: 258 imgs 39.5s (6.5 img/s)
+13:49:09 [w1] dinov3_b16_512 MadMax-A2: 180 imgs 36.5s (4.9 img/s)
+13:49:38 [w1] dinov3_b16_512 S3LI-Etna-loops: 780 imgs 29.3s (26.6 img/s)
+13:49:48 [w1] dinov3_b16_512 LunarLoc-9: 119 imgs 9.2s (12.9 img/s)
+13:49:52 [w1] dinov3_b16_512 SPICE-A-dawn-off-spad@5.0us: 98 imgs 4.8s (20.3 img/s)
+13:49:57 [w1] dinov3_b16_512 SPICE-A-noon-off-spad@5.0us: 97 imgs 4.8s (20.1 img/s)
+13:50:02 [w1] hf plain: timm/vit_large_patch16_dinov3.lvd1689m/model.safetensors -> /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_large_patch16_dinov3.lvd1689m/model.safetensors
+13:51:43 [w1] dinov3: RoPE periods truncated to bfloat16 (official behaviour)
+13:51:44 [w1] built dinov3_l16_224 in 106.5s
+13:52:19 [w1] dinov3_l16_224 MadMax-E1: 507 imgs 35.0s (14.5 img/s)
+13:52:55 [w1] dinov3_l16_224 MadMax-G0: 258 imgs 36.3s (7.1 img/s)
+13:53:29 [w1] dinov3_l16_224 MadMax-A2: 180 imgs 34.4s (5.2 img/s)
+13:53:46 [w1] dinov3_l16_224 S3LI-Etna-loops: 780 imgs 16.4s (47.6 img/s)
+13:53:53 [w1] dinov3_l16_224 LunarLoc-9: 119 imgs 6.7s (17.7 img/s)
+13:53:56 [w1] dinov3_l16_224 SPICE-A-dawn-off-spad@5.0us: 98 imgs 3.2s (30.3 img/s)
+13:53:59 [w1] dinov3_l16_224 SPICE-A-noon-off-spad@5.0us: 97 imgs 3.3s (29.3 img/s)
+13:54:04 [w1] hf plain: timm/vit_large_patch16_dinov3.lvd1689m/model.safetensors -> /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_large_patch16_dinov3.lvd1689m/model.safetensors
+13:54:04 [w1] dinov3: RoPE periods truncated to bfloat16 (official behaviour)
+13:54:04 [w1] built dinov3_l16_512 in 4.9s
+13:55:26 [w1] dinov3_l16_512 MadMax-E1: 507 imgs 81.4s (6.2 img/s)
+13:56:23 [w1] dinov3_l16_512 MadMax-G0: 258 imgs 57.1s (4.5 img/s)
+13:57:12 [w1] dinov3_l16_512 MadMax-A2: 180 imgs 49.2s (3.7 img/s)
+13:58:35 [w1] dinov3_l16_512 S3LI-Etna-loops: 780 imgs 82.7s (9.4 img/s)
+13:58:52 [w1] dinov3_l16_512 LunarLoc-9: 119 imgs 17.3s (6.9 img/s)
+13:59:03 [w1] dinov3_l16_512 SPICE-A-dawn-off-spad@5.0us: 98 imgs 11.6s (8.4 img/s)
+13:59:15 [w1] dinov3_l16_512 SPICE-A-noon-off-spad@5.0us: 97 imgs 11.4s (8.5 img/s)

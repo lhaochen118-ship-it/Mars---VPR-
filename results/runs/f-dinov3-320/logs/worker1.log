@@ -1,0 +1,30 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+13:42:32 [w1] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 6
+13:42:32 [w1] hf plain: timm/vit_small_patch16_dinov3.lvd1689m/model.safetensors -> /kaggle/input/notebooks/nguyenmanh0404/vprspace-deps-hf/hf_plain/timm--vit_small_patch16_dinov3.lvd1689m/model.safetensors
+13:42:44 [w1] dinov3: RoPE periods truncated to bfloat16 (official behaviour)
+13:42:44 [w1] built dinov3_s16_320 in 12.5s
+13:42:54 [w1] dinov3_s16_320 S3LI-Etna-crater: 1129 imgs 10.1s (112.2 img/s)
+13:43:28 [w1] dinov3_s16_320 MadMax-C1: 463 imgs 33.9s (13.6 img/s)
+13:44:01 [w1] dinov3_s16_320 MadMax-G0: 258 imgs 32.5s (7.9 img/s)
+13:44:33 [w1] dinov3_s16_320 MadMax-A0: 171 imgs 32.3s (5.3 img/s)
+13:44:36 [w1] dinov3_s16_320 SPICE-A-noon-off@2500.0us: 99 imgs 3.2s (31.3 img/s)
+13:44:38 [w1] dinov3_s16_320 SPICE-A-noon-off-spad@5.0us: 97 imgs 2.3s (42.6 img/s)
+13:44:40 [w1] hf plain: timm/vit_base_patch16_dinov3.lvd1689m/model.safetensors -> /kaggle/input/notebooks/nguyenmanh0404/vprspace-deps-hf/hf_plain/timm--vit_base_patch16_dinov3.lvd1689m/model.safetensors
+13:44:40 [w1] dinov3: RoPE periods truncated to bfloat16 (official behaviour)
+13:44:40 [w1] built dinov3_b16_320 in 1.4s
+13:44:57 [w1] dinov3_b16_320 S3LI-Etna-crater: 1129 imgs 17.3s (65.4 img/s)
+13:45:34 [w1] dinov3_b16_320 MadMax-C1: 463 imgs 37.3s (12.4 img/s)
+13:46:09 [w1] dinov3_b16_320 MadMax-G0: 258 imgs 34.6s (7.5 img/s)
+13:46:43 [w1] dinov3_b16_320 MadMax-A0: 171 imgs 34.0s (5.0 img/s)
+13:46:47 [w1] dinov3_b16_320 SPICE-A-noon-off@2500.0us: 99 imgs 3.6s (27.8 img/s)
+13:46:49 [w1] dinov3_b16_320 SPICE-A-noon-off-spad@5.0us: 97 imgs 2.8s (34.8 img/s)
+13:46:54 [w1] hf plain: timm/vit_large_patch16_dinov3.lvd1689m/model.safetensors -> /kaggle/input/notebooks/nguyenmanh0404/vprspace-deps-hf/hf_plain/timm--vit_large_patch16_dinov3.lvd1689m/model.safetensors
+13:48:25 [w1] dinov3: RoPE periods truncated to bfloat16 (official behaviour)
+13:48:25 [w1] built dinov3_l16_320 in 96.2s
+13:49:14 [w1] dinov3_l16_320 S3LI-Etna-crater: 1129 imgs 47.8s (23.6 img/s)
+13:50:02 [w1] dinov3_l16_320 MadMax-C1: 463 imgs 48.3s (9.6 img/s)
+13:50:42 [w1] dinov3_l16_320 MadMax-G0: 258 imgs 40.0s (6.4 img/s)
+13:51:19 [w1] dinov3_l16_320 MadMax-A0: 171 imgs 36.8s (4.7 img/s)
+13:51:25 [w1] dinov3_l16_320 SPICE-A-noon-off@2500.0us: 99 imgs 6.5s (15.2 img/s)
+13:51:31 [w1] dinov3_l16_320 SPICE-A-noon-off-spad@5.0us: 97 imgs 5.6s (17.3 img/s)

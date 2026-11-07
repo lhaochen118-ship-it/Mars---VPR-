@@ -1,0 +1,44 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+13:11:38 [w1] torch 2.6.0+cu124 cuda 12.4 dev Tesla T4 trajectories 13
+Using cache found in /tmp/torch_home/hub/amaralibey_bag-of-queries_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+13:12:39 [w1] built boq in 61.7s
+/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/dataloader.py:624: UserWarning: This DataLoader will create 8 worker processes in total. Our suggested max number of worker in current system is 4, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+13:13:25 [w1] boq S3LI-Etna-crater: 1129 imgs 45.7s (24.7 img/s)
+13:13:56 [w1] boq S3LI-Etna-loops: 780 imgs 31.2s (25.0 img/s)
+13:15:29 [w1] boq MadMax-E1: 507 imgs 92.9s (5.5 img/s)
+13:15:57 [w1] boq S3LI-Etna-traverse_1: 485 imgs 27.4s (17.7 img/s)
+13:17:10 [w1] boq MadMax-A4: 412 imgs 73.4s (5.6 img/s)
+13:18:17 [w1] boq MadMax-G0: 258 imgs 67.0s (3.9 img/s)
+13:18:29 [w1] boq LunarLoc-10: 183 imgs 11.7s (15.6 img/s)
+13:19:15 [w1] boq MadMax-A0: 171 imgs 46.2s (3.7 img/s)
+13:19:28 [w1] boq LunarLoc-15: 118 imgs 12.6s (9.4 img/s)
+13:19:36 [w1] boq SPICE-A-dawn-off@2500.0us: 99 imgs 8.4s (11.8 img/s)
+13:19:43 [w1] boq SPICE-A-dawn-off-spad@5.0us: 98 imgs 7.2s (13.5 img/s)
+13:19:49 [w1] boq SPICE-A-night-on@2500.0us: 97 imgs 5.8s (16.8 img/s)
+13:19:56 [w1] boq LunarLoc-17: 54 imgs 6.7s (8.1 img/s)
+Using cache found in /tmp/torch_home/hub/gmberton_MegaLoc_main
+13:20:01 [w1] hf plain: gberton/MegaLoc/config.json -> /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/config.json
+13:20:01 [w1] hf plain: gberton/MegaLoc/model.safetensors -> /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/model.safetensors
+13:22:32 [w1] built megaloc in 156.1s
+13:24:43 [w1] megaloc S3LI-Etna-crater: 1129 imgs 131.0s (8.6 img/s)
+13:26:12 [w1] megaloc S3LI-Etna-loops: 780 imgs 89.4s (8.7 img/s)
+13:27:57 [w1] megaloc MadMax-E1: 507 imgs 104.3s (4.9 img/s)
+13:28:56 [w1] megaloc S3LI-Etna-traverse_1: 485 imgs 59.9s (8.1 img/s)
+13:30:30 [w1] megaloc MadMax-A4: 412 imgs 93.2s (4.4 img/s)
+13:31:32 [w1] megaloc MadMax-G0: 258 imgs 62.1s (4.2 img/s)
+13:31:58 [w1] megaloc LunarLoc-10: 183 imgs 26.2s (7.0 img/s)
+13:32:39 [w1] megaloc MadMax-A0: 171 imgs 41.1s (4.2 img/s)
+13:32:59 [w1] megaloc LunarLoc-15: 118 imgs 20.2s (5.8 img/s)
+13:33:13 [w1] megaloc SPICE-A-dawn-off@2500.0us: 99 imgs 13.7s (7.2 img/s)
+13:33:25 [w1] megaloc SPICE-A-dawn-off-spad@5.0us: 98 imgs 12.4s (7.9 img/s)
+13:33:38 [w1] megaloc SPICE-A-night-on@2500.0us: 97 imgs 12.3s (7.9 img/s)
+13:33:46 [w1] megaloc LunarLoc-17: 54 imgs 8.5s (6.3 img/s)

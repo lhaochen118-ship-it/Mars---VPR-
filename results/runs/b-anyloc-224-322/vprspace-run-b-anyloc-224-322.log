@@ -1,0 +1,230 @@
+[{"stream_name":"stderr","time":0.829788518,"data":"/kaggle/src/script.py:23: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.\n"}
+,{"stream_name":"stderr","time":0.829842861,"data":"  tarfile.open(fileobj=io.BytesIO(base64.b64decode(CODE_B64))).extractall(code)\n"}
+,{"stream_name":"stdout","time":0.868333555,"data":"12:48:07 [+     0s] spec {\"session\": \"b-anyloc-224-322\", \"env\": \"pinned\", \"configs\": [\"anyloc_224\", \"anyloc_322\"], \"trajectories\": null, \"pixel_cost\": false}\n"}
+,{"stream_name":"stdout","time":6.478044128,"data":"12:48:13 [+     6s] input tree:\n"}
+,{"stream_name":"stdout","time":6.478072127,"data":"/kaggle/input\n"}
+,{"stream_name":"stdout","time":6.478075516,"data":"/kaggle/input/notebooks\n"}
+,{"stream_name":"stdout","time":6.478078166,"data":"/kaggle/input/notebooks/hieuho669\n"}
+,{"stream_name":"stdout","time":6.478080742,"data":"/kaggle/input/notebooks/hieuho669/vprspace-data-a\n"}
+,{"stream_name":"stdout","time":6.478083352,"data":"/kaggle/input/notebooks/hieuho669/vprspace-deps-anyloc\n"}
+,{"stream_name":"stdout","time":6.478085936,"data":"/kaggle/input/notebooks/hieuho669/vprspace-deps-anyloc/torch_home\n"}
+,{"stream_name":"stdout","time":6.478088792,"data":"/kaggle/input/notebooks/hieuho669/vprspace-deps-anyloc/torch_home/hub\n"}
+,{"stream_name":"stdout","time":6.478091465,"data":"/kaggle/input/notebooks/hieuho669/vprspace-deps-core\n"}
+,{"stream_name":"stdout","time":6.47809385,"data":"/kaggle/input/notebooks/hieuho669/vprspace-deps-core/hf_home\n"}
+,{"stream_name":"stdout","time":6.478096231,"data":"/kaggle/input/notebooks/hieuho669/vprspace-deps-core/hf_home/hub\n"}
+,{"stream_name":"stdout","time":6.478098671,"data":"/kaggle/input/notebooks/hieuho669/vprspace-deps-core/hf_home/xet\n"}
+,{"stream_name":"stdout","time":6.478101028,"data":"/kaggle/input/notebooks/hieuho669/vprspace-deps-core/torch_home\n"}
+,{"stream_name":"stdout","time":6.478103377,"data":"/kaggle/input/notebooks/hieuho669/vprspace-deps-core/torch_home/hub\n"}
+,{"stream_name":"stdout","time":6.478105785,"data":"/kaggle/input/notebooks/hieuho669/vprspace-deps-core/wheels\n"}
+,{"stream_name":"stdout","time":6.478108276,"data":"/kaggle/input/notebooks/hieuho669/vprspace-data-b\n"}
+,{"stream_name":"stdout","time":6.478110632,"data":"/kaggle/input/competitions\n"}
+,{"stream_name":"stdout","time":6.478113063,"data":"/kaggle/input/competitions/gemma-4-developer-agent\n"}
+,{"stream_name":"stdout","time":6.478115445,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission\n"}
+,{"stream_name":"stdout","time":6.478117903,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/configs\n"}
+,{"stream_name":"stdout","time":6.478120455,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/prompts\n"}
+,{"stream_name":"stdout","time":6.47812286,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/sub_agents\n"}
+,{"stream_name":"stdout","time":6.478125265,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters\n"}
+,{"stream_name":"stdout","time":6.478127735,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters/tool_lora\n"}
+,{"stream_name":"stdout","time":6.478130162,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters/main_lora\n"}
+,{"stream_name":"stdout","time":6.478132583,"data":"/kaggle/input/competitions/gemma-4-developer-agent/docker\n"}
+,{"stream_name":"stdout","time":6.478134975,"data":"/kaggle/input/competitions/gemma-4-developer-agent/snapshots\n"}
+,{"stream_name":"stdout","time":6.47814712,"data":"/kaggle/input/competitions/gemma-4-developer-agent/wheels\n"}
+,{"stream_name":"stdout","time":6.478149275,"data":"/kaggle/input/competitions/gemma-4-developer-agent/graphs\n"}
+,{"stream_name":"stdout","time":6.478151117,"data":"/kaggle/input/competitions/gemma-4-developer-agent/embeddings\n"}
+,{"stream_name":"stdout","time":6.478152991,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sandbox\n"}
+,{"stream_name":"stdout","time":6.478154946,"data":"\n"}
+,{"stream_name":"stdout","time":11.593230105,"data":"12:48:18 [+    11s] $ cp -rs --remove-destination /kaggle/input/notebooks/hieuho669/vprspace-deps-anyloc/torch_home/. /tmp/torch_home/\n"}
+,{"stream_name":"stdout","time":11.76163361,"data":"12:48:18 [+    11s] $ cp -rs --remove-destination /kaggle/input/notebooks/hieuho669/vprspace-deps-core/torch_home/. /tmp/torch_home/\n"}
+,{"stream_name":"stdout","time":16.652997561,"data":"12:48:23 [+    16s] $ cp -rs --remove-destination /kaggle/input/notebooks/hieuho669/vprspace-deps-core/hf_home/. /tmp/hf_home/\n"}
+,{"stream_name":"stdout","time":29.576808513,"data":"12:48:36 [+    29s] wheels: /kaggle/input/notebooks/hieuho669/vprspace-deps-core/wheels req: /kaggle/input/notebooks/hieuho669/vprspace-deps-core/requirements_pinned.txt\n"}
+,{"stream_name":"stdout","time":29.576843222,"data":"12:48:36 [+    29s] $ /usr/bin/python3 -m venv /tmp/vprenv\n"}
+,{"stream_name":"stderr","time":29.713983881,"data":"Error: Command '['/tmp/vprenv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":29.726156771,"data":"12:48:36 [+    29s] $ /usr/bin/python3 -m venv --without-pip /tmp/vprenv\n"}
+,{"stream_name":"stdout","time":29.812169713,"data":"12:48:36 [+    29s] $ /usr/bin/python3 -m pip --python /tmp/vprenv/bin/python install -q --no-index --find-links /kaggle/input/notebooks/hieuho669/vprspace-deps-core/wheels -r /kaggle/input/notebooks/hieuho669/vprspace-deps-core/requirements_pinned.txt\n"}
+,{"stream_name":"stderr","time":30.275853981,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":30.275873279,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":160.923194821,"data":"12:50:47 [+   160s] $ /usr/bin/python3 -m pip --python /tmp/vprenv/bin/python install -q --no-index --no-deps --find-links /kaggle/input/notebooks/hieuho669/vprspace-deps-core/wheels pytorch-lightning lightning-utilities torchmetrics fast-pytorch-kmeans timm psutil pytorch-metric-learning\n"}
+,{"stream_name":"stderr","time":161.169084855,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":161.169112241,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":166.894208974,"data":"12:50:53 [+   166s] data root /tmp/vprdata/vpr-space-v0 extracted\n"}
+,{"stream_name":"stdout","time":166.962877633,"data":"12:50:53 [+   166s] 4 GPUs, images per GPU [2182.0, 2217.0, 2192.0, 2193.0]\n"}
+,{"stream_name":"stdout","time":1346.899175825,"data":"13:10:33 [+  1346s] workers exit codes [0, 0, 0, 0]\n"}
+,{"stream_name":"stdout","time":1346.899312708,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":1346.899330258,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":1346.899333643,"data":"12:50:56 [w0] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 5\n"}
+,{"stream_name":"stdout","time":1346.899336549,"data":"Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main\n"}
+,{"stream_name":"stdout","time":1346.899339276,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":1346.899352268,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)\n"}
+,{"stream_name":"stdout","time":1346.899354537,"data":"  warnings.warn(\"xFormers is not available (SwiGLU)\")\n"}
+,{"stream_name":"stdout","time":1346.899356572,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)\n"}
+,{"stream_name":"stdout","time":1346.899358749,"data":"  warnings.warn(\"xFormers is not available (Attention)\")\n"}
+,{"stream_name":"stdout","time":1346.899360689,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)\n"}
+,{"stream_name":"stdout","time":1346.899362767,"data":"  warnings.warn(\"xFormers is not available (Block)\")\n"}
+,{"stream_name":"stdout","time":1346.899364761,"data":"Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files\n"}
+,{"stream_name":"stdout","time":1346.899366705,"data":"Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt\n"}
+,{"stream_name":"stdout","time":1346.899368707,"data":"Desc dim set to 1536\n"}
+,{"stream_name":"stdout","time":1346.899370613,"data":"Model with domain = 'global' vocabulary loaded\n"}
+,{"stream_name":"stdout","time":1346.899372496,"data":"Desc dim set to 1536\n"}
+,{"stream_name":"stdout","time":1346.899374297,"data":"12:59:24 [w0] built anyloc_224 in 507.0s\n"}
+,{"stream_name":"stdout","time":1346.899376257,"data":"13:01:56 [w0] anyloc_224 S3LI-Etna-crater_inout: 1683 imgs 152.5s (11.0 img/s)\n"}
+,{"stream_name":"stdout","time":1346.89937822,"data":"13:02:24 [w0] anyloc_224 MadMax-F3: 229 imgs 28.0s (8.2 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899380187,"data":"13:02:37 [w0] anyloc_224 LunarLoc-15: 118 imgs 13.0s (9.1 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899382097,"data":"13:02:47 [w0] anyloc_224 SPICE-A-dawn-off-spad@5.0us: 98 imgs 9.8s (10.0 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899405971,"data":"13:02:54 [w0] anyloc_224 LunarLoc-17: 54 imgs 7.0s (7.8 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899408043,"data":"Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main\n"}
+,{"stream_name":"stdout","time":1346.899409974,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":1346.899411872,"data":"Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files\n"}
+,{"stream_name":"stdout","time":1346.899413818,"data":"Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt\n"}
+,{"stream_name":"stdout","time":1346.899415965,"data":"Desc dim set to 1536\n"}
+,{"stream_name":"stdout","time":1346.899417796,"data":"Model with domain = 'global' vocabulary loaded\n"}
+,{"stream_name":"stdout","time":1346.899419677,"data":"Desc dim set to 1536\n"}
+,{"stream_name":"stdout","time":1346.899421523,"data":"13:03:15 [w0] built anyloc_322 in 21.0s\n"}
+,{"stream_name":"stdout","time":1346.89942508,"data":"13:08:25 [w0] anyloc_322 S3LI-Etna-crater_inout: 1683 imgs 310.4s (5.4 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899427084,"data":"13:09:15 [w0] anyloc_322 MadMax-F3: 229 imgs 49.5s (4.6 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899428997,"data":"13:09:39 [w0] anyloc_322 LunarLoc-15: 118 imgs 24.3s (4.9 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899430893,"data":"13:09:58 [w0] anyloc_322 SPICE-A-dawn-off-spad@5.0us: 98 imgs 19.0s (5.2 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899432909,"data":"13:10:10 [w0] anyloc_322 LunarLoc-17: 54 imgs 12.2s (4.4 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899438091,"data":"\n"}
+,{"stream_name":"stdout","time":1346.899440109,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":1346.899441976,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":1346.899443832,"data":"12:50:56 [w1] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 6\n"}
+,{"stream_name":"stdout","time":1346.899445792,"data":"Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main\n"}
+,{"stream_name":"stdout","time":1346.899447737,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":1346.899449624,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)\n"}
+,{"stream_name":"stdout","time":1346.899451683,"data":"  warnings.warn(\"xFormers is not available (SwiGLU)\")\n"}
+,{"stream_name":"stdout","time":1346.899453668,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)\n"}
+,{"stream_name":"stdout","time":1346.89945569,"data":"  warnings.warn(\"xFormers is not available (Attention)\")\n"}
+,{"stream_name":"stdout","time":1346.899457647,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)\n"}
+,{"stream_name":"stdout","time":1346.89945965,"data":"  warnings.warn(\"xFormers is not available (Block)\")\n"}
+,{"stream_name":"stdout","time":1346.899461636,"data":"Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files\n"}
+,{"stream_name":"stdout","time":1346.899463617,"data":"Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt\n"}
+,{"stream_name":"stdout","time":1346.899465588,"data":"Desc dim set to 1536\n"}
+,{"stream_name":"stdout","time":1346.899467439,"data":"Model with domain = 'global' vocabulary loaded\n"}
+,{"stream_name":"stdout","time":1346.899469698,"data":"Desc dim set to 1536\n"}
+,{"stream_name":"stdout","time":1346.899471569,"data":"12:59:24 [w1] built anyloc_224 in 507.3s\n"}
+,{"stream_name":"stdout","time":1346.899473442,"data":"13:01:06 [w1] anyloc_224 S3LI-Etna-crater: 1129 imgs 102.3s (11.0 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899475367,"data":"13:01:55 [w1] anyloc_224 MadMax-C1: 463 imgs 49.0s (9.5 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899477218,"data":"13:02:25 [w1] anyloc_224 MadMax-G0: 258 imgs 30.5s (8.5 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899479142,"data":"13:02:49 [w1] anyloc_224 MadMax-A0: 171 imgs 23.3s (7.4 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899481017,"data":"13:02:58 [w1] anyloc_224 SPICE-A-noon-off@2500.0us: 99 imgs 9.9s (10.0 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899482984,"data":"13:03:08 [w1] anyloc_224 SPICE-A-noon-off-spad@5.0us: 97 imgs 9.4s (10.4 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899484921,"data":"Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main\n"}
+,{"stream_name":"stdout","time":1346.899486829,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":1346.899489275,"data":"Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files\n"}
+,{"stream_name":"stdout","time":1346.899491236,"data":"Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt\n"}
+,{"stream_name":"stdout","time":1346.899493211,"data":"Desc dim set to 1536\n"}
+,{"stream_name":"stdout","time":1346.89949716,"data":"Model with domain = 'global' vocabulary loaded\n"}
+,{"stream_name":"stdout","time":1346.899499124,"data":"Desc dim set to 1536\n"}
+,{"stream_name":"stdout","time":1346.899500972,"data":"13:03:29 [w1] built anyloc_322 in 21.3s\n"}
+,{"stream_name":"stdout","time":1346.899502837,"data":"13:06:53 [w1] anyloc_322 S3LI-Etna-crater: 1129 imgs 204.3s (5.5 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899504776,"data":"13:08:23 [w1] anyloc_322 MadMax-C1: 463 imgs 89.5s (5.2 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899506676,"data":"13:09:17 [w1] anyloc_322 MadMax-G0: 258 imgs 53.8s (4.8 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899508597,"data":"13:09:54 [w1] anyloc_322 MadMax-A0: 171 imgs 37.5s (4.6 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899510476,"data":"13:10:13 [w1] anyloc_322 SPICE-A-noon-off@2500.0us: 99 imgs 19.0s (5.2 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899512417,"data":"13:10:32 [w1] anyloc_322 SPICE-A-noon-off-spad@5.0us: 97 imgs 18.5s (5.2 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899514336,"data":"\n"}
+,{"stream_name":"stdout","time":1346.899516127,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":1346.899518003,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":1346.899519874,"data":"12:50:56 [w2] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 7\n"}
+,{"stream_name":"stdout","time":1346.899521795,"data":"Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main\n"}
+,{"stream_name":"stdout","time":1346.8995237,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":1346.899525575,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)\n"}
+,{"stream_name":"stdout","time":1346.899527596,"data":"  warnings.warn(\"xFormers is not available (SwiGLU)\")\n"}
+,{"stream_name":"stdout","time":1346.899529509,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)\n"}
+,{"stream_name":"stdout","time":1346.899531566,"data":"  warnings.warn(\"xFormers is not available (Attention)\")\n"}
+,{"stream_name":"stdout","time":1346.899533535,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)\n"}
+,{"stream_name":"stdout","time":1346.899535566,"data":"  warnings.warn(\"xFormers is not available (Block)\")\n"}
+,{"stream_name":"stdout","time":1346.899537506,"data":"Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files\n"}
+,{"stream_name":"stdout","time":1346.899539546,"data":"Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt\n"}
+,{"stream_name":"stdout","time":1346.89954154,"data":"Desc dim set to 1536\n"}
+,{"stream_name":"stdout","time":1346.899543336,"data":"Model with domain = 'global' vocabulary loaded\n"}
+,{"stream_name":"stdout","time":1346.899545198,"data":"Desc dim set to 1536\n"}
+,{"stream_name":"stdout","time":1346.89954709,"data":"12:59:24 [w2] built anyloc_224 in 507.2s\n"}
+,{"stream_name":"stdout","time":1346.899548997,"data":"13:00:33 [w2] anyloc_224 S3LI-Etna-loops: 780 imgs 69.0s (11.3 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899550909,"data":"13:01:25 [w2] anyloc_224 MadMax-C0: 502 imgs 52.6s (9.5 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899553637,"data":"13:02:09 [w2] anyloc_224 MadMax-A4: 412 imgs 43.7s (9.4 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899555597,"data":"13:02:27 [w2] anyloc_224 LunarLoc-10: 183 imgs 17.9s (10.2 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899560013,"data":"13:02:39 [w2] anyloc_224 LunarLoc-9: 119 imgs 12.1s (9.8 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899562037,"data":"13:02:49 [w2] anyloc_224 SPICE-A-dawn-off@2500.0us: 99 imgs 9.7s (10.2 img/s)\n"}
+,{"stream_name":"stdout","time":1346.89956395,"data":"13:02:58 [w2] anyloc_224 SPICE-A-night-on-spad@5.0us: 97 imgs 9.3s (10.4 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899565931,"data":"Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main\n"}
+,{"stream_name":"stdout","time":1346.899567835,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":1346.899569737,"data":"Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files\n"}
+,{"stream_name":"stdout","time":1346.899571656,"data":"Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt\n"}
+,{"stream_name":"stdout","time":1346.899573673,"data":"Desc dim set to 1536\n"}
+,{"stream_name":"stdout","time":1346.899575464,"data":"Model with domain = 'global' vocabulary loaded\n"}
+,{"stream_name":"stdout","time":1346.899577305,"data":"Desc dim set to 1536\n"}
+,{"stream_name":"stdout","time":1346.899579094,"data":"13:03:19 [w2] built anyloc_322 in 21.3s\n"}
+,{"stream_name":"stdout","time":1346.899580985,"data":"13:05:39 [w2] anyloc_322 S3LI-Etna-loops: 780 imgs 140.2s (5.6 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899582897,"data":"13:07:15 [w2] anyloc_322 MadMax-C0: 502 imgs 95.5s (5.3 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899584797,"data":"13:08:35 [w2] anyloc_322 MadMax-A4: 412 imgs 79.6s (5.2 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899586689,"data":"13:09:09 [w2] anyloc_322 LunarLoc-10: 183 imgs 34.2s (5.4 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899588599,"data":"13:09:32 [w2] anyloc_322 LunarLoc-9: 119 imgs 23.0s (5.2 img/s)\n"}
+,{"stream_name":"stdout","time":1346.89959046,"data":"13:09:51 [w2] anyloc_322 SPICE-A-dawn-off@2500.0us: 99 imgs 19.1s (5.2 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899592347,"data":"13:10:09 [w2] anyloc_322 SPICE-A-night-on-spad@5.0us: 97 imgs 18.3s (5.3 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899594266,"data":"\n"}
+,{"stream_name":"stdout","time":1346.899598928,"data":"n i32be\\n    return unpack_from(\"\u003eI\", c, o)[0]\\n           ~~~~~~~~~~~^^^^^^^^^^^^\\nstruct.error: unpack_from requires a buffer of at least 4 bytes for unpacking 4 bytes at offset 0 (actual buffer size is 0)\\n\\nThe above exception was the direct cause of the following exception:\\n\\nTraceback (most recent call last):\\n  File \"/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/_utils/worker.py\", line 349, in _worker_loop\\n    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]\\n  File \"/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/_utils/fetch.py\", line 52, in fetch\\n    data = [self.dataset[idx] for idx in possibly_batched_index]\\n            ~~~~~~~~~~~~^^^^^\\n  File \"/tmp/vprcode/worker.py\", line 103, in __getitem__\\n    return self.prep(Image.open(self.paths[i]).convert(\"RGB\"))\\n                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^\\n  File \"/tmp/vprenv/lib/python3.13/site-packages/PIL/Image.py\", line 1070, in convert\\n    self.load()\\n    ~~~~~~~~~^^\\n  File \"/tmp/vprenv/lib/python3.13/site-packages/PIL/ImageFile.py\", line 399, in load\\n    raise OSError(msg) from e\\nOSError: image file is truncated\\n')\n"}
+,{"stream_name":"stdout","time":1346.899611345,"data":"13:00:49 [w3] anyloc_224 MadMax-E1: 507 imgs 51.9s (9.8 img/s)\n"}
+,{"stream_name":"stdout","time":1346.89961343,"data":"13:01:33 [w3] anyloc_224 S3LI-Etna-traverse_1: 485 imgs 44.4s (10.9 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899617643,"data":"13:02:07 [w3] anyloc_224 MadMax-G2: 290 imgs 33.5s (8.6 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899619728,"data":"13:02:31 [w3] anyloc_224 MadMax-A2: 180 imgs 23.9s (7.5 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899621619,"data":"13:02:49 [w3] anyloc_224 MadMax-F0: 117 imgs 18.4s (6.4 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899623536,"data":"13:02:59 [w3] anyloc_224 SPICE-A-night-on@2500.0us: 97 imgs 9.6s (10.1 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899625434,"data":"Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main\n"}
+,{"stream_name":"stdout","time":1346.899627412,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":1346.899629346,"data":"Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files\n"}
+,{"stream_name":"stdout","time":1346.899631375,"data":"Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt\n"}
+,{"stream_name":"stdout","time":1346.899633385,"data":"Desc dim set to 1536\n"}
+,{"stream_name":"stdout","time":1346.899635193,"data":"Model with domain = 'global' vocabulary loaded\n"}
+,{"stream_name":"stdout","time":1346.899637024,"data":"Desc dim set to 1536\n"}
+,{"stream_name":"stdout","time":1346.899638887,"data":"13:03:20 [w3] built anyloc_322 in 21.2s\n"}
+,{"stream_name":"stdout","time":1346.899642501,"data":"13:04:19 [w3] FAILED anyloc_322 MadMax-E0: OSError('Caught OSError in DataLoader worker process 9.\\nOriginal Traceback (most recent call last):\\n  File \"/tmp/vprenv/lib/python3.13/site-packages/PIL/ImageFile.py\", line 392, in load\\n    s = read(read_bytes)\\n  File \"/tmp/vprenv/lib/python3.13/site-packages/PIL/PngImagePlugin.py\", line 999, in load_read\\n    cid, pos, length = self.png.read()\\n                       ~~~~~~~~~~~~~^^\\n  File \"/tmp/vprenv/lib/python3.13/site-packages/PIL/PngImagePlugin.py\", line 179, in read\\n    length = i32(s)\\n  File \"/tmp/vprenv/lib/python3.13/site-packages/PIL/_binary.py\", line 96, in i32be\\n    return unpack_from(\"\u003eI\", c, o)[0]\\n           ~~~~~~~~~~~^^^^^^^^^^^^\\nstruct.error: unpack_from requires a buffer of at least 4 bytes for unpacking 4 bytes at offset 0 (actual buffer size is 0)\\n\\nThe above exception was the direct cause of the following exception:\\n\\nTraceback (most recent call last):\\n  File \"/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/_utils/worker.py\", line 349, in _worker_loop\\n    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]\\n  File \"/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/_utils/fetch.py\", line 52, in fetch\\n    data = [self.dataset[idx] for idx in possibly_batched_index]\\n            ~~~~~~~~~~~~^^^^^\\n  File \"/tmp/vprcode/worker.py\", line 103, in __getitem__\\n    return self.prep(Image.open(self.paths[i]).convert(\"RGB\"))\\n                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^\\n  File \"/tmp/vprenv/lib/python3.13/site-packages/PIL/Image.py\", line 1070, in convert\\n    self.load()\\n    ~~~~~~~~~^^\\n  File \"/tmp/vprenv/lib/python3.13/site-packages/PIL/ImageFile.py\", line 399, in load\\n    raise OSError(msg) from e\\nOSError: image file is truncated\\n')\n"}
+,{"stream_name":"stdout","time":1346.899649693,"data":"Exception ignored in: \u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x7ad2f1249f80\u003e\n"}
+,{"stream_name":"stdout","time":1346.899651818,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":1346.899653765,"data":"  File \"/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/dataloader.py\", line 1618, in __del__\n"}
+,{"stream_name":"stdout","time":1346.899655859,"data":"    self._shutdown_workers()\n"}
+,{"stream_name":"stdout","time":1346.899657737,"data":"  File \"/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/dataloader.py\", line 1601, in _shutdown_workers\n"}
+,{"stream_name":"stdout","time":1346.899662223,"data":"    if w.is_alive():\n"}
+,{"stream_name":"stdout","time":1346.899664074,"data":"  File \"/usr/lib/python3.13/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stdout","time":1346.899666054,"data":"    assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stdout","time":1346.899668038,"data":"AssertionError: can only test a child process\n"}
+,{"stream_name":"stdout","time":1346.899669906,"data":"Exception ignored in: \u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x7ad2f1249f80\u003e\n"}
+,{"stream_name":"stdout","time":1346.899671995,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":1346.899673875,"data":"  File \"/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/dataloader.py\", line 1618, in __del__\n"}
+,{"stream_name":"stdout","time":1346.899675953,"data":"    self._shutdown_workers()\n"}
+,{"stream_name":"stdout","time":1346.899677773,"data":"  File \"/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/dataloader.py\", line 1601, in _shutdown_workers\n"}
+,{"stream_name":"stdout","time":1346.899679754,"data":"    if w.is_alive():\n"}
+,{"stream_name":"stdout","time":1346.899682029,"data":"  File \"/usr/lib/python3.13/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stdout","time":1346.899684152,"data":"    assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stdout","time":1346.899686102,"data":"AssertionError: can only test a child process\n"}
+,{"stream_name":"stdout","time":1346.899687971,"data":"Exception ignored in: \u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x7ad2f1249f80\u003e\n"}
+,{"stream_name":"stdout","time":1346.899690028,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":1346.899691954,"data":"  File \"/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/dataloader.py\", line 1618, in __del__\n"}
+,{"stream_name":"stdout","time":1346.899694018,"data":"    self._shutdown_workers()\n"}
+,{"stream_name":"stdout","time":1346.899695892,"data":"  File \"/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/dataloader.py\", line 1601, in _shutdown_workers\n"}
+,{"stream_name":"stdout","time":1346.899697893,"data":"    if w.is_alive():\n"}
+,{"stream_name":"stdout","time":1346.899699728,"data":"  File \"/usr/lib/python3.13/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stdout","time":1346.899701696,"data":"    assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stdout","time":1346.899703653,"data":"AssertionError: can only test a child process\n"}
+,{"stream_name":"stdout","time":1346.899705529,"data":"13:05:57 [w3] anyloc_322 MadMax-E1: 507 imgs 98.0s (5.2 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899707417,"data":"13:07:26 [w3] anyloc_322 S3LI-Etna-traverse_1: 485 imgs 88.3s (5.5 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899709328,"data":"13:08:25 [w3] anyloc_322 MadMax-G2: 290 imgs 59.6s (4.9 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899711192,"data":"13:09:05 [w3] anyloc_322 MadMax-A2: 180 imgs 39.6s (4.5 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899713034,"data":"13:09:33 [w3] anyloc_322 MadMax-F0: 117 imgs 28.0s (4.2 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899714957,"data":"13:09:52 [w3] anyloc_322 SPICE-A-night-on@2500.0us: 97 imgs 18.9s (5.1 img/s)\n"}
+,{"stream_name":"stdout","time":1346.899716894,"data":"\n"}
+,{"stream_name":"stdout","time":1346.899718695,"data":"13:10:33 [+  1346s] $ /tmp/vprenv/bin/python /tmp/vprcode/metrics_all.py --root /tmp/vprdata/vpr-space-v0 --desc-dir /kaggle/working/desc --out /kaggle/working/results --tag b-anyloc-224-322\n"}
+,{"stream_name":"stderr","time":1346.950455016,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":1346.950475163,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":1354.07546107,"data":"anyloc_global_224: 15/16 setups, missing 1\n"}
+,{"stream_name":"stdout","time":1358.119312844,"data":"anyloc_global_322: 15/16 setups, missing 1\n"}
+,{"stream_name":"stdout","time":1362.146153006,"data":"anyloc_unstructured_224: 15/16 setups, missing 1\n"}
+,{"stream_name":"stdout","time":1366.15943063,"data":"anyloc_unstructured_322: 15/16 setups, missing 1\n"}
+,{"stream_name":"stdout","time":1367.797997756,"data":"13:10:54 [+  1367s] DONE\n"}
+,{"stream_name":"stderr","time":1370.200904983,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1370.200925267,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1370.523473831,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1370.523494183,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1372.474449261,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1373.521454491,"data":"[NbConvertApp] Writing 336743 bytes to __results__.html\n"}
+]

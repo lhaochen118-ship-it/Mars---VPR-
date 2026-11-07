@@ -1,0 +1,87 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+13:20:06 [w1] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 7
+Using cache found in /tmp/torch_home/hub/gmberton_cosplace_main
+Returning CosPlace model with backbone: ResNet50 with features dimension 2048
+13:20:32 [w1] built cosplace_r50_2048_native in 25.9s
+13:21:33 [w1] cosplace_r50_2048_native MadMax-E1: 507 imgs 61.5s (8.2 img/s)
+13:22:05 [w1] cosplace_r50_2048_native MadMax-G0: 258 imgs 31.9s (8.1 img/s)
+13:22:28 [w1] cosplace_r50_2048_native MadMax-A2: 180 imgs 22.4s (8.0 img/s)
+13:22:37 [w1] cosplace_r50_2048_native S3LI-Etna-loops: 780 imgs 9.0s (86.9 img/s)
+13:22:41 [w1] cosplace_r50_2048_native LunarLoc-9: 119 imgs 4.8s (24.8 img/s)
+13:22:43 [w1] cosplace_r50_2048_native SPICE-A-dawn-off-spad@5.0us: 98 imgs 1.2s (78.7 img/s)
+13:22:44 [w1] cosplace_r50_2048_native SPICE-A-noon-off-spad@5.0us: 97 imgs 1.2s (78.7 img/s)
+Using cache found in /tmp/torch_home/hub/gmberton_cosplace_main
+Returning CosPlace model with backbone: ResNet50 with features dimension 2048
+13:22:45 [w1] built cosplace_r50_2048_512 in 0.8s
+13:23:08 [w1] cosplace_r50_2048_512 MadMax-E1: 507 imgs 23.4s (21.7 img/s)
+13:23:26 [w1] cosplace_r50_2048_512 MadMax-G0: 258 imgs 17.5s (14.7 img/s)
+13:23:42 [w1] cosplace_r50_2048_512 MadMax-A2: 180 imgs 16.2s (11.1 img/s)
+13:23:51 [w1] cosplace_r50_2048_512 S3LI-Etna-loops: 780 imgs 9.3s (84.1 img/s)
+13:23:55 [w1] cosplace_r50_2048_512 LunarLoc-9: 119 imgs 4.2s (28.5 img/s)
+13:23:57 [w1] cosplace_r50_2048_512 SPICE-A-dawn-off-spad@5.0us: 98 imgs 2.0s (47.9 img/s)
+13:23:59 [w1] cosplace_r50_2048_512 SPICE-A-noon-off-spad@5.0us: 97 imgs 2.1s (47.2 img/s)
+Using cache found in /tmp/torch_home/hub/gmberton_cosplace_main
+Returning CosPlace model with backbone: ResNet101 with features dimension 2048
+13:24:10 [w1] built cosplace_r101_2048_native in 10.4s
+13:25:37 [w1] cosplace_r101_2048_native MadMax-E1: 507 imgs 87.1s (5.8 img/s)
+13:26:22 [w1] cosplace_r101_2048_native MadMax-G0: 258 imgs 45.5s (5.7 img/s)
+13:26:54 [w1] cosplace_r101_2048_native MadMax-A2: 180 imgs 32.0s (5.6 img/s)
+13:27:07 [w1] cosplace_r101_2048_native S3LI-Etna-loops: 780 imgs 12.5s (62.4 img/s)
+13:27:13 [w1] cosplace_r101_2048_native LunarLoc-9: 119 imgs 5.9s (20.1 img/s)
+13:27:14 [w1] cosplace_r101_2048_native SPICE-A-dawn-off-spad@5.0us: 98 imgs 1.5s (64.1 img/s)
+13:27:16 [w1] cosplace_r101_2048_native SPICE-A-noon-off-spad@5.0us: 97 imgs 1.5s (66.1 img/s)
+Using cache found in /tmp/torch_home/hub/gmberton_cosplace_main
+Returning CosPlace model with backbone: ResNet152 with features dimension 2048
+13:27:59 [w1] built cosplace_r152_2048_native in 42.8s
+13:30:00 [w1] cosplace_r152_2048_native MadMax-E1: 507 imgs 120.8s (4.2 img/s)
+13:31:01 [w1] cosplace_r152_2048_native MadMax-G0: 258 imgs 61.9s (4.2 img/s)
+13:31:45 [w1] cosplace_r152_2048_native MadMax-A2: 180 imgs 44.0s (4.1 img/s)
+13:32:03 [w1] cosplace_r152_2048_native S3LI-Etna-loops: 780 imgs 17.2s (45.3 img/s)
+13:32:11 [w1] cosplace_r152_2048_native LunarLoc-9: 119 imgs 8.1s (14.7 img/s)
+13:32:13 [w1] cosplace_r152_2048_native SPICE-A-dawn-off-spad@5.0us: 98 imgs 2.0s (49.7 img/s)
+13:32:15 [w1] cosplace_r152_2048_native SPICE-A-noon-off-spad@5.0us: 97 imgs 2.3s (42.0 img/s)
+Using cache found in /tmp/torch_home/hub/gmberton_cosplace_main
+Returning CosPlace model with backbone: ResNet50 with features dimension 512
+13:32:16 [w1] built cosplace_r50_512_native in 0.6s
+13:33:13 [w1] cosplace_r50_512_native MadMax-E1: 507 imgs 57.6s (8.8 img/s)
+13:33:44 [w1] cosplace_r50_512_native MadMax-G0: 258 imgs 30.6s (8.4 img/s)
+13:34:06 [w1] cosplace_r50_512_native MadMax-A2: 180 imgs 22.1s (8.1 img/s)
+13:34:15 [w1] cosplace_r50_512_native S3LI-Etna-loops: 780 imgs 8.7s (89.5 img/s)
+13:34:19 [w1] cosplace_r50_512_native LunarLoc-9: 119 imgs 4.3s (27.8 img/s)
+13:34:20 [w1] cosplace_r50_512_native SPICE-A-dawn-off-spad@5.0us: 98 imgs 1.5s (67.5 img/s)
+13:34:22 [w1] cosplace_r50_512_native SPICE-A-noon-off-spad@5.0us: 97 imgs 1.5s (63.7 img/s)
+Using cache found in /tmp/torch_home/hub/gmberton_cosplace_main
+Returning CosPlace model with backbone: VGG16 with features dimension 512
+13:34:24 [w1] built cosplace_vgg16_512_native in 1.6s
+13:35:49 [w1] cosplace_vgg16_512_native MadMax-E1: 507 imgs 85.1s (6.0 img/s)
+13:36:33 [w1] cosplace_vgg16_512_native MadMax-G0: 258 imgs 44.5s (5.8 img/s)
+13:37:05 [w1] cosplace_vgg16_512_native MadMax-A2: 180 imgs 32.2s (5.6 img/s)
+13:37:19 [w1] cosplace_vgg16_512_native S3LI-Etna-loops: 780 imgs 14.1s (55.4 img/s)
+13:37:26 [w1] cosplace_vgg16_512_native LunarLoc-9: 119 imgs 6.1s (19.7 img/s)
+13:37:27 [w1] cosplace_vgg16_512_native SPICE-A-dawn-off-spad@5.0us: 98 imgs 1.7s (58.1 img/s)
+13:37:29 [w1] cosplace_vgg16_512_native SPICE-A-noon-off-spad@5.0us: 97 imgs 1.7s (57.4 img/s)
+13:37:29 [w1] built mixvpr_4096 in 0.5s
+13:38:31 [w1] mixvpr_4096 MadMax-E1: 507 imgs 61.3s (8.3 img/s)
+13:39:33 [w1] mixvpr_4096 MadMax-G0: 258 imgs 61.9s (4.2 img/s)
+13:40:16 [w1] mixvpr_4096 MadMax-A2: 180 imgs 42.9s (4.2 img/s)
+13:40:24 [w1] mixvpr_4096 S3LI-Etna-loops: 780 imgs 8.8s (88.6 img/s)
+13:40:30 [w1] mixvpr_4096 LunarLoc-9: 119 imgs 5.3s (22.5 img/s)
+13:40:32 [w1] mixvpr_4096 SPICE-A-dawn-off-spad@5.0us: 98 imgs 2.1s (46.5 img/s)
+13:40:34 [w1] mixvpr_4096 SPICE-A-noon-off-spad@5.0us: 97 imgs 2.2s (44.9 img/s)
+13:40:34 [w1] built mixvpr_512 in 0.5s
+13:41:37 [w1] mixvpr_512 MadMax-E1: 507 imgs 62.8s (8.1 img/s)
+13:42:38 [w1] mixvpr_512 MadMax-G0: 258 imgs 60.8s (4.2 img/s)
+13:43:20 [w1] mixvpr_512 MadMax-A2: 180 imgs 42.1s (4.3 img/s)
+13:43:29 [w1] mixvpr_512 S3LI-Etna-loops: 780 imgs 8.7s (89.6 img/s)
+13:43:34 [w1] mixvpr_512 LunarLoc-9: 119 imgs 5.3s (22.6 img/s)
+13:43:36 [w1] mixvpr_512 SPICE-A-dawn-off-spad@5.0us: 98 imgs 2.1s (47.1 img/s)
+13:43:38 [w1] mixvpr_512 SPICE-A-noon-off-spad@5.0us: 97 imgs 2.1s (45.1 img/s)
+13:43:39 [w1] built mixvpr_128 in 0.5s
+13:44:41 [w1] mixvpr_128 MadMax-E1: 507 imgs 61.7s (8.2 img/s)
+13:45:42 [w1] mixvpr_128 MadMax-G0: 258 imgs 61.3s (4.2 img/s)
+13:46:24 [w1] mixvpr_128 MadMax-A2: 180 imgs 42.2s (4.3 img/s)
+13:46:33 [w1] mixvpr_128 S3LI-Etna-loops: 780 imgs 8.6s (90.6 img/s)
+13:46:38 [w1] mixvpr_128 LunarLoc-9: 119 imgs 5.1s (23.4 img/s)
+13:46:40 [w1] mixvpr_128 SPICE-A-dawn-off-spad@5.0us: 98 imgs 2.0s (48.1 img/s)
+13:46:42 [w1] mixvpr_128 SPICE-A-noon-off-spad@5.0us: 97 imgs 2.1s (46.5 img/s)

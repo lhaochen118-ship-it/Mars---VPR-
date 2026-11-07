@@ -11,6 +11,7 @@ sys.path.insert(0, HERE)
 from launch import USERNAMES, metadata  # noqa: E402
 
 CODE_FILES = ["configs.py", "worker.py", "metrics_all.py", "paper_reference.json", "densevlad_gpu.py",
+              "densevlad_vlfeat.py", "vlfeat_phow/phow.py", "vlfeat_phow/phow_shim.c",
               "upstream/dataset.py", "upstream/evaluate.py", "upstream/methods.py", "upstream/metrics.py"]
 
 

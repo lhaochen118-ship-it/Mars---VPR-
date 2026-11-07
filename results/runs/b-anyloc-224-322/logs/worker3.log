@@ -1,0 +1,66 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+12:50:56 [w3] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 7
+Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files
+Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt
+Desc dim set to 1536
+Model with domain = 'global' vocabulary loaded
+Desc dim set to 1536
+12:59:24 [w3] built anyloc_224 in 507.1s
+12:59:57 [w3] FAILED anyloc_224 MadMax-E0: OSError('Caught OSError in DataLoader worker process 9.\nOriginal Traceback (most recent call last):\n  File "/tmp/vprenv/lib/python3.13/site-packages/PIL/ImageFile.py", line 392, in load\n    s = read(read_bytes)\n  File "/tmp/vprenv/lib/python3.13/site-packages/PIL/PngImagePlugin.py", line 999, in load_read\n    cid, pos, length = self.png.read()\n                       ~~~~~~~~~~~~~^^\n  File "/tmp/vprenv/lib/python3.13/site-packages/PIL/PngImagePlugin.py", line 179, in read\n    length = i32(s)\n  File "/tmp/vprenv/lib/python3.13/site-packages/PIL/_binary.py", line 96, in i32be\n    return unpack_from(">I", c, o)[0]\n           ~~~~~~~~~~~^^^^^^^^^^^^\nstruct.error: unpack_from requires a buffer of at least 4 bytes for unpacking 4 bytes at offset 0 (actual buffer size is 0)\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File "/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/_utils/worker.py", line 349, in _worker_loop\n    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]\n  File "/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch\n    data = [self.dataset[idx] for idx in possibly_batched_index]\n            ~~~~~~~~~~~~^^^^^\n  File "/tmp/vprcode/worker.py", line 103, in __getitem__\n    return self.prep(Image.open(self.paths[i]).convert("RGB"))\n                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^\n  File "/tmp/vprenv/lib/python3.13/site-packages/PIL/Image.py", line 1070, in convert\n    self.load()\n    ~~~~~~~~~^^\n  File "/tmp/vprenv/lib/python3.13/site-packages/PIL/ImageFile.py", line 399, in load\n    raise OSError(msg) from e\nOSError: image file is truncated\n')
+13:00:49 [w3] anyloc_224 MadMax-E1: 507 imgs 51.9s (9.8 img/s)
+13:01:33 [w3] anyloc_224 S3LI-Etna-traverse_1: 485 imgs 44.4s (10.9 img/s)
+13:02:07 [w3] anyloc_224 MadMax-G2: 290 imgs 33.5s (8.6 img/s)
+13:02:31 [w3] anyloc_224 MadMax-A2: 180 imgs 23.9s (7.5 img/s)
+13:02:49 [w3] anyloc_224 MadMax-F0: 117 imgs 18.4s (6.4 img/s)
+13:02:59 [w3] anyloc_224 SPICE-A-night-on@2500.0us: 97 imgs 9.6s (10.1 img/s)
+Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files
+Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt
+Desc dim set to 1536
+Model with domain = 'global' vocabulary loaded
+Desc dim set to 1536
+13:03:20 [w3] built anyloc_322 in 21.2s
+13:04:19 [w3] FAILED anyloc_322 MadMax-E0: OSError('Caught OSError in DataLoader worker process 9.\nOriginal Traceback (most recent call last):\n  File "/tmp/vprenv/lib/python3.13/site-packages/PIL/ImageFile.py", line 392, in load\n    s = read(read_bytes)\n  File "/tmp/vprenv/lib/python3.13/site-packages/PIL/PngImagePlugin.py", line 999, in load_read\n    cid, pos, length = self.png.read()\n                       ~~~~~~~~~~~~~^^\n  File "/tmp/vprenv/lib/python3.13/site-packages/PIL/PngImagePlugin.py", line 179, in read\n    length = i32(s)\n  File "/tmp/vprenv/lib/python3.13/site-packages/PIL/_binary.py", line 96, in i32be\n    return unpack_from(">I", c, o)[0]\n           ~~~~~~~~~~~^^^^^^^^^^^^\nstruct.error: unpack_from requires a buffer of at least 4 bytes for unpacking 4 bytes at offset 0 (actual buffer size is 0)\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File "/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/_utils/worker.py", line 349, in _worker_loop\n    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]\n  File "/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch\n    data = [self.dataset[idx] for idx in possibly_batched_index]\n            ~~~~~~~~~~~~^^^^^\n  File "/tmp/vprcode/worker.py", line 103, in __getitem__\n    return self.prep(Image.open(self.paths[i]).convert("RGB"))\n                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^\n  File "/tmp/vprenv/lib/python3.13/site-packages/PIL/Image.py", line 1070, in convert\n    self.load()\n    ~~~~~~~~~^^\n  File "/tmp/vprenv/lib/python3.13/site-packages/PIL/ImageFile.py", line 399, in load\n    raise OSError(msg) from e\nOSError: image file is truncated\n')
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x7ad2f1249f80>
+Traceback (most recent call last):
+  File "/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/dataloader.py", line 1618, in __del__
+    self._shutdown_workers()
+  File "/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/dataloader.py", line 1601, in _shutdown_workers
+    if w.is_alive():
+  File "/usr/lib/python3.13/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x7ad2f1249f80>
+Traceback (most recent call last):
+  File "/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/dataloader.py", line 1618, in __del__
+    self._shutdown_workers()
+  File "/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/dataloader.py", line 1601, in _shutdown_workers
+    if w.is_alive():
+  File "/usr/lib/python3.13/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x7ad2f1249f80>
+Traceback (most recent call last):
+  File "/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/dataloader.py", line 1618, in __del__
+    self._shutdown_workers()
+  File "/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/dataloader.py", line 1601, in _shutdown_workers
+    if w.is_alive():
+  File "/usr/lib/python3.13/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+13:05:57 [w3] anyloc_322 MadMax-E1: 507 imgs 98.0s (5.2 img/s)
+13:07:26 [w3] anyloc_322 S3LI-Etna-traverse_1: 485 imgs 88.3s (5.5 img/s)
+13:08:25 [w3] anyloc_322 MadMax-G2: 290 imgs 59.6s (4.9 img/s)
+13:09:05 [w3] anyloc_322 MadMax-A2: 180 imgs 39.6s (4.5 img/s)
+13:09:33 [w3] anyloc_322 MadMax-F0: 117 imgs 28.0s (4.2 img/s)
+13:09:52 [w3] anyloc_322 SPICE-A-night-on@2500.0us: 97 imgs 18.9s (5.1 img/s)

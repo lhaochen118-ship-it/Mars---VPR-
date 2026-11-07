@@ -1,0 +1,73 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+13:22:51 [w0] torch 2.6.0+cu124 cuda 12.4 dev Tesla T4 trajectories 12
+Using cache found in /tmp/torch_home/hub/gmberton_MegaLoc_main
+13:22:53 [w0] hf plain: gberton/MegaLoc/config.json -> /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/config.json
+13:22:53 [w0] hf plain: gberton/MegaLoc/model.safetensors -> /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/model.safetensors
+13:24:43 [w0] built megaloc_322 in 112.0s
+/tmp/vprenv/lib/python3.13/site-packages/torch/utils/data/dataloader.py:624: UserWarning: This DataLoader will create 8 worker processes in total. Our suggested max number of worker in current system is 4, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+13:25:40 [w0] megaloc_322 S3LI-Etna-crater_inout: 1683 imgs 57.0s (29.5 img/s)
+13:27:20 [w0] megaloc_322 MadMax-E0: 517 imgs 99.7s (5.2 img/s)
+13:28:56 [w0] megaloc_322 MadMax-C0: 502 imgs 96.6s (5.2 img/s)
+13:30:11 [w0] megaloc_322 MadMax-C1: 463 imgs 75.3s (6.2 img/s)
+13:31:01 [w0] megaloc_322 MadMax-G2: 290 imgs 49.6s (5.8 img/s)
+13:31:33 [w0] megaloc_322 MadMax-F3: 229 imgs 32.2s (7.1 img/s)
+13:32:10 [w0] megaloc_322 MadMax-A2: 180 imgs 36.5s (4.9 img/s)
+13:32:16 [w0] megaloc_322 LunarLoc-9: 119 imgs 6.3s (18.9 img/s)
+13:32:50 [w0] megaloc_322 MadMax-F0: 117 imgs 33.9s (3.5 img/s)
+13:32:57 [w0] megaloc_322 SPICE-A-noon-off@2500.0us: 99 imgs 6.9s (14.3 img/s)
+13:33:02 [w0] megaloc_322 SPICE-A-night-on-spad@5.0us: 97 imgs 5.6s (17.3 img/s)
+13:33:08 [w0] megaloc_322 SPICE-A-noon-off-spad@5.0us: 97 imgs 5.3s (18.3 img/s)
+Using cache found in /tmp/torch_home/hub/gmberton_MegaLoc_main
+13:33:10 [w0] hf plain: gberton/MegaLoc/config.json -> /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/config.json
+13:33:10 [w0] hf plain: gberton/MegaLoc/model.safetensors -> /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/model.safetensors
+13:33:10 [w0] built megaloc_224 in 2.6s
+13:33:44 [w0] megaloc_224 S3LI-Etna-crater_inout: 1683 imgs 33.6s (50.1 img/s)
+13:34:54 [w0] megaloc_224 MadMax-E0: 517 imgs 70.1s (7.4 img/s)
+13:35:57 [w0] megaloc_224 MadMax-C0: 502 imgs 62.5s (8.0 img/s)
+13:36:40 [w0] megaloc_224 MadMax-C1: 463 imgs 43.2s (10.7 img/s)
+13:37:14 [w0] megaloc_224 MadMax-G2: 290 imgs 34.3s (8.4 img/s)
+13:37:47 [w0] megaloc_224 MadMax-F3: 229 imgs 32.8s (7.0 img/s)
+13:38:18 [w0] megaloc_224 MadMax-A2: 180 imgs 31.4s (5.7 img/s)
+13:38:26 [w0] megaloc_224 LunarLoc-9: 119 imgs 7.6s (15.7 img/s)
+13:38:45 [w0] megaloc_224 MadMax-F0: 117 imgs 19.3s (6.1 img/s)
+13:38:49 [w0] megaloc_224 SPICE-A-noon-off@2500.0us: 99 imgs 3.6s (27.6 img/s)
+13:38:52 [w0] megaloc_224 SPICE-A-night-on-spad@5.0us: 97 imgs 2.8s (34.7 img/s)
+13:38:54 [w0] megaloc_224 SPICE-A-noon-off-spad@5.0us: 97 imgs 2.9s (33.9 img/s)
+Using cache found in /tmp/torch_home/hub/amaralibey_bag-of-queries_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+13:38:57 [w0] built boq_224 in 2.3s
+13:39:35 [w0] boq_224 S3LI-Etna-crater_inout: 1683 imgs 37.7s (44.6 img/s)
+13:41:03 [w0] boq_224 MadMax-E0: 517 imgs 88.0s (5.9 img/s)
+13:42:16 [w0] boq_224 MadMax-C0: 502 imgs 73.1s (6.9 img/s)
+13:43:19 [w0] boq_224 MadMax-C1: 463 imgs 63.6s (7.3 img/s)
+13:43:55 [w0] boq_224 MadMax-G2: 290 imgs 35.6s (8.1 img/s)
+13:44:23 [w0] boq_224 MadMax-F3: 229 imgs 28.2s (8.1 img/s)
+13:44:46 [w0] boq_224 MadMax-A2: 180 imgs 23.3s (7.7 img/s)
+13:44:51 [w0] boq_224 LunarLoc-9: 119 imgs 4.8s (24.8 img/s)
+13:45:10 [w0] boq_224 MadMax-F0: 117 imgs 18.4s (6.4 img/s)
+13:45:13 [w0] boq_224 SPICE-A-noon-off@2500.0us: 99 imgs 3.2s (30.8 img/s)
+13:45:18 [w0] boq_224 SPICE-A-night-on-spad@5.0us: 97 imgs 5.2s (18.8 img/s)
+13:45:23 [w0] boq_224 SPICE-A-noon-off-spad@5.0us: 97 imgs 5.3s (18.4 img/s)
+Using cache found in /tmp/torch_home/hub/amaralibey_bag-of-queries_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+13:45:25 [w0] built boq_518 in 2.2s
+13:48:36 [w0] boq_518 S3LI-Etna-crater_inout: 1683 imgs 190.8s (8.8 img/s)
+13:50:13 [w0] boq_518 MadMax-E0: 517 imgs 96.9s (5.3 img/s)
+13:51:47 [w0] boq_518 MadMax-C0: 502 imgs 93.6s (5.4 img/s)
+13:53:15 [w0] boq_518 MadMax-C1: 463 imgs 88.7s (5.2 img/s)
+13:54:14 [w0] boq_518 MadMax-G2: 290 imgs 59.0s (4.9 img/s)
+13:55:01 [w0] boq_518 MadMax-F3: 229 imgs 46.8s (4.9 img/s)
+13:55:37 [w0] boq_518 MadMax-A2: 180 imgs 35.4s (5.1 img/s)
+13:55:54 [w0] boq_518 LunarLoc-9: 119 imgs 17.0s (7.0 img/s)
+13:56:19 [w0] boq_518 MadMax-F0: 117 imgs 25.1s (4.7 img/s)
+13:56:32 [w0] boq_518 SPICE-A-noon-off@2500.0us: 99 imgs 13.4s (7.4 img/s)
+13:56:45 [w0] boq_518 SPICE-A-night-on-spad@5.0us: 97 imgs 12.6s (7.7 img/s)
+13:56:57 [w0] boq_518 SPICE-A-noon-off-spad@5.0us: 97 imgs 12.5s (7.8 img/s)

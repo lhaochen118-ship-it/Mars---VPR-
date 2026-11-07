@@ -1,0 +1,71 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+13:33:18 [w3] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 6
+13:33:50 [w3] built netvlad_4096_native in 32.2s
+13:34:00 [w3] OOM -> sub-batch 4
+13:35:33 [w3] netvlad_4096_native MadMax-C1: 463 imgs 102.9s (4.5 img/s)
+13:36:58 [w3] netvlad_4096_native MadMax-A4: 412 imgs 85.2s (4.8 img/s)
+13:37:22 [w3] netvlad_4096_native S3LI-Etna-crater: 1129 imgs 24.6s (45.9 img/s)
+13:37:34 [w3] netvlad_4096_native LunarLoc-10: 183 imgs 11.7s (15.7 img/s)
+13:37:37 [w3] netvlad_4096_native SPICE-A-dawn-off@2500.0us: 99 imgs 2.8s (35.7 img/s)
+13:37:40 [w3] netvlad_4096_native SPICE-A-night-on@2500.0us: 97 imgs 2.7s (35.8 img/s)
+13:37:46 [w3] built netvlad_32768_native in 6.0s
+13:37:50 [w3] OOM -> sub-batch 4
+13:39:23 [w3] netvlad_32768_native MadMax-C1: 463 imgs 97.7s (4.7 img/s)
+13:40:48 [w3] netvlad_32768_native MadMax-A4: 412 imgs 85.2s (4.8 img/s)
+13:41:12 [w3] netvlad_32768_native S3LI-Etna-crater: 1129 imgs 23.7s (47.6 img/s)
+13:41:23 [w3] netvlad_32768_native LunarLoc-10: 183 imgs 11.0s (16.6 img/s)
+13:41:26 [w3] netvlad_32768_native SPICE-A-dawn-off@2500.0us: 99 imgs 2.8s (35.4 img/s)
+13:41:29 [w3] netvlad_32768_native SPICE-A-night-on@2500.0us: 97 imgs 2.6s (36.7 img/s)
+13:41:36 [w3] built netvlad_4096_max640 in 7.3s
+13:41:57 [w3] netvlad_4096_max640 MadMax-C1: 463 imgs 21.2s (21.9 img/s)
+13:42:15 [w3] netvlad_4096_max640 MadMax-A4: 412 imgs 17.9s (23.0 img/s)
+13:42:37 [w3] netvlad_4096_max640 S3LI-Etna-crater: 1129 imgs 21.7s (51.9 img/s)
+13:42:41 [w3] netvlad_4096_max640 LunarLoc-10: 183 imgs 4.2s (43.6 img/s)
+13:42:45 [w3] netvlad_4096_max640 SPICE-A-dawn-off@2500.0us: 99 imgs 3.5s (28.4 img/s)
+13:42:48 [w3] netvlad_4096_max640 SPICE-A-night-on@2500.0us: 97 imgs 3.1s (31.6 img/s)
+13:42:48 [w3] hf plain: timm/vit_small_patch16_dinov3.lvd1689m/model.safetensors -> /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_small_patch16_dinov3.lvd1689m/model.safetensors
+13:42:56 [w3] dinov3: RoPE periods truncated to bfloat16 (official behaviour)
+13:42:56 [w3] built dinov3_s16_224 in 8.0s
+13:43:25 [w3] dinov3_s16_224 MadMax-C1: 463 imgs 29.5s (15.7 img/s)
+13:43:56 [w3] dinov3_s16_224 MadMax-A4: 412 imgs 31.1s (13.3 img/s)
+13:44:01 [w3] dinov3_s16_224 S3LI-Etna-crater: 1129 imgs 5.1s (220.1 img/s)
+13:44:07 [w3] dinov3_s16_224 LunarLoc-10: 183 imgs 5.4s (34.0 img/s)
+13:44:09 [w3] dinov3_s16_224 SPICE-A-dawn-off@2500.0us: 99 imgs 2.4s (42.0 img/s)
+13:44:12 [w3] dinov3_s16_224 SPICE-A-night-on@2500.0us: 97 imgs 2.4s (40.3 img/s)
+13:44:13 [w3] hf plain: timm/vit_base_patch16_dinov3.lvd1689m/model.safetensors -> /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_base_patch16_dinov3.lvd1689m/model.safetensors
+13:45:06 [w3] dinov3: RoPE periods truncated to bfloat16 (official behaviour)
+13:45:06 [w3] built dinov3_b16_224 in 54.3s
+13:45:39 [w3] dinov3_b16_224 MadMax-C1: 463 imgs 33.2s (14.0 img/s)
+13:46:12 [w3] dinov3_b16_224 MadMax-A4: 412 imgs 32.7s (12.6 img/s)
+13:46:22 [w3] dinov3_b16_224 S3LI-Etna-crater: 1129 imgs 9.9s (113.7 img/s)
+13:46:28 [w3] dinov3_b16_224 LunarLoc-10: 183 imgs 6.1s (29.8 img/s)
+13:46:31 [w3] dinov3_b16_224 SPICE-A-dawn-off@2500.0us: 99 imgs 2.7s (36.4 img/s)
+13:46:33 [w3] dinov3_b16_224 SPICE-A-night-on@2500.0us: 97 imgs 2.8s (35.0 img/s)
+13:46:35 [w3] hf plain: timm/vit_base_patch16_dinov3.lvd1689m/model.safetensors -> /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_base_patch16_dinov3.lvd1689m/model.safetensors
+13:46:35 [w3] dinov3: RoPE periods truncated to bfloat16 (official behaviour)
+13:46:35 [w3] built dinov3_b16_512 in 1.6s
+13:47:23 [w3] dinov3_b16_512 MadMax-C1: 463 imgs 47.6s (9.7 img/s)
+13:48:08 [w3] dinov3_b16_512 MadMax-A4: 412 imgs 45.5s (9.0 img/s)
+13:48:51 [w3] dinov3_b16_512 S3LI-Etna-crater: 1129 imgs 42.7s (26.4 img/s)
+13:49:03 [w3] dinov3_b16_512 LunarLoc-10: 183 imgs 12.1s (15.2 img/s)
+13:49:09 [w3] dinov3_b16_512 SPICE-A-dawn-off@2500.0us: 99 imgs 6.1s (16.2 img/s)
+13:49:15 [w3] dinov3_b16_512 SPICE-A-night-on@2500.0us: 97 imgs 6.3s (15.3 img/s)
+13:49:20 [w3] hf plain: timm/vit_large_patch16_dinov3.lvd1689m/model.safetensors -> /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_large_patch16_dinov3.lvd1689m/model.safetensors
+13:51:43 [w3] dinov3: RoPE periods truncated to bfloat16 (official behaviour)
+13:51:44 [w3] built dinov3_l16_224 in 148.3s
+13:52:18 [w3] dinov3_l16_224 MadMax-C1: 463 imgs 34.6s (13.4 img/s)
+13:52:56 [w3] dinov3_l16_224 MadMax-A4: 412 imgs 37.8s (10.9 img/s)
+13:53:20 [w3] dinov3_l16_224 S3LI-Etna-crater: 1129 imgs 23.6s (47.9 img/s)
+13:53:28 [w3] dinov3_l16_224 LunarLoc-10: 183 imgs 8.3s (22.1 img/s)
+13:53:32 [w3] dinov3_l16_224 SPICE-A-dawn-off@2500.0us: 99 imgs 3.9s (25.3 img/s)
+13:53:36 [w3] dinov3_l16_224 SPICE-A-night-on@2500.0us: 97 imgs 4.0s (24.4 img/s)
+13:53:40 [w3] hf plain: timm/vit_large_patch16_dinov3.lvd1689m/model.safetensors -> /kaggle/input/vprspace-deps-hf/hf_plain/timm--vit_large_patch16_dinov3.lvd1689m/model.safetensors
+13:53:41 [w3] dinov3: RoPE periods truncated to bfloat16 (official behaviour)
+13:53:41 [w3] built dinov3_l16_512 in 4.9s
+13:55:01 [w3] dinov3_l16_512 MadMax-C1: 463 imgs 79.9s (5.8 img/s)
+13:56:15 [w3] dinov3_l16_512 MadMax-A4: 412 imgs 74.3s (5.5 img/s)
+13:58:17 [w3] dinov3_l16_512 S3LI-Etna-crater: 1129 imgs 121.5s (9.3 img/s)
+13:58:41 [w3] dinov3_l16_512 LunarLoc-10: 183 imgs 24.8s (7.4 img/s)
+13:58:55 [w3] dinov3_l16_512 SPICE-A-dawn-off@2500.0us: 99 imgs 13.2s (7.5 img/s)
+13:59:07 [w3] dinov3_l16_512 SPICE-A-night-on@2500.0us: 97 imgs 12.9s (7.5 img/s)

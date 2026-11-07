@@ -1,0 +1,211 @@
+[{"stream_name":"stderr","time":0.735801823,"data":"/kaggle/src/script.py:23: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.\n"}
+,{"stream_name":"stderr","time":0.735854184,"data":"  tarfile.open(fileobj=io.BytesIO(base64.b64decode(CODE_B64))).extractall(code)\n"}
+,{"stream_name":"stdout","time":0.761013721,"data":"13:39:28 [+     0s] spec {\"session\": \"d-cosplace-netvlad-square-t4\", \"env\": \"pinned\", \"configs\": [\"cosplace_r50_2048_322\", \"cosplace_r50_2048_518\", \"netvlad_4096_322\", \"netvlad_4096_518\", \"netvlad_32768_518\"], \"trajectories\": null, \"pixel_cost\": false}\n"}
+,{"stream_name":"stdout","time":4.574660447,"data":"13:39:32 [+     4s] input tree:\n"}
+,{"stream_name":"stdout","time":4.574688982,"data":"/kaggle/input\n"}
+,{"stream_name":"stdout","time":4.5747178349999995,"data":"/kaggle/input/notebooks\n"}
+,{"stream_name":"stdout","time":4.57472229,"data":"/kaggle/input/notebooks/yeshenhi\n"}
+,{"stream_name":"stdout","time":4.574726397,"data":"/kaggle/input/notebooks/yeshenhi/vprspace-data-a\n"}
+,{"stream_name":"stdout","time":4.574730568,"data":"/kaggle/input/notebooks/yeshenhi/vprspace-deps-core\n"}
+,{"stream_name":"stdout","time":4.574734725,"data":"/kaggle/input/notebooks/yeshenhi/vprspace-deps-core/hf_home\n"}
+,{"stream_name":"stdout","time":4.574739023,"data":"/kaggle/input/notebooks/yeshenhi/vprspace-deps-core/hf_home/hub\n"}
+,{"stream_name":"stdout","time":4.574743102,"data":"/kaggle/input/notebooks/yeshenhi/vprspace-deps-core/hf_home/xet\n"}
+,{"stream_name":"stdout","time":4.574747353,"data":"/kaggle/input/notebooks/yeshenhi/vprspace-deps-core/torch_home\n"}
+,{"stream_name":"stdout","time":4.574752017,"data":"/kaggle/input/notebooks/yeshenhi/vprspace-deps-core/torch_home/hub\n"}
+,{"stream_name":"stdout","time":4.574757417,"data":"/kaggle/input/notebooks/yeshenhi/vprspace-deps-core/wheels\n"}
+,{"stream_name":"stdout","time":4.57476251,"data":"/kaggle/input/notebooks/yeshenhi/vprspace-deps-extra\n"}
+,{"stream_name":"stdout","time":4.574767595,"data":"/kaggle/input/notebooks/yeshenhi/vprspace-deps-extra/extra\n"}
+,{"stream_name":"stdout","time":4.574772036,"data":"/kaggle/input/notebooks/yeshenhi/vprspace-deps-extra/extra/VPR-methods-evaluation\n"}
+,{"stream_name":"stdout","time":4.574787692,"data":"/kaggle/input/notebooks/yeshenhi/vprspace-deps-extra/extra/mixvpr\n"}
+,{"stream_name":"stdout","time":4.574792531,"data":"/kaggle/input/notebooks/yeshenhi/vprspace-deps-extra/hf_home\n"}
+,{"stream_name":"stdout","time":4.5747969699999995,"data":"/kaggle/input/notebooks/yeshenhi/vprspace-deps-extra/hf_home/hub\n"}
+,{"stream_name":"stdout","time":4.574801118,"data":"/kaggle/input/notebooks/yeshenhi/vprspace-deps-extra/hf_home/xet\n"}
+,{"stream_name":"stdout","time":4.574805297,"data":"/kaggle/input/notebooks/yeshenhi/vprspace-deps-extra/torch_home\n"}
+,{"stream_name":"stdout","time":4.5748094550000005,"data":"/kaggle/input/notebooks/yeshenhi/vprspace-deps-extra/torch_home/hub\n"}
+,{"stream_name":"stdout","time":4.574813588,"data":"/kaggle/input/notebooks/yeshenhi/vprspace-data-b\n"}
+,{"stream_name":"stdout","time":4.5748176780000005,"data":"\n"}
+,{"stream_name":"stdout","time":8.429754379,"data":"13:39:36 [+     8s] $ cp -rs --remove-destination /kaggle/input/notebooks/yeshenhi/vprspace-deps-core/torch_home/. /tmp/torch_home/\n"}
+,{"stream_name":"stdout","time":8.921162246,"data":"13:39:36 [+     8s] $ cp -rs --remove-destination /kaggle/input/notebooks/yeshenhi/vprspace-deps-extra/torch_home/. /tmp/torch_home/\n"}
+,{"stream_name":"stdout","time":12.603529609,"data":"13:39:40 [+    12s] $ cp -rs --remove-destination /kaggle/input/notebooks/yeshenhi/vprspace-deps-core/hf_home/. /tmp/hf_home/\n"}
+,{"stream_name":"stdout","time":14.056903607,"data":"13:39:41 [+    13s] $ cp -rs --remove-destination /kaggle/input/notebooks/yeshenhi/vprspace-deps-extra/hf_home/. /tmp/hf_home/\n"}
+,{"stream_name":"stdout","time":24.747921849,"data":"13:39:52 [+    24s] wheels: /kaggle/input/notebooks/yeshenhi/vprspace-deps-core/wheels req: /kaggle/input/notebooks/yeshenhi/vprspace-deps-core/requirements_pinned.txt\n"}
+,{"stream_name":"stdout","time":24.74794973,"data":"13:39:52 [+    24s] $ /usr/bin/python3 -m venv /tmp/vprenv\n"}
+,{"stream_name":"stderr","time":24.954477432,"data":"Error: Command '['/tmp/vprenv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":24.973095926,"data":"13:39:52 [+    24s] $ /usr/bin/python3 -m venv --without-pip /tmp/vprenv\n"}
+,{"stream_name":"stdout","time":25.110005946,"data":"13:39:52 [+    24s] $ /usr/bin/python3 -m pip --python /tmp/vprenv/bin/python install -q --no-index --find-links /kaggle/input/notebooks/yeshenhi/vprspace-deps-core/wheels -r /kaggle/input/notebooks/yeshenhi/vprspace-deps-core/requirements_pinned.txt\n"}
+,{"stream_name":"stderr","time":25.646575669,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":25.646604068,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":196.237934318,"data":"13:42:44 [+   196s] $ /usr/bin/python3 -m pip --python /tmp/vprenv/bin/python install -q --no-index --no-deps --find-links /kaggle/input/notebooks/yeshenhi/vprspace-deps-core/wheels pytorch-lightning lightning-utilities torchmetrics fast-pytorch-kmeans timm psutil pytorch-metric-learning\n"}
+,{"stream_name":"stderr","time":196.485341447,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":196.485370162,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":200.282089709,"data":"13:42:48 [+   200s] data root /tmp/vprdata/vpr-space-v0 extracted\n"}
+,{"stream_name":"stdout","time":200.40395202,"data":"13:42:48 [+   200s] 2 GPUs, images per GPU [4393.0, 4391.0]\n"}
+,{"stream_name":"stdout","time":204.150712929,"data":"13:42:51 [+   203s] hf_plain dirs: none\n"}
+,{"stream_name":"stdout","time":2700.207888875,"data":"14:24:28 [+  2699s] workers exit codes [0, 0]\n"}
+,{"stream_name":"stdout","time":2700.210654319,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":2700.210666546,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":2700.210671199,"data":"13:42:59 [w0] torch 2.6.0+cu124 cuda 12.4 dev Tesla T4 trajectories 12\n"}
+,{"stream_name":"stdout","time":2700.21067554,"data":"Using cache found in /tmp/torch_home/hub/gmberton_cosplace_main\n"}
+,{"stream_name":"stdout","time":2700.210679696,"data":"Returning CosPlace model with backbone: ResNet50 with features dimension 2048\n"}
+,{"stream_name":"stdout","time":2700.210683875,"data":"13:43:20 [w0] built cosplace_r50_2048_322 in 21.3s\n"}
+,{"stream_name":"stdout","time":2700.210688025,"data":"13:43:54 [w0] cosplace_r50_2048_322 S3LI-Etna-crater_inout: 1683 imgs 34.2s (49.3 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210693983,"data":"13:45:35 [w0] cosplace_r50_2048_322 MadMax-E0: 517 imgs 101.1s (5.1 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210715539,"data":"13:47:13 [w0] cosplace_r50_2048_322 MadMax-C0: 502 imgs 97.8s (5.1 img/s)\n"}
+,{"stream_name":"stdout","time":2700.2107208,"data":"13:48:51 [w0] cosplace_r50_2048_322 MadMax-C1: 463 imgs 97.9s (4.7 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210726001,"data":"13:49:43 [w0] cosplace_r50_2048_322 MadMax-G2: 290 imgs 51.8s (5.6 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210740257,"data":"13:50:35 [w0] cosplace_r50_2048_322 MadMax-F3: 229 imgs 51.9s (4.4 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210744142,"data":"13:51:20 [w0] cosplace_r50_2048_322 MadMax-A2: 180 imgs 44.6s (4.0 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210748193,"data":"13:51:24 [w0] cosplace_r50_2048_322 LunarLoc-9: 119 imgs 4.9s (24.3 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210751556,"data":"13:51:51 [w0] cosplace_r50_2048_322 MadMax-F0: 117 imgs 26.6s (4.4 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210755059,"data":"13:51:54 [w0] cosplace_r50_2048_322 SPICE-A-noon-off@2500.0us: 99 imgs 2.9s (33.9 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210758409,"data":"13:51:56 [w0] cosplace_r50_2048_322 SPICE-A-night-on-spad@5.0us: 97 imgs 2.4s (40.8 img/s)\n"}
+,{"stream_name":"stdout","time":2700.21076183,"data":"13:51:58 [w0] cosplace_r50_2048_322 SPICE-A-noon-off-spad@5.0us: 97 imgs 2.2s (43.9 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210765165,"data":"Using cache found in /tmp/torch_home/hub/gmberton_cosplace_main\n"}
+,{"stream_name":"stdout","time":2700.210768471,"data":"Returning CosPlace model with backbone: ResNet50 with features dimension 2048\n"}
+,{"stream_name":"stdout","time":2700.210771834,"data":"13:52:00 [w0] built cosplace_r50_2048_518 in 1.4s\n"}
+,{"stream_name":"stdout","time":2700.210775148,"data":"13:52:45 [w0] cosplace_r50_2048_518 S3LI-Etna-crater_inout: 1683 imgs 44.7s (37.6 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210778459,"data":"13:54:17 [w0] cosplace_r50_2048_518 MadMax-E0: 517 imgs 92.0s (5.6 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210781725,"data":"13:55:46 [w0] cosplace_r50_2048_518 MadMax-C0: 502 imgs 89.6s (5.6 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210785036,"data":"13:57:15 [w0] cosplace_r50_2048_518 MadMax-C1: 463 imgs 89.0s (5.2 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210788333,"data":"13:58:09 [w0] cosplace_r50_2048_518 MadMax-G2: 290 imgs 54.1s (5.4 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210791596,"data":"13:58:56 [w0] cosplace_r50_2048_518 MadMax-F3: 229 imgs 46.8s (4.9 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210794916,"data":"13:59:37 [w0] cosplace_r50_2048_518 MadMax-A2: 180 imgs 40.7s (4.4 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210799102,"data":"13:59:43 [w0] cosplace_r50_2048_518 LunarLoc-9: 119 imgs 6.4s (18.5 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210802602,"data":"14:00:06 [w0] cosplace_r50_2048_518 MadMax-F0: 117 imgs 22.3s (5.2 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210807481,"data":"14:00:11 [w0] cosplace_r50_2048_518 SPICE-A-noon-off@2500.0us: 99 imgs 4.8s (20.6 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210810888,"data":"14:00:15 [w0] cosplace_r50_2048_518 SPICE-A-night-on-spad@5.0us: 97 imgs 4.3s (22.8 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210815945,"data":"14:00:19 [w0] cosplace_r50_2048_518 SPICE-A-noon-off-spad@5.0us: 97 imgs 3.9s (24.6 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210819684,"data":"14:00:33 [w0] built netvlad_4096_322 in 14.2s\n"}
+,{"stream_name":"stdout","time":2700.210823424,"data":"14:01:09 [w0] netvlad_4096_322 S3LI-Etna-crater_inout: 1683 imgs 36.0s (46.7 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210827219,"data":"14:02:42 [w0] netvlad_4096_322 MadMax-E0: 517 imgs 93.2s (5.5 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210831216,"data":"14:04:22 [w0] netvlad_4096_322 MadMax-C0: 502 imgs 100.2s (5.0 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210834945,"data":"14:05:52 [w0] netvlad_4096_322 MadMax-C1: 463 imgs 89.4s (5.2 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210838616,"data":"14:06:49 [w0] netvlad_4096_322 MadMax-G2: 290 imgs 56.7s (5.1 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210846112,"data":"14:07:35 [w0] netvlad_4096_322 MadMax-F3: 229 imgs 46.7s (4.9 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210849501,"data":"14:08:12 [w0] netvlad_4096_322 MadMax-A2: 180 imgs 36.4s (4.9 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210852734,"data":"14:08:16 [w0] netvlad_4096_322 LunarLoc-9: 119 imgs 4.8s (24.9 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210855964,"data":"14:08:40 [w0] netvlad_4096_322 MadMax-F0: 117 imgs 23.1s (5.1 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210859255,"data":"14:08:42 [w0] netvlad_4096_322 SPICE-A-noon-off@2500.0us: 99 imgs 2.8s (35.0 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210863078,"data":"14:08:44 [w0] netvlad_4096_322 SPICE-A-night-on-spad@5.0us: 97 imgs 2.1s (46.7 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210866523,"data":"14:08:46 [w0] netvlad_4096_322 SPICE-A-noon-off-spad@5.0us: 97 imgs 2.0s (48.1 img/s)\n"}
+,{"stream_name":"stdout","time":2700.21086993,"data":"14:08:55 [w0] built netvlad_4096_518 in 8.4s\n"}
+,{"stream_name":"stdout","time":2700.210873167,"data":"14:09:47 [w0] netvlad_4096_518 S3LI-Etna-crater_inout: 1683 imgs 52.5s (32.1 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210876455,"data":"14:11:35 [w0] netvlad_4096_518 MadMax-E0: 517 imgs 107.1s (4.8 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210879799,"data":"14:13:19 [w0] netvlad_4096_518 MadMax-C0: 502 imgs 104.8s (4.8 img/s)\n"}
+,{"stream_name":"stdout","time":2700.21088314,"data":"14:14:55 [w0] netvlad_4096_518 MadMax-C1: 463 imgs 95.7s (4.8 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210886477,"data":"14:15:54 [w0] netvlad_4096_518 MadMax-G2: 290 imgs 58.8s (4.9 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210889794,"data":"14:16:32 [w0] netvlad_4096_518 MadMax-F3: 229 imgs 38.0s (6.0 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210893187,"data":"14:17:00 [w0] netvlad_4096_518 MadMax-A2: 180 imgs 27.7s (6.5 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210898077,"data":"14:17:05 [w0] netvlad_4096_518 LunarLoc-9: 119 imgs 5.2s (23.0 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210905261,"data":"14:17:24 [w0] netvlad_4096_518 MadMax-F0: 117 imgs 19.0s (6.2 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210908055,"data":"14:17:28 [w0] netvlad_4096_518 SPICE-A-noon-off@2500.0us: 99 imgs 4.2s (23.7 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210910339,"data":"14:17:32 [w0] netvlad_4096_518 SPICE-A-night-on-spad@5.0us: 97 imgs 3.9s (24.8 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210912607,"data":"14:17:36 [w0] netvlad_4096_518 SPICE-A-noon-off-spad@5.0us: 97 imgs 3.9s (24.8 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210914875,"data":"14:17:42 [w0] built netvlad_32768_518 in 6.1s\n"}
+,{"stream_name":"stdout","time":2700.210917156,"data":"14:18:36 [w0] netvlad_32768_518 S3LI-Etna-crater_inout: 1683 imgs 54.4s (31.0 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210919442,"data":"14:19:41 [w0] netvlad_32768_518 MadMax-E0: 517 imgs 64.7s (8.0 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210921696,"data":"14:20:54 [w0] netvlad_32768_518 MadMax-C0: 502 imgs 73.0s (6.9 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210923932,"data":"14:21:59 [w0] netvlad_32768_518 MadMax-C1: 463 imgs 65.3s (7.1 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210926195,"data":"14:22:44 [w0] netvlad_32768_518 MadMax-G2: 290 imgs 45.1s (6.4 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210928444,"data":"14:23:21 [w0] netvlad_32768_518 MadMax-F3: 229 imgs 36.7s (6.2 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210930657,"data":"14:23:48 [w0] netvlad_32768_518 MadMax-A2: 180 imgs 27.4s (6.6 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210932875,"data":"14:23:54 [w0] netvlad_32768_518 LunarLoc-9: 119 imgs 5.4s (22.1 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210937763,"data":"14:24:13 [w0] netvlad_32768_518 MadMax-F0: 117 imgs 19.1s (6.1 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210940069,"data":"14:24:17 [w0] netvlad_32768_518 SPICE-A-noon-off@2500.0us: 99 imgs 4.3s (22.9 img/s)\n"}
+,{"stream_name":"stdout","time":2700.21094254,"data":"14:24:21 [w0] netvlad_32768_518 SPICE-A-night-on-spad@5.0us: 97 imgs 3.9s (24.6 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210944857,"data":"14:24:25 [w0] netvlad_32768_518 SPICE-A-noon-off-spad@5.0us: 97 imgs 4.0s (24.1 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210947129,"data":"\n"}
+,{"stream_name":"stdout","time":2700.21094925,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":2700.210951484,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":2700.210953676,"data":"13:42:59 [w1] torch 2.6.0+cu124 cuda 12.4 dev Tesla T4 trajectories 13\n"}
+,{"stream_name":"stdout","time":2700.210955967,"data":"Using cache found in /tmp/torch_home/hub/gmberton_cosplace_main\n"}
+,{"stream_name":"stdout","time":2700.210958174,"data":"Returning CosPlace model with backbone: ResNet50 with features dimension 2048\n"}
+,{"stream_name":"stdout","time":2700.210960426,"data":"13:43:20 [w1] built cosplace_r50_2048_322 in 21.2s\n"}
+,{"stream_name":"stdout","time":2700.210962632,"data":"13:43:44 [w1] cosplace_r50_2048_322 S3LI-Etna-crater: 1129 imgs 23.4s (48.3 img/s)\n"}
+,{"stream_name":"stdout","time":2700.21096487,"data":"13:43:58 [w1] cosplace_r50_2048_322 S3LI-Etna-loops: 780 imgs 14.6s (53.5 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210967128,"data":"13:45:37 [w1] cosplace_r50_2048_322 MadMax-E1: 507 imgs 98.7s (5.1 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210969372,"data":"13:45:48 [w1] cosplace_r50_2048_322 S3LI-Etna-traverse_1: 485 imgs 10.9s (44.3 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210971665,"data":"13:47:16 [w1] cosplace_r50_2048_322 MadMax-A4: 412 imgs 88.4s (4.7 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210973906,"data":"13:48:09 [w1] cosplace_r50_2048_322 MadMax-G0: 258 imgs 52.8s (4.9 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210976734,"data":"13:48:17 [w1] cosplace_r50_2048_322 LunarLoc-10: 183 imgs 7.7s (23.7 img/s)\n"}
+,{"stream_name":"stdout","time":2700.21098315,"data":"13:48:54 [w1] cosplace_r50_2048_322 MadMax-A0: 171 imgs 37.5s (4.6 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210985409,"data":"13:49:03 [w1] cosplace_r50_2048_322 LunarLoc-15: 118 imgs 8.8s (13.5 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210987712,"data":"13:49:06 [w1] cosplace_r50_2048_322 SPICE-A-dawn-off@2500.0us: 99 imgs 3.1s (31.8 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210989995,"data":"13:49:09 [w1] cosplace_r50_2048_322 SPICE-A-dawn-off-spad@5.0us: 98 imgs 2.6s (37.8 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210992253,"data":"13:49:12 [w1] cosplace_r50_2048_322 SPICE-A-night-on@2500.0us: 97 imgs 3.2s (30.3 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210994505,"data":"13:49:18 [w1] cosplace_r50_2048_322 LunarLoc-17: 54 imgs 5.7s (9.5 img/s)\n"}
+,{"stream_name":"stdout","time":2700.210996819,"data":"Using cache found in /tmp/torch_home/hub/gmberton_cosplace_main\n"}
+,{"stream_name":"stdout","time":2700.210999036,"data":"Returning CosPlace model with backbone: ResNet50 with features dimension 2048\n"}
+,{"stream_name":"stdout","time":2700.211001305,"data":"13:49:33 [w1] built cosplace_r50_2048_518 in 15.8s\n"}
+,{"stream_name":"stdout","time":2700.211003517,"data":"13:50:05 [w1] cosplace_r50_2048_518 S3LI-Etna-crater: 1129 imgs 31.9s (35.4 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211005835,"data":"13:50:29 [w1] cosplace_r50_2048_518 S3LI-Etna-loops: 780 imgs 23.8s (32.7 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211010085,"data":"13:51:59 [w1] cosplace_r50_2048_518 MadMax-E1: 507 imgs 90.0s (5.6 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211012394,"data":"13:52:15 [w1] cosplace_r50_2048_518 S3LI-Etna-traverse_1: 485 imgs 16.2s (30.0 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211014654,"data":"13:53:37 [w1] cosplace_r50_2048_518 MadMax-A4: 412 imgs 81.6s (5.0 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211016965,"data":"13:54:27 [w1] cosplace_r50_2048_518 MadMax-G0: 258 imgs 50.4s (5.1 img/s)\n"}
+,{"stream_name":"stdout","time":2700.21101919,"data":"13:54:37 [w1] cosplace_r50_2048_518 LunarLoc-10: 183 imgs 9.5s (19.3 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211021431,"data":"13:55:15 [w1] cosplace_r50_2048_518 MadMax-A0: 171 imgs 38.2s (4.5 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211023655,"data":"13:55:25 [w1] cosplace_r50_2048_518 LunarLoc-15: 118 imgs 9.4s (12.6 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211025974,"data":"13:55:30 [w1] cosplace_r50_2048_518 SPICE-A-dawn-off@2500.0us: 99 imgs 5.8s (17.1 img/s)\n"}
+,{"stream_name":"stdout","time":2700.21102836,"data":"13:55:35 [w1] cosplace_r50_2048_518 SPICE-A-dawn-off-spad@5.0us: 98 imgs 4.4s (22.4 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211030638,"data":"13:55:40 [w1] cosplace_r50_2048_518 SPICE-A-night-on@2500.0us: 97 imgs 5.3s (18.2 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211032907,"data":"13:55:45 [w1] cosplace_r50_2048_518 LunarLoc-17: 54 imgs 5.0s (10.7 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211035164,"data":"13:55:59 [w1] built netvlad_4096_322 in 13.6s\n"}
+,{"stream_name":"stdout","time":2700.211037354,"data":"13:56:25 [w1] netvlad_4096_322 S3LI-Etna-crater: 1129 imgs 25.9s (43.6 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211039596,"data":"13:56:43 [w1] netvlad_4096_322 S3LI-Etna-loops: 780 imgs 18.2s (43.0 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211054758,"data":"13:58:16 [w1] netvlad_4096_322 MadMax-E1: 507 imgs 93.5s (5.4 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211058707,"data":"13:58:28 [w1] netvlad_4096_322 S3LI-Etna-traverse_1: 485 imgs 11.6s (41.9 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211062171,"data":"13:59:47 [w1] netvlad_4096_322 MadMax-A4: 412 imgs 78.9s (5.2 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211065993,"data":"14:00:33 [w1] netvlad_4096_322 MadMax-G0: 258 imgs 46.0s (5.6 img/s)\n"}
+,{"stream_name":"stdout","time":2700.21107062,"data":"14:00:40 [w1] netvlad_4096_322 LunarLoc-10: 183 imgs 7.6s (24.2 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211075377,"data":"14:01:17 [w1] netvlad_4096_322 MadMax-A0: 171 imgs 36.9s (4.6 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211080201,"data":"14:01:23 [w1] netvlad_4096_322 LunarLoc-15: 118 imgs 6.2s (19.1 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211085129,"data":"14:01:26 [w1] netvlad_4096_322 SPICE-A-dawn-off@2500.0us: 99 imgs 2.9s (34.7 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211090106,"data":"14:01:29 [w1] netvlad_4096_322 SPICE-A-dawn-off-spad@5.0us: 98 imgs 2.4s (41.1 img/s)\n"}
+,{"stream_name":"stdout","time":2700.21109537,"data":"14:01:32 [w1] netvlad_4096_322 SPICE-A-night-on@2500.0us: 97 imgs 2.9s (33.2 img/s)\n"}
+,{"stream_name":"stdout","time":2700.21109996,"data":"14:01:35 [w1] netvlad_4096_322 LunarLoc-17: 54 imgs 3.8s (14.2 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211104867,"data":"14:01:48 [w1] built netvlad_4096_518 in 12.2s\n"}
+,{"stream_name":"stdout","time":2700.211109739,"data":"14:02:34 [w1] netvlad_4096_518 S3LI-Etna-crater: 1129 imgs 46.7s (24.2 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211114732,"data":"14:03:03 [w1] netvlad_4096_518 S3LI-Etna-loops: 780 imgs 28.7s (27.2 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211124124,"data":"14:04:51 [w1] netvlad_4096_518 MadMax-E1: 507 imgs 107.9s (4.7 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211129429,"data":"14:05:12 [w1] netvlad_4096_518 S3LI-Etna-traverse_1: 485 imgs 21.0s (23.1 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211134442,"data":"14:06:42 [w1] netvlad_4096_518 MadMax-A4: 412 imgs 90.0s (4.6 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211155047,"data":"14:07:42 [w1] netvlad_4096_518 MadMax-G0: 258 imgs 59.6s (4.3 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211158285,"data":"14:07:51 [w1] netvlad_4096_518 LunarLoc-10: 183 imgs 9.7s (18.9 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211161782,"data":"14:08:31 [w1] netvlad_4096_518 MadMax-A0: 171 imgs 39.5s (4.3 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211165711,"data":"14:08:40 [w1] netvlad_4096_518 LunarLoc-15: 118 imgs 9.5s (12.5 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211169538,"data":"14:08:46 [w1] netvlad_4096_518 SPICE-A-dawn-off@2500.0us: 99 imgs 5.6s (17.8 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211173524,"data":"14:08:51 [w1] netvlad_4096_518 SPICE-A-dawn-off-spad@5.0us: 98 imgs 5.4s (18.2 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211177302,"data":"14:08:57 [w1] netvlad_4096_518 SPICE-A-night-on@2500.0us: 97 imgs 5.7s (17.1 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211181242,"data":"14:09:02 [w1] netvlad_4096_518 LunarLoc-17: 54 imgs 5.3s (10.1 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211185155,"data":"14:09:11 [w1] built netvlad_32768_518 in 8.5s\n"}
+,{"stream_name":"stdout","time":2700.211188904,"data":"14:09:54 [w1] netvlad_32768_518 S3LI-Etna-crater: 1129 imgs 43.6s (25.9 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211192773,"data":"14:10:25 [w1] netvlad_32768_518 S3LI-Etna-loops: 780 imgs 30.2s (25.9 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211197017,"data":"14:12:05 [w1] netvlad_32768_518 MadMax-E1: 507 imgs 100.6s (5.0 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211201446,"data":"14:12:28 [w1] netvlad_32768_518 S3LI-Etna-traverse_1: 485 imgs 22.3s (21.8 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211205502,"data":"14:13:49 [w1] netvlad_32768_518 MadMax-A4: 412 imgs 81.2s (5.1 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211209619,"data":"14:14:44 [w1] netvlad_32768_518 MadMax-G0: 258 imgs 55.4s (4.7 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211213386,"data":"14:14:55 [w1] netvlad_32768_518 LunarLoc-10: 183 imgs 10.3s (17.7 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211217439,"data":"14:15:33 [w1] netvlad_32768_518 MadMax-A0: 171 imgs 38.5s (4.4 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211221484,"data":"14:15:42 [w1] netvlad_32768_518 LunarLoc-15: 118 imgs 9.2s (12.8 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211225708,"data":"14:15:48 [w1] netvlad_32768_518 SPICE-A-dawn-off@2500.0us: 99 imgs 5.8s (17.1 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211229707,"data":"14:15:53 [w1] netvlad_32768_518 SPICE-A-dawn-off-spad@5.0us: 98 imgs 5.4s (18.3 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211233838,"data":"14:15:59 [w1] netvlad_32768_518 SPICE-A-night-on@2500.0us: 97 imgs 5.6s (17.4 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211237857,"data":"14:16:04 [w1] netvlad_32768_518 LunarLoc-17: 54 imgs 5.4s (10.1 img/s)\n"}
+,{"stream_name":"stdout","time":2700.211241954,"data":"\n"}
+,{"stream_name":"stdout","time":2700.211245789,"data":"14:24:28 [+  2699s] $ /tmp/vprenv/bin/python /tmp/vprcode/metrics_all.py --root /tmp/vprdata/vpr-space-v0 --desc-dir /kaggle/working/desc --out /kaggle/working/results --tag d-cosplace-netvlad-square-t4\n"}
+,{"stream_name":"stderr","time":2700.329837543,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":2700.329873266,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":2706.90622917,"data":"cosplace_r50_2048_322: 16/16 setups, AUPRC mean 0.2419\n"}
+,{"stream_name":"stdout","time":2707.892834162,"data":"cosplace_r50_2048_518: 16/16 setups, AUPRC mean 0.2713\n"}
+,{"stream_name":"stdout","time":2713.822199247,"data":"netvlad_32768_518: 16/16 setups, AUPRC mean 0.2421\n"}
+,{"stream_name":"stdout","time":2715.1205719,"data":"netvlad_4096_322: 16/16 setups, AUPRC mean 0.2218\n"}
+,{"stream_name":"stdout","time":2716.473030991,"data":"netvlad_4096_518: 16/16 setups, AUPRC mean 0.2326\n"}
+,{"stream_name":"stdout","time":2717.59321317,"data":"14:24:45 [+  2717s] DONE\n"}
+,{"stream_name":"stderr","time":2719.826204346,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":2719.826231076,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":2720.092896971,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":2720.092928265,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":2721.637319332,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":2722.618379024,"data":"[NbConvertApp] Writing 339613 bytes to __results__.html\n"}
+]

@@ -1,0 +1,26 @@
+13:09:55 [w1] torch 2.11.0+cu130 cuda 13.0 dev NVIDIA L4 trajectories 6
+Using cache found in /tmp/torch_home/hub/amaralibey_bag-of-queries_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+13:11:19 [w1] built boq in 83.6s
+13:11:47 [w1] boq S3LI-Etna-crater: 1129 imgs 27.9s (40.5 img/s)
+13:12:15 [w1] boq MadMax-C1: 463 imgs 27.6s (16.8 img/s)
+13:12:31 [w1] boq MadMax-G0: 258 imgs 16.2s (15.9 img/s)
+13:12:45 [w1] boq MadMax-A0: 171 imgs 14.0s (12.2 img/s)
+13:12:48 [w1] boq SPICE-A-noon-off@2500.0us: 99 imgs 2.8s (35.0 img/s)
+13:12:50 [w1] boq SPICE-A-noon-off-spad@5.0us: 97 imgs 2.5s (39.3 img/s)
+Using cache found in /tmp/torch_home/hub/gmberton_MegaLoc_main
+13:12:52 [w1] hf plain: gberton/MegaLoc/config.json -> /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/config.json
+13:12:52 [w1] hf plain: gberton/MegaLoc/model.safetensors -> /kaggle/input/vprspace-deps-hf/hf_plain/gberton--MegaLoc/model.safetensors
+13:14:09 [w1] built megaloc in 78.8s
+13:15:01 [w1] megaloc S3LI-Etna-crater: 1129 imgs 52.5s (21.5 img/s)
+13:15:28 [w1] megaloc MadMax-C1: 463 imgs 26.3s (17.6 img/s)
+13:15:45 [w1] megaloc MadMax-G0: 258 imgs 17.8s (14.5 img/s)
+13:15:59 [w1] megaloc MadMax-A0: 171 imgs 13.7s (12.5 img/s)
+13:16:05 [w1] megaloc SPICE-A-noon-off@2500.0us: 99 imgs 5.4s (18.3 img/s)
+13:16:10 [w1] megaloc SPICE-A-noon-off-spad@5.0us: 97 imgs 5.1s (19.0 img/s)

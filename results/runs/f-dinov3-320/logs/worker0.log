@@ -1,0 +1,27 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+13:42:31 [w0] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 5
+13:42:32 [w0] hf plain: timm/vit_small_patch16_dinov3.lvd1689m/model.safetensors -> /kaggle/input/notebooks/nguyenmanh0404/vprspace-deps-hf/hf_plain/timm--vit_small_patch16_dinov3.lvd1689m/model.safetensors
+13:42:44 [w0] dinov3: RoPE periods truncated to bfloat16 (official behaviour)
+13:42:44 [w0] built dinov3_s16_320 in 12.7s
+13:42:56 [w0] dinov3_s16_320 S3LI-Etna-crater_inout: 1683 imgs 11.9s (141.0 img/s)
+13:43:29 [w0] dinov3_s16_320 MadMax-F3: 229 imgs 32.9s (7.0 img/s)
+13:43:38 [w0] dinov3_s16_320 LunarLoc-15: 118 imgs 8.7s (13.5 img/s)
+13:43:40 [w0] dinov3_s16_320 SPICE-A-dawn-off-spad@5.0us: 98 imgs 2.3s (42.3 img/s)
+13:43:44 [w0] dinov3_s16_320 LunarLoc-17: 54 imgs 4.1s (13.2 img/s)
+13:43:45 [w0] hf plain: timm/vit_base_patch16_dinov3.lvd1689m/model.safetensors -> /kaggle/input/notebooks/nguyenmanh0404/vprspace-deps-hf/hf_plain/timm--vit_base_patch16_dinov3.lvd1689m/model.safetensors
+13:44:39 [w0] dinov3: RoPE periods truncated to bfloat16 (official behaviour)
+13:44:40 [w0] built dinov3_b16_320 in 55.5s
+13:45:03 [w0] dinov3_b16_320 S3LI-Etna-crater_inout: 1683 imgs 23.2s (72.5 img/s)
+13:45:37 [w0] dinov3_b16_320 MadMax-F3: 229 imgs 34.4s (6.7 img/s)
+13:45:47 [w0] dinov3_b16_320 LunarLoc-15: 118 imgs 9.7s (12.2 img/s)
+13:45:50 [w0] dinov3_b16_320 SPICE-A-dawn-off-spad@5.0us: 98 imgs 2.8s (34.9 img/s)
+13:45:54 [w0] dinov3_b16_320 LunarLoc-17: 54 imgs 4.5s (12.1 img/s)
+13:45:59 [w0] hf plain: timm/vit_large_patch16_dinov3.lvd1689m/model.safetensors -> /kaggle/input/notebooks/nguyenmanh0404/vprspace-deps-hf/hf_plain/timm--vit_large_patch16_dinov3.lvd1689m/model.safetensors
+13:48:25 [w0] dinov3: RoPE periods truncated to bfloat16 (official behaviour)
+13:48:26 [w0] built dinov3_l16_320 in 151.4s
+13:49:33 [w0] dinov3_l16_320 S3LI-Etna-crater_inout: 1683 imgs 67.3s (25.0 img/s)
+13:50:14 [w0] dinov3_l16_320 MadMax-F3: 229 imgs 40.9s (5.6 img/s)
+13:50:27 [w0] dinov3_l16_320 LunarLoc-15: 118 imgs 13.2s (8.9 img/s)
+13:50:33 [w0] dinov3_l16_320 SPICE-A-dawn-off-spad@5.0us: 98 imgs 5.5s (17.7 img/s)
+13:50:39 [w0] dinov3_l16_320 LunarLoc-17: 54 imgs 6.1s (8.9 img/s)

@@ -1,0 +1,293 @@
+[{"stream_name":"stderr","time":0.906868149,"data":"/kaggle/src/script.py:23: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.\n"}
+,{"stream_name":"stderr","time":0.906903824,"data":"  tarfile.open(fileobj=io.BytesIO(base64.b64decode(CODE_B64))).extractall(code)\n"}
+,{"stream_name":"stdout","time":0.944132372,"data":"13:09:07 [+     0s] spec {\"session\": \"b-salad\", \"env\": \"pinned\", \"configs\": [\"salad_322\", \"salad_322_official\", \"salad_224\", \"salad_518\", \"salad_native14\"], \"trajectories\": null, \"pixel_cost\": true}\n"}
+,{"stream_name":"stdout","time":4.490952507,"data":"13:09:11 [+     4s] input tree:\n"}
+,{"stream_name":"stdout","time":4.490982778,"data":"/kaggle/input\n"}
+,{"stream_name":"stdout","time":4.490986381,"data":"/kaggle/input/competitions\n"}
+,{"stream_name":"stdout","time":4.490989017,"data":"/kaggle/input/competitions/gemma-4-developer-agent\n"}
+,{"stream_name":"stdout","time":4.490991632,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission\n"}
+,{"stream_name":"stdout","time":4.490994286,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/configs\n"}
+,{"stream_name":"stdout","time":4.490996817,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/prompts\n"}
+,{"stream_name":"stdout","time":4.490999556,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/sub_agents\n"}
+,{"stream_name":"stdout","time":4.491002039,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters\n"}
+,{"stream_name":"stdout","time":4.491004614,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters/tool_lora\n"}
+,{"stream_name":"stdout","time":4.491007212,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters/main_lora\n"}
+,{"stream_name":"stdout","time":4.491009796,"data":"/kaggle/input/competitions/gemma-4-developer-agent/docker\n"}
+,{"stream_name":"stdout","time":4.491012256,"data":"/kaggle/input/competitions/gemma-4-developer-agent/snapshots\n"}
+,{"stream_name":"stdout","time":4.491014739,"data":"/kaggle/input/competitions/gemma-4-developer-agent/wheels\n"}
+,{"stream_name":"stdout","time":4.491017146,"data":"/kaggle/input/competitions/gemma-4-developer-agent/graphs\n"}
+,{"stream_name":"stdout","time":4.491019647,"data":"/kaggle/input/competitions/gemma-4-developer-agent/embeddings\n"}
+,{"stream_name":"stdout","time":4.4910221,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sandbox\n"}
+,{"stream_name":"stdout","time":4.491062523,"data":"/kaggle/input/notebooks\n"}
+,{"stream_name":"stdout","time":4.491069771,"data":"/kaggle/input/notebooks/namhunhh\n"}
+,{"stream_name":"stdout","time":4.491072265,"data":"/kaggle/input/notebooks/namhunhh/vprspace-data-b\n"}
+,{"stream_name":"stdout","time":4.49107479,"data":"/kaggle/input/notebooks/namhunhh/vprspace-data-a\n"}
+,{"stream_name":"stdout","time":4.491077316,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-core\n"}
+,{"stream_name":"stdout","time":4.491079802,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-core/hf_home\n"}
+,{"stream_name":"stdout","time":4.491082306,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-core/hf_home/hub\n"}
+,{"stream_name":"stdout","time":4.491094905,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-core/hf_home/xet\n"}
+,{"stream_name":"stdout","time":4.491097571,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-core/torch_home\n"}
+,{"stream_name":"stdout","time":4.491100078,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-core/torch_home/hub\n"}
+,{"stream_name":"stdout","time":4.491111278,"data":"/kaggle/input/notebooks/namhunhh/vprspace-deps-core/wheels\n"}
+,{"stream_name":"stdout","time":4.491113481,"data":"\n"}
+,{"stream_name":"stdout","time":7.695138725,"data":"13:09:14 [+     7s] $ cp -rs --remove-destination /kaggle/input/notebooks/namhunhh/vprspace-deps-core/torch_home/. /tmp/torch_home/\n"}
+,{"stream_name":"stdout","time":10.951927143,"data":"13:09:18 [+    10s] $ cp -rs --remove-destination /kaggle/input/notebooks/namhunhh/vprspace-deps-core/hf_home/. /tmp/hf_home/\n"}
+,{"stream_name":"stdout","time":21.983833009,"data":"13:09:29 [+    21s] wheels: /kaggle/input/notebooks/namhunhh/vprspace-deps-core/wheels req: /kaggle/input/notebooks/namhunhh/vprspace-deps-core/requirements_pinned.txt\n"}
+,{"stream_name":"stdout","time":21.983859624,"data":"13:09:29 [+    21s] $ /usr/bin/python3 -m venv /tmp/vprenv\n"}
+,{"stream_name":"stderr","time":22.123020845,"data":"Error: Command '['/tmp/vprenv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stdout","time":22.135908176,"data":"13:09:29 [+    21s] $ /usr/bin/python3 -m venv --without-pip /tmp/vprenv\n"}
+,{"stream_name":"stdout","time":22.221914144,"data":"13:09:29 [+    21s] $ /usr/bin/python3 -m pip --python /tmp/vprenv/bin/python install -q --no-index --find-links /kaggle/input/notebooks/namhunhh/vprspace-deps-core/wheels -r /kaggle/input/notebooks/namhunhh/vprspace-deps-core/requirements_pinned.txt\n"}
+,{"stream_name":"stderr","time":22.692116022,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":22.6921366,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":154.46441209,"data":"13:11:41 [+   154s] $ /usr/bin/python3 -m pip --python /tmp/vprenv/bin/python install -q --no-index --no-deps --find-links /kaggle/input/notebooks/namhunhh/vprspace-deps-core/wheels pytorch-lightning lightning-utilities torchmetrics fast-pytorch-kmeans timm psutil pytorch-metric-learning\n"}
+,{"stream_name":"stderr","time":154.703309824,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":154.703333738,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":158.111914157,"data":"13:11:45 [+   157s] data root /tmp/vprdata/vpr-space-v0 extracted\n"}
+,{"stream_name":"stdout","time":158.178531976,"data":"13:11:45 [+   157s] 4 GPUs, images per GPU [3436.179328, 3447.08928, 3426.137536, 3431.018624]\n"}
+,{"stream_name":"stdout","time":161.19458663,"data":"13:11:48 [+   160s] hf_plain dirs: none\n"}
+,{"stream_name":"stdout","time":2579.608027276,"data":"13:52:06 [+  2579s] workers exit codes [0, 0, 0, 0]\n"}
+,{"stream_name":"stdout","time":2579.608198395,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":2579.608215067,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":2579.608218586,"data":"13:11:51 [w0] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 6\n"}
+,{"stream_name":"stdout","time":2579.608221449,"data":"Using cache found in /tmp/torch_home/hub/serizba_salad_main\n"}
+,{"stream_name":"stdout","time":2579.608224336,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2579.608226988,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)\n"}
+,{"stream_name":"stdout","time":2579.608229795,"data":"  warnings.warn(\"xFormers is not available (SwiGLU)\")\n"}
+,{"stream_name":"stdout","time":2579.608232554,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)\n"}
+,{"stream_name":"stdout","time":2579.608243264,"data":"  warnings.warn(\"xFormers is not available (Attention)\")\n"}
+,{"stream_name":"stdout","time":2579.608245599,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)\n"}
+,{"stream_name":"stdout","time":2579.608247682,"data":"  warnings.warn(\"xFormers is not available (Block)\")\n"}
+,{"stream_name":"stdout","time":2579.608249726,"data":"13:13:02 [w0] built salad_322 in 70.6s\n"}
+,{"stream_name":"stdout","time":2579.608263936,"data":"13:13:42 [w0] salad_322 MadMax-E0: 517 imgs 40.2s (12.9 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608267761,"data":"13:14:17 [w0] salad_322 MadMax-F3: 229 imgs 35.3s (6.5 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608269821,"data":"13:14:45 [w0] salad_322 S3LI-Etna-crater_inout: 1683 imgs 27.8s (60.5 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608271833,"data":"13:15:15 [w0] salad_322 MadMax-F0: 117 imgs 29.3s (4.0 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608273745,"data":"13:15:19 [w0] salad_322 LunarLoc-17: 54 imgs 4.0s (13.4 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608275666,"data":"13:15:22 [w0] salad_322 SPICE-A-night-on-spad@5.0us: 97 imgs 3.2s (30.5 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608277599,"data":"Using cache found in /tmp/torch_home/hub/serizba_salad_main\n"}
+,{"stream_name":"stdout","time":2579.608279609,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2579.608281618,"data":"13:15:24 [w0] built salad_322_official in 1.9s\n"}
+,{"stream_name":"stdout","time":2579.608283532,"data":"13:15:51 [w0] salad_322_official MadMax-E0: 517 imgs 27.7s (18.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608285481,"data":"13:16:15 [w0] salad_322_official MadMax-F3: 229 imgs 23.9s (9.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608287442,"data":"13:16:44 [w0] salad_322_official S3LI-Etna-crater_inout: 1683 imgs 28.8s (58.5 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608289416,"data":"13:17:04 [w0] salad_322_official MadMax-F0: 117 imgs 20.1s (5.8 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608291331,"data":"13:17:07 [w0] salad_322_official LunarLoc-17: 54 imgs 3.0s (17.9 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608293246,"data":"13:17:10 [w0] salad_322_official SPICE-A-night-on-spad@5.0us: 97 imgs 3.0s (31.9 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608295288,"data":"Using cache found in /tmp/torch_home/hub/serizba_salad_main\n"}
+,{"stream_name":"stdout","time":2579.608298327,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2579.608300361,"data":"13:17:12 [w0] built salad_224 in 1.9s\n"}
+,{"stream_name":"stdout","time":2579.608302262,"data":"13:17:42 [w0] salad_224 MadMax-E0: 517 imgs 29.8s (17.3 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608304241,"data":"13:18:10 [w0] salad_224 MadMax-F3: 229 imgs 27.4s (8.3 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608306136,"data":"13:18:25 [w0] salad_224 S3LI-Etna-crater_inout: 1683 imgs 15.1s (111.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.60830807,"data":"13:18:49 [w0] salad_224 MadMax-F0: 117 imgs 24.3s (4.8 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608309961,"data":"13:18:53 [w0] salad_224 LunarLoc-17: 54 imgs 3.5s (15.4 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608311936,"data":"13:18:55 [w0] salad_224 SPICE-A-night-on-spad@5.0us: 97 imgs 2.3s (42.5 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608313941,"data":"Using cache found in /tmp/torch_home/hub/serizba_salad_main\n"}
+,{"stream_name":"stdout","time":2579.608318646,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2579.608320725,"data":"13:18:57 [w0] built salad_518 in 1.9s\n"}
+,{"stream_name":"stdout","time":2579.608322644,"data":"13:19:38 [w0] OOM -\u003e sub-batch 64\n"}
+,{"stream_name":"stdout","time":2579.60832487,"data":"13:19:56 [w0] salad_518 MadMax-E0: 517 imgs 58.9s (8.8 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608326766,"data":"13:20:35 [w0] salad_518 MadMax-F3: 229 imgs 39.0s (5.9 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608328673,"data":"13:21:54 [w0] salad_518 S3LI-Etna-crater_inout: 1683 imgs 79.6s (21.1 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608330648,"data":"13:22:26 [w0] salad_518 MadMax-F0: 117 imgs 31.8s (3.7 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608332608,"data":"13:22:32 [w0] salad_518 LunarLoc-17: 54 imgs 5.8s (9.3 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608334499,"data":"13:22:39 [w0] salad_518 SPICE-A-night-on-spad@5.0us: 97 imgs 6.6s (14.7 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608336478,"data":"Using cache found in /tmp/torch_home/hub/serizba_salad_main\n"}
+,{"stream_name":"stdout","time":2579.608338447,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2579.608340372,"data":"13:22:41 [w0] built salad_native14 in 1.9s\n"}
+,{"stream_name":"stdout","time":2579.608342283,"data":"13:38:06 [w0] salad_native14 MadMax-E0: 517 imgs 925.5s (0.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608344202,"data":"13:44:57 [w0] salad_native14 MadMax-F3: 229 imgs 411.4s (0.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608346121,"data":"13:46:49 [w0] salad_native14 S3LI-Etna-crater_inout: 1683 imgs 111.6s (15.1 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608348148,"data":"13:50:21 [w0] salad_native14 MadMax-F0: 117 imgs 211.7s (0.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608350052,"data":"13:50:42 [w0] salad_native14 LunarLoc-17: 54 imgs 21.7s (2.5 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608351975,"data":"13:50:47 [w0] salad_native14 SPICE-A-night-on-spad@5.0us: 97 imgs 4.8s (20.3 img/s)\n"}
+,{"stream_name":"stdout","time":2579.60835396,"data":"\n"}
+,{"stream_name":"stdout","time":2579.608355843,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":2579.608357746,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":2579.608359612,"data":"13:11:51 [w1] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 7\n"}
+,{"stream_name":"stdout","time":2579.608361569,"data":"Using cache found in /tmp/torch_home/hub/serizba_salad_main\n"}
+,{"stream_name":"stdout","time":2579.608363721,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2579.608366026,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)\n"}
+,{"stream_name":"stdout","time":2579.608368106,"data":"  warnings.warn(\"xFormers is not available (SwiGLU)\")\n"}
+,{"stream_name":"stdout","time":2579.608370106,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)\n"}
+,{"stream_name":"stdout","time":2579.608372146,"data":"  warnings.warn(\"xFormers is not available (Attention)\")\n"}
+,{"stream_name":"stdout","time":2579.608374087,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)\n"}
+,{"stream_name":"stdout","time":2579.608376101,"data":"  warnings.warn(\"xFormers is not available (Block)\")\n"}
+,{"stream_name":"stdout","time":2579.608380445,"data":"13:13:02 [w1] built salad_322 in 70.8s\n"}
+,{"stream_name":"stdout","time":2579.608382513,"data":"13:13:42 [w1] salad_322 MadMax-E1: 507 imgs 40.1s (12.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608384441,"data":"13:14:17 [w1] salad_322 MadMax-G0: 258 imgs 35.4s (7.3 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608386338,"data":"13:14:50 [w1] salad_322 MadMax-A2: 180 imgs 32.8s (5.5 img/s)\n"}
+,{"stream_name":"stdout","time":2579.60838825,"data":"13:15:05 [w1] salad_322 S3LI-Etna-loops: 780 imgs 14.9s (52.2 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608390178,"data":"13:15:12 [w1] salad_322 LunarLoc-9: 119 imgs 6.5s (18.2 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608392106,"data":"13:15:15 [w1] salad_322 SPICE-A-dawn-off-spad@5.0us: 98 imgs 3.2s (30.8 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608394026,"data":"13:15:18 [w1] salad_322 SPICE-A-noon-off-spad@5.0us: 97 imgs 3.2s (30.4 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608395964,"data":"Using cache found in /tmp/torch_home/hub/serizba_salad_main\n"}
+,{"stream_name":"stdout","time":2579.608397926,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2579.608399881,"data":"13:15:20 [w1] built salad_322_official in 1.9s\n"}
+,{"stream_name":"stdout","time":2579.608401761,"data":"13:15:48 [w1] salad_322_official MadMax-E1: 507 imgs 27.8s (18.3 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608403686,"data":"13:16:11 [w1] salad_322_official MadMax-G0: 258 imgs 23.7s (10.9 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608405606,"data":"13:16:34 [w1] salad_322_official MadMax-A2: 180 imgs 22.7s (7.9 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608407519,"data":"13:16:49 [w1] salad_322_official S3LI-Etna-loops: 780 imgs 14.5s (53.7 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608409441,"data":"13:16:54 [w1] salad_322_official LunarLoc-9: 119 imgs 5.2s (22.9 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608411335,"data":"13:16:57 [w1] salad_322_official SPICE-A-dawn-off-spad@5.0us: 98 imgs 2.9s (33.4 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608413386,"data":"13:17:00 [w1] salad_322_official SPICE-A-noon-off-spad@5.0us: 97 imgs 3.0s (32.0 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608415332,"data":"Using cache found in /tmp/torch_home/hub/serizba_salad_main\n"}
+,{"stream_name":"stdout","time":2579.608417229,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2579.608419175,"data":"13:17:02 [w1] built salad_224 in 1.9s\n"}
+,{"stream_name":"stdout","time":2579.608421041,"data":"13:17:31 [w1] salad_224 MadMax-E1: 507 imgs 29.4s (17.3 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608422964,"data":"13:17:59 [w1] salad_224 MadMax-G0: 258 imgs 27.5s (9.4 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608425525,"data":"13:18:26 [w1] salad_224 MadMax-A2: 180 imgs 26.9s (6.7 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608427498,"data":"13:18:34 [w1] salad_224 S3LI-Etna-loops: 780 imgs 8.4s (92.7 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608429526,"data":"13:18:39 [w1] salad_224 LunarLoc-9: 119 imgs 5.4s (22.0 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608431424,"data":"13:18:42 [w1] salad_224 SPICE-A-dawn-off-spad@5.0us: 98 imgs 2.2s (44.0 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608433355,"data":"13:18:44 [w1] salad_224 SPICE-A-noon-off-spad@5.0us: 97 imgs 2.3s (42.9 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608435287,"data":"Using cache found in /tmp/torch_home/hub/serizba_salad_main\n"}
+,{"stream_name":"stdout","time":2579.608437171,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2579.608440842,"data":"13:18:46 [w1] built salad_518 in 1.9s\n"}
+,{"stream_name":"stdout","time":2579.608442826,"data":"13:19:27 [w1] OOM -\u003e sub-batch 64\n"}
+,{"stream_name":"stdout","time":2579.608444696,"data":"13:19:44 [w1] salad_518 MadMax-E1: 507 imgs 58.2s (8.7 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608446694,"data":"13:20:24 [w1] salad_518 MadMax-G0: 258 imgs 40.0s (6.5 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608448626,"data":"13:21:00 [w1] salad_518 MadMax-A2: 180 imgs 36.5s (4.9 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608450545,"data":"13:21:39 [w1] salad_518 S3LI-Etna-loops: 780 imgs 38.9s (20.1 img/s)\n"}
+,{"stream_name":"stdout","time":2579.60845257,"data":"13:21:50 [w1] salad_518 LunarLoc-9: 119 imgs 10.6s (11.2 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608454531,"data":"13:21:57 [w1] salad_518 SPICE-A-dawn-off-spad@5.0us: 98 imgs 6.5s (15.0 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608456483,"data":"13:22:03 [w1] salad_518 SPICE-A-noon-off-spad@5.0us: 97 imgs 6.6s (14.7 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608458388,"data":"Using cache found in /tmp/torch_home/hub/serizba_salad_main\n"}
+,{"stream_name":"stdout","time":2579.608460284,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2579.608462258,"data":"13:22:05 [w1] built salad_native14 in 1.8s\n"}
+,{"stream_name":"stdout","time":2579.608464144,"data":"13:37:21 [w1] salad_native14 MadMax-E1: 507 imgs 915.9s (0.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608466052,"data":"13:45:07 [w1] salad_native14 MadMax-G0: 258 imgs 465.9s (0.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608467945,"data":"13:50:33 [w1] salad_native14 MadMax-A2: 180 imgs 326.5s (0.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608469841,"data":"13:51:25 [w1] salad_native14 S3LI-Etna-loops: 780 imgs 51.9s (15.0 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608471766,"data":"13:51:54 [w1] salad_native14 LunarLoc-9: 119 imgs 29.0s (4.1 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608473662,"data":"13:51:59 [w1] salad_native14 SPICE-A-dawn-off-spad@5.0us: 98 imgs 4.8s (20.3 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608475626,"data":"13:52:04 [w1] salad_native14 SPICE-A-noon-off-spad@5.0us: 97 imgs 4.7s (20.7 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608477652,"data":"\n"}
+,{"stream_name":"stdout","time":2579.608479413,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":2579.6084813,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":2579.608483164,"data":"13:11:51 [w2] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 6\n"}
+,{"stream_name":"stdout","time":2579.608485098,"data":"Using cache found in /tmp/torch_home/hub/serizba_salad_main\n"}
+,{"stream_name":"stdout","time":2579.608487054,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2579.608489601,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)\n"}
+,{"stream_name":"stdout","time":2579.608491753,"data":"  warnings.warn(\"xFormers is not available (SwiGLU)\")\n"}
+,{"stream_name":"stdout","time":2579.608493778,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)\n"}
+,{"stream_name":"stdout","time":2579.608495897,"data":"  warnings.warn(\"xFormers is not available (Attention)\")\n"}
+,{"stream_name":"stdout","time":2579.608497921,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)\n"}
+,{"stream_name":"stdout","time":2579.608502004,"data":"  warnings.warn(\"xFormers is not available (Block)\")\n"}
+,{"stream_name":"stdout","time":2579.608504084,"data":"13:13:02 [w2] built salad_322 in 70.7s\n"}
+,{"stream_name":"stdout","time":2579.608506006,"data":"13:13:42 [w2] salad_322 MadMax-C0: 502 imgs 40.3s (12.5 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608507908,"data":"13:14:18 [w2] salad_322 MadMax-G2: 290 imgs 35.5s (8.2 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608509801,"data":"13:14:50 [w2] salad_322 MadMax-A0: 171 imgs 32.7s (5.2 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608511778,"data":"13:15:00 [w2] salad_322 S3LI-Etna-traverse_1: 485 imgs 10.1s (48.1 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608513729,"data":"13:15:10 [w2] salad_322 LunarLoc-15: 118 imgs 10.0s (11.7 img/s)\n"}
+,{"stream_name":"stdout","time":2579.60851566,"data":"13:15:14 [w2] salad_322 SPICE-A-noon-off@2500.0us: 99 imgs 3.9s (25.5 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608517616,"data":"Using cache found in /tmp/torch_home/hub/serizba_salad_main\n"}
+,{"stream_name":"stdout","time":2579.608519509,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2579.608521436,"data":"13:15:16 [w2] built salad_322_official in 1.9s\n"}
+,{"stream_name":"stdout","time":2579.608523316,"data":"13:15:44 [w2] salad_322_official MadMax-C0: 502 imgs 27.5s (18.3 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608525228,"data":"13:16:08 [w2] salad_322_official MadMax-G2: 290 imgs 24.1s (12.0 img/s)\n"}
+,{"stream_name":"stdout","time":2579.60852721,"data":"13:16:30 [w2] salad_322_official MadMax-A0: 171 imgs 22.5s (7.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608529132,"data":"13:16:40 [w2] salad_322_official S3LI-Etna-traverse_1: 485 imgs 9.6s (50.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608531062,"data":"13:16:46 [w2] salad_322_official LunarLoc-15: 118 imgs 6.2s (18.9 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608533001,"data":"13:16:50 [w2] salad_322_official SPICE-A-noon-off@2500.0us: 99 imgs 3.5s (28.2 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608534947,"data":"Using cache found in /tmp/torch_home/hub/serizba_salad_main\n"}
+,{"stream_name":"stdout","time":2579.608536831,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2579.608538734,"data":"13:16:52 [w2] built salad_224 in 1.9s\n"}
+,{"stream_name":"stdout","time":2579.608540616,"data":"13:17:21 [w2] salad_224 MadMax-C0: 502 imgs 29.5s (17.0 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608542726,"data":"13:17:49 [w2] salad_224 MadMax-G2: 290 imgs 27.9s (10.4 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608544633,"data":"13:18:16 [w2] salad_224 MadMax-A0: 171 imgs 27.1s (6.3 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608546548,"data":"13:18:22 [w2] salad_224 S3LI-Etna-traverse_1: 485 imgs 6.1s (79.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608548461,"data":"13:18:29 [w2] salad_224 LunarLoc-15: 118 imgs 7.1s (16.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608550716,"data":"13:18:32 [w2] salad_224 SPICE-A-noon-off@2500.0us: 99 imgs 3.0s (33.3 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608552667,"data":"Using cache found in /tmp/torch_home/hub/serizba_salad_main\n"}
+,{"stream_name":"stdout","time":2579.608554576,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2579.608556478,"data":"13:18:34 [w2] built salad_518 in 1.9s\n"}
+,{"stream_name":"stdout","time":2579.608558416,"data":"13:19:15 [w2] OOM -\u003e sub-batch 64\n"}
+,{"stream_name":"stdout","time":2579.608562078,"data":"13:19:31 [w2] salad_518 MadMax-C0: 502 imgs 56.8s (8.8 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608564081,"data":"13:20:12 [w2] salad_518 MadMax-G2: 290 imgs 40.9s (7.1 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608565943,"data":"13:20:48 [w2] salad_518 MadMax-A0: 171 imgs 35.8s (4.8 img/s)\n"}
+,{"stream_name":"stdout","time":2579.60856786,"data":"13:21:12 [w2] salad_518 S3LI-Etna-traverse_1: 485 imgs 24.5s (19.8 img/s)\n"}
+,{"stream_name":"stdout","time":2579.60856977,"data":"13:21:24 [w2] salad_518 LunarLoc-15: 118 imgs 12.3s (9.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608571692,"data":"13:21:32 [w2] salad_518 SPICE-A-noon-off@2500.0us: 99 imgs 7.4s (13.5 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608573614,"data":"Using cache found in /tmp/torch_home/hub/serizba_salad_main\n"}
+,{"stream_name":"stdout","time":2579.608575598,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2579.6085775,"data":"13:21:34 [w2] built salad_native14 in 1.9s\n"}
+,{"stream_name":"stdout","time":2579.608579389,"data":"13:36:24 [w2] salad_native14 MadMax-C0: 502 imgs 890.3s (0.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608581314,"data":"13:44:59 [w2] salad_native14 MadMax-G2: 290 imgs 515.1s (0.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608583216,"data":"13:50:05 [w2] salad_native14 MadMax-A0: 171 imgs 305.9s (0.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.6085851,"data":"13:50:38 [w2] salad_native14 S3LI-Etna-traverse_1: 485 imgs 32.9s (14.8 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608587036,"data":"13:51:25 [w2] salad_native14 LunarLoc-15: 118 imgs 46.8s (2.5 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608588946,"data":"13:51:32 [w2] salad_native14 SPICE-A-noon-off@2500.0us: 99 imgs 7.8s (12.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608590962,"data":"\n"}
+,{"stream_name":"stdout","time":2579.608592712,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":2579.608594612,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":2579.608596469,"data":"13:11:51 [w3] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 6\n"}
+,{"stream_name":"stdout","time":2579.608598456,"data":"Using cache found in /tmp/torch_home/hub/serizba_salad_main\n"}
+,{"stream_name":"stdout","time":2579.608600336,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2579.608602278,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)\n"}
+,{"stream_name":"stdout","time":2579.608604322,"data":"  warnings.warn(\"xFormers is not available (SwiGLU)\")\n"}
+,{"stream_name":"stdout","time":2579.60860634,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)\n"}
+,{"stream_name":"stdout","time":2579.608608393,"data":"  warnings.warn(\"xFormers is not available (Attention)\")\n"}
+,{"stream_name":"stdout","time":2579.608610598,"data":"/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)\n"}
+,{"stream_name":"stdout","time":2579.608614926,"data":"  warnings.warn(\"xFormers is not available (Block)\")\n"}
+,{"stream_name":"stdout","time":2579.608616861,"data":"13:13:02 [w3] built salad_322 in 70.6s\n"}
+,{"stream_name":"stdout","time":2579.608618737,"data":"13:13:41 [w3] salad_322 MadMax-C1: 463 imgs 39.6s (11.7 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608620638,"data":"13:14:19 [w3] salad_322 MadMax-A4: 412 imgs 37.7s (10.9 img/s)\n"}
+,{"stream_name":"stdout","time":2579.60862475,"data":"13:14:40 [w3] salad_322 S3LI-Etna-crater: 1129 imgs 20.4s (55.4 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608626901,"data":"13:14:47 [w3] salad_322 LunarLoc-10: 183 imgs 7.9s (23.2 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608628838,"data":"13:14:51 [w3] salad_322 SPICE-A-dawn-off@2500.0us: 99 imgs 3.7s (26.4 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608630786,"data":"13:14:55 [w3] salad_322 SPICE-A-night-on@2500.0us: 97 imgs 3.9s (25.1 img/s)\n"}
+,{"stream_name":"stdout","time":2579.6086328,"data":"Using cache found in /tmp/torch_home/hub/serizba_salad_main\n"}
+,{"stream_name":"stdout","time":2579.608634718,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2579.608636666,"data":"13:14:57 [w3] built salad_322_official in 1.9s\n"}
+,{"stream_name":"stdout","time":2579.608638575,"data":"13:15:24 [w3] salad_322_official MadMax-C1: 463 imgs 27.1s (17.1 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608640507,"data":"13:15:50 [w3] salad_322_official MadMax-A4: 412 imgs 26.4s (15.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.60864251,"data":"13:16:11 [w3] salad_322_official S3LI-Etna-crater: 1129 imgs 20.1s (56.2 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608644471,"data":"13:16:17 [w3] salad_322_official LunarLoc-10: 183 imgs 6.5s (28.2 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608646397,"data":"13:16:20 [w3] salad_322_official SPICE-A-dawn-off@2500.0us: 99 imgs 3.4s (29.1 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608648377,"data":"13:16:24 [w3] salad_322_official SPICE-A-night-on@2500.0us: 97 imgs 3.4s (28.3 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608650343,"data":"Using cache found in /tmp/torch_home/hub/serizba_salad_main\n"}
+,{"stream_name":"stdout","time":2579.608652265,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2579.608654202,"data":"13:16:26 [w3] built salad_224 in 1.9s\n"}
+,{"stream_name":"stdout","time":2579.608656103,"data":"13:16:55 [w3] salad_224 MadMax-C1: 463 imgs 29.3s (15.8 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608658101,"data":"13:17:26 [w3] salad_224 MadMax-A4: 412 imgs 30.9s (13.3 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608660014,"data":"13:17:37 [w3] salad_224 S3LI-Etna-crater: 1129 imgs 11.0s (102.9 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608661966,"data":"13:17:43 [w3] salad_224 LunarLoc-10: 183 imgs 6.5s (28.2 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608663917,"data":"13:17:46 [w3] salad_224 SPICE-A-dawn-off@2500.0us: 99 imgs 2.9s (34.2 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608665858,"data":"13:17:49 [w3] salad_224 SPICE-A-night-on@2500.0us: 97 imgs 2.9s (33.5 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608667796,"data":"Using cache found in /tmp/torch_home/hub/serizba_salad_main\n"}
+,{"stream_name":"stdout","time":2579.60866972,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2579.60867166,"data":"13:17:51 [w3] built salad_518 in 1.9s\n"}
+,{"stream_name":"stdout","time":2579.608673586,"data":"13:18:33 [w3] OOM -\u003e sub-batch 64\n"}
+,{"stream_name":"stdout","time":2579.608675555,"data":"13:18:49 [w3] salad_518 MadMax-C1: 463 imgs 57.5s (8.1 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608677886,"data":"13:19:38 [w3] salad_518 MadMax-A4: 412 imgs 49.4s (8.3 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608679848,"data":"13:20:32 [w3] salad_518 S3LI-Etna-crater: 1129 imgs 54.4s (20.7 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608681799,"data":"13:20:47 [w3] salad_518 LunarLoc-10: 183 imgs 14.3s (12.8 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608685969,"data":"13:20:54 [w3] salad_518 SPICE-A-dawn-off@2500.0us: 99 imgs 7.4s (13.4 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608688024,"data":"13:21:01 [w3] salad_518 SPICE-A-night-on@2500.0us: 97 imgs 7.2s (13.4 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608689989,"data":"Using cache found in /tmp/torch_home/hub/serizba_salad_main\n"}
+,{"stream_name":"stdout","time":2579.608691992,"data":"Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main\n"}
+,{"stream_name":"stdout","time":2579.608693938,"data":"13:21:03 [w3] built salad_native14 in 1.9s\n"}
+,{"stream_name":"stdout","time":2579.608695835,"data":"13:35:00 [w3] salad_native14 MadMax-C1: 463 imgs 836.5s (0.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608697758,"data":"13:47:23 [w3] salad_native14 MadMax-A4: 412 imgs 743.8s (0.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608699672,"data":"13:48:39 [w3] salad_native14 S3LI-Etna-crater: 1129 imgs 75.2s (15.0 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608701586,"data":"13:49:23 [w3] salad_native14 LunarLoc-10: 183 imgs 44.5s (4.1 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608703507,"data":"13:49:31 [w3] salad_native14 SPICE-A-dawn-off@2500.0us: 99 imgs 7.9s (12.6 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608705431,"data":"13:49:39 [w3] salad_native14 SPICE-A-night-on@2500.0us: 97 imgs 7.7s (12.7 img/s)\n"}
+,{"stream_name":"stdout","time":2579.608707449,"data":"\n"}
+,{"stream_name":"stdout","time":2579.608709273,"data":"13:52:06 [+  2579s] $ /tmp/vprenv/bin/python /tmp/vprcode/metrics_all.py --root /tmp/vprdata/vpr-space-v0 --desc-dir /kaggle/working/desc --out /kaggle/working/results --tag b-salad\n"}
+,{"stream_name":"stderr","time":2579.658940656,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":2579.658955512,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":2583.830048862,"data":"salad_224: 16/16 setups, AUPRC mean 0.3666\n"}
+,{"stream_name":"stdout","time":2584.923789321,"data":"salad_322: 16/16 setups, AUPRC mean 0.3941\n"}
+,{"stream_name":"stdout","time":2586.011406733,"data":"salad_322_official: 16/16 setups, AUPRC mean 0.3928\n"}
+,{"stream_name":"stdout","time":2587.099576045,"data":"salad_518: 16/16 setups, AUPRC mean 0.4113\n"}
+,{"stream_name":"stdout","time":2588.187308069,"data":"salad_native14: 16/16 setups, AUPRC mean 0.3844\n"}
+,{"stream_name":"stdout","time":2589.802566207,"data":"13:52:16 [+  2589s] DONE\n"}
+,{"stream_name":"stderr","time":2592.121349747,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":2592.121373223,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":2592.432527327,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":2592.432547134,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":2594.287514852,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":2595.29978197,"data":"[NbConvertApp] Writing 339319 bytes to __results__.html\n"}
+]

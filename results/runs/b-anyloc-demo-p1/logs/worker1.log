@@ -1,0 +1,21 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+12:48:01 [w1] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 4
+Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files
+Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt
+Desc dim set to 1536
+Model with domain = 'global' vocabulary loaded
+Desc dim set to 1536
+13:05:38 [w1] built anyloc_demo1024 in 1056.8s
+13:13:58 [w1] anyloc_demo1024 MadMax-G2: 290 imgs 500.5s (0.6 img/s)
+13:21:58 [w1] anyloc_demo1024 S3LI-Etna-loops: 780 imgs 480.0s (1.6 img/s)
+13:23:45 [w1] anyloc_demo1024 LunarLoc-17: 54 imgs 106.8s (0.5 img/s)
+13:24:28 [w1] anyloc_demo1024 SPICE-A-dawn-off-spad@5.0us: 98 imgs 43.3s (2.3 img/s)

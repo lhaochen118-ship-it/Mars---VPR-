@@ -1,0 +1,8 @@
+13:52:41 [w2] torch 2.11.0+cu130 cuda 13.0 dev NVIDIA L4 trajectories 6
+13:52:41 [w2] built densevlad_16384 in 0.3s
+13:53:02 [w2] densevlad_16384 MadMax-C0: 502 imgs 20.7s (24.3 img/s)
+13:53:14 [w2] densevlad_16384 MadMax-G2: 290 imgs 12.0s (24.2 img/s)
+13:53:22 [w2] densevlad_16384 MadMax-A0: 171 imgs 7.7s (22.1 img/s)
+13:53:39 [w2] densevlad_16384 S3LI-Etna-traverse_1: 485 imgs 17.5s (27.7 img/s)
+13:53:45 [w2] densevlad_16384 LunarLoc-15: 118 imgs 5.3s (22.2 img/s)
+13:53:49 [w2] densevlad_16384 SPICE-A-noon-off@2500.0us: 99 imgs 4.0s (25.1 img/s)

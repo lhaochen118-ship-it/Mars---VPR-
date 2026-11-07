@@ -1,0 +1,62 @@
+{
+ "session": {
+  "session": "b-anyloc-demo-p2",
+  "env": "pinned",
+  "configs": [
+   "anyloc_demo1024"
+  ],
+  "trajectories": [
+   "MadMax-E0",
+   "MadMax-E1",
+   "MadMax-C1",
+   "MadMax-A4",
+   "MadMax-G0",
+   "S3LI-Etna-traverse_1",
+   "MadMax-A2",
+   "LunarLoc-15",
+   "MadMax-F0",
+   "SPICE-A-dawn-off@2500.0us",
+   "SPICE-A-night-on@2500.0us",
+   "SPICE-A-night-on-spad@5.0us"
+  ],
+  "pixel_cost": true
+ },
+ "seconds": 1967.4,
+ "n_gpu": 4,
+ "cpus": 46,
+ "assign": [
+  [
+   "MadMax-E0",
+   "S3LI-Etna-traverse_1",
+   "LunarLoc-15",
+   "SPICE-A-dawn-off@2500.0us",
+   "SPICE-A-night-on-spad@5.0us"
+  ],
+  [
+   "MadMax-E1",
+   "MadMax-F0",
+   "SPICE-A-night-on@2500.0us"
+  ],
+  [
+   "MadMax-C1",
+   "MadMax-A2"
+  ],
+  [
+   "MadMax-A4",
+   "MadMax-G0"
+  ]
+ ],
+ "images_per_gpu": [
+  2030.2455679999998,
+  2026.286784,
+  2049.122688,
+  2135.16672
+ ],
+ "worker_exit": [
+  0,
+  0,
+  0,
+  0
+ ],
+ "nvidia_smi": "Fri Nov  6 13:22:30 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA L4                      Off |   00000000:00:03.0 Off |                    0 |\n| N/A   64C    P0             22W /   72W |       0MiB /  23034MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n|   1  NVIDIA L4                      Off |   00000000:00:04.0 Off |                    0 |\n| N/A   68C    P0             22W /   72W |       0MiB /  23034MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n|   2  NVIDIA L4                      Off |   00000000:00:05.0 Off |                    0 |\n| N/A   63C    P8             18W /   72W |       0MiB /  23034MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n|   3  NVIDIA L4                      Off |   00000000:00:06.0 Off |                    0 |\n| N/A   62C    P8             17W /   72W |       0MiB /  23034MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+\n"
+}

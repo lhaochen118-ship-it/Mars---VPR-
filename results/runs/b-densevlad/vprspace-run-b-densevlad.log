@@ -1,0 +1,91 @@
+[{"stream_name":"stderr","time":0.993145306,"data":"/kaggle/src/script.py:23: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.\n"}
+,{"stream_name":"stderr","time":0.993180718,"data":"  tarfile.open(fileobj=io.BytesIO(base64.b64decode(CODE_B64))).extractall(code)\n"}
+,{"stream_name":"stdout","time":1.043148049,"data":"13:38:52 [+     0s] spec {\"session\": \"b-densevlad\", \"env\": \"kaggle\", \"configs\": [\"densevlad_16384\"], \"trajectories\": null, \"pixel_cost\": true, \"pre\": [[\"{code}/densevlad_gpu.py\", \"--root\", \"{root}\", \"--desc-dir\", \"{desc}\", \"--stage\", \"vocab\"]], \"post\": [[\"{code}/densevlad_gpu.py\", \"--root\", \"{root}\", \"--desc-dir\", \"{desc}\", \"--stage\", \"pca\"]]}\n"}
+,{"stream_name":"stdout","time":5.732011031,"data":"13:38:56 [+     5s] input tree:\n"}
+,{"stream_name":"stdout","time":5.732034681,"data":"/kaggle/input\n"}
+,{"stream_name":"stdout","time":5.7320381430000005,"data":"/kaggle/input/notebooks\n"}
+,{"stream_name":"stdout","time":5.732041337,"data":"/kaggle/input/notebooks/dinhthinh\n"}
+,{"stream_name":"stdout","time":5.732043903,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-data-b\n"}
+,{"stream_name":"stdout","time":5.7320464300000005,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-deps-core\n"}
+,{"stream_name":"stdout","time":5.732049035,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-deps-core/hf_home\n"}
+,{"stream_name":"stdout","time":5.732051438,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-deps-core/hf_home/hub\n"}
+,{"stream_name":"stdout","time":5.73205378,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-deps-core/hf_home/xet\n"}
+,{"stream_name":"stdout","time":5.732056154,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-deps-core/torch_home\n"}
+,{"stream_name":"stdout","time":5.732058692,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-deps-core/torch_home/hub\n"}
+,{"stream_name":"stdout","time":5.7320611580000005,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-deps-core/wheels\n"}
+,{"stream_name":"stdout","time":5.732063521,"data":"/kaggle/input/notebooks/dinhthinh/vprspace-data-a\n"}
+,{"stream_name":"stdout","time":5.7320660960000005,"data":"/kaggle/input/competitions\n"}
+,{"stream_name":"stdout","time":5.732068546,"data":"/kaggle/input/competitions/gemma-4-developer-agent\n"}
+,{"stream_name":"stdout","time":5.732070955,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission\n"}
+,{"stream_name":"stdout","time":5.732073381,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/configs\n"}
+,{"stream_name":"stdout","time":5.732075818,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/prompts\n"}
+,{"stream_name":"stdout","time":5.732078241,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/sub_agents\n"}
+,{"stream_name":"stdout","time":5.732080686,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters\n"}
+,{"stream_name":"stdout","time":5.732083083,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters/tool_lora\n"}
+,{"stream_name":"stdout","time":5.732085537,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sample_submission/adapters/main_lora\n"}
+,{"stream_name":"stdout","time":5.732087941,"data":"/kaggle/input/competitions/gemma-4-developer-agent/docker\n"}
+,{"stream_name":"stdout","time":5.732090316,"data":"/kaggle/input/competitions/gemma-4-developer-agent/snapshots\n"}
+,{"stream_name":"stdout","time":5.732092681,"data":"/kaggle/input/competitions/gemma-4-developer-agent/wheels\n"}
+,{"stream_name":"stdout","time":5.732095071,"data":"/kaggle/input/competitions/gemma-4-developer-agent/graphs\n"}
+,{"stream_name":"stdout","time":5.732106175,"data":"/kaggle/input/competitions/gemma-4-developer-agent/embeddings\n"}
+,{"stream_name":"stdout","time":5.732108373,"data":"/kaggle/input/competitions/gemma-4-developer-agent/sandbox\n"}
+,{"stream_name":"stdout","time":5.732110303,"data":"\n"}
+,{"stream_name":"stdout","time":10.137315386,"data":"13:39:01 [+     9s] $ cp -rs --remove-destination /kaggle/input/notebooks/dinhthinh/vprspace-deps-core/torch_home/. /tmp/torch_home/\n"}
+,{"stream_name":"stdout","time":14.65395393,"data":"13:39:05 [+    14s] $ cp -rs --remove-destination /kaggle/input/notebooks/dinhthinh/vprspace-deps-core/hf_home/. /tmp/hf_home/\n"}
+,{"stream_name":"stdout","time":419.868481825,"data":"13:45:51 [+   419s] data root /tmp/vprdata/vpr-space-v0 extracted\n"}
+,{"stream_name":"stdout","time":419.936059396,"data":"13:45:51 [+   419s] 4 GPUs, images per GPU [3436.179328, 3447.08928, 3426.137536, 3431.018624]\n"}
+,{"stream_name":"stdout","time":424.019698595,"data":"13:45:55 [+   423s] hf_plain dirs: none\n"}
+,{"stream_name":"stdout","time":424.019823423,"data":"13:45:55 [+   423s] pre step: /usr/bin/python3 /tmp/vprcode/densevlad_gpu.py --root /tmp/vprdata/vpr-space-v0 --desc-dir /kaggle/working/desc --stage vocab\n"}
+,{"stream_name":"stdout","time":813.700551536,"data":"13:52:24 [densevlad] vocab: 3989 database images, 1196700 sampled RootSIFT descriptors in 363s\n"}
+,{"stream_name":"stdout","time":816.122231679,"data":"13:52:27 [densevlad] vocab saved /kaggle/working/desc/_densevlad/vocab_k128.npy (366s)\n"}
+,{"stream_name":"stdout","time":935.265903016,"data":"13:54:26 [+   934s] workers exit codes [0, 0, 0, 0]\n"}
+,{"stream_name":"stdout","time":935.266011472,"data":"13:52:41 [w0] torch 2.11.0+cu130 cuda 13.0 dev NVIDIA L4 trajectories 6\n"}
+,{"stream_name":"stdout","time":935.266029849,"data":"13:52:42 [w0] built densevlad_16384 in 0.3s\n"}
+,{"stream_name":"stdout","time":935.266033599,"data":"13:53:03 [w0] densevlad_16384 MadMax-E0: 517 imgs 21.3s (24.3 img/s)\n"}
+,{"stream_name":"stdout","time":935.266036232,"data":"13:53:13 [w0] densevlad_16384 MadMax-F3: 229 imgs 10.0s (22.9 img/s)\n"}
+,{"stream_name":"stdout","time":935.266039015,"data":"13:54:13 [w0] densevlad_16384 S3LI-Etna-crater_inout: 1683 imgs 60.3s (27.9 img/s)\n"}
+,{"stream_name":"stdout","time":935.266041638,"data":"13:54:19 [w0] densevlad_16384 MadMax-F0: 117 imgs 5.6s (20.8 img/s)\n"}
+,{"stream_name":"stdout","time":935.266044292,"data":"13:54:22 [w0] densevlad_16384 LunarLoc-17: 54 imgs 2.7s (19.9 img/s)\n"}
+,{"stream_name":"stdout","time":935.266046823,"data":"13:54:25 [w0] densevlad_16384 SPICE-A-night-on-spad@5.0us: 97 imgs 3.3s (29.2 img/s)\n"}
+,{"stream_name":"stdout","time":935.266049304,"data":"\n"}
+,{"stream_name":"stdout","time":935.266051529,"data":"13:52:41 [w1] torch 2.11.0+cu130 cuda 13.0 dev NVIDIA L4 trajectories 7\n"}
+,{"stream_name":"stdout","time":935.266054024,"data":"13:52:42 [w1] built densevlad_16384 in 0.3s\n"}
+,{"stream_name":"stdout","time":935.266056365,"data":"13:53:02 [w1] densevlad_16384 MadMax-E1: 507 imgs 20.9s (24.3 img/s)\n"}
+,{"stream_name":"stdout","time":935.266058866,"data":"13:53:13 [w1] densevlad_16384 MadMax-G0: 258 imgs 10.9s (23.6 img/s)\n"}
+,{"stream_name":"stdout","time":935.266061235,"data":"13:53:21 [w1] densevlad_16384 MadMax-A2: 180 imgs 7.8s (23.0 img/s)\n"}
+,{"stream_name":"stdout","time":935.266063789,"data":"13:53:49 [w1] densevlad_16384 S3LI-Etna-loops: 780 imgs 28.0s (27.9 img/s)\n"}
+,{"stream_name":"stdout","time":935.266066219,"data":"13:53:53 [w1] densevlad_16384 LunarLoc-9: 119 imgs 3.7s (32.0 img/s)\n"}
+,{"stream_name":"stdout","time":935.26606858,"data":"13:53:56 [w1] densevlad_16384 SPICE-A-dawn-off-spad@5.0us: 98 imgs 3.3s (29.4 img/s)\n"}
+,{"stream_name":"stdout","time":935.26607982,"data":"13:54:00 [w1] densevlad_16384 SPICE-A-noon-off-spad@5.0us: 97 imgs 3.3s (29.0 img/s)\n"}
+,{"stream_name":"stdout","time":935.26608199,"data":"\n"}
+,{"stream_name":"stdout","time":935.26608763,"data":"13:52:41 [w2] torch 2.11.0+cu130 cuda 13.0 dev NVIDIA L4 trajectories 6\n"}
+,{"stream_name":"stdout","time":935.266089741,"data":"13:52:41 [w2] built densevlad_16384 in 0.3s\n"}
+,{"stream_name":"stdout","time":935.266091998,"data":"13:53:02 [w2] densevlad_16384 MadMax-C0: 502 imgs 20.7s (24.3 img/s)\n"}
+,{"stream_name":"stdout","time":935.266093971,"data":"13:53:14 [w2] densevlad_16384 MadMax-G2: 290 imgs 12.0s (24.2 img/s)\n"}
+,{"stream_name":"stdout","time":935.26609582,"data":"13:53:22 [w2] densevlad_16384 MadMax-A0: 171 imgs 7.7s (22.1 img/s)\n"}
+,{"stream_name":"stdout","time":935.266097663,"data":"13:53:39 [w2] densevlad_16384 S3LI-Etna-traverse_1: 485 imgs 17.5s (27.7 img/s)\n"}
+,{"stream_name":"stdout","time":935.26609953,"data":"13:53:45 [w2] densevlad_16384 LunarLoc-15: 118 imgs 5.3s (22.2 img/s)\n"}
+,{"stream_name":"stdout","time":935.266101372,"data":"13:53:49 [w2] densevlad_16384 SPICE-A-noon-off@2500.0us: 99 imgs 4.0s (25.1 img/s)\n"}
+,{"stream_name":"stdout","time":935.266103238,"data":"\n"}
+,{"stream_name":"stdout","time":935.2661051,"data":"13:52:41 [w3] torch 2.11.0+cu130 cuda 13.0 dev NVIDIA L4 trajectories 6\n"}
+,{"stream_name":"stdout","time":935.266107169,"data":"13:52:41 [w3] built densevlad_16384 in 0.4s\n"}
+,{"stream_name":"stdout","time":935.266109123,"data":"13:53:01 [w3] densevlad_16384 MadMax-C1: 463 imgs 19.3s (24.0 img/s)\n"}
+,{"stream_name":"stdout","time":935.26611102,"data":"13:53:17 [w3] densevlad_16384 MadMax-A4: 412 imgs 16.1s (25.6 img/s)\n"}
+,{"stream_name":"stdout","time":935.266112826,"data":"13:53:57 [w3] densevlad_16384 S3LI-Etna-crater: 1129 imgs 40.3s (28.0 img/s)\n"}
+,{"stream_name":"stdout","time":935.266114677,"data":"13:54:03 [w3] densevlad_16384 LunarLoc-10: 183 imgs 5.5s (33.5 img/s)\n"}
+,{"stream_name":"stdout","time":935.266116581,"data":"13:54:07 [w3] densevlad_16384 SPICE-A-dawn-off@2500.0us: 99 imgs 4.0s (25.0 img/s)\n"}
+,{"stream_name":"stdout","time":935.266118465,"data":"13:54:10 [w3] densevlad_16384 SPICE-A-night-on@2500.0us: 97 imgs 3.8s (25.2 img/s)\n"}
+,{"stream_name":"stdout","time":935.266120432,"data":"\n"}
+,{"stream_name":"stdout","time":935.266142189,"data":"13:54:26 [+   934s] post step: /usr/bin/python3 /tmp/vprcode/densevlad_gpu.py --root /tmp/vprdata/vpr-space-v0 --desc-dir /kaggle/working/desc --stage pca\n"}
+,{"stream_name":"stdout","time":987.555872752,"data":"13:55:18 [densevlad] pca-whitening: 3989 dims from 3989 database VLADs\n"}
+,{"stream_name":"stdout","time":988.037364756,"data":"13:55:19 [+   987s] $ /usr/bin/python3 /tmp/vprcode/metrics_all.py --root /tmp/vprdata/vpr-space-v0 --desc-dir /kaggle/working/desc --out /kaggle/working/results --tag b-densevlad\n"}
+,{"stream_name":"stdout","time":993.102185814,"data":"densevlad_16384: 16/16 setups, AUPRC mean 0.2190\n"}
+,{"stream_name":"stdout","time":993.894420409,"data":"densevlad_pca4096: 16/16 setups, AUPRC mean 0.0369\n"}
+,{"stream_name":"stdout","time":995.632046557,"data":"13:55:26 [+   995s] DONE\n"}
+,{"stream_name":"stderr","time":997.948209745,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":997.948238706,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":998.214504345,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":998.214535505,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":999.149702129,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1000.207799665,"data":"[NbConvertApp] Writing 339890 bytes to __results__.html\n"}
+]

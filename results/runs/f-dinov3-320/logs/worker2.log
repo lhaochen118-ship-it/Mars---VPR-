@@ -1,0 +1,33 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+13:42:31 [w2] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 7
+13:42:32 [w2] hf plain: timm/vit_small_patch16_dinov3.lvd1689m/model.safetensors -> /kaggle/input/notebooks/nguyenmanh0404/vprspace-deps-hf/hf_plain/timm--vit_small_patch16_dinov3.lvd1689m/model.safetensors
+13:42:44 [w2] dinov3: RoPE periods truncated to bfloat16 (official behaviour)
+13:42:44 [w2] built dinov3_s16_320 in 12.6s
+13:42:53 [w2] dinov3_s16_320 S3LI-Etna-loops: 780 imgs 8.9s (87.2 img/s)
+13:43:27 [w2] dinov3_s16_320 MadMax-C0: 502 imgs 33.6s (14.9 img/s)
+13:44:00 [w2] dinov3_s16_320 MadMax-A4: 412 imgs 33.4s (12.3 img/s)
+13:44:07 [w2] dinov3_s16_320 LunarLoc-10: 183 imgs 7.3s (25.2 img/s)
+13:44:14 [w2] dinov3_s16_320 LunarLoc-9: 119 imgs 6.5s (18.2 img/s)
+13:44:17 [w2] dinov3_s16_320 SPICE-A-dawn-off@2500.0us: 99 imgs 3.0s (32.9 img/s)
+13:44:19 [w2] dinov3_s16_320 SPICE-A-night-on-spad@5.0us: 97 imgs 2.2s (44.0 img/s)
+13:44:20 [w2] hf plain: timm/vit_base_patch16_dinov3.lvd1689m/model.safetensors -> /kaggle/input/notebooks/nguyenmanh0404/vprspace-deps-hf/hf_plain/timm--vit_base_patch16_dinov3.lvd1689m/model.safetensors
+13:44:39 [w2] dinov3: RoPE periods truncated to bfloat16 (official behaviour)
+13:44:40 [w2] built dinov3_b16_320 in 20.5s
+13:44:52 [w2] dinov3_b16_320 S3LI-Etna-loops: 780 imgs 12.2s (64.1 img/s)
+13:45:30 [w2] dinov3_b16_320 MadMax-C0: 502 imgs 37.9s (13.2 img/s)
+13:46:07 [w2] dinov3_b16_320 MadMax-A4: 412 imgs 36.9s (11.2 img/s)
+13:46:15 [w2] dinov3_b16_320 LunarLoc-10: 183 imgs 8.6s (21.2 img/s)
+13:46:23 [w2] dinov3_b16_320 LunarLoc-9: 119 imgs 7.4s (16.2 img/s)
+13:46:26 [w2] dinov3_b16_320 SPICE-A-dawn-off@2500.0us: 99 imgs 3.4s (29.5 img/s)
+13:46:29 [w2] dinov3_b16_320 SPICE-A-night-on-spad@5.0us: 97 imgs 2.7s (35.7 img/s)
+13:46:33 [w2] hf plain: timm/vit_large_patch16_dinov3.lvd1689m/model.safetensors -> /kaggle/input/notebooks/nguyenmanh0404/vprspace-deps-hf/hf_plain/timm--vit_large_patch16_dinov3.lvd1689m/model.safetensors
+13:48:25 [w2] dinov3: RoPE periods truncated to bfloat16 (official behaviour)
+13:48:26 [w2] built dinov3_l16_320 in 116.8s
+13:48:58 [w2] dinov3_l16_320 S3LI-Etna-loops: 780 imgs 32.0s (24.4 img/s)
+13:49:47 [w2] dinov3_l16_320 MadMax-C0: 502 imgs 49.3s (10.2 img/s)
+13:50:33 [w2] dinov3_l16_320 MadMax-A4: 412 imgs 46.1s (8.9 img/s)
+13:50:45 [w2] dinov3_l16_320 LunarLoc-10: 183 imgs 12.2s (15.0 img/s)
+13:50:55 [w2] dinov3_l16_320 LunarLoc-9: 119 imgs 9.3s (12.8 img/s)
+13:51:01 [w2] dinov3_l16_320 SPICE-A-dawn-off@2500.0us: 99 imgs 6.2s (16.0 img/s)
+13:51:06 [w2] dinov3_l16_320 SPICE-A-night-on-spad@5.0us: 97 imgs 5.4s (17.9 img/s)

@@ -1,0 +1,35 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+12:50:56 [w0] torch 2.6.0+cu124 cuda 12.4 dev NVIDIA L4 trajectories 5
+Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/tmp/torch_home/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files
+Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt
+Desc dim set to 1536
+Model with domain = 'global' vocabulary loaded
+Desc dim set to 1536
+12:59:24 [w0] built anyloc_224 in 507.0s
+13:01:56 [w0] anyloc_224 S3LI-Etna-crater_inout: 1683 imgs 152.5s (11.0 img/s)
+13:02:24 [w0] anyloc_224 MadMax-F3: 229 imgs 28.0s (8.2 img/s)
+13:02:37 [w0] anyloc_224 LunarLoc-15: 118 imgs 13.0s (9.1 img/s)
+13:02:47 [w0] anyloc_224 SPICE-A-dawn-off-spad@5.0us: 98 imgs 9.8s (10.0 img/s)
+13:02:54 [w0] anyloc_224 LunarLoc-17: 54 imgs 7.0s (7.8 img/s)
+Using cache found in /tmp/torch_home/hub/AnyLoc_DINO_main
+Using cache found in /tmp/torch_home/hub/facebookresearch_dinov2_main
+Storing (torch.hub) cache in: /tmp/torch_home/hub/checkpoints/anyloc_files
+Cluster centers already downloaded: /tmp/torch_home/hub/checkpoints/anyloc_files/dinov2_vitg14_l31_value_c32_global_c_centers.pt
+Desc dim set to 1536
+Model with domain = 'global' vocabulary loaded
+Desc dim set to 1536
+13:03:15 [w0] built anyloc_322 in 21.0s
+13:08:25 [w0] anyloc_322 S3LI-Etna-crater_inout: 1683 imgs 310.4s (5.4 img/s)
+13:09:15 [w0] anyloc_322 MadMax-F3: 229 imgs 49.5s (4.6 img/s)
+13:09:39 [w0] anyloc_322 LunarLoc-15: 118 imgs 24.3s (4.9 img/s)
+13:09:58 [w0] anyloc_322 SPICE-A-dawn-off-spad@5.0us: 98 imgs 19.0s (5.2 img/s)
+13:10:10 [w0] anyloc_322 LunarLoc-17: 54 imgs 12.2s (4.4 img/s)
