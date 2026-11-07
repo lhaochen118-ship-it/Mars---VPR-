@@ -23,16 +23,22 @@ def try_push(s, split):
     if any(CONFIGS[c]["kind"] == "densevlad" for c in s["configs"]):
         spec["pre"] = [["{code}/densevlad_gpu.py", "--root", "{root}", "--desc-dir", "{desc}", "--stage", "vocab"]]
         spec["post"] = [["{code}/densevlad_gpu.py", "--root", "{root}", "--desc-dir", "{desc}", "--stage", "pca"]]
+    for key in ("pre", "post"):  # custom steps given by the plan (e.g. the CPU-parallel VLFeat DenseVLAD)
+        if key in s:
+            spec[key] = s[key]
     user = USERNAMES[s["label"]]
     sources = [f"{user}/vprspace-data-a", f"{user}/vprspace-data-b"] + [f"{user}/vprspace-deps-{d}" for d in s["deps"]]
+    sources += [f"{user}/{k}" for k in s.get("extra_sources", [])]
     d = tempfile.mkdtemp()
     open(os.path.join(d, "run.py"), "w").write(launch_session.build_script(spec))
-    json.dump(metadata(s["label"], f"vprspace-run-{s['session']}", "run.py", gpu=s["gpu"], kernel_sources=sources),
+    json.dump(metadata(s["label"], f"vprspace-run-{s['session']}", "run.py", gpu=s["gpu"], kernel_sources=sources,
+                       dataset_sources=s.get("dataset_sources", [])),
               open(os.path.join(d, "kernel-metadata.json"), "w"))
     if os.environ.get("VPRS_DRY_RUN"):
         md = json.load(open(os.path.join(d, "kernel-metadata.json")))
         print(json.dumps({"id": md["id"], "machine_shape": md.get("machine_shape"), "internet": md["enable_internet"],
                           "competition": md["competition_sources"], "kernel_sources": md["kernel_sources"],
+                          "dataset_sources": md["dataset_sources"],
                           "spec": {k: v for k, v in spec.items() if k != "configs"}, "n_configs": len(spec["configs"])}))
         shutil.rmtree(d, ignore_errors=True)
         return "successfully pushed (dry-run)"

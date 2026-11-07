@@ -17,7 +17,18 @@ def _find_lib():
             return os.path.join(d, "libphow.so")
     hits = sorted(glob.glob("/kaggle/input/**/libphow.so", recursive=True))  # Kaggle: build kernel attached as input
     assert hits, "libphow.so not found (set VPRS_VLFEAT_DIR)"
-    return hits[0]
+    # inputs may be mounted noexec: load copies from /tmp (atomic copy, safe if several processes race)
+    import shutil, tempfile
+    dst = "/tmp/vprs_vlfeat"
+    os.makedirs(dst, exist_ok=True)
+    for name in ("libvl.so", "libphow.so"):
+        if not os.path.exists(os.path.join(dst, name)):
+            fd, tmp = tempfile.mkstemp(dir=dst)
+            os.close(fd)
+            shutil.copyfile(os.path.join(os.path.dirname(hits[0]), name), tmp)
+            os.chmod(tmp, 0o755)
+            os.replace(tmp, os.path.join(dst, name))
+    return os.path.join(dst, "libphow.so")
 
 
 _lib = ctypes.CDLL(_find_lib())

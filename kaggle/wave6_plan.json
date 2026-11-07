@@ -1,0 +1,9 @@
+{"_note": "DenseVLAD on the original VLFeat vl_phow (CPU-parallel over the 46 vCPUs of an L4 session; GPU only for k-means).",
+ "sessions": [
+  {"label": "dinhthinh", "session": "g-dvlad-vlfeat-640", "gpu": "L4", "env": "pinned", "deps": ["core"],
+   "extra_sources": ["vprspace-vlfeat-build"], "configs": [],
+   "post": [["{code}/densevlad_vlfeat.py", "--root", "{root}", "--desc-dir", "{desc}", "--res", "640"]]},
+  {"label": "namhunhh", "session": "g-dvlad-vlfeat-native", "gpu": "L4", "env": "pinned", "deps": ["core"],
+   "extra_sources": ["vprspace-vlfeat-build"], "configs": [],
+   "post": [["{code}/densevlad_vlfeat.py", "--root", "{root}", "--desc-dir", "{desc}", "--res", "native"]]}
+ ]}

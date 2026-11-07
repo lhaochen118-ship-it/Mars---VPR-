@@ -1,0 +1,7 @@
+{"_note": "DenseVLAD (VLFeat) with vocabulary + PCA-whitening learned on an independent urban set (GSV-Cities), as Torii et al. did on San Francisco street view.",
+ "sessions": [
+  {"label": "dinhthinh", "session": "h-dvlad-vlfeat-urban", "gpu": "L4", "env": "pinned", "deps": ["core"],
+   "extra_sources": ["vprspace-vlfeat-build"], "dataset_sources": ["amaralibey/gsv-cities"], "configs": [],
+   "post": [["{code}/densevlad_vlfeat.py", "--root", "{root}", "--desc-dir", "{desc}", "--res", "640",
+             "--train-root", "/kaggle/input", "--train-n-vocab", "4000", "--train-n-pca", "20000", "--pca-k", "256", "1024", "4096"]]}
+ ]}

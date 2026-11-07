@@ -21,9 +21,8 @@ import argparse, json, math, os, sys, time
 from multiprocessing import get_context
 from pathlib import Path
 
-os.environ.setdefault("OMP_NUM_THREADS", "1")
-os.environ.setdefault("OPENBLAS_NUM_THREADS", "1")
-os.environ.setdefault("MKL_NUM_THREADS", "1")
+for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS"):  # one BLAS thread per pool worker
+    os.environ[_v] = "1"
 import numpy as np
 from scipy import sparse
 from PIL import Image, ImageFile
@@ -204,16 +203,61 @@ def load_mat_centers(path):
     return next(iter(cands.values())).T.astype(np.float32)  # MATLAB/VLFeat store centres as columns (D x K)
 
 
+def sample_external(train_root, n, seed=0):
+    """Deterministic sample of n images spread evenly over the city folders of an external urban set (GSV-Cities:
+    <root>/**/Images/<City>/*.jpg)."""
+    img_dirs = []
+    for dirpath, dirnames, _ in os.walk(train_root):
+        if os.path.basename(dirpath) == "Images" and dirnames:
+            img_dirs = sorted(os.path.join(dirpath, d) for d in dirnames)
+            break
+    assert img_dirs, f"no Images/<city>/ folder under {train_root}"
+    rng = np.random.default_rng(seed)
+    per = math.ceil(n / len(img_dirs))
+    out = []
+    for d in img_dirs:
+        files = sorted(e.path for e in os.scandir(d) if e.name.lower().endswith((".jpg", ".jpeg", ".png")))
+        out += [files[i] for i in sorted(rng.choice(len(files), size=min(per, len(files)), replace=False))]
+    rng.shuffle(out)
+    log(f"external set: {len(img_dirs)} cities, {len(out)} sampled images")
+    return out[:n]
+
+
+def learn_whitening(X, ks):
+    """PCA-whitening from the rows of X (n x D, n >> k): returns mu and {k: D x k projection} (GPU float64)."""
+    import torch
+    dev = "cuda" if torch.cuda.is_available() else "cpu"
+    Xt = torch.as_tensor(X, dtype=torch.float64, device=dev)
+    mu = Xt.mean(0)
+    Xt -= mu
+    lam, U = torch.linalg.eigh(Xt @ Xt.T)  # Gram trick
+    lam, U = lam.flip(0).clamp(min=0), U.flip(1)
+    rank = int((lam > lam[0] * 1e-10).sum())
+    out = {}
+    for k in ks:
+        k = min(k, rank)
+        V = Xt.T @ (U[:, :k] / lam[:k].sqrt())            # D x k orthonormal principal directions
+        sigma = (lam[:k] / (len(X) - 1)).sqrt()
+        out[k] = (V / sigma).cpu().numpy()
+        log(f"whitening k={k}: explained variance {float(lam[:k].sum() / lam.sum()):.3f} (n={len(X)}, rank {rank})")
+    return mu.cpu().numpy(), out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--root", required=True)
     ap.add_argument("--desc-dir", required=True)
     ap.add_argument("--res", nargs="+", default=["640", "native"], choices=["640", "native"])
     ap.add_argument("--vocab-mat")
+    ap.add_argument("--train-root", help="external image set (GSV-Cities) for vocabulary + whitening, as in Torii et al.")
+    ap.add_argument("--train-n-vocab", type=int, default=4000)
+    ap.add_argument("--train-n-pca", type=int, default=20000)
+    ap.add_argument("--pca-k", type=int, nargs="+", default=[256, 1024, 4096])
     ap.add_argument("--samples-per-image", type=int, default=300)
     ap.add_argument("--trajectories", nargs="*")
     ap.add_argument("--procs", type=int, default=max(1, len(os.sched_getaffinity(0)) - 2))
     a = ap.parse_args()
+    import phow  # noqa: F401  load VLFeat once in the parent, before the pool forks
     root, desc = Path(a.root), Path(a.desc_dir)
     sys.path.insert(0, str(HERE / "upstream"))
     import dataset
@@ -223,26 +267,32 @@ def main():
     if a.trajectories:
         trajs = [t for t in trajs if t in a.trajectories]
     ctx = get_context("fork")
+    (desc / "_densevlad_vlfeat").mkdir(parents=True, exist_ok=True)
     for res in a.res:
         t0 = time.time()
         tag = f"densevlad_vlfeat_{res}"
-        vocab_f = desc / "_densevlad_vlfeat" / f"vocab_{res}.npy"
-        vocab_f.parent.mkdir(parents=True, exist_ok=True)
+        train = None
+        if a.train_root:
+            train = sample_external(a.train_root, a.train_n_vocab + a.train_n_pca)
+            train_vocab, train_pca = train[:a.train_n_vocab], train[a.train_n_vocab:]
+            tag += "_urban"
+        vocab_f = desc / "_densevlad_vlfeat" / f"vocab_{tag}.npy"
         if a.vocab_mat:
             C = load_mat_centers(a.vocab_mat)
             tag += "_torii"
         elif vocab_f.exists():
             C = np.load(vocab_f)
         else:
-            paths = [str(p) for t in db_trajs for p in sorted((root / "images" / t).glob("*.png"))]
+            paths = train_vocab if train else [str(p) for t in db_trajs for p in sorted((root / "images" / t).glob("*.png"))]
             with ctx.Pool(a.procs, initializer=_init, initargs=(None,)) as pool:
                 S = list(pool.imap(_sample, [(p, res, a.samples_per_image, i) for i, p in enumerate(paths)], chunksize=4))
             X = np.concatenate(S).astype(np.float32)
-            log(f"{res}: {len(paths)} database images, {len(X)} sampled non-zero RootSIFT ({time.time() - t0:.0f}s)")
+            log(f"{tag}: {len(paths)} {'external' if train else 'database'} images, {len(X)} sampled non-zero RootSIFT "
+                f"({time.time() - t0:.0f}s)")
             C = kmeans(X, K)
             np.save(vocab_f, C)
-        log(f"{res}: vocabulary {C.shape} ready ({time.time() - t0:.0f}s)")
-        stats = {}
+        log(f"{tag}: vocabulary {C.shape} ready ({time.time() - t0:.0f}s)")
+        stats, bench = {}, {}
         with ctx.Pool(a.procs, initializer=_init, initargs=(C,)) as pool:
             for t in trajs:
                 files = sorted((root / "images" / t).glob("*.png"))
@@ -253,11 +303,27 @@ def main():
                     X = np.stack([o[0][z] for o in outs])
                     assert X.shape == (len(files), K * 128) and np.isfinite(X).all()
                     np.save(d / f"{t}.npy", X)
+                    bench[(z, t)] = X
                 n_tot, n_zero = sum(o[1] for o in outs), sum(o[2] for o in outs)
                 stats[t] = {"images": len(files), "descriptors_per_image": n_tot / len(files), "zero_fraction": n_zero / max(n_tot, 1)}
                 log(f"{res} {t}: {len(files)} imgs, {n_tot / len(files):.0f} descr/img, zero {n_zero / max(n_tot, 1):.3f} "
                     f"({time.time() - t0:.0f}s)")
-        json.dump(stats, open(desc / "_densevlad_vlfeat" / f"stats_{res}.json", "w"), indent=1)
+            if train:  # whitening learned on independent VLADs (never on the benchmark)
+                outs = list(pool.imap(_encode, [(p, res) for p in train_pca], chunksize=4))
+                log(f"{tag}: {len(outs)} external VLADs for the whitening ({time.time() - t0:.0f}s)")
+        json.dump(stats, open(desc / "_densevlad_vlfeat" / f"stats_{tag}.json", "w"), indent=1)
+        if train:
+            for z in ("keep0", "drop0"):
+                mu, Ps = learn_whitening(np.stack([o[0][z] for o in outs]), a.pca_k)
+                for k, P in Ps.items():
+                    d = desc / f"{tag}_pcaw{k}_{z}"
+                    d.mkdir(parents=True, exist_ok=True)
+                    for t in trajs:
+                        Y = (bench[(z, t)].astype(np.float64) - mu) @ P
+                        Y /= np.maximum(np.linalg.norm(Y, axis=1, keepdims=True), 1e-12)
+                        assert np.isfinite(Y).all()
+                        np.save(d / f"{t}.npy", Y.astype(np.float32))
+            log(f"{tag}: whitened sets written ({time.time() - t0:.0f}s)")
 
 
 if __name__ == "__main__":

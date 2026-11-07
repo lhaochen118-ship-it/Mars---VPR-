@@ -62,8 +62,9 @@ def main():
         sh(pip + ["install", "-q", "--no-index", "--no-deps", "--find-links", wheels, "pytorch-lightning", "lightning-utilities",
                   "torchmetrics", "fast-pytorch-kmeans", "timm", "psutil", "pytorch-metric-learning"])
         py = "/tmp/vprenv/bin/python"
-    freeze = subprocess.run([py, "-m", "pip", "freeze"], capture_output=True, text=True).stdout if py != sys.executable else \
-        subprocess.run([sys.executable, "-m", "pip", "freeze"], capture_output=True, text=True).stdout
+    # the venv is created --without-pip on Kaggle, so "venv/bin/python -m pip" is empty: use the pip that installed it
+    freeze_cmd = (pip + ["freeze"]) if py != sys.executable else [sys.executable, "-m", "pip", "freeze"]
+    freeze = subprocess.run(freeze_cmd, capture_output=True, text=True).stdout
     open(f"{W}/logs/pip_freeze.txt", "w").write(freeze)
     rc = ext.wait()
     assert rc == 0, f"tar extraction failed ({rc})"
