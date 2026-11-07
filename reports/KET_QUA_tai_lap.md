@@ -26,7 +26,7 @@ Kết luận ngắn:
   - Ảnh `MadMax-E0/0293.png` bị **cắt cụt** trong bản phát hành: thiếu chunk IEND, chỉ giải mã được 1.387/1.544 hàng.
   - Chúng tôi đọc phần giải mã được (`PIL ImageFile.LOAD_TRUNCATED_IMAGES=True`). Cách này cho đúng số của bài báo ở cặp E0–E1 (BoQ 0,3007 → 0,30; MegaLoc 0,3315 → 0,33).
 - **Ground truth**: dùng `vpr_gt/VPR-GT-RPE-0` phát hành.
-  - Chúng tôi dựng lại bước bỏ phiếu từ `misc/rpe_estimates` với ngưỡng Bảng V. Kết quả khớp **100%** ma trận hard/soft của cả 16 cặp (`results/verification/gt_rederivation.txt`).
+  - Chúng tôi dựng lại bước bỏ phiếu từ `misc/rpe_estimates` với ngưỡng Bảng V. Kết quả khớp **100%** ma trận hard/soft của cả 16 cặp (`results/verification/gt_rederivation_summary.txt`).
 - **Metric**: dùng nguyên `evaluate.py` và `metrics.py` của tác giả (commit eae17bf, không sửa):
   - `similarity` chuẩn hoá theo thống kê DB rồi chuẩn hoá L2;
   - AUPRC với 100 ngưỡng; R@100p; R@K.
@@ -115,7 +115,7 @@ Ghi chú:
 
 ## 6. DenseVLAD
 
-Bài chỉ ghi "DenseVLAD [Torii 2015]". Bản gốc là code MATLAB với ba thành phần: dense SIFT bằng VLFeat `vl_phow`, vocabulary 128 từ và PCA-whitening 4096-D. Vocabulary và whitening đều học trên ảnh Street View đô thị. Gói `247code.zip` chứa chúng **không còn tồn tại**: host gốc trả 403, Internet Archive có trang dự án nhưng không lưu file.
+Bài chỉ ghi "DenseVLAD [Torii 2015]". Bản gốc là code MATLAB với ba thành phần: dense SIFT bằng VLFeat `vl_phow`, vocabulary 128 từ và PCA-whitening 4096-D. Vocabulary và whitening được học trên ảnh đô thị, độc lập với dữ liệu đánh giá. Gói `247code.zip` chứa chúng **không còn tồn tại**: host gốc trả 403, Internet Archive có trang dự án nhưng không lưu file.
 
 ### 6.1 Các phiên bản đã chạy (16/16 cặp)
 
@@ -162,8 +162,8 @@ Các phiên bản:
 - **Whitening là yếu tố thứ hai.** Thêm PCA-whitening 4096-D học trên 20.000 ảnh GSV, tức đúng pipeline của Torii:
   - Bảng III gần như trùng bài: R@1/R@5/R@10 = 0,52/0,67/0,75 so với 0,52/0,68/0,76;
   - nhưng AUPRC trung bình lên 0,397, cao hơn 0,35 của bài.
-- **Giá trị của bài nằm giữa hai cấu hình này** (0,314 và 0,397). Mọi cấu hình đều có tương quan theo cặp ≥ 0,96.
-- Khác biệt còn lại phù hợp với việc tác giả dùng **vocabulary và PCA gốc của Torii**, học trên ảnh San Francisco và Tokyo, khác với GSV-Cities. Thành phần đó không còn tồn tại công khai.
+- **Giá trị của bài nằm giữa hai cấu hình này** (0,314 và 0,397). Mọi cấu hình GSV-Cities đều có tương quan theo cặp ≥ 0,95.
+- Khác biệt còn lại phù hợp với việc tác giả dùng **vocabulary và PCA gốc của Torii**, học trên ảnh đô thị khác GSV-Cities (theo các benchmark dùng lại DenseVLAD, vocabulary học trên bộ San Francisco). Thành phần đó không còn tồn tại công khai.
 - **DenseVLAD không thể tái lập chính xác.** Bản gần nhất theo từng cặp là "VLFeat 640, vocabulary GSV-Cities, không whitening".
 - Lưu ý: việc chọn bản "gần nhất" dựa vào số của bài, nên đây là phân tích độ nhạy, không phải cấu hình chọn trước.
 
