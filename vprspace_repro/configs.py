@@ -7,6 +7,11 @@ CONFIGS = {
     "megaloc": dict(kind="authors", method="megaloc"),               # 518x518, batch 24
     "boq_bs256": dict(kind="authors", method="boq", batch_size=256),  # same, larger batch (numerics check)
     "megaloc_bs128": dict(kind="authors", method="megaloc", batch_size=128),
+    # Group A resolution sensitivity (authors' code path, only the Images size changed; not used for the paper match)
+    "megaloc_322": dict(kind="authors", method="megaloc", size=(322, 322)),   # size used in the author's mini-vpr repo
+    "megaloc_224": dict(kind="authors", method="megaloc", size=(224, 224)),
+    "boq_224": dict(kind="authors", method="boq", size=(224, 224)),
+    "boq_518": dict(kind="authors", method="boq", size=(518, 518)),
     # ---- SALAD (DINOv2-B, GSV-Cities weights) ----
     "salad_322": dict(kind="salad", size=(322, 322)),
     "salad_224": dict(kind="salad", size=(224, 224)),
@@ -25,6 +30,8 @@ CONFIGS = {
     "cosplace_r152_2048_native": dict(kind="cosplace", backbone="ResNet152", dim=2048, size="native"),
     "cosplace_r50_512_native": dict(kind="cosplace", backbone="ResNet50", dim=512, size="native"),
     "cosplace_vgg16_512_native": dict(kind="cosplace", backbone="VGG16", dim=512, size="native"),
+    "cosplace_r50_2048_322": dict(kind="cosplace", backbone="ResNet50", dim=2048, size=(322, 322)),
+    "cosplace_r50_2048_518": dict(kind="cosplace", backbone="ResNet50", dim=2048, size=(518, 518)),
     # ---- MixVPR (ResNet50, fixed 320x320 input) ----
     "mixvpr_4096": dict(kind="mixvpr", dim=4096, size=(320, 320)),
     "mixvpr_512": dict(kind="mixvpr", dim=512, size=(320, 320)),
@@ -33,12 +40,19 @@ CONFIGS = {
     "netvlad_4096_native": dict(kind="netvlad", dim=4096, size="native"),
     "netvlad_32768_native": dict(kind="netvlad", dim=32768, size="native"),
     "netvlad_4096_max640": dict(kind="netvlad", dim=4096, size="max640"),
+    "netvlad_4096_322": dict(kind="netvlad", dim=4096, size=(322, 322)),
+    "netvlad_4096_518": dict(kind="netvlad", dim=4096, size=(518, 518)),
+    "netvlad_32768_518": dict(kind="netvlad", dim=32768, size=(518, 518)),
     # ---- DINOv3 CLS token (timm mirrors of the official LVD-1689M weights) ----
     "dinov3_s16_224": dict(kind="dinov3", arch="vit_small_patch16_dinov3.lvd1689m", size=(224, 224)),
     "dinov3_b16_224": dict(kind="dinov3", arch="vit_base_patch16_dinov3.lvd1689m", size=(224, 224)),
     "dinov3_b16_512": dict(kind="dinov3", arch="vit_base_patch16_dinov3.lvd1689m", size=(512, 512)),
     "dinov3_l16_224": dict(kind="dinov3", arch="vit_large_patch16_dinov3.lvd1689m", size=(224, 224)),
     "dinov3_l16_512": dict(kind="dinov3", arch="vit_large_patch16_dinov3.lvd1689m", size=(512, 512)),
+    # 322 (the authors' size for BoQ and, as found, AnyLoc) is not a multiple of DINOv3's patch 16 -> nearest: 320
+    "dinov3_s16_320": dict(kind="dinov3", arch="vit_small_patch16_dinov3.lvd1689m", size=(320, 320)),
+    "dinov3_b16_320": dict(kind="dinov3", arch="vit_base_patch16_dinov3.lvd1689m", size=(320, 320)),
+    "dinov3_l16_320": dict(kind="dinov3", arch="vit_large_patch16_dinov3.lvd1689m", size=(320, 320)),
     # ---- DenseVLAD (re-implementation, GPU dense RootSIFT; PCA-4096 variant written by the post step) ----
     "densevlad_16384": dict(kind="densevlad", size="gray640"),
 }

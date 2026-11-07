@@ -1,0 +1,37 @@
+{
+ "note": "Wave 3: fill the free T4 slot of each T4 account",
+ "sessions": [
+  {
+   "label": "mxuanquy",
+   "session": "d-groupa-resolution-t4",
+   "gpu": "T4",
+   "env": "pinned",
+   "deps": [
+    "core"
+   ],
+   "configs": [
+    "megaloc_322",
+    "megaloc_224",
+    "boq_224",
+    "boq_518"
+   ]
+  },
+  {
+   "label": "yeshenhi",
+   "session": "d-cosplace-netvlad-square-t4",
+   "gpu": "T4",
+   "env": "pinned",
+   "deps": [
+    "core",
+    "extra"
+   ],
+   "configs": [
+    "cosplace_r50_2048_322",
+    "cosplace_r50_2048_518",
+    "netvlad_4096_322",
+    "netvlad_4096_518",
+    "netvlad_32768_518"
+   ]
+  }
+ ]
+}

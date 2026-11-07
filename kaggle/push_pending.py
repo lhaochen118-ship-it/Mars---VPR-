@@ -17,7 +17,7 @@ def try_push(s, split):
     import shutil, tempfile
     sys.path.insert(0, os.path.join(launch_session.REPO, "vprspace_repro"))
     from configs import CONFIGS
-    trajs = split[s["split"]] if "split" in s else None
+    trajs = s.get("trajectories") or (split[s["split"]] if "split" in s else None)
     pixel_cost = any(isinstance(CONFIGS[c].get("size"), str) and not CONFIGS[c]["size"].startswith("pilbilinear") for c in s["configs"])
     spec = {"session": s["session"], "env": s["env"], "configs": s["configs"], "trajectories": trajs, "pixel_cost": pixel_cost}
     if any(CONFIGS[c]["kind"] == "densevlad" for c in s["configs"]):
@@ -29,6 +29,13 @@ def try_push(s, split):
     open(os.path.join(d, "run.py"), "w").write(launch_session.build_script(spec))
     json.dump(metadata(s["label"], f"vprspace-run-{s['session']}", "run.py", gpu=s["gpu"], kernel_sources=sources),
               open(os.path.join(d, "kernel-metadata.json"), "w"))
+    if os.environ.get("VPRS_DRY_RUN"):
+        md = json.load(open(os.path.join(d, "kernel-metadata.json")))
+        print(json.dumps({"id": md["id"], "machine_shape": md.get("machine_shape"), "internet": md["enable_internet"],
+                          "competition": md["competition_sources"], "kernel_sources": md["kernel_sources"],
+                          "spec": {k: v for k, v in spec.items() if k != "configs"}, "n_configs": len(spec["configs"])}))
+        shutil.rmtree(d, ignore_errors=True)
+        return "successfully pushed (dry-run)"
     r = subprocess.run(["kg", s["label"], "kernels", "push", "-p", d], capture_output=True, text=True)
     shutil.rmtree(d, ignore_errors=True)
     return (r.stdout + r.stderr).strip().splitlines()[-1]

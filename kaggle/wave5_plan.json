@@ -1,0 +1,20 @@
+{
+ "note": "Wave 5: DINOv3 at 320 (nearest multiple of 16 to the authors' 322 convention)",
+ "sessions": [
+  {
+   "label": "nguyenmanh0404",
+   "session": "f-dinov3-320",
+   "gpu": "L4",
+   "env": "pinned",
+   "deps": [
+    "core",
+    "hf"
+   ],
+   "configs": [
+    "dinov3_s16_320",
+    "dinov3_b16_320",
+    "dinov3_l16_320"
+   ]
+  }
+ ]
+}

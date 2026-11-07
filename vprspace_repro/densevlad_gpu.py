@@ -15,7 +15,10 @@ from pathlib import Path
 import numpy as np
 import torch
 import torch.nn.functional as F
-from PIL import Image
+from PIL import Image, ImageFile
+
+# same handling as worker.py for the truncated MadMax-E0/0293.png of the release (decode available rows)
+ImageFile.LOAD_TRUNCATED_IMAGES = os.environ.get("VPRS_LOAD_TRUNCATED", "1") == "1"
 
 BINS, STEP, LONG_SIDE, K = (4, 6, 8, 10), 2, 640, 128
 DEV = "cuda" if torch.cuda.is_available() else "cpu"

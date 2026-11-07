@@ -4,7 +4,7 @@ import base64, glob, io, json, os, shutil, subprocess, sys, tarfile, time
 
 SPEC = json.loads(r'''__SPEC__''')
 CODE_B64 = "__CODE_B64__"
-W = "/kaggle/working"
+W = os.environ.get("VPRS_W", "/kaggle/working")  # overridable for local smoke tests
 T0 = time.time()
 
 
@@ -98,7 +98,9 @@ def main():
             "vme_dir": vme_dir, "mixvpr_root": mixvpr_root}
     json.dump(spec, open("/tmp/worker_spec.json", "w"))
     cpus = len(os.sched_getaffinity(0))
-    env = dict(os.environ, TORCH_HOME="/tmp/torch_home", HF_HOME="/tmp/hf_home", HF_HUB_OFFLINE="1",
+    hf_plain = ":".join(find_dirs("hf_plain"))
+    log("hf_plain dirs:", hf_plain or "none")
+    env = dict(os.environ, TORCH_HOME="/tmp/torch_home", HF_HOME="/tmp/hf_home", HF_HUB_OFFLINE="1", VPRS_HF_PLAIN=hf_plain,
                TRANSFORMERS_OFFLINE="1", PYTHONPATH=f"{code}:{code}/upstream", VPRS_SESSION=SPEC["session"],
                VPRS_LOADER_WORKERS=str(max(2, (cpus - 2) // max(n_gpu, 1))), OMP_NUM_THREADS="4")
     def run_steps(key):

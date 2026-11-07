@@ -20,6 +20,12 @@ from configs import CONFIGS, outputs_of  # noqa: E402
 
 IMNET = dict(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
 
+# The released MadMax-E0 trajectory contains a PNG whose image data is cut short ("image file is truncated" in
+# PIL 12.2 and 13.0). The paper reports E0-E1 numbers, so the authors decoded it somehow; the closest neutral choice
+# is PIL's own LOAD_TRUNCATED_IMAGES (decodes the available rows). It changes nothing for intact files.
+from PIL import ImageFile  # noqa: E402
+ImageFile.LOAD_TRUNCATED_IMAGES = os.environ.get("VPRS_LOAD_TRUNCATED", "1") == "1"
+
 # Offline torch.hub: resolve "<owner>/<repo>" to the pre-populated cache directory (pinned commit) instead of probing
 # github.com for the default branch. This is exactly torch.hub's own no-internet fallback, made unconditional.
 _orig_parse_repo_info = torch.hub._parse_repo_info
@@ -51,6 +57,12 @@ def _install_hf_fallback():
         try:
             return orig(repo_id, filename, *args, **kwargs)
         except Exception as e:
+            # 1) plain copies prepared by vprspace-deps-hf (sha256-verified against the Hub's LFS oid at download time)
+            for d in filter(None, os.environ.get("VPRS_HF_PLAIN", "").split(":")):
+                cand = Path(d) / repo_id.replace("/", "--") / filename
+                if cand.exists():
+                    log(f"hf plain: {repo_id}/{filename} -> {cand}")
+                    return str(cand)
             base = Path(os.environ.get("HF_HOME", "~/.cache/huggingface")).expanduser() / "hub" / ("models--" + repo_id.replace("/", "--"))
             for snap in sorted(base.glob(f"snapshots/*/{filename}")):
                 if snap.exists() and snap.stat().st_size > 2048:
@@ -171,7 +183,8 @@ class Extractor:
         return torch.cat(outs)
 
     def __call__(self, paths):
-        dl = DataLoader(ImageSet(paths, self.prep), batch_size=self.loader_bs, num_workers=NUM_WORKERS, pin_memory=DEV == "cuda")
+        dl = DataLoader(ImageSet(paths, self.prep), batch_size=self.loader_bs, num_workers=NUM_WORKERS, pin_memory=DEV == "cuda",
+                        prefetch_factor=1 if NUM_WORKERS > 0 else None)
         res = [self.run_batch(x) for x in dl]
         if isinstance(res[0], dict):
             return {k: torch.cat([r[k] for r in res]).numpy() for k in res[0]}
@@ -198,10 +211,12 @@ def build(name, spec):
         m = methods.Method(c["method"])
         if "batch_size" in c:
             m.batch_size = c["batch_size"]
+        if "size" in c:
+            m.size = tuple(c["size"])
         return lambda paths: m(paths)
     if k == "salad":
         model = torch.hub.load("serizba/salad", "dinov2_salad").eval().to(DEV)
-        return Extractor(lambda x: model(x), c["size"], loader_bs=128 if c["size"] != "native14" else 16)
+        return Extractor(lambda x: model(x), c["size"], loader_bs=128 if c["size"] != "native14" else 8)
     if k == "anyloc":
         model = torch.hub.load("AnyLoc/DINO", "get_vlad_model", backbone="DINOv2", domain="global", device=DEV)
         cc = torch.load(os.path.join(torch.hub.get_dir(), "checkpoints", "anyloc_files",
@@ -218,18 +233,23 @@ def build(name, spec):
         return Extractor(fwd, c["size"], loader_bs=32 if c["size"] != "anyloc_demo" else 8)
     if k == "cosplace":
         model = torch.hub.load("gmberton/cosplace", "get_trained_model", backbone=c["backbone"], fc_output_dim=c["dim"]).eval().to(DEV)
-        return Extractor(lambda x: model(x), c["size"], loader_bs=64 if c["size"] == "native" else 128)
+        return Extractor(lambda x: model(x), c["size"], loader_bs=8 if c["size"] == "native" else 64)
     if k == "mixvpr":
         mod = vme_module("mixvpr", spec["vme_dir"])
         cwd = os.getcwd()
         os.chdir(spec["mixvpr_root"])  # contains trained_models/mixvpr/<ckpt>
-        model = mod.get_mixvpr(descriptors_dimension=c["dim"]).eval().to(DEV)
+        orig_load = torch.load  # checkpoints hold CUDA tensors: map to the active device (identical on GPU)
+        torch.load = lambda f, *a, **k: orig_load(f, *a, **{**k, "map_location": k.get("map_location", DEV)})
+        try:
+            model = mod.get_mixvpr(descriptors_dimension=c["dim"]).eval().to(DEV)
+        finally:
+            torch.load = orig_load
         os.chdir(cwd)
         return Extractor(lambda x: model(x), c["size"], loader_bs=256)
     if k == "netvlad":
         mod = vme_module("netvlad", spec["vme_dir"])
         model = mod.NetVLAD(descriptors_dimension=c["dim"]).eval().to(DEV)
-        return Extractor(lambda x: model(x), c["size"], loader_bs=32)
+        return Extractor(lambda x: model(x), c["size"], loader_bs=8 if c["size"] == "native" else 32)
     if k == "dinov3":
         import timm
         model = timm.create_model(c["arch"], pretrained=True, num_classes=0, dynamic_img_size=True).eval()
